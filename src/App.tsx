@@ -16,6 +16,14 @@ const ServiceAreaPages = lazy(() => import("./pages/services/ServiceAreaPages"))
 const HostingAndCare = lazy(() => import("./pages/services/HostingAndCare"));
 const OngoingSEO = lazy(() => import("./pages/services/OngoingSEO"));
 const WhoWeHelp = lazy(() => import("./pages/WhoWeHelp"));
+const Electricians = lazy(() => import("./pages/trades/Electricians"));
+const Plumbers = lazy(() => import("./pages/trades/Plumbers"));
+const Builders = lazy(() => import("./pages/trades/Builders"));
+const Roofers = lazy(() => import("./pages/trades/Roofers"));
+const Decorators = lazy(() => import("./pages/trades/Decorators"));
+const Joiners = lazy(() => import("./pages/trades/Joiners"));
+const Landscapers = lazy(() => import("./pages/trades/Landscapers"));
+const HeatingEngineers = lazy(() => import("./pages/trades/HeatingEngineers"));
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const ResultsPage = lazy(() => import("./pages/ResultsPage"));
 const About = lazy(() => import("./pages/About"));
@@ -50,6 +58,14 @@ const App = () => (
             <Route path="/services/hosting-and-care" element={<HostingAndCare />} />
             <Route path="/services/ongoing-seo" element={<OngoingSEO />} />
             <Route path="/who-we-help" element={<WhoWeHelp />} />
+            <Route path="/trades/electricians" element={<Electricians />} />
+            <Route path="/trades/plumbers" element={<Plumbers />} />
+            <Route path="/trades/builders" element={<Builders />} />
+            <Route path="/trades/roofers" element={<Roofers />} />
+            <Route path="/trades/decorators" element={<Decorators />} />
+            <Route path="/trades/joiners" element={<Joiners />} />
+            <Route path="/trades/landscapers" element={<Landscapers />} />
+            <Route path="/trades/heating-engineers" element={<HeatingEngineers />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/about" element={<About />} />

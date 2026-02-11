@@ -2,14 +2,15 @@ import tradePlumber from "@/assets/trade-plumber.jpg";
 import tradeRoofer from "@/assets/trade-roofer.jpg";
 import tradeBuilder from "@/assets/trade-builder.jpg";
 import { Wrench, Zap, Droplets, HardHat, PaintBucket, Hammer } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const trades = [
-  { icon: Zap, name: "Electricians", description: "Domestic and commercial electrical contractors" },
-  { icon: Droplets, name: "Plumbers", description: "Plumbing, heating and gas engineers" },
-  { icon: HardHat, name: "Builders", description: "General builders and construction firms" },
-  { icon: Wrench, name: "Roofers", description: "Roofing contractors and repair specialists" },
-  { icon: PaintBucket, name: "Decorators", description: "Painters, decorators and plasterers" },
-  { icon: Hammer, name: "Joiners", description: "Joiners, carpenters and cabinet makers" },
+  { icon: Zap, name: "Electricians", href: "/trades/electricians", description: "Domestic and commercial electrical contractors" },
+  { icon: Droplets, name: "Plumbers", href: "/trades/plumbers", description: "Plumbing, heating and gas engineers" },
+  { icon: HardHat, name: "Builders", href: "/trades/builders", description: "General builders and construction firms" },
+  { icon: Wrench, name: "Roofers", href: "/trades/roofers", description: "Roofing contractors and repair specialists" },
+  { icon: PaintBucket, name: "Decorators", href: "/trades/decorators", description: "Painters, decorators and plasterers" },
+  { icon: Hammer, name: "Joiners", href: "/trades/joiners", description: "Joiners, carpenters and cabinet makers" },
 ];
 
 const WhoWeHelp = () => {
@@ -31,18 +32,19 @@ const WhoWeHelp = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {trades.map((trade, index) => (
-                <div
+                <Link
                   key={index}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors"
+                  to={trade.href}
+                  className="flex items-center gap-3 p-3 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
                     <trade.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <span className="block text-sm font-semibold text-foreground">{trade.name}</span>
+                    <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">{trade.name}</span>
                     <span className="block text-xs text-muted-foreground">{trade.description}</span>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

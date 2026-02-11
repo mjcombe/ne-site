@@ -99,13 +99,23 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/90">
               Trades We Work With
             </h4>
-            <ul className="flex flex-col gap-2.5 text-sm text-primary-foreground/70">
-              <li>Electricians</li>
-              <li>Plumbers</li>
-              <li>Builders</li>
-              <li>Roofers</li>
-              <li>Decorators</li>
-              <li>Joiners & Carpenters</li>
+            <ul className="flex flex-col gap-2.5">
+              {[
+                { label: "Electricians", href: "/trades/electricians" },
+                { label: "Plumbers", href: "/trades/plumbers" },
+                { label: "Builders", href: "/trades/builders" },
+                { label: "Roofers", href: "/trades/roofers" },
+                { label: "Decorators", href: "/trades/decorators" },
+                { label: "Joiners & Carpenters", href: "/trades/joiners" },
+                { label: "Landscapers", href: "/trades/landscapers" },
+                { label: "Heating Engineers", href: "/trades/heating-engineers" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-accent transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
