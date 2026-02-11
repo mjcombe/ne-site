@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 import tradeBuilder from "@/assets/trade-builder.jpg";
 
 const trades = [
-  { icon: Zap, name: "Electricians", description: "Domestic rewires, new builds, commercial installations, emergency callouts — we help electricians rank for the searches that generate real work." },
-  { icon: Droplets, name: "Plumbers", description: "Boiler installs, bathroom fits, emergency plumbing — we build websites and SEO strategies that bring plumbers consistent local enquiries." },
-  { icon: HardHat, name: "Builders", description: "Extensions, renovations, new builds, groundworks — we help builders showcase their work and attract high-value projects." },
-  { icon: Wrench, name: "Roofers", description: "Roof repairs, flat roofing, new roofs, guttering — we make sure roofing businesses appear when homeowners need them most." },
-  { icon: PaintBucket, name: "Decorators", description: "Interior painting, exterior decorating, wallpapering, plastering — we help decorators build a strong local reputation online." },
-  { icon: Hammer, name: "Joiners & Carpenters", description: "Kitchens, staircases, bespoke joinery — we build online presences that help joiners attract quality work from local customers." },
-  { icon: Home, name: "Landscapers", description: "Garden design, driveways, fencing, patios — we help landscapers get found by homeowners searching for outdoor improvements." },
-  { icon: Thermometer, name: "Heating Engineers", description: "Boiler servicing, central heating, underfloor heating — we position heating businesses to capture high-intent local searches." },
+  { icon: Zap, name: "Electricians", href: "/trades/electricians", description: "Domestic rewires, new builds, commercial installations, emergency callouts — we help electricians rank for the searches that generate real work." },
+  { icon: Droplets, name: "Plumbers", href: "/trades/plumbers", description: "Boiler installs, bathroom fits, emergency plumbing — we build websites and SEO strategies that bring plumbers consistent local enquiries." },
+  { icon: HardHat, name: "Builders", href: "/trades/builders", description: "Extensions, renovations, new builds, groundworks — we help builders showcase their work and attract high-value projects." },
+  { icon: Wrench, name: "Roofers", href: "/trades/roofers", description: "Roof repairs, flat roofing, new roofs, guttering — we make sure roofing businesses appear when homeowners need them most." },
+  { icon: PaintBucket, name: "Decorators", href: "/trades/decorators", description: "Interior painting, exterior decorating, wallpapering, plastering — we help decorators build a strong local reputation online." },
+  { icon: Hammer, name: "Joiners & Carpenters", href: "/trades/joiners", description: "Kitchens, staircases, bespoke joinery — we build online presences that help joiners attract quality work from local customers." },
+  { icon: Home, name: "Landscapers", href: "/trades/landscapers", description: "Garden design, driveways, fencing, patios — we help landscapers get found by homeowners searching for outdoor improvements." },
+  { icon: Thermometer, name: "Heating Engineers", href: "/trades/heating-engineers", description: "Boiler servicing, central heating, underfloor heating — we position heating businesses to capture high-intent local searches." },
 ];
 
 const WhoWeHelpPage = () => {
@@ -36,15 +36,16 @@ const WhoWeHelpPage = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {trades.map((trade, i) => (
-              <div key={i} className="flex gap-4 p-6 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all">
+              <Link key={i} to={trade.href} className="flex gap-4 p-6 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all group">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
                   <trade.icon className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold text-lg text-foreground mb-1.5">{trade.name}</h3>
+                  <h3 className="font-heading font-semibold text-lg text-foreground mb-1.5 group-hover:text-accent transition-colors">{trade.name}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{trade.description}</p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-accent mt-2">Learn more <ArrowRight className="w-4 h-4" /></span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
