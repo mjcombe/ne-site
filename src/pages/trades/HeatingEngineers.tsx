@@ -40,7 +40,7 @@ const HeatingEngineers = () => (
       "heating engineer Tynemouth",
       "Vaillant accredited installer near me",
     ]}
-    benefitsTitle="Why heating engineers choose NE Trades"
+    benefitsTitle="Why heating engineers choose NE1 Web Digital"
     benefits={[
       { title: "Gas Safe trust prominently displayed", description: "We make your Gas Safe registration, manufacturer accreditations, and qualifications impossible to miss — the first thing homeowners see before anything else." },
       { title: "Compete with national companies locally", description: "British Gas can't offer the personal service you provide. We position your local expertise and responsiveness as advantages over faceless national companies." },

@@ -40,7 +40,7 @@ const Electricians = () => (
       "EV charger installer Newcastle",
       "Part P electrician near me",
     ]}
-    benefitsTitle="Why electricians choose NE Trades"
+    benefitsTitle="Why electricians choose NE1 Web Digital"
     benefits={[
       { title: "We understand electrical services", description: "From consumer unit upgrades to full rewires, we know how to present your services in language customers actually search for." },
       { title: "Accreditation-led trust building", description: "We make your NICEIC, NAPIT, and Part P credentials front and centre — the first thing potential customers see." },

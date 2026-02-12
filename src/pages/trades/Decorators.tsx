@@ -40,7 +40,7 @@ const Decorators = () => (
       "spray painting kitchen cabinets",
       "heritage property decorator",
     ]}
-    benefitsTitle="Why decorators choose NE Trades"
+    benefitsTitle="Why decorators choose NE1 Web Digital"
     benefits={[
       { title: "Let your work sell itself", description: "We build portfolio-driven websites where stunning photography of your completed projects does the selling — so customers choose you for quality, not just price." },
       { title: "Attract premium decorating clients", description: "A professional online presence attracts homeowners willing to pay for quality finishes rather than bargain hunters looking for the cheapest quote." },

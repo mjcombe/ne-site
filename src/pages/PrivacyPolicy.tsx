@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
         <div className="space-y-8">
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">1. Who we are</h2>
-            <p className="text-muted-foreground leading-relaxed">NE Trades provides website design and local SEO services for trade businesses. Our registered office is located in North East England, UK. When we refer to "we", "us", or "our", we mean NE Trades.</p>
+            <p className="text-muted-foreground leading-relaxed">NE1 Web Digital provides website design and local SEO services for trade businesses. Our registered office is Suite 2.6a, North Tyneside Business Centre, North Shields, NE30 1NT. When we refer to "we", "us", or "our", we mean NE1 Web Digital.</p>
           </div>
 
           <div>
@@ -52,12 +52,12 @@ const PrivacyPolicy = () => (
 
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">7. Your rights</h2>
-            <p className="text-muted-foreground leading-relaxed">Under UK GDPR, you have the right to access your data, rectify inaccurate data, erase your data, restrict processing, object to processing, and data portability. To exercise any of these rights, contact us at hello@netrades.co.uk.</p>
+            <p className="text-muted-foreground leading-relaxed">Under UK GDPR, you have the right to access your data, rectify inaccurate data, erase your data, restrict processing, object to processing, and data portability. To exercise any of these rights, contact us at hello@ne1webdigital.co.uk.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">8. Contact</h2>
-            <p className="text-muted-foreground leading-relaxed">If you have questions about this privacy policy, email us at hello@netrades.co.uk or call 0191 123 4567.</p>
+            <p className="text-muted-foreground leading-relaxed">If you have questions about this privacy policy, email us at hello@ne1webdigital.co.uk or call 07463 687129.</p>
           </div>
         </div>
       </div>

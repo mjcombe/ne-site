@@ -29,7 +29,7 @@ const stats = [
 
 const testimonials = [
   {
-    quote: "Since NE Trades built our new website and sorted our SEO, we've had to take on another electrician to handle the extra work. Best money we've ever spent.",
+    quote: "Since NE1 Web Digital built our new website and sorted our SEO, we've had to take on another electrician to handle the extra work. Best money we've ever spent.",
     name: "David Thompson",
     role: "Thompson Electrical, Newcastle",
   },
@@ -39,7 +39,7 @@ const testimonials = [
     role: "Richardson Plumbing, Sunderland",
   },
   {
-    quote: "NE Trades actually understand how trade businesses work. They built us a proper website that our customers trust, and it shows in the enquiries.",
+    quote: "NE1 Web Digital actually understand how trade businesses work. They built us a proper website that our customers trust, and it shows in the enquiries.",
     name: "Sarah Mitchell",
     role: "Mitchell Roofing, Durham",
   },

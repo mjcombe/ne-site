@@ -47,7 +47,7 @@ const CookiePolicy = () => (
 
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">5. Contact</h2>
-            <p className="text-muted-foreground leading-relaxed">If you have questions about our use of cookies, contact us at hello@netrades.co.uk or call 0191 123 4567.</p>
+            <p className="text-muted-foreground leading-relaxed">If you have questions about our use of cookies, contact us at hello@ne1webdigital.co.uk or call 07463 687129.</p>
           </div>
         </div>
       </div>

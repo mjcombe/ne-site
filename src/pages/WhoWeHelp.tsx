@@ -27,7 +27,7 @@ const WhoWeHelpPage = () => {
             We only work with trade businesses
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE Trades is built specifically for tradespeople. We understand how your customers search, what they look for, and how to turn that into booked work for your business.
+            NE1 Web Digital is built specifically for tradespeople. We understand how your customers search, what they look for, and how to turn that into booked work for your business.
           </p>
         </div>
       </section>
@@ -56,7 +56,7 @@ const WhoWeHelpPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Why trade businesses choose NE Trades
+                Why trade businesses choose NE1 Web Digital
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Generic web agencies don't understand the trades industry. They build pretty websites that don't generate leads because they don't know how local customers actually search for and choose tradespeople.

@@ -123,23 +123,23 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <h2 className="text-xl font-bold text-foreground mb-6">Get in touch directly</h2>
               <div className="space-y-6">
-                <a href="tel:01911234567" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
+                <a href="tel:07463687129" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
                   <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">Call us</span>
-                    <span className="block text-sm text-muted-foreground">0191 123 4567</span>
+                    <span className="block text-sm text-muted-foreground">07463 687129</span>
                   </div>
                 </a>
 
-                <a href="mailto:hello@netrades.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
+                <a href="mailto:hello@ne1webdigital.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
                   <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">Email us</span>
-                    <span className="block text-sm text-muted-foreground">hello@netrades.co.uk</span>
+                    <span className="block text-sm text-muted-foreground">hello@ne1webdigital.co.uk</span>
                   </div>
                 </a>
 
@@ -149,7 +149,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <span className="block text-sm font-semibold text-foreground">Location</span>
-                    <span className="block text-sm text-muted-foreground">North East England, UK</span>
+                    <span className="block text-sm text-muted-foreground">Suite 2.6a, North Tyneside Business Centre,<br />North Shields, NE30 1NT</span>
                   </div>
                 </div>
 

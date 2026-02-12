@@ -40,7 +40,7 @@ const Builders = () => (
       "kitchen extension quotes",
       "reliable builder reviews",
     ]}
-    benefitsTitle="Why builders choose NE Trades"
+    benefitsTitle="Why builders choose NE1 Web Digital"
     benefits={[
       { title: "Attract higher-value projects", description: "A professional website with strong project galleries positions you for extensions, new builds, and renovations rather than small repair jobs." },
       { title: "Portfolio that sells for you", description: "We showcase your completed projects with professional layouts that demonstrate quality, scale, and attention to detail — letting your work do the talking." },

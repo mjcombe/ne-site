@@ -40,7 +40,7 @@ const Plumbers = () => (
       "new bathroom quote Gateshead",
       "plumber Tynemouth",
     ]}
-    benefitsTitle="Why plumbers choose NE Trades"
+    benefitsTitle="Why plumbers choose NE1 Web Digital"
     benefits={[
       { title: "Stop paying for shared leads", description: "Unlike lead generation sites, your website belongs to you. Every enquiry comes directly to you with no competition and no per-lead fees." },
       { title: "Year-round enquiry pipeline", description: "Our seasonal content strategy ensures you're visible for boiler servicing, bathroom fits, and emergency work throughout the year." },

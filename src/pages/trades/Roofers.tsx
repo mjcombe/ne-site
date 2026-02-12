@@ -40,7 +40,7 @@ const Roofers = () => (
       "slate roof repair Gateshead",
       "fascia and soffit replacement",
     ]}
-    benefitsTitle="Why roofers choose NE Trades"
+    benefitsTitle="Why roofers choose NE1 Web Digital"
     benefits={[
       { title: "Capture emergency searches", description: "Roofing emergencies drive some of the highest-intent searches online. We make sure your business appears when homeowners urgently need a roofer." },
       { title: "Stand out from unreliable roofers", description: "A professional website with genuine reviews and project photos instantly separates you from the roofers giving the trade a bad name." },

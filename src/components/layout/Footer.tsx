@@ -35,23 +35,23 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-md gradient-teal flex items-center justify-center">
                 <span className="font-heading font-bold text-sm text-accent-foreground">NE</span>
               </div>
-              <span className="font-heading font-bold text-xl">NE Trades</span>
+              <span className="font-heading font-bold text-xl">NE1 Web Digital</span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Professional websites and local SEO built specifically for trade businesses across the North East and beyond.
             </p>
             <div className="flex flex-col gap-3">
-              <a href="tel:01911234567" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="tel:07463687129" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 shrink-0" />
-                0191 123 4567
+                07463 687129
               </a>
-              <a href="mailto:hello@netrades.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="mailto:hello@ne1webdigital.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4 shrink-0" />
-                hello@netrades.co.uk
+                hello@ne1webdigital.co.uk
               </a>
-              <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
-                <MapPin className="w-4 h-4 shrink-0" />
-                North East England
+              <div className="flex items-start gap-2 text-sm text-primary-foreground/80">
+                <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
+                <span>Suite 2.6a, North Tyneside Business Centre,<br />North Shields, NE30 1NT</span>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} NE Trades. All rights reserved.
+            © {new Date().getFullYear()} NE1 Web Digital. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {legalLinks.map((link) => (

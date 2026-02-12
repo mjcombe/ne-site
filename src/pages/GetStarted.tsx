@@ -153,9 +153,9 @@ const GetStarted = () => {
                 <p className="text-sm text-muted-foreground mb-3">
                   Give us a ring and we'll have a quick chat about what you need.
                 </p>
-                <a href="tel:01911234567" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                <a href="tel:07463687129" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
                   <Phone className="w-4 h-4" />
-                  0191 123 4567
+                  07463 687129
                 </a>
               </div>
 
