@@ -65,8 +65,8 @@ const TradePageLayout = ({
                   </Link>
                 </Button>
                 <Button variant="heroOutline" size="lg" asChild>
-                  <a href="tel:01911234567">
-                    <Phone className="w-4 h-4" /> Call 0191 123 4567
+                  <a href="tel:07463687129">
+                    <Phone className="w-4 h-4" /> Call 07463 687129
                   </a>
                 </Button>
               </div>

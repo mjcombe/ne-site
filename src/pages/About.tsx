@@ -16,7 +16,7 @@ const About = () => {
             Built by people who understand trades
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE Trades exists to help trade businesses get more work through professional websites and local SEO that actually delivers.
+            NE1 Web Digital exists to help trade businesses get more work through professional websites and local SEO that actually delivers.
           </p>
         </div>
       </section>
@@ -28,7 +28,7 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Our story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  NE Trades was founded with a simple observation: most web design agencies don't understand the trades industry. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a tradesperson.
+                  NE1 Web Digital was founded with a simple observation: most web design agencies don't understand the trades industry. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a tradesperson.
                 </p>
                 <p>
                   We decided to change that. Based in the North East, we work exclusively with trade businesses — electricians, plumbers, builders, roofers, decorators, and every trade in between. We know how your customers search, what makes them pick up the phone, and what a genuinely useful lead looks like.
@@ -38,7 +38,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img src={tradeBuilder} alt="NE Trades team" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
+            <img src={tradeBuilder} alt="NE1 Web Digital team" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
           </div>
         </div>
       </section>
