@@ -38,7 +38,7 @@ const Header = () => {
               to={link.href}
               className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                 location.pathname === link.href
-                  ? "text-accent bg-orange-light"
+                  ? "text-accent bg-teal-light"
                   : "text-text-secondary hover:text-foreground hover:bg-secondary"
               }`}
             >
@@ -79,7 +79,7 @@ const Header = () => {
                 onClick={() => setMobileOpen(false)}
                 className={`px-4 py-3 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === link.href
-                    ? "text-accent bg-orange-light"
+                    ? "text-accent bg-teal-light"
                     : "text-text-secondary hover:text-foreground hover:bg-secondary"
                 }`}
               >
