@@ -64,7 +64,7 @@ const TradePageLayout = ({
                     Get Started <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                <Button variant="heroOutline" size="lg" asChild>
                   <a href="tel:01911234567">
                     <Phone className="w-4 h-4" /> Call 0191 123 4567
                   </a>
