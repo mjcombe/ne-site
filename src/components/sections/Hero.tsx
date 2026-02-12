@@ -17,8 +17,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/90 to-navy/70" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="py-20 md:py-28 lg:py-36 max-w-3xl">
+      <div className="relative z-10 w-full">
+        <div className="py-20 md:py-28 lg:py-36 text-center max-w-4xl mx-auto px-4 md:px-6">
           <div className="inline-flex items-center gap-2 bg-primary-foreground/10 border border-primary-foreground/20 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-sm text-primary-foreground/80 font-medium">
@@ -30,11 +30,11 @@ const Hero = () => {
             Get more local enquiries for your trade business
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Professional websites and local SEO built specifically for electricians, plumbers, builders, and tradespeople across the North East. More phone calls. More quote requests. More booked jobs.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="xl" asChild>
               <Link to="/get-started">
                 Get More Enquiries
@@ -49,7 +49,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="mt-12 flex items-center gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="mt-12 flex items-center justify-center gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="text-center">
               <span className="block text-2xl md:text-3xl font-bold text-accent">100+</span>
               <span className="text-xs text-primary-foreground/60 uppercase tracking-wide">Trade Websites</span>
