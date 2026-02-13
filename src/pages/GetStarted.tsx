@@ -1,35 +1,45 @@
 import Layout from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight, Phone, CheckCircle } from "lucide-react";
-import { useState } from "react";
-import { toast } from "sonner";
+import { Phone, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 
 const GetStarted = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    trade: "",
-    website: "",
-    message: "",
-  });
-  const [submitting, setSubmitting] = useState(false);
+  useEffect(() => {
+    (function (C: any, A: string, L: string) {
+      let p = function (a: any, ar: any) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
-    setSubmitting(true);
-    setTimeout(() => {
-      toast.success("Brilliant! We'll be in touch to arrange your free call.");
-      setFormData({ name: "", email: "", phone: "", trade: "", website: "", message: "" });
-      setSubmitting(false);
-    }, 1000);
-  };
+    const Cal = (window as any).Cal;
+    Cal("init", "30min", { origin: "https://app.cal.com" });
+    Cal.ns["30min"]("inline", {
+      elementOrSelector: "#cal-get-started",
+      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
+      calLink: "ne1webdesign/30min",
+    });
+    Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+  }, []);
 
   return (
     <Layout>
@@ -42,7 +52,7 @@ const GetStarted = () => {
             Ready to get more enquiries?
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            Fill in the form below and we'll arrange a free, no-obligation discovery call to discuss how we can help your trade business grow.
+            Pick a time that works for you and we'll have a free, no-obligation discovery call to discuss how we can help your trade business grow.
           </p>
         </div>
       </section>
@@ -50,84 +60,13 @@ const GetStarted = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Form */}
+            {/* Cal.com Embed */}
             <div className="lg:col-span-3">
               <h2 className="text-xl font-bold text-foreground mb-6">Book your free discovery call</h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Name *</label>
-                    <Input
-                      placeholder="Your full name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      maxLength={100}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Email *</label>
-                    <Input
-                      type="email"
-                      placeholder="your@email.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      maxLength={255}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Phone *</label>
-                    <Input
-                      type="tel"
-                      placeholder="07xxx xxxxxx"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      maxLength={20}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Your trade</label>
-                    <Input
-                      placeholder="e.g. Electrician, Plumber"
-                      value={formData.trade}
-                      onChange={(e) => setFormData({ ...formData, trade: e.target.value })}
-                      maxLength={100}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1.5">Current website (if any)</label>
-                  <Input
-                    type="url"
-                    placeholder="https://yourwebsite.com"
-                    value={formData.website}
-                    onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    maxLength={255}
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1.5">Anything else we should know?</label>
-                  <Textarea
-                    placeholder="Tell us about your business goals, challenges, or questions..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    rows={4}
-                    maxLength={1000}
-                  />
-                </div>
-                <Button variant="cta" size="lg" type="submit" disabled={submitting} className="w-full sm:w-auto">
-                  {submitting ? "Sending..." : "Book My Free Call"}
-                  {!submitting && <ArrowRight className="w-5 h-5" />}
-                </Button>
-                <p className="text-xs text-muted-foreground">
-                  Free, no-obligation call. By submitting, you agree to our{" "}
-                  <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>.
-                </p>
-              </form>
+              <div
+                id="cal-get-started"
+                className="w-full min-h-[500px] overflow-auto rounded-lg border border-border"
+              />
             </div>
 
             {/* Benefits */}
