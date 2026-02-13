@@ -31,12 +31,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-auto px-2.5 h-8 rounded-md gradient-teal flex items-center justify-center animate-[pulse_3s_ease-in-out_infinite] hover:animate-none transition-all">
-                <span className="font-heading font-bold text-sm text-accent-foreground tracking-wide">NETRADES</span>
-              </div>
-              <span className="font-heading font-bold text-xl">NE1 Web Digital</span>
-            </Link>
+            <span className="font-heading font-bold text-xl text-primary-foreground">NE1 Digital</span>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Professional websites and local SEO built specifically for trade businesses across the North East and beyond.
             </p>
@@ -45,9 +40,9 @@ const Footer = () => {
                 <Phone className="w-4 h-4 shrink-0" />
                 07463 687129
               </a>
-              <a href="mailto:hello@ne1webdigital.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="mailto:hello@netrades.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4 shrink-0" />
-                hello@ne1webdigital.co.uk
+                hello@netrades.co.uk
               </a>
               <div className="flex items-start gap-2 text-sm text-primary-foreground/80">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
@@ -123,7 +118,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} NE1 Web Digital. All rights reserved.
+            © {new Date().getFullYear()} NE1 Digital. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {legalLinks.map((link) => (
