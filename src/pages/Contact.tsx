@@ -1,35 +1,46 @@
 import Layout from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { useState } from "react";
-import { toast } from "sonner";
+import { useEffect } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    trade: "",
-    message: "",
-  });
-  const [submitting, setSubmitting] = useState(false);
+  useEffect(() => {
+    // Cal.com embed script
+    (function (C: any, A: string, L: string) {
+      let p = function (a: any, ar: any) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
-    setSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Thanks for your enquiry! We'll be in touch within 24 hours.");
-      setFormData({ name: "", email: "", phone: "", trade: "", message: "" });
-      setSubmitting(false);
-    }, 1000);
-  };
+    const Cal = (window as any).Cal;
+    Cal("init", "30min", { origin: "https://app.cal.com" });
+    Cal.ns["30min"]("inline", {
+      elementOrSelector: "#my-cal-inline-30min",
+      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
+      calLink: "ne1webdesign/30min",
+    });
+    Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+  }, []);
 
   return (
     <Layout>
@@ -39,10 +50,10 @@ const Contact = () => {
             Contact
           </span>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Get in touch
+            Book a free discovery call
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            Have a question or ready to get started? Drop us a message or give us a call. We'll get back to you within 24 hours.
+            Pick a time that works for you. We'll have a quick chat about your business and how we can help you get more enquiries.
           </p>
         </div>
       </section>
@@ -50,73 +61,13 @@ const Contact = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Form */}
+            {/* Cal.com Embed */}
             <div className="lg:col-span-3">
-              <h2 className="text-xl font-bold text-foreground mb-6">Send us an enquiry</h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Name *</label>
-                    <Input
-                      placeholder="Your full name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      maxLength={100}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Email *</label>
-                    <Input
-                      type="email"
-                      placeholder="your@email.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      maxLength={255}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Phone</label>
-                    <Input
-                      type="tel"
-                      placeholder="07xxx xxxxxx"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      maxLength={20}
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Your trade</label>
-                    <Input
-                      placeholder="e.g. Electrician, Plumber"
-                      value={formData.trade}
-                      onChange={(e) => setFormData({ ...formData, trade: e.target.value })}
-                      maxLength={100}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1.5">Message *</label>
-                  <Textarea
-                    placeholder="Tell us about your business and what you're looking for..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    rows={5}
-                    maxLength={1000}
-                    required
-                  />
-                </div>
-                <Button variant="cta" size="lg" type="submit" disabled={submitting} className="w-full sm:w-auto">
-                  {submitting ? "Sending..." : "Send Enquiry"}
-                </Button>
-                <p className="text-xs text-muted-foreground">
-                  By submitting this form, you agree to our{" "}
-                  <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>.
-                </p>
-              </form>
+              <h2 className="text-xl font-bold text-foreground mb-6">Choose a time</h2>
+              <div
+                id="my-cal-inline-30min"
+                className="w-full min-h-[500px] overflow-auto rounded-lg border border-border"
+              />
             </div>
 
             {/* Contact info */}
@@ -133,13 +84,13 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <a href="mailto:hello@ne1webdigital.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
+                <a href="mailto:hello@netrades.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
                   <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">Email us</span>
-                    <span className="block text-sm text-muted-foreground">hello@ne1webdigital.co.uk</span>
+                    <span className="block text-sm text-muted-foreground">hello@netrades.co.uk</span>
                   </div>
                 </a>
 
@@ -167,9 +118,9 @@ const Contact = () => {
               <div className="mt-8 p-5 rounded-lg bg-accent/5 border border-accent/20">
                 <h3 className="font-heading font-semibold text-foreground mb-2">What happens next?</h3>
                 <ol className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex gap-2"><span className="text-accent font-semibold">1.</span> We receive your enquiry and review it</li>
-                  <li className="flex gap-2"><span className="text-accent font-semibold">2.</span> We get back to you within 24 hours</li>
-                  <li className="flex gap-2"><span className="text-accent font-semibold">3.</span> We book a free discovery call to understand your business</li>
+                  <li className="flex gap-2"><span className="text-accent font-semibold">1.</span> Pick a time that suits you</li>
+                  <li className="flex gap-2"><span className="text-accent font-semibold">2.</span> We'll have a free 30-minute discovery call</li>
+                  <li className="flex gap-2"><span className="text-accent font-semibold">3.</span> We'll discuss your business goals and challenges</li>
                   <li className="flex gap-2"><span className="text-accent font-semibold">4.</span> We send you a clear proposal with no obligation</li>
                 </ol>
               </div>
