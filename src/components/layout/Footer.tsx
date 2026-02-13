@@ -32,8 +32,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-md gradient-teal flex items-center justify-center">
-                <span className="font-heading font-bold text-sm text-accent-foreground">NE</span>
+              <div className="w-auto px-2.5 h-8 rounded-md gradient-teal flex items-center justify-center animate-[pulse_3s_ease-in-out_infinite] hover:animate-none transition-all">
+                <span className="font-heading font-bold text-sm text-accent-foreground tracking-wide">NETRADES</span>
               </div>
               <span className="font-heading font-bold text-xl">NE1 Web Digital</span>
             </Link>

@@ -22,8 +22,8 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
-          <div className="w-8 h-8 rounded-md gradient-navy flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-sm">NE</span>
+          <div className="w-auto px-2.5 h-8 rounded-md gradient-navy flex items-center justify-center animate-[pulse_3s_ease-in-out_infinite] hover:animate-none transition-all">
+            <span className="text-primary-foreground font-heading font-bold text-sm tracking-wide">NETRADES</span>
           </div>
           <span className="font-heading font-bold text-xl text-foreground">
             NE1 Web Digital
@@ -38,7 +38,7 @@ const Header = () => {
               to={link.href}
               className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                 location.pathname === link.href
-                  ? "text-accent bg-teal-light"
+                  ? "text-primary font-semibold bg-secondary"
                   : "text-text-secondary hover:text-foreground hover:bg-secondary"
               }`}
             >
@@ -79,7 +79,7 @@ const Header = () => {
                 onClick={() => setMobileOpen(false)}
                 className={`px-4 py-3 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === link.href
-                    ? "text-accent bg-teal-light"
+                    ? "text-primary font-semibold bg-secondary"
                     : "text-text-secondary hover:text-foreground hover:bg-secondary"
                 }`}
               >
