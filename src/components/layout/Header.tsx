@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -21,13 +22,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
-          <div className="w-auto px-2.5 h-8 rounded-md gradient-navy flex items-center justify-center animate-[pulse_3s_ease-in-out_infinite] hover:animate-none transition-all">
-            <span className="text-primary-foreground font-heading font-bold text-sm tracking-wide">NETRADES</span>
-          </div>
-          <span className="font-heading font-bold text-xl text-foreground">
-            NE1 Web Digital
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
+          <img src={logoImage} alt="NE1 Trades" className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
