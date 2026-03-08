@@ -1,6 +1,6 @@
 import {
   Search, MapPin, Star, Globe, FileText, Smartphone,
-  TrendingUp, Users, MessageSquare, Shield
+  TrendingUp, Users, MessageSquare, Shield, Zap, Droplets, HardHat, Wrench, Thermometer
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
