@@ -36,7 +36,7 @@ const Groundworkers = () => (
       "mini digger hire with operator",
       "concrete foundations near me",
     ]}
-    benefitsTitle="Why groundwork companies choose NE1 Web Digital"
+    benefitsTitle="Why groundwork companies choose NE Trades"
     benefits={[
       { title: "B2B and direct targeting", description: "We target both builders/developers needing subcontractors and homeowners needing driveways, patios, and foundations." },
       { title: "Project scale showcase", description: "Professional case studies and project galleries that demonstrate your capability for larger contracts." },

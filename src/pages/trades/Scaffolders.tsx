@@ -36,7 +36,7 @@ const Scaffolders = () => (
       "temporary roofing scaffold",
       "scaffolding for loft conversion",
     ]}
-    benefitsTitle="Why scaffolding companies choose NE1 Web Digital"
+    benefitsTitle="Why scaffolding companies choose NE Trades"
     benefits={[
       { title: "B2B and B2C targeting", description: "We target both homeowners needing scaffold hire and builders looking for reliable scaffolding subcontractors." },
       { title: "Safety-first messaging", description: "We highlight your safety credentials, CISRS qualifications, and insurance — the details that win contracts." },

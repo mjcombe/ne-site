@@ -36,7 +36,7 @@ const Tilers = () => (
       "wet room tiler Gateshead",
       "outdoor tiling specialist",
     ]}
-    benefitsTitle="Why tilers choose NE1 Web Digital"
+    benefitsTitle="Why tilers choose NE Trades"
     benefits={[
       { title: "Visual-first design", description: "Tiling is a visual trade. We build websites that let your finished work do the selling with stunning photo galleries." },
       { title: "Niche keyword targeting", description: "We target specific searches — bathroom tiling, floor tiling, mosaic work — not just generic 'tiler' terms." },

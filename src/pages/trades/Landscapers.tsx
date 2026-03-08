@@ -38,7 +38,7 @@ const Landscapers = () => (
       "decking installer near me",
       "retaining wall builder",
     ]}
-    benefitsTitle="Why landscapers choose NE1 Web Digital"
+    benefitsTitle="Why landscapers choose NE Trades"
     benefits={[
       { title: "Before-and-after impact", description: "Landscaping is one of the most visual trades. We design your website to maximise the dramatic impact of your project transformations." },
       { title: "Year-round project pipeline", description: "Our seasonal content strategy targets different landscaping services throughout the year, smoothing out the seasonal peaks and troughs." },

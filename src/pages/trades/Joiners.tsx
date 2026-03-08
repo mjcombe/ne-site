@@ -38,7 +38,7 @@ const Joiners = () => (
       "commercial joinery North East",
       "door hanging service near me",
     ]}
-    benefitsTitle="Why joiners choose NE1 Web Digital"
+    benefitsTitle="Why joiners choose NE Trades"
     benefits={[
       { title: "Communicate craftsmanship digitally", description: "We build websites that capture the detail, quality, and care in your joinery work — from timber selection to finished installation." },
       { title: "Attract bespoke project enquiries", description: "Our SEO strategy targets customers searching for bespoke, custom, and fitted solutions rather than off-the-shelf alternatives." },
