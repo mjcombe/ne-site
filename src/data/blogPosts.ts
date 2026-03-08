@@ -270,5 +270,128 @@ export const blogPosts: BlogPost[] = [
       "## Patience and Consistency",
       "Map pack rankings don't change overnight. It typically takes 3-6 months of consistent effort to see significant movement. Keep optimising your profile, gathering reviews, building citations, and improving your website. The tradespeople who commit to this process consistently are the ones who dominate their local map results. Our [ongoing SEO support](/services/ongoing-seo) handles all of this for you month after month."
     ]
+  },
+  {
+    slug: "electrician-website-newcastle-guide",
+    title: "Why Every Electrician in Newcastle Needs a Professional Website",
+    metaDescription: "A guide for Newcastle electricians on why a professional website is essential for winning local work. Get more enquiries from customers in your area.",
+    excerpt: "If you're an electrician in Newcastle without a professional website, you're leaving work on the table. Here's why it matters and what to include.",
+    icon: Zap,
+    date: "2026-03-07",
+    readTime: "6 min read",
+    category: "Trade Websites",
+    content: [
+      "Newcastle is one of the most competitive areas for [electricians](/trades/electricians) in the North East. With dozens of electrical contractors covering the city, Jesmond, Gosforth, Heaton and beyond, the tradespeople winning the most work are the ones showing up on Google — and that starts with a professional website.",
+      "## The Newcastle Electrician Market",
+      "Searches like 'electrician Newcastle', 'emergency electrician near me' and 'NICEIC electrician Gosforth' happen hundreds of times every month. Without a [website](/services/websites-for-trades) that's optimised for these terms, you're relying entirely on word of mouth and expensive lead generation platforms.",
+      "## What Your Website Needs",
+      "A strong electrician website should clearly list your services — consumer unit upgrades, rewires, fault finding, EICRs, and new builds. Each service should ideally have its own page targeting specific searches. Include your NICEIC or NAPIT registration prominently, and make sure your phone number is clickable on mobile.",
+      "## Local Content That Ranks",
+      "Mention the specific Newcastle areas you cover — Jesmond, Heaton, Gosforth, Fenham, Byker, Walker, Westerhope. Create [service area pages](/services/service-area-pages) for each key area. Reference local landmarks and housing types — 'Victorian terrace rewires in Heaton' or 'new build electrical installations in Great Park' signals to Google that you're genuinely local.",
+      "## Google Business Profile for Newcastle",
+      "Pair your website with a fully optimised [Google Business Profile](/services/google-business-profile). Ensure your business address or service area covers Newcastle postcodes (NE1-NE7). Upload photos of completed work at Newcastle properties. Ask customers in the area to mention their neighbourhood in reviews — 'Great job on our rewire in Jesmond!' carries more local SEO weight than a generic review.",
+      "## Standing Out From Competitors",
+      "Most Newcastle electricians either have no website or have a basic one that hasn't been updated in years. A professionally built, SEO-optimised website immediately puts you ahead. Add genuine [Google reviews](/blog/how-to-get-more-google-reviews-trade-business), before-and-after photos of Newcastle jobs, and clear pricing guidance to build trust.",
+      "## Getting Started",
+      "You don't need to spend thousands or wait months. Our [websites for trades](/services/websites-for-trades) are designed specifically for electricians and other tradespeople, built with [local SEO](/services/local-seo) baked in from day one. Combined with [ongoing SEO support](/services/ongoing-seo), you'll be generating organic enquiries from Newcastle customers within weeks."
+    ]
+  },
+  {
+    slug: "plumber-website-sunderland-local-seo",
+    title: "How Plumbers in Sunderland Can Dominate Local Search",
+    metaDescription: "Local SEO tips specifically for plumbers in Sunderland. Rank higher on Google, get more calls, and beat competitors in your area.",
+    excerpt: "Sunderland plumbers face fierce competition online. Here's how to use local SEO and a professional website to win more work in your area.",
+    icon: Droplets,
+    date: "2026-03-05",
+    readTime: "5 min read",
+    category: "Local SEO",
+    content: [
+      "If you're a [plumber](/trades/plumbers) working across Sunderland — covering the city centre, Roker, Seaburn, Hendon, Ryhope, Washington and surrounding areas — local SEO could be the difference between a full diary and quiet weeks waiting for the phone to ring.",
+      "## What Sunderland Customers Search For",
+      "Real searches happening every day include 'plumber Sunderland', 'emergency plumber near me Sunderland', 'boiler repair Sunderland', and 'gas engineer Roker'. Each of these represents a customer ready to hire. If your website doesn't appear in these results, that work goes to a competitor. Understanding [why local SEO matters](/blog/why-local-seo-matters-for-tradesmen-north-east) is the first step.",
+      "## Building Your Sunderland Presence",
+      "Start with a professional [website](/services/websites-for-trades) that clearly states you're a Sunderland-based plumber. Create individual pages for your core services — boiler installation, emergency plumbing, bathroom fitting, central heating. Then add [service area pages](/services/service-area-pages) for each part of Sunderland you cover.",
+      "## Google Business Profile Essentials",
+      "Set your service area to cover Sunderland postcodes (SR1-SR6). Choose 'Plumber' as your primary category with secondary categories like 'Gas engineer', 'Boiler repair service', and 'Drain cleaning service'. Post regular updates showing completed jobs in Sunderland — 'Just completed a boiler installation in Roker' with a photo. Read our [complete GBP guide](/blog/google-business-profile-guide-tradespeople).",
+      "## Reviews From Sunderland Customers",
+      "Ask every Sunderland customer for a [Google review](/blog/how-to-get-more-google-reviews-trade-business). Reviews that mention 'Sunderland', 'Roker', or other local areas carry extra weight for local rankings. Respond to every review mentioning the specific job and area — this adds natural local keyword signals.",
+      "## Competing With Lead Gen Sites",
+      "Many Sunderland plumbers rely on Checkatrade or MyBuilder. These platforms charge per lead and share your enquiry with competitors. [Your own SEO presence](/blog/how-seo-beats-lead-generation-sites-tradespeople) generates exclusive leads that come directly to you. After 6-12 months of consistent [ongoing SEO](/services/ongoing-seo), most plumbers find they can significantly reduce their lead gen spend.",
+      "## Your Next Step",
+      "The Sunderland plumbing market is competitive but far from saturated online. Most local plumbers have outdated websites or none at all. A small investment in a professional website and [local SEO](/services/local-seo) puts you ahead of the pack and keeps your phone ringing."
+    ]
+  },
+  {
+    slug: "builder-website-gateshead-north-east",
+    title: "Websites for Builders in Gateshead: What You Need to Know",
+    metaDescription: "Why builders in Gateshead need a professional website to win more local work. Essential tips for construction businesses in the North East.",
+    excerpt: "Gateshead builders are missing out on work by not having a professional online presence. Here's what a good builder's website should include.",
+    icon: HardHat,
+    date: "2026-03-03",
+    readTime: "5 min read",
+    category: "Trade Websites",
+    content: [
+      "For [builders](/trades/builders) in Gateshead — whether you specialise in extensions, loft conversions, new builds or renovation work — your website is your most important marketing tool. Most homeowners planning building work start their search online, and a professional website builds the trust they need before committing to a large project.",
+      "## Why Builders Need Websites More Than Most",
+      "Building work involves significant expense and disruption for homeowners. They're not going to hire someone they found on a scrap of paper or a Facebook comment. They'll research, compare, and check reviews. A professional [website](/services/websites-for-trades) that showcases your past projects, qualifications, and customer testimonials makes you the obvious choice.",
+      "## What to Include on Your Builder Website",
+      "Your website should feature a portfolio of completed projects with before-and-after photos. Show extensions in Low Fell, loft conversions in Whickham, renovation work in Saltwell. Include specific pages for each service — extensions, loft conversions, garage conversions, new builds, and structural work. Each page should explain the process, typical timelines, and what customers can expect.",
+      "## Targeting Gateshead Searches",
+      "Homeowners search for 'builder Gateshead', 'house extension Gateshead', 'loft conversion Low Fell', and 'building contractor Team Valley'. Create dedicated [service area pages](/services/service-area-pages) covering Gateshead, Low Fell, Whickham, Birtley, Blaydon, Felling, and surrounding areas. Mention specific types of properties you work on — Tyneside flats, semi-detached homes, period properties.",
+      "## Building Trust Online",
+      "Display your Federation of Master Builders membership, public liability insurance details, and any relevant qualifications prominently. Add [Google reviews](/blog/how-to-get-more-google-reviews-trade-business) to your website and ensure your [Google Business Profile](/services/google-business-profile) is fully optimised with photos of Gateshead projects.",
+      "## Standing Out in Gateshead",
+      "Most builders in Gateshead rely purely on word of mouth or expensive advertising. A [local SEO strategy](/services/local-seo) that targets specific building services in specific Gateshead areas puts you where customers are looking. Combine this with [ongoing SEO](/services/ongoing-seo) to build authority over time and stay ahead of competitors who eventually catch on."
+    ]
+  },
+  {
+    slug: "roofer-seo-north-shields-tyne-wear",
+    title: "SEO for Roofers in North Shields and Tyne & Wear",
+    metaDescription: "How roofers in North Shields and Tyne & Wear can use SEO to get more roofing enquiries. Practical tips for ranking in local search results.",
+    excerpt: "Roofers in North Shields and across Tyne & Wear can generate a steady stream of enquiries with the right SEO strategy. Here's how.",
+    icon: Wrench,
+    date: "2026-03-01",
+    readTime: "5 min read",
+    category: "Local SEO",
+    content: [
+      "Roofing work is inherently local — homeowners need a [roofer](/trades/roofers) who can attend quickly, especially for emergency repairs. For roofers based in North Shields, Whitley Bay, Tynemouth, and the wider Tyne & Wear area, [local SEO](/services/local-seo) is the most cost-effective way to keep a full pipeline of work.",
+      "## High-Intent Roofing Searches",
+      "Searches like 'roofer North Shields', 'emergency roof repair Whitley Bay', 'flat roof repair Tynemouth', and 'roof replacement near me' are happening daily. These aren't browsers — they're homeowners with genuine, often urgent needs. Ranking for these terms means your phone rings with qualified leads, not shared enquiries from a lead gen site.",
+      "## Your Roofing Website",
+      "A strong roofing [website](/services/websites-for-trades) should clearly list all your services: slate and tile roofing, flat roofing, chimney repairs, guttering, fascias and soffits, and emergency repairs. Include photos of completed roofing work across the area — 'New slate roof in Cullercoats' or 'Flat roof replacement in Wallsend' adds both credibility and local SEO value.",
+      "## Service Area Pages for Maximum Coverage",
+      "As a roofer, you likely cover a wide area. Create [service area pages](/services/service-area-pages) for North Shields, Whitley Bay, Tynemouth, Wallsend, Killingworth, Forest Hall, and anywhere else you regularly work. Each page should mention the types of roofing common in that area and the specific problems local properties face — coastal properties in Whitley Bay have different roofing challenges than inland homes.",
+      "## Emergency Roofing SEO",
+      "Emergency roof repairs are some of the highest-value, highest-intent searches. Create a dedicated page for emergency roofing services, emphasise your response times, and ensure your [Google Business Profile](/services/google-business-profile) has 'Emergency roof repair' in your services list. Homeowners searching at 10pm during a storm will call the first roofer they find.",
+      "## Reviews Tell the Story",
+      "Roofing customers are especially cautious — they've heard the horror stories. A strong review profile with detailed [Google reviews](/blog/how-to-get-more-google-reviews-trade-business) describing specific roofing work builds enormous trust. Ask customers to mention the type of work and location — 'Brilliant job replacing our ridge tiles in North Shields, arrived same day and cleaned up perfectly.'",
+      "## Long-Term SEO Investment",
+      "Roofing SEO compounds over time. After 6 months of consistent [ongoing SEO work](/services/ongoing-seo), your website becomes a reliable source of enquiries. Unlike paid advertising that stops the moment your budget runs out, [SEO delivers lasting results](/blog/how-seo-beats-lead-generation-sites-tradespeople) that grow stronger month after month."
+    ]
+  },
+  {
+    slug: "heating-engineer-website-durham-darlington",
+    title: "Websites & SEO for Heating Engineers in Durham and Darlington",
+    metaDescription: "How heating engineers in Durham and Darlington can get more boiler and heating enquiries through a professional website and local SEO strategy.",
+    excerpt: "Heating engineers in Durham and Darlington are perfectly positioned to dominate local search. Here's how to turn Google into your best lead source.",
+    icon: Thermometer,
+    date: "2026-02-27",
+    readTime: "6 min read",
+    category: "Trade Websites",
+    content: [
+      "For [heating engineers](/trades/heating-engineers) covering Durham, Darlington, Bishop Auckland, and surrounding County Durham areas, the demand for boiler installations, servicing, and repairs never stops. The question is whether customers can find you when they need you — and that comes down to your online presence.",
+      "## Seasonal Search Demand",
+      "Heating searches spike dramatically from September through March. 'Boiler repair Durham', 'heating engineer Darlington', 'boiler installation Bishop Auckland', and 'emergency boiler repair near me' peak during cold snaps when boilers fail. Having your [website](/services/websites-for-trades) and [local SEO](/services/local-seo) ready before winter means you capture this demand when competitors scramble.",
+      "## Essential Website Pages",
+      "Your heating engineer website should have dedicated pages for boiler installations, boiler repairs and servicing, central heating installation, powerflush services, gas safety certificates, and underfloor heating. Each page targets different search terms and captures customers at different stages — someone needing an annual service has different needs than someone whose boiler has broken down at midnight.",
+      "## Gas Safe and Trust",
+      "As a Gas Safe registered engineer, this is your biggest trust signal. Display your Gas Safe registration number prominently on every page. Include it in your [Google Business Profile](/services/google-business-profile) description. Homeowners searching for heating engineers are cautious about gas safety — make it impossible to miss that you're fully qualified.",
+      "## Covering County Durham",
+      "County Durham is a large area with plenty of demand. Create [service area pages](/services/service-area-pages) for Durham city, Darlington, Bishop Auckland, Newton Aycliffe, Consett, Chester-le-Street, Spennymoor, and Crook. Each page can reference the typical heating systems in local properties — older stone-built homes in Durham city have different heating needs than modern estates in Newton Aycliffe.",
+      "## Building Your Review Profile",
+      "Heating work generates natural review opportunities — a grateful customer whose boiler you fixed on a freezing evening is likely to leave a glowing [review](/blog/how-to-get-more-google-reviews-trade-business). Send a review request the morning after emergency call-outs when gratitude is highest. Reviews mentioning 'Durham', 'Darlington', or specific services boost your [Google Maps ranking](/blog/how-to-rank-higher-google-maps-tradespeople).",
+      "## Year-Round Strategy",
+      "Don't wait for winter. Build your online presence during quieter months so you're firmly established when demand peaks. An [ongoing SEO strategy](/services/ongoing-seo) ensures your website climbs rankings steadily, so when the first cold snap hits, you're already at the top of the results. [Get started now](/get-started) and be ready for the season ahead."
+    ]
   }
 ];
