@@ -19,12 +19,9 @@ const Hero = () => {
 
       <div className="relative z-10 w-full">
         <div className="py-20 md:py-28 lg:py-36 text-center max-w-4xl mx-auto px-4 md:px-6">
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 border border-primary-foreground/20 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-sm text-primary-foreground/80 font-medium">
-              Specialist websites & SEO for trade businesses
-            </span>
-          </div>
+          <p className="text-sm text-primary-foreground/70 font-medium uppercase tracking-wider mb-6 animate-fade-in">
+            Specialist websites & SEO for trade businesses
+          </p>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Get more local enquiries for your trade business
