@@ -38,7 +38,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img src={tmichaelJames} alt="Michael James, founder of NE1 Digital className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
+            <img src={michaelJames} alt="Michael James, founder of NE1 Digital" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
           </div>
         </div>
       </section>
