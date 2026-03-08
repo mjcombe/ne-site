@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 import { tradeCategories } from "@/data/tradeCategories";
 
-// Show a selection of trades across categories for the homepage
-const featuredTrades = [
-  ...tradeCategories[0].trades.slice(0, 4),
-  ...tradeCategories[1].trades.slice(0, 1),
-  ...tradeCategories[2].trades.slice(0, 1),
-];
+// Show a selection of trades for the homepage
+const featuredTrades = tradeCategories[0].trades.slice(0, 6);
 
 const WhoWeHelp = () => {
   return (
@@ -19,10 +15,10 @@ const WhoWeHelp = () => {
               Who We Help
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Built for trades, beauty, and service businesses
+              Built for tradespeople across the North East
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              We work with local businesses across trades, beauty, and services. We know how your customers search, what makes them pick up the phone, and what a good lead looks like for your industry.
+              We work with trade businesses across the North East. We know how your customers search, what makes them pick up the phone, and what a good lead looks like for your trade.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -55,8 +51,8 @@ const WhoWeHelp = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <div className="bg-accent rounded-lg p-8 text-accent-foreground">
-                <span className="block text-4xl font-bold font-heading">28+</span>
-                <span className="text-sm opacity-90">Industries Served</span>
+                <span className="block text-4xl font-bold font-heading">15+</span>
+                <span className="text-sm opacity-90">Trades Served</span>
               </div>
               <div className="gradient-navy rounded-lg p-8 text-primary-foreground">
                 <span className="block text-4xl font-bold font-heading">100+</span>
