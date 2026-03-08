@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Grid3X3 } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Tilers = () => (
   <TradePageLayout
     trade="Tilers"
     icon={Grid3X3}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring tilers more local work"
     heroDescription="From bathroom tiling to kitchen splashbacks and full floor installations, we help tiling businesses get found by homeowners searching for quality tilers in their area."
     problemsTitle="Why most tilers struggle to get found online"

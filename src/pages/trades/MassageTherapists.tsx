@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Heart } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const MassageTherapists = () => (
   <TradePageLayout
     category="beauty"
     trade="Massage Therapists & Spa Services"
     icon={Heart}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring massage therapists more clients"
     heroDescription="From sports massage and deep tissue to relaxation and spa treatments, we help massage therapists and wellness businesses get found by clients searching for therapeutic and relaxation services locally."
     problemsTitle="Why most massage therapists struggle online"

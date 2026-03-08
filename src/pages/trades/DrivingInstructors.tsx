@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { GraduationCap } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const DrivingInstructors = () => (
   <TradePageLayout
     category="services"
     trade="Driving Instructors"
     icon={GraduationCap}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring driving instructors more pupils"
     heroDescription="Whether you're an independent ADI or run a small driving school, we help driving instructors get found by learner drivers and parents searching for lessons in their local area."
     problemsTitle="Why most driving instructors struggle online"

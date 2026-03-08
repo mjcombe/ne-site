@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Droplets } from "lucide-react";
-import heroImage from "@/assets/trade-plumber.jpg";
 
 const Plumbers = () => (
   <TradePageLayout
     trade="Plumbers"
     icon={Droplets}
-    heroImage={heroImage}
     heroTitle="Get more plumbing jobs through Google — without chasing leads"
     heroDescription="From boiler installs to emergency callouts, we help plumbers and heating engineers build a strong online presence that generates consistent local enquiries without paying for lead generation sites."
     problemsTitle="Sound familiar? Most plumbers face these problems"

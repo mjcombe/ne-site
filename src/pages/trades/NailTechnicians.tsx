@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Hand } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const NailTechnicians = () => (
   <TradePageLayout
     category="beauty"
     trade="Nail Technicians"
     icon={Hand}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring nail technicians more clients"
     heroDescription="Whether you run a nail bar, offer gel extensions from a home salon, or provide mobile nail services, we help nail techs get found by clients searching for nail services in their area."
     problemsTitle="Why most nail techs struggle to grow online"

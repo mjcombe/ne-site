@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { HardHat } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Builders = () => (
   <TradePageLayout
     trade="Builders"
     icon={HardHat}
-    heroImage={heroImage}
     heroTitle="Win bigger building projects through a website that works as hard as you do"
     heroDescription="Extensions, new builds, renovations, groundworks — we help builders and construction firms attract high-value projects from homeowners and developers who are actively searching for reliable local builders."
     problemsTitle="The online challenges builders face"

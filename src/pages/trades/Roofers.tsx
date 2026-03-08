@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Wrench } from "lucide-react";
-import heroImage from "@/assets/trade-roofer.jpg";
 
 const Roofers = () => (
   <TradePageLayout
     trade="Roofers"
     icon={Wrench}
-    heroImage={heroImage}
     heroTitle="Get more roofing leads from homeowners who need you right now"
     heroDescription="Roof repairs, flat roofing, new roofs, and guttering — we help roofing contractors appear at the top of Google when homeowners discover a leak, need storm damage repaired, or want a quote for a new roof."
     problemsTitle="Why most roofers miss out on online leads"

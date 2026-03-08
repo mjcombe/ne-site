@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Scissors } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const HairSalons = () => (
   <TradePageLayout
     category="beauty"
     trade="Hair Salons & Barbers"
     icon={Scissors}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring salons and barbers more bookings"
     heroDescription="Whether you run a high-street salon, a barbershop, or offer mobile hairdressing, we help hair businesses get found by local customers searching for cuts, colours, and styling near them."
     problemsTitle="Why most salons struggle to grow online"

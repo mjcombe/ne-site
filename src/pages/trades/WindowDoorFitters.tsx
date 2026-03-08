@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { DoorOpen } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const WindowDoorFitters = () => (
   <TradePageLayout
     trade="Window & Door Fitters"
     icon={DoorOpen}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring window and door fitters more local work"
     heroDescription="Whether you install UPVC windows, composite doors, aluminium bi-folds, or conservatories, we help window and door businesses get found by homeowners ready to invest in their property."
     problemsTitle="Why most window & door fitters struggle online"

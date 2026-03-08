@@ -11,7 +11,6 @@ interface TradePageProps {
   trade: string;
   heroTitle: string;
   heroDescription: string;
-  heroImage?: string;
   problemsTitle: string;
   problems: string[];
   servicesTitle: string;

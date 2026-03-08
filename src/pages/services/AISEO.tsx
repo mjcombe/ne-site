@@ -1,9 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImage from "@/assets/service-local-seo.jpg";
 
 const AISEO = () => (
   <ServicePageLayout
-    heroImage={heroImage}
     title="AI-powered SEO that keeps you ahead of the competition"
     subtitle="AI & Generative SEO"
     description="The future of search is changing. AI-driven search results, voice assistants, and generative engines are reshaping how customers find tradespeople. We make sure your business is optimised for both traditional and AI-powered search."

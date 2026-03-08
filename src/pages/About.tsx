@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import michaelJames from "@/assets/michaeljames.jpg";
+
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 const About = () => {
@@ -48,7 +48,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img src={michaelJames} alt="Michael James, founder of NE1 Digital" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
+            <div className="gradient-navy rounded-lg p-8 text-primary-foreground flex flex-col justify-center aspect-[4/3]">
+              <span className="block text-4xl font-bold font-heading mb-2">NE1</span>
+              <span className="block text-lg font-heading mb-1">Web Digital</span>
+              <span className="text-sm text-primary-foreground/70">North East England</span>
+            </div>
           </div>
         </div>
       </section>

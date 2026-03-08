@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Hammer } from "lucide-react";
-import heroImage from "@/assets/trade-joiner.jpg";
 
 const Joiners = () => (
   <TradePageLayout
     trade="Joiners & Carpenters"
     icon={Hammer}
-    heroImage={heroImage}
     heroTitle="Showcase your craftsmanship online and attract better joinery projects"
     heroDescription="Bespoke kitchens, staircases, fitted wardrobes, and architectural joinery — we help joiners and carpenters build an online presence that attracts customers who appreciate skilled craftsmanship and are willing to pay for quality."
     problemsTitle="The challenges joiners and carpenters face online"

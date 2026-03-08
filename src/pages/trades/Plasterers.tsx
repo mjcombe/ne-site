@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Blocks } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Plasterers = () => (
   <TradePageLayout
     trade="Plasterers"
     icon={Blocks}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring plasterers more local work"
     heroDescription="Whether you specialise in skimming, rendering, or full re-plasters, we help plastering businesses get found by homeowners and contractors who need quality work done right."
     problemsTitle="Why most plasterers struggle to get found online"

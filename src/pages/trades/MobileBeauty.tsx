@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Brush } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const MobileBeauty = () => (
   <TradePageLayout
     category="beauty"
     trade="Mobile Beauty & Makeup Artists"
     icon={Brush}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring mobile beauty and makeup artists more bookings"
     heroDescription="Whether you specialise in bridal makeup, event styling, or mobile beauty treatments, we help mobile beauty professionals get found by clients searching for at-home and on-location services."
     problemsTitle="Why most mobile beauty pros struggle online"

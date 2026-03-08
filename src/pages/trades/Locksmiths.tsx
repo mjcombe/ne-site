@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Lock } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Locksmiths = () => (
   <TradePageLayout
     trade="Locksmiths"
     icon={Lock}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring locksmiths more emergency and residential work"
     heroDescription="From emergency lockouts to new lock installations and security upgrades, we help locksmiths dominate local search results and capture high-intent customers who need help fast."
     problemsTitle="Why most locksmiths struggle to get found online"

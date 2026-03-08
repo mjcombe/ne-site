@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Bug } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const PestControl = () => (
   <TradePageLayout
     category="services"
     trade="Pest Control"
     icon={Bug}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring pest control businesses more emergency and planned work"
     heroDescription="From emergency rat and mouse call-outs to planned wasp nest removal and commercial contracts, we help pest control businesses dominate local search results for high-intent pest-related searches."
     problemsTitle="Why most pest control businesses struggle online"

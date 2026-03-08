@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { SprayCanIcon } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Cleaners = () => (
   <TradePageLayout
     category="services"
     trade="Cleaners"
     icon={SprayCanIcon}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring cleaning businesses more regular clients"
     heroDescription="Whether you offer domestic cleaning, commercial contracts, end-of-tenancy, or specialist cleaning services, we help cleaning businesses get found by customers searching for reliable cleaners locally."
     problemsTitle="Why most cleaning businesses struggle online"

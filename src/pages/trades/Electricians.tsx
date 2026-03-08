@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Zap } from "lucide-react";
-import heroImage from "@/assets/trade-electrician.jpg";
 
 const Electricians = () => (
   <TradePageLayout
     trade="Electricians"
     icon={Zap}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring electricians more local work"
     heroDescription="Whether you specialise in domestic rewires, commercial installations, or emergency callouts, we help electricians get found by the customers who need them most — right when they're searching."
     problemsTitle="Why most electricians struggle to get found online"

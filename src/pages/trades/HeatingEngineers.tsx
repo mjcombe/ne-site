@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Thermometer } from "lucide-react";
-import heroImage from "@/assets/trade-heating.jpg";
 
 const HeatingEngineers = () => (
   <TradePageLayout
     trade="Heating Engineers"
     icon={Thermometer}
-    heroImage={heroImage}
     heroTitle="Generate more boiler and heating enquiries from local homeowners"
     heroDescription="Boiler installations, central heating systems, underfloor heating, and annual servicing — we help Gas Safe registered heating engineers build a dominant online presence that generates consistent enquiries from homeowners who need reliable heating solutions."
     problemsTitle="Why heating engineers lose leads to competitors"

@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Wrench } from "lucide-react";
-import heroImage from "@/assets/trade-plumber.jpg";
 
 const DrainageEngineers = () => (
   <TradePageLayout
     trade="Drainage Engineers"
     icon={Wrench}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring drainage engineers more emergency and planned work"
     heroDescription="From blocked drains and CCTV surveys to full drainage installations, we help drainage businesses capture urgent searches and planned maintenance enquiries across the North East."
     problemsTitle="Why most drainage companies struggle to get found online"

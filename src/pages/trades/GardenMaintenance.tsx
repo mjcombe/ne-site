@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { TreePine } from "lucide-react";
-import heroImage from "@/assets/trade-landscaper.jpg";
 
 const GardenMaintenance = () => (
   <TradePageLayout
     category="services"
     trade="Garden Maintenance"
     icon={TreePine}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring garden maintenance businesses more regular clients"
     heroDescription="From lawn care and hedge trimming to seasonal garden tidying and ongoing maintenance contracts, we help garden maintenance businesses get found by homeowners who want their gardens kept beautiful."
     problemsTitle="Why most garden maintenance businesses struggle online"

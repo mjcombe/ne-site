@@ -1,9 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImage from "@/assets/service-google-profile.jpg";
 
 const GoogleBusinessProfile = () => (
   <ServicePageLayout
-    heroImage={heroImage}
     title="Google Business Profile optimisation for tradespeople"
     subtitle="Google Business Profile"
     description="Your Google Business Profile is often the first thing customers see. We optimise it fully so you stand out in the map pack and get more calls directly from Google."
