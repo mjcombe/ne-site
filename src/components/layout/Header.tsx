@@ -4,6 +4,13 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.png";
 
+const servicesDropdown = [
+  { label: "Websites for Trades", href: "/services/websites-for-trades" },
+  { label: "Google Business Profile", href: "/services/google-business-profile" },
+  { label: "Service Area Pages", href: "/services/service-area-pages" },
+  { label: "Hosting & Care", href: "/services/hosting-and-care" },
+];
+
 const seoDropdown = [
   { label: "SEO for Trades", href: "/services/seo" },
   { label: "Local SEO", href: "/services/local-seo" },
@@ -13,7 +20,7 @@ const seoDropdown = [
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Services", href: "/services", dropdown: servicesDropdown },
   { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help" },
   { label: "How It Works", href: "/how-it-works" },
