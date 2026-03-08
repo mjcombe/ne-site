@@ -38,6 +38,18 @@ const services = [
     description: "Continuous SEO improvements, content updates, and performance tracking to keep your rankings climbing month after month.",
     href: "/services/ongoing-seo",
   },
+  {
+    icon: BarChart3,
+    title: "SEO for Trades",
+    description: "Full SEO services built for trade businesses. From keyword research to technical fixes, we get you ranking on Google.",
+    href: "/services/seo",
+  },
+  {
+    icon: Sparkles,
+    title: "AI & Generative SEO",
+    description: "Future-proof your visibility with AI-powered SEO. Get found in AI search results, voice assistants, and generative engines.",
+    href: "/services/ai-seo",
+  },
 ];
 
 const ServiceCards = () => {

@@ -21,6 +21,8 @@ const serviceIconMap: Record<string, LucideIcon> = {
   "/services/service-area-pages": FileText,
   "/services/hosting-and-care": Shield,
   "/services/ongoing-seo": TrendingUp,
+  "/services/seo": BarChart3,
+  "/services/ai-seo": Sparkles,
 };
 
 const ServicePageLayout = ({
