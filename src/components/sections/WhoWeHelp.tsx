@@ -1,16 +1,13 @@
 import tradePlumber from "@/assets/trade-plumber.jpg";
 import tradeRoofer from "@/assets/trade-roofer.jpg";
-import tradeBuilder from "@/assets/trade-electrician.jpg";
-import { Wrench, Zap, Droplets, HardHat, PaintBucket, Hammer } from "lucide-react";
 import { Link } from "react-router-dom";
+import { tradeCategories } from "@/data/tradeCategories";
 
-const trades = [
-  { icon: Zap, name: "Electricians", href: "/trades/electricians", description: "Domestic and commercial electrical contractors" },
-  { icon: Droplets, name: "Plumbers", href: "/trades/plumbers", description: "Plumbing, heating and gas engineers" },
-  { icon: HardHat, name: "Builders", href: "/trades/builders", description: "General builders and construction firms" },
-  { icon: Wrench, name: "Roofers", href: "/trades/roofers", description: "Roofing contractors and repair specialists" },
-  { icon: PaintBucket, name: "Decorators", href: "/trades/decorators", description: "Painters, decorators and plasterers" },
-  { icon: Hammer, name: "Joiners", href: "/trades/joiners", description: "Joiners, carpenters and cabinet makers" },
+// Show a selection of trades across categories for the homepage
+const featuredTrades = [
+  ...tradeCategories[0].trades.slice(0, 4),
+  ...tradeCategories[1].trades.slice(0, 1),
+  ...tradeCategories[2].trades.slice(0, 1),
 ];
 
 const WhoWeHelp = () => {
@@ -24,14 +21,14 @@ const WhoWeHelp = () => {
               Who We Help
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Built for tradespeople, by people who understand trades
+              Built for trades, beauty, and service businesses
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              We work exclusively with trade businesses. We know how your customers search, what makes them pick up the phone, and what a good lead looks like for your trade.
+              We work with local businesses across trades, beauty, and services. We know how your customers search, what makes them pick up the phone, and what a good lead looks like for your industry.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {trades.map((trade, index) => (
+              {featuredTrades.map((trade, index) => (
                 <Link
                   key={index}
                   to={trade.href}
@@ -47,6 +44,13 @@ const WhoWeHelp = () => {
                 </Link>
               ))}
             </div>
+
+            <Link
+              to="/who-we-help"
+              className="inline-flex items-center gap-1 text-sm font-medium text-accent mt-6 hover:underline"
+            >
+              View all industries we work with →
+            </Link>
           </div>
 
           {/* Images grid */}
@@ -59,8 +63,8 @@ const WhoWeHelp = () => {
                 loading="lazy"
               />
               <div className="bg-accent rounded-lg p-5 text-accent-foreground">
-                <span className="block text-3xl font-bold font-heading">100%</span>
-                <span className="text-sm opacity-90">Trade Focused</span>
+                <span className="block text-3xl font-bold font-heading">28+</span>
+                <span className="text-sm opacity-90">Industries Served</span>
               </div>
             </div>
             <div className="space-y-4 pt-8">
