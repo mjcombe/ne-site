@@ -36,22 +36,6 @@ const Locksmiths = lazy(() => import("./pages/trades/Locksmiths"));
 const WindowDoorFitters = lazy(() => import("./pages/trades/WindowDoorFitters"));
 const Groundworkers = lazy(() => import("./pages/trades/Groundworkers"));
 
-// Beauty & Wellness
-const HairSalons = lazy(() => import("./pages/trades/HairSalons"));
-const BeautyTherapists = lazy(() => import("./pages/trades/BeautyTherapists"));
-const NailTechnicians = lazy(() => import("./pages/trades/NailTechnicians"));
-const MobileBeauty = lazy(() => import("./pages/trades/MobileBeauty"));
-const MassageTherapists = lazy(() => import("./pages/trades/MassageTherapists"));
-
-// Service Businesses
-const Cleaners = lazy(() => import("./pages/trades/Cleaners"));
-const DogGroomers = lazy(() => import("./pages/trades/DogGroomers"));
-const PersonalTrainers = lazy(() => import("./pages/trades/PersonalTrainers"));
-const Photographers = lazy(() => import("./pages/trades/Photographers"));
-const DrivingInstructors = lazy(() => import("./pages/trades/DrivingInstructors"));
-const Mechanics = lazy(() => import("./pages/trades/Mechanics"));
-const GardenMaintenance = lazy(() => import("./pages/trades/GardenMaintenance"));
-const PestControl = lazy(() => import("./pages/trades/PestControl"));
 
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const ResultsPage = lazy(() => import("./pages/ResultsPage"));
