@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Dog } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const DogGroomers = () => (
   <TradePageLayout
     category="services"
     trade="Dog Groomers"
     icon={Dog}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring dog groomers more bookings"
     heroDescription="Whether you run a grooming salon, offer mobile grooming, or specialise in breed-specific styling, we help dog groomers get found by pet owners searching for grooming services locally."
     problemsTitle="Why most dog groomers struggle to grow online"
