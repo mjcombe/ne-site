@@ -36,7 +36,7 @@ const DrainageEngineers = () => (
       "drain jetting near me",
       "drainage company Gateshead",
     ]}
-    benefitsTitle="Why drainage engineers choose NE1 Web Digital"
+    benefitsTitle="Why drainage engineers choose NE Trades"
     benefits={[
       { title: "Emergency-first design", description: "Your website is built for urgency — prominent phone numbers, one-tap calling, and clear emergency messaging." },
       { title: "High-intent keyword targeting", description: "We target the searches people make when they desperately need a drainage engineer — the most valuable leads in the trade." },

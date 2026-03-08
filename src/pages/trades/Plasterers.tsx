@@ -36,7 +36,7 @@ const Plasterers = () => (
       "plasterer quotes Gateshead",
       "K rend installer North East",
     ]}
-    benefitsTitle="Why plasterers choose NE1 Web Digital"
+    benefitsTitle="Why plasterers choose NE Trades"
     benefits={[
       { title: "We showcase your craft", description: "Beautiful gallery layouts that let your finished work sell itself — before-and-after photos that convert browsers into callers." },
       { title: "Trade-specific SEO", description: "We know the difference between skimming, rendering, and dry lining — and we target the exact terms your customers search for." },

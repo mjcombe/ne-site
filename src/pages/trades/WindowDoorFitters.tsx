@@ -36,7 +36,7 @@ const WindowDoorFitters = () => (
       "FENSA registered window fitter",
       "replacement windows near me",
     ]}
-    benefitsTitle="Why window & door fitters choose NE1 Web Digital"
+    benefitsTitle="Why window & door fitters choose NE Trades"
     benefits={[
       { title: "Product-focused SEO", description: "We target specific product searches — composite doors, bi-fold doors, UPVC windows — not just generic 'window fitter' terms." },
       { title: "Visual selling power", description: "Stunning installation galleries that let homeowners see your quality before they even pick up the phone." },

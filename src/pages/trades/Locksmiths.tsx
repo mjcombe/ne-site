@@ -36,7 +36,7 @@ const Locksmiths = () => (
       "commercial locksmith North East",
       "smart lock installation",
     ]}
-    benefitsTitle="Why locksmiths choose NE1 Web Digital"
+    benefitsTitle="Why locksmiths choose NE Trades"
     benefits={[
       { title: "Emergency-optimised design", description: "One-tap calling, instant visibility of your phone number, and fast mobile loading — because lockout customers need you NOW." },
       { title: "Anti-scam positioning", description: "We help legitimate locksmiths stand out with verified credentials, real addresses, and genuine customer reviews." },

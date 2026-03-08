@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEOHead
-        title="Contact NE1 Digital | Book a Free Call"
+        title="Contact NE Trades | Book a Free Call"
         description="Get in touch to discuss your trade website or SEO project. Based in North Shields, serving the North East and beyond."
         canonical="https://netrades.co.uk/contact"
       />

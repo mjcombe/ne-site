@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About NE1 Digital | Trade Website Specialists"
+        title="About NE Tradesrade Website Specialists"
         description="We build websites and SEO for trade businesses in the North East. Meet the team behind NE Trades."
         canonical="https://netrades.co.uk/about"
         jsonLd={breadcrumbSchema([
@@ -26,7 +26,7 @@ const About = () => {
             Built by people who understand trades
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1 Web Digital exists to help trade businesses get more work through professional websites and local SEO that actually delivers.
+            NE1  T Trades help trade businesses get more work through professional websites and local SEO that actually delivers.
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Our story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  NE1 Web Digital was founded with a simple observation: most web design agencies don't understand the trades industry. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a tradesperson.
+                  NE1 Web Di Tradesnded with a simple observation: most web design agencies don't understand the trades industry. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a tradesperson.
                 </p>
                 <p>
                   We decided to change that. Based in the North East, we work exclusively with trade businesses — electricians, plumbers, builders, roofers, decorators, and every trade in between. We know how your customers search, what makes them pick up the phone, and what a genuinely useful lead looks like.
@@ -49,8 +49,8 @@ const About = () => {
               </div>
             </div>
             <div className="gradient-navy rounded-lg p-8 text-primary-foreground flex flex-col justify-center aspect-[4/3]">
-              <span className="block text-4xl font-bold font-heading mb-2">NE1</span>
-              <span className="block text-lg font-heading mb-1">Web Digital</span>
+              <span className="block text-4xl font-bold font-heading mb-2">NE</span>
+              <span className="block text-lg font-heading mb-1">Trades</span>
               <span className="text-sm text-primary-foreground/70">North East England</span>
             </div>
           </div>
