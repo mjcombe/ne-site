@@ -131,71 +131,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://netrades.co.uk/trades/hair-salons</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/beauty-therapists</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/nail-technicians</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/mobile-beauty</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/massage-therapists</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/cleaners</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/dog-groomers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/personal-trainers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/photographers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/driving-instructors</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/mechanics</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/garden-maintenance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://netrades.co.uk/trades/pest-control</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://netrades.co.uk/how-it-works</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -213,6 +148,56 @@
   <url>
     <loc>https://netrades.co.uk/blog</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/why-local-seo-matters-for-tradesmen-north-east</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/google-business-profile-guide-tradespeople</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/how-to-get-more-google-reviews-trade-business</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/service-area-pages-seo-tradespeople</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/website-mistakes-tradespeople-make</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/mobile-search-tradespeople-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/how-seo-beats-lead-generation-sites-tradespeople</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/what-makes-good-trade-website</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/local-citations-guide-tradespeople-north-east</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/blog/how-to-rank-higher-google-maps-tradespeople</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -229,6 +214,11 @@
     <loc>https://netrades.co.uk/get-started</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://netrades.co.uk/reviews</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://netrades.co.uk/faq</loc>
