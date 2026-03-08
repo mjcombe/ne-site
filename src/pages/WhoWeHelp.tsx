@@ -3,6 +3,7 @@ import { Wrench, Zap, Droplets, HardHat, PaintBucket, Hammer, Home, Thermometer,
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import tradeBuilder from "@/assets/trade-builder.jpg";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 const trades = [
   { icon: Zap, name: "Electricians", href: "/trades/electricians", description: "Domestic rewires, new builds, commercial installations, emergency callouts — we help electricians rank for the searches that generate real work." },

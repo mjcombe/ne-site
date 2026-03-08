@@ -3,10 +3,20 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import michaelJames from "@/assets/michaeljames.jpg";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 const About = () => {
   return (
     <Layout>
+      <SEOHead
+        title="About NE1 Digital | Trade Website Specialists"
+        description="We build websites and SEO for trade businesses in the North East. Meet the team behind NE Trades."
+        canonical="https://netrades.co.uk/about"
+        jsonLd={breadcrumbSchema([
+          { name: "Home", url: "https://netrades.co.uk/" },
+          { name: "About", url: "https://netrades.co.uk/about" },
+        ])}
+      />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
