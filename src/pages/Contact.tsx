@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useEffect } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const Contact = () => {
   useEffect(() => {
@@ -18,15 +19,15 @@ const Contact = () => {
           cal.loaded = true;
         }
         if (ar[0] === L) {
-          const api = function () { p(api, arguments); };
+          const api: any = function () { p(api, arguments); };
           const namespace = ar[1];
           api.q = api.q || [];
           if (typeof namespace === "string") {
             cal.ns[namespace] = cal.ns[namespace] || api;
             p(cal.ns[namespace], ar);
             p(cal, ["initNamespace", namespace]);
-          } else p(cal, ar);
-          return;
+          } else
+            p(cal, ar);
         }
         p(cal, ar);
       };
@@ -44,6 +45,11 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="Contact NE1 Digital | Book a Free Call"
+        description="Get in touch to discuss your trade website or SEO project. Based in North Shields, serving the North East and beyond."
+        canonical="https://netrades.co.uk/contact"
+      />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">

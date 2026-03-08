@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 
 const websiteFeatures = [
   { icon: Globe, label: "Fully custom website design and build" },
