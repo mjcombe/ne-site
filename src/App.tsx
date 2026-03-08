@@ -36,22 +36,6 @@ const Locksmiths = lazy(() => import("./pages/trades/Locksmiths"));
 const WindowDoorFitters = lazy(() => import("./pages/trades/WindowDoorFitters"));
 const Groundworkers = lazy(() => import("./pages/trades/Groundworkers"));
 
-// Beauty & Wellness
-const HairSalons = lazy(() => import("./pages/trades/HairSalons"));
-const BeautyTherapists = lazy(() => import("./pages/trades/BeautyTherapists"));
-const NailTechnicians = lazy(() => import("./pages/trades/NailTechnicians"));
-const MobileBeauty = lazy(() => import("./pages/trades/MobileBeauty"));
-const MassageTherapists = lazy(() => import("./pages/trades/MassageTherapists"));
-
-// Service Businesses
-const Cleaners = lazy(() => import("./pages/trades/Cleaners"));
-const DogGroomers = lazy(() => import("./pages/trades/DogGroomers"));
-const PersonalTrainers = lazy(() => import("./pages/trades/PersonalTrainers"));
-const Photographers = lazy(() => import("./pages/trades/Photographers"));
-const DrivingInstructors = lazy(() => import("./pages/trades/DrivingInstructors"));
-const Mechanics = lazy(() => import("./pages/trades/Mechanics"));
-const GardenMaintenance = lazy(() => import("./pages/trades/GardenMaintenance"));
-const PestControl = lazy(() => import("./pages/trades/PestControl"));
 
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const ResultsPage = lazy(() => import("./pages/ResultsPage"));
@@ -68,8 +52,6 @@ const FAQPage = lazy(() => import("./pages/FAQ"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingTrades = lazy(() => import("./pages/landing/LandingTrades"));
-const LandingBeauty = lazy(() => import("./pages/landing/LandingBeauty"));
-const LandingServices = lazy(() => import("./pages/landing/LandingServices"));
 const Locations = lazy(() => import("./pages/Locations"));
 const Location = lazy(() => import("./pages/Location"));
 
@@ -116,21 +98,6 @@ const App = () => (
             <Route path="/trades/locksmiths" element={<Locksmiths />} />
             <Route path="/trades/window-door-fitters" element={<WindowDoorFitters />} />
             <Route path="/trades/groundworkers" element={<Groundworkers />} />
-            {/* Beauty & Wellness */}
-            <Route path="/trades/hair-salons" element={<HairSalons />} />
-            <Route path="/trades/beauty-therapists" element={<BeautyTherapists />} />
-            <Route path="/trades/nail-technicians" element={<NailTechnicians />} />
-            <Route path="/trades/mobile-beauty" element={<MobileBeauty />} />
-            <Route path="/trades/massage-therapists" element={<MassageTherapists />} />
-            {/* Service Businesses */}
-            <Route path="/trades/cleaners" element={<Cleaners />} />
-            <Route path="/trades/dog-groomers" element={<DogGroomers />} />
-            <Route path="/trades/personal-trainers" element={<PersonalTrainers />} />
-            <Route path="/trades/photographers" element={<Photographers />} />
-            <Route path="/trades/driving-instructors" element={<DrivingInstructors />} />
-            <Route path="/trades/mechanics" element={<Mechanics />} />
-            <Route path="/trades/garden-maintenance" element={<GardenMaintenance />} />
-            <Route path="/trades/pest-control" element={<PestControl />} />
             {/* Other */}
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/results" element={<ResultsPage />} />
@@ -146,8 +113,6 @@ const App = () => (
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/go" element={<LandingPage />} />
             <Route path="/go/trades" element={<LandingTrades />} />
-            <Route path="/go/beauty" element={<LandingBeauty />} />
-            <Route path="/go/services" element={<LandingServices />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/:slug" element={<Location />} />

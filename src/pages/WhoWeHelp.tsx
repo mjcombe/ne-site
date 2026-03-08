@@ -10,8 +10,8 @@ const WhoWeHelpPage = () => {
   return (
     <Layout>
       <SEOHead
-        title="Websites & SEO for Trades, Beauty & Service Businesses"
-        description="We build websites and local SEO for electricians, plumbers, builders, hair salons, beauty therapists, cleaners, and service businesses across the North East."
+        title="Websites & SEO for Tradespeople | Electricians, Plumbers, Builders & More"
+        description="We build websites and local SEO for electricians, plumbers, builders, roofers, joiners and tradespeople across the North East."
         canonical="https://netrades.co.uk/who-we-help"
         jsonLd={breadcrumbSchema([
           { name: "Home", url: "https://netrades.co.uk/" },
@@ -24,22 +24,20 @@ const WhoWeHelpPage = () => {
             Who We Help
           </span>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            We work with trades, beauty, and service businesses
+            We work with tradespeople across the North East
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1 Web Digital helps local businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="underline text-accent hover:text-accent/80">plumber</Link>, a <Link to="/trades/hair-salons" className="underline text-accent hover:text-accent/80">hair salon</Link>, or a <Link to="/trades/cleaners" className="underline text-accent hover:text-accent/80">cleaning company</Link>, we build websites and SEO strategies that turn searches into booked work.
+            NE1 Web Digital helps trade businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="underline text-accent hover:text-accent/80">plumber</Link>, an <Link to="/trades/electricians" className="underline text-accent hover:text-accent/80">electrician</Link>, or a <Link to="/trades/builders" className="underline text-accent hover:text-accent/80">builder</Link>, we build websites and SEO strategies that turn searches into booked work.
           </p>
         </div>
       </section>
 
-      {tradeCategories.map((category, catIdx) => (
-        <section key={category.label} className={catIdx % 2 === 0 ? "section-padding bg-background" : "section-padding bg-secondary"}>
+      {tradeCategories.map((category) => (
+        <section key={category.label} className="section-padding bg-background">
           <div className="container mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-2">{category.label}</h2>
             <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-              {catIdx === 0 && "From electricians to groundworkers — we help traditional trade businesses get found online and win more local work."}
-              {catIdx === 1 && "Salons, therapists, and mobile beauty pros — we build online presences that fill appointment books from Google search."}
-              {catIdx === 2 && "Cleaners, photographers, personal trainers, and more — we help service businesses grow with websites and local SEO."}
+              From electricians to groundworkers — we help trade businesses get found online and win more local work.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {category.trades.map((trade) => (
@@ -64,15 +62,15 @@ const WhoWeHelpPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Why local businesses choose NE1 Web Digital
+                Why tradespeople choose NE1 Web Digital
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Generic web agencies don't understand your industry. We know how local customers search, what makes them pick up the phone, and how to turn clicks into booked work — whether you're a <Link to="/trades/roofers" className="text-accent hover:underline">roofer</Link>, a <Link to="/trades/beauty-therapists" className="text-accent hover:underline">beauty therapist</Link>, or a <Link to="/trades/mechanics" className="text-accent hover:underline">mechanic</Link>.
+                Generic web agencies don't understand your industry. We know how local customers search, what makes them pick up the phone, and how to turn clicks into booked work — whether you're a <Link to="/trades/roofers" className="text-accent hover:underline">roofer</Link>, a <Link to="/trades/joiners" className="text-accent hover:underline">joiner</Link>, or a <Link to="/trades/heating-engineers" className="text-accent hover:underline">heating engineer</Link>.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
                   "We know the search terms your customers actually use",
-                  "We understand what makes someone pick up the phone or book online",
+                  "We understand what makes someone pick up the phone",
                   "We build websites designed for conversions, not awards",
                   "We track real results — calls, quote requests, booked jobs",
                 ].map((item, i) => (
