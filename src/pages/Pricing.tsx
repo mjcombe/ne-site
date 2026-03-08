@@ -171,7 +171,7 @@ const Pricing = () => {
               </div>
               <div className="p-8">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
-                  Everything in Business, plus
+                  Everything in Business, plus ongoing SEO
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {seoFeatures.map(({ icon: Icon, label }) => (
