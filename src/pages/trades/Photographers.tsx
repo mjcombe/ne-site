@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Camera } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const Photographers = () => (
   <TradePageLayout
     category="services"
     trade="Photographers"
     icon={Camera}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring photographers more bookings"
     heroDescription="Whether you specialise in weddings, portraits, commercial, or event photography, we help photographers get found by clients searching for professional photography services in their area."
     problemsTitle="Why most photographers struggle to get found"

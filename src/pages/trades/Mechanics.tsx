@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Car } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Mechanics = () => (
   <TradePageLayout
     category="services"
     trade="Mechanics"
     icon={Car}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring mechanics and garages more customers"
     heroDescription="Whether you run a garage, offer mobile mechanic services, or specialise in specific vehicle types, we help mechanics get found by car owners searching for reliable repair and servicing near them."
     problemsTitle="Why most mechanics struggle to get found online"

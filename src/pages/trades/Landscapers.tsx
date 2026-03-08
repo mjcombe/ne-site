@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Home } from "lucide-react";
-import heroImage from "@/assets/trade-landscaper.jpg";
 
 const Landscapers = () => (
   <TradePageLayout
     trade="Landscapers"
     icon={Home}
-    heroImage={heroImage}
     heroTitle="Get more landscaping projects from homeowners searching online"
     heroDescription="Garden design, driveways, patios, fencing, and outdoor living spaces — we help landscaping businesses attract homeowners planning outdoor improvements by making sure you're the first company they find on Google."
     problemsTitle="Why most landscapers miss out on online enquiries"

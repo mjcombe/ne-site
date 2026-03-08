@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { HardHat } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Scaffolders = () => (
   <TradePageLayout
     trade="Scaffolders"
     icon={HardHat}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring scaffolding companies more work"
     heroDescription="From residential scaffold erection to commercial projects and scaffold hire, we help scaffolding businesses get found by builders, contractors, and homeowners who need reliable scaffolding services."
     problemsTitle="Why most scaffolding companies struggle online"

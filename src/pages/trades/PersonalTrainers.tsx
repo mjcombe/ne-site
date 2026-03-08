@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Dumbbell } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const PersonalTrainers = () => (
   <TradePageLayout
     category="services"
     trade="Personal Trainers"
     icon={Dumbbell}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring personal trainers more clients"
     heroDescription="Whether you train in a gym, offer mobile PT sessions, run bootcamps, or coach online, we help personal trainers get found by people searching for fitness support in their area."
     problemsTitle="Why most personal trainers struggle online"
