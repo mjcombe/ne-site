@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import tradeBuilder from "@/assets/trade-builder.jpg";
+import michaelJames from "@/assets/michaeljames.jpg";
 
 const About = () => {
   return (
@@ -38,7 +38,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img src={tradeBuilder} alt="NE1 Web Digital team" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
+            <img src={michaelJames} alt="Michael James, founder of NE1 Digital" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
           </div>
         </div>
       </section>
