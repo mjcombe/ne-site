@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <footer className="gradient-navy text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <span className="font-heading font-bold text-xl text-primary-foreground">NE1 Digital</span>
@@ -107,6 +107,31 @@ const Footer = () => {
                 { label: "Joiners & Carpenters", href: "/trades/joiners" },
                 { label: "Landscapers", href: "/trades/landscapers" },
                 { label: "Heating Engineers", href: "/trades/heating-engineers" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Locations */}
+          <div>
+            <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/90">
+              Locations
+            </h4>
+            <ul className="flex flex-col gap-2.5">
+              {[
+                { label: "Newcastle", href: "/locations/newcastle" },
+                { label: "Sunderland", href: "/locations/sunderland" },
+                { label: "Gateshead", href: "/locations/gateshead" },
+                { label: "Durham", href: "/locations/durham" },
+                { label: "North Shields", href: "/locations/north-shields" },
+                { label: "Darlington", href: "/locations/darlington" },
+                { label: "Middlesbrough", href: "/locations/middlesbrough" },
+                { label: "All Locations", href: "/locations" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
