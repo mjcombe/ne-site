@@ -29,7 +29,6 @@ const ServicePageLayout = ({
   title,
   subtitle,
   description,
-  heroImage,
   whoIsItFor,
   howItHelps,
   whatsIncluded,
