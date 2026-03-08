@@ -4,6 +4,13 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.png";
 
+const servicesDropdown = [
+  { label: "Websites for Trades", href: "/services/websites-for-trades" },
+  { label: "Google Business Profile", href: "/services/google-business-profile" },
+  { label: "Service Area Pages", href: "/services/service-area-pages" },
+  { label: "Hosting & Care", href: "/services/hosting-and-care" },
+];
+
 const seoDropdown = [
   { label: "SEO for Trades", href: "/services/seo" },
   { label: "Local SEO", href: "/services/local-seo" },
@@ -13,7 +20,7 @@ const seoDropdown = [
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Services", href: "/services", dropdown: servicesDropdown },
   { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help" },
   { label: "How It Works", href: "/how-it-works" },
@@ -24,29 +31,30 @@ const navLinks = [
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [openDesktop, setOpenDesktop] = useState<string | null>(null);
+  const [openMobile, setOpenMobile] = useState<string | null>(null);
   const location = useLocation();
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
 
   // Close desktop dropdown on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDesktopDropdownOpen(false);
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setOpenDesktop(null);
       }
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  // Close dropdown on route change
+  // Close dropdowns on route change
   useEffect(() => {
-    setDesktopDropdownOpen(false);
-    setMobileDropdownOpen(false);
+    setOpenDesktop(null);
+    setOpenMobile(null);
   }, [location.pathname]);
 
-  const isSeoPaths = seoDropdown.some((item) => location.pathname === item.href);
+  const isDropdownActive = (dropdown: typeof seoDropdown) =>
+    dropdown.some((item) => location.pathname === item.href);
 
   return (
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
@@ -56,23 +64,25 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1" ref={navRef}>
           {navLinks.map((link) => {
             if (link.dropdown) {
+              const isOpen = openDesktop === link.label;
+              const isActive = isDropdownActive(link.dropdown);
               return (
-                <div key={link.label} className="relative" ref={dropdownRef}>
+                <div key={link.label} className="relative">
                   <button
-                    onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
+                    onClick={() => setOpenDesktop(isOpen ? null : link.label)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
-                      isSeoPaths
+                      isActive
                         ? "text-primary font-semibold bg-secondary"
                         : "text-text-secondary hover:text-foreground hover:bg-secondary"
                     }`}
                   >
                     {link.label}
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${desktopDropdownOpen ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
-                  {desktopDropdownOpen && (
+                  {isOpen && (
                     <div className="absolute top-full left-0 mt-1 w-52 bg-card border border-border rounded-lg shadow-lg py-1 animate-fade-in z-50">
                       {link.dropdown.map((item) => (
                         <Link
@@ -135,20 +145,22 @@ const Header = () => {
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
               if (link.dropdown) {
+                const isOpen = openMobile === link.label;
+                const isActive = isDropdownActive(link.dropdown);
                 return (
                   <div key={link.label}>
                     <button
-                      onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                      onClick={() => setOpenMobile(isOpen ? null : link.label)}
                       className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
-                        isSeoPaths
+                        isActive
                           ? "text-primary font-semibold bg-secondary"
                           : "text-text-secondary hover:text-foreground hover:bg-secondary"
                       }`}
                     >
                       {link.label}
-                      <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                     </button>
-                    {mobileDropdownOpen && (
+                    {isOpen && (
                       <div className="ml-4 flex flex-col gap-0.5 mt-1">
                         {link.dropdown.map((item) => (
                           <Link
