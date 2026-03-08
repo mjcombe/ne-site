@@ -105,7 +105,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
-                  <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <Clock className="w-5 h-5 text-accent" />
                   </div>
                   <div>

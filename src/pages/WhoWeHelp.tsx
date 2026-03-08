@@ -37,7 +37,7 @@ const WhoWeHelpPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {trades.map((trade, i) => (
               <Link key={i} to={trade.href} className="flex gap-4 p-6 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all group">
-                <div className="shrink-0 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 rounded-lg bg-icon-bg flex items-center justify-center">
                   <trade.icon className="w-6 h-6 text-accent" />
                 </div>
                 <div>
