@@ -1,8 +1,9 @@
 import Layout from "@/components/layout/Layout";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 interface TradePageProps {
   trade: string;
