@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Globe, Search, MapPin, FileText, Shield, TrendingUp, ArrowRight } from "lucide-react";
+import { Globe, Search, MapPin, FileText, Shield, TrendingUp, ArrowRight, BarChart3, Sparkles } from "lucide-react";
 
 const services = [
   {
