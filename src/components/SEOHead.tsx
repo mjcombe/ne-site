@@ -69,7 +69,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://netrades.co.uk/#business",
-  name: "NE1 Digital",
+  name: "NE Trades",
   alternateName: "NE Trades",
   description: "Professional websites and local SEO for trade businesses in the North East. We help electricians, plumbers, builders and tradespeople get more local enquiries.",
   url: "https://netrades.co.uk",
