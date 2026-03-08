@@ -1,10 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import CookieConsent from "@/components/CookieConsent";
-
-
-interface LayoutProps {
-  children: React.ReactNode;
+.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
@@ -19,4 +16,4 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
-export default Layout;
+export defa
