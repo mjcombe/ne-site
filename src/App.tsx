@@ -98,21 +98,6 @@ const App = () => (
             <Route path="/trades/locksmiths" element={<Locksmiths />} />
             <Route path="/trades/window-door-fitters" element={<WindowDoorFitters />} />
             <Route path="/trades/groundworkers" element={<Groundworkers />} />
-            {/* Beauty & Wellness */}
-            <Route path="/trades/hair-salons" element={<HairSalons />} />
-            <Route path="/trades/beauty-therapists" element={<BeautyTherapists />} />
-            <Route path="/trades/nail-technicians" element={<NailTechnicians />} />
-            <Route path="/trades/mobile-beauty" element={<MobileBeauty />} />
-            <Route path="/trades/massage-therapists" element={<MassageTherapists />} />
-            {/* Service Businesses */}
-            <Route path="/trades/cleaners" element={<Cleaners />} />
-            <Route path="/trades/dog-groomers" element={<DogGroomers />} />
-            <Route path="/trades/personal-trainers" element={<PersonalTrainers />} />
-            <Route path="/trades/photographers" element={<Photographers />} />
-            <Route path="/trades/driving-instructors" element={<DrivingInstructors />} />
-            <Route path="/trades/mechanics" element={<Mechanics />} />
-            <Route path="/trades/garden-maintenance" element={<GardenMaintenance />} />
-            <Route path="/trades/pest-control" element={<PestControl />} />
             {/* Other */}
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/results" element={<ResultsPage />} />
