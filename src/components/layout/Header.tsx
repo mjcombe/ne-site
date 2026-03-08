@@ -6,20 +6,18 @@ import logoImage from "@/assets/logo.png";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const servicesDropdown = [
-  { label: "Websites for Trades", href: "/services/websites-for-trades" },
-  { label: "Google Business Profile", href: "/services/google-business-profile" },
-  { label: "Service Area Pages", href: "/services/service-area-pages" },
-  { label: "Hosting & Care", href: "/services/hosting-and-care" },
+  { label: "Websites for Trades", href: "/services/websites-for-trades", sub: false },
+  { label: "Google Business Profile", href: "/services/google-business-profile", sub: false },
+  { label: "Service Area Pages", href: "/services/service-area-pages", sub: false },
+  { label: "Hosting & Care", href: "/services/hosting-and-care", sub: false },
+  { label: "divider", href: "", sub: false },
+  { label: "SEO for Trades", href: "/services/seo", sub: true },
+  { label: "Local SEO", href: "/services/local-seo", sub: true },
+  { label: "AI & Generative SEO", href: "/services/ai-seo", sub: true },
+  { label: "Ongoing SEO Support", href: "/services/ongoing-seo", sub: true },
 ];
 
-const seoDropdown = [
-  { label: "SEO for Trades", href: "/services/seo" },
-  { label: "Local SEO", href: "/services/local-seo" },
-  { label: "AI & Generative SEO", href: "/services/ai-seo" },
-  { label: "Ongoing SEO Support", href: "/services/ongoing-seo" },
-];
-
-type SimpleDropdown = { label: string; href: string }[];
+type SimpleDropdown = { label: string; href: string; sub?: boolean }[];
 
 interface NavLink {
   label: string;
@@ -30,7 +28,6 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { label: "Services", href: "/services", dropdown: servicesDropdown },
-  { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help", megaMenu: true },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
@@ -63,7 +60,7 @@ const Header = () => {
   }, [location.pathname]);
 
   const isDropdownActive = (dropdown: SimpleDropdown) =>
-    dropdown.some((item) => location.pathname === item.href);
+    dropdown.some((item) => item.href && location.pathname === item.href);
 
   const isMegaMenuActive = () =>
     tradeCategories.some((cat) => cat.trades.some((t) => location.pathname === t.href));
@@ -152,20 +149,27 @@ const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-52 bg-card border border-border rounded-lg shadow-lg py-1 animate-fade-in z-50">
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.href}
-                          to={item.href}
-                          className={`block px-4 py-2.5 text-sm transition-colors ${
-                            location.pathname === item.href
-                              ? "text-primary font-semibold bg-secondary"
-                              : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                    <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-xl py-2 animate-fade-in z-50">
+                      {link.dropdown.map((item, idx) => {
+                        if (item.label === "divider") {
+                          return <div key={`divider-${idx}`} className="my-2 border-t border-border mx-3" />;
+                        }
+                        return (
+                          <Link
+                            key={item.href}
+                            to={item.href}
+                            className={`block px-4 py-2 text-sm transition-colors ${
+                              item.sub ? "pl-4" : ""
+                            } ${
+                              location.pathname === item.href
+                                ? "text-primary font-semibold bg-secondary"
+                                : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                            }`}
+                          >
+                            {item.label}
+                          </Link>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
@@ -286,20 +290,25 @@ const Header = () => {
                     </button>
                     {isOpen && (
                       <div className="ml-4 flex flex-col gap-0.5 mt-1">
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.href}
-                            to={item.href}
-                            onClick={() => setMobileOpen(false)}
-                            className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
-                              location.pathname === item.href
-                                ? "text-primary font-semibold bg-secondary"
-                                : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                            }`}
-                          >
-                            {item.label}
-                          </Link>
-                        ))}
+                        {link.dropdown.map((item, idx) => {
+                          if (item.label === "divider") {
+                            return <div key={`divider-${idx}`} className="my-1 border-t border-border mx-4" />;
+                          }
+                          return (
+                            <Link
+                              key={item.href}
+                              to={item.href}
+                              onClick={() => setMobileOpen(false)}
+                              className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
+                                location.pathname === item.href
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                              }`}
+                            >
+                              {item.label}
+                            </Link>
+                          );
+                        })}
                       </div>
                     )}
                   </div>
