@@ -1,7 +1,9 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
+import heroImage from "@/assets/service-ongoing-seo.jpg";
 
 const OngoingSEO = () => (
   <ServicePageLayout
+    heroImage={heroImage}
     title="Ongoing SEO support to keep your rankings climbing"
     subtitle="Ongoing SEO Support"
     description="SEO isn't a one-off job. We provide continuous optimisation, fresh content, and performance tracking to make sure your trade business keeps ranking higher and generating more enquiries month after month."

@@ -1,7 +1,9 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
+import heroImage from "@/assets/service-area-pages.jpg";
 
 const ServiceAreaPages = () => (
   <ServicePageLayout
+    heroImage={heroImage}
     title="Service area pages that capture local search traffic"
     subtitle="Service Area Pages"
     description="Dedicated pages for every town and area you cover. When someone searches 'plumber in Gateshead' or 'electrician Durham', your business shows up with a page built for that exact search."
