@@ -38,6 +38,8 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const FAQPage = lazy(() => import("./pages/FAQ"));
+const Locations = lazy(() => import("./pages/Locations"));
+const Location = lazy(() => import("./pages/Location"));
 
 const queryClient = new QueryClient();
 
