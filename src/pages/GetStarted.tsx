@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Phone, CheckCircle } from "lucide-react";
 import { useEffect } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const GetStarted = () => {
   useEffect(() => {
