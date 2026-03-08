@@ -14,12 +14,12 @@ const TermsOfService = () => (
         <div className="space-y-8">
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">1. Introduction</h2>
-            <p className="text-muted-foreground leading-relaxed">These terms of service govern your use of the NE Trades website and our services. By using our website or engaging our services, you agree to these terms.</p>
+            <p className="text-muted-foreground leading-relaxed">These terms of service govern your use of the NE Tradeste and our services. By using our website or engaging our services, you agree to these terms.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">2. Our services</h2>
-            <p className="text-muted-foreground leading-relaxed">NE1 Web Digital provides website design, local SEO, Google Business Profile optimisation, hosting, and related digital marketing services for trade businesses. The specific scope of work for each client is detailed in individual proposals and agreements.</p>
+            <p className="text-muted-foreground leading-relaxed">NE1 Web  Tradesdes website design, local SEO, Google Business Profile optimisation, hosting, and related digital marketing services for trade businesses. The specific scope of work for each client is detailed in individual proposals and agreements.</p>
           </div>
 
           <div>

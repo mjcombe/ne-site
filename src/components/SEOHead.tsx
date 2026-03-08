@@ -116,7 +116,7 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://netrades.co.uk/#organization",
-  name: "NE1 Digital",
+  name: "NE Trades",
   url: "https://netrades.co.uk",
   logo: "https://netrades.co.uk/favicon.png",
   contactPoint: {
