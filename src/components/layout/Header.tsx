@@ -145,20 +145,22 @@ const Header = () => {
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
               if (link.dropdown) {
+                const isOpen = openMobile === link.label;
+                const isActive = isDropdownActive(link.dropdown);
                 return (
                   <div key={link.label}>
                     <button
-                      onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                      onClick={() => setOpenMobile(isOpen ? null : link.label)}
                       className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
-                        isSeoPaths
+                        isActive
                           ? "text-primary font-semibold bg-secondary"
                           : "text-text-secondary hover:text-foreground hover:bg-secondary"
                       }`}
                     >
                       {link.label}
-                      <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                     </button>
-                    {mobileDropdownOpen && (
+                    {isOpen && (
                       <div className="ml-4 flex flex-col gap-0.5 mt-1">
                         {link.dropdown.map((item) => (
                           <Link
