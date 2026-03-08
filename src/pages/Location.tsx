@@ -1,8 +1,9 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { MapPin, ArrowRight, Phone, CheckCircle2, Search, TrendingUp, Quote } from "lucide-react";
+import { MapPin, ArrowRight, Phone, CheckCircle2, Search, TrendingUp, Quote, Star } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { locations } from "@/data/locations";
+import { reviews } from "@/data/reviews";
 import SEOHead, { breadcrumbSchema, localBusinessSchema } from "@/components/SEOHead";
 
 const Location = () => {
