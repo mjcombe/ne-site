@@ -7,6 +7,7 @@ import WhoWeHelp from "@/components/sections/WhoWeHelp";
 import Results from "@/components/sections/Results";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+import BlogCarousel from "@/components/sections/BlogCarousel";
 import SEOHead, { localBusinessSchema, organizationSchema, websiteSchema } from "@/components/SEOHead";
 
 const Index = () => {
@@ -25,6 +26,7 @@ const Index = () => {
       <WhoWeHelp />
       <Results />
       <FAQ />
+      <BlogCarousel />
       <FinalCTA />
     </Layout>
   );
