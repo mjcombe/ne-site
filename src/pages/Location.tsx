@@ -151,13 +151,17 @@ const Location = () => {
       {/* Testimonial */}
       <section className="section-padding bg-secondary">
         <div className="container mx-auto max-w-3xl text-center">
-          <Quote className="w-10 h-10 text-accent mx-auto mb-6 opacity-50" />
+          <div className="flex gap-1 justify-center mb-4">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-5 h-5 fill-[hsl(38,92%,50%)] text-[hsl(38,92%,50%)]" />
+            ))}
+          </div>
           <blockquote className="text-xl md:text-2xl font-heading font-semibold text-foreground leading-relaxed mb-6">
-            "{location.testimonialQuote}"
+            "{review.text}"
           </blockquote>
           <div>
-            <p className="font-semibold text-foreground">{location.testimonialAuthor}</p>
-            <p className="text-sm text-muted-foreground">{location.testimonialTrade}</p>
+            <p className="font-semibold text-foreground">{review.name}</p>
+            {review.business && <p className="text-sm text-muted-foreground">{review.business}</p>}
           </div>
         </div>
       </section>
