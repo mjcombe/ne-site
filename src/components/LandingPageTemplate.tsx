@@ -76,7 +76,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
             {config.heroHeading}
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-2xl mx-auto [&_a]:text-white [&_a]:underline [&_a:hover]:text-white/80">
             {config.heroDescription}
           </p>
 
