@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import CookieConsent from "@/components/CookieConsent";
-import Chatbot from "@/components/Chatbot";
+
 
 interface LayoutProps {
   children: React.ReactNode;
