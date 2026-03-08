@@ -1,7 +1,9 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
+import heroImage from "@/assets/service-local-seo.jpg";
 
 const LocalSEO = () => (
   <ServicePageLayout
+    heroImage={heroImage}
     title="Local SEO that puts your trade business in front of customers"
     subtitle="Local SEO for Trades"
     description="When someone searches 'electrician near me' or 'plumber Newcastle', local SEO determines whether they find you or your competitors. We make sure they find you."

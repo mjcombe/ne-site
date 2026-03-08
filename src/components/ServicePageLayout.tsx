@@ -7,6 +7,7 @@ interface ServicePageLayoutProps {
   title: string;
   subtitle: string;
   description: string;
+  heroImage?: string;
   whoIsItFor: string[];
   howItHelps: string[];
   whatsIncluded: string[];
@@ -18,6 +19,7 @@ const ServicePageLayout = ({
   title,
   subtitle,
   description,
+  heroImage,
   whoIsItFor,
   howItHelps,
   whatsIncluded,
@@ -27,8 +29,19 @@ const ServicePageLayout = ({
   return (
     <Layout>
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-4xl">
+      <section className="relative overflow-hidden gradient-navy text-primary-foreground section-padding">
+        {heroImage && (
+          <div className="absolute inset-0">
+            <img
+              src={heroImage}
+              alt={title}
+              className="w-full h-full object-cover opacity-15"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/90 to-navy/70" />
+          </div>
+        )}
+        <div className="relative z-10 container mx-auto max-w-4xl">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
             {subtitle}
           </span>
@@ -50,7 +63,6 @@ const ServicePageLayout = ({
           </div>
         </div>
       </section>
-
       {/* Who it's for */}
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
