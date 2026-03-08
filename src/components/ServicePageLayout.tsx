@@ -37,8 +37,34 @@ const ServicePageLayout = ({
   expectedOutcomes,
   relatedServices,
 }: ServicePageLayoutProps) => {
+  const location = useLocation();
+  const slug = location.pathname.split("/").pop() || "";
+  const pageTitle = `${subtitle} | NE Trades`;
+  const metaDesc = description.slice(0, 155);
+  const canonical = `https://netrades.co.uk${location.pathname}`;
+
   return (
     <Layout>
+      <SEOHead
+        title={pageTitle}
+        description={metaDesc}
+        canonical={canonical}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: "Home", url: "https://netrades.co.uk/" },
+            { name: "Services", url: "https://netrades.co.uk/services" },
+            { name: subtitle, url: canonical },
+          ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: subtitle,
+            description: description,
+            provider: { "@id": "https://netrades.co.uk/#business" },
+            areaServed: { "@type": "AdministrativeArea", name: "North East England" },
+          },
+        ]}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden gradient-navy text-primary-foreground section-padding">
         {heroImage && (

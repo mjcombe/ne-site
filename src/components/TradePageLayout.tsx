@@ -44,8 +44,33 @@ const TradePageLayout = ({
   ctaDescription,
   icon: Icon,
 }: TradePageProps) => {
+  const location = useLocation();
+  const canonical = `https://netrades.co.uk${location.pathname}`;
+  const pageTitle = `Websites & SEO for ${trade} | NE Trades`;
+  const metaDesc = heroDescription.slice(0, 155);
+
   return (
     <Layout>
+      <SEOHead
+        title={pageTitle}
+        description={metaDesc}
+        canonical={canonical}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: "Home", url: "https://netrades.co.uk/" },
+            { name: "Who We Help", url: "https://netrades.co.uk/who-we-help" },
+            { name: trade, url: canonical },
+          ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: `Websites & SEO for ${trade}`,
+            description: heroDescription,
+            provider: { "@id": "https://netrades.co.uk/#business" },
+            areaServed: { "@type": "AdministrativeArea", name: "North East England" },
+          },
+        ]}
+      />
       {/* Hero */}
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto">
