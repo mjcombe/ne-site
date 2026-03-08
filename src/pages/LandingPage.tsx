@@ -41,17 +41,17 @@ const LandingPage = () => {
       {/* Hero */}
       <section className="gradient-navy text-primary-foreground py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-6">
+          <div className="flex items-center justify-center gap-2 mb-6">
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-[hsl(38,92%,50%)] text-[hsl(38,92%,50%)]" />
+                <Star key={i} className="w-4 h-4 fill-[hsl(38,92%,50%)] text-[hsl(38,92%,50%)]" />
               ))}
             </div>
-            <span className="text-xs font-medium text-primary-foreground/70">Rated 5.0 from 96 Google Reviews</span>
+            <span className="text-sm font-medium text-primary-foreground/70">Rated 5.0 from 96 Google Reviews</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
-            Stop losing jobs to competitors with better websites
+            Stop losing jobs to competitors with a better Google ranking
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto">
