@@ -1,9 +1,19 @@
 import Layout from "@/components/layout/Layout";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Phone, CheckCircle2, Globe, Search, MapPin, FileText, Shield, TrendingUp } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import { blogPosts } from "@/data/blogPosts";
+
+const relatedServiceLinks = [
+  { label: "Trade Websites", href: "/services/websites-for-trades", icon: Globe },
+  { label: "Local SEO", href: "/services/local-seo", icon: Search },
+  { label: "Google Business Profile", href: "/services/google-business-profile", icon: MapPin },
+  { label: "Service Area Pages", href: "/services/service-area-pages", icon: FileText },
+  { label: "Hosting & Care", href: "/services/hosting-and-care", icon: Shield },
+  { label: "Ongoing SEO", href: "/services/ongoing-seo", icon: TrendingUp },
+];
 
 export type TradeCategory = "trades" | "beauty" | "services";
 
