@@ -78,7 +78,7 @@ const ServicePageLayout = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {whoIsItFor.map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-icon-bg flex items-center justify-center mt-0.5">
                   <span className="w-2 h-2 rounded-full bg-accent" />
                 </span>
                 <span className="text-sm text-foreground leading-relaxed">{item}</span>
@@ -150,7 +150,7 @@ const ServicePageLayout = ({
                   className="group p-5 rounded-lg bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all flex items-center gap-3"
                 >
                   {Icon && (
-                    <div className="w-9 h-9 rounded-md bg-icon-bg flex items-center justify-center shrink-0 group-hover:bg-icon-bg/80 transition-colors">
+                    <div className="w-9 h-9 rounded-md bg-icon-bg flex items-center justify-center shrink-0 group-hover:bg-icon-bg/8 transition-colors">
                       <Icon className="w-4.5 h-4.5 text-accent" />
                     </div>
                   )}
