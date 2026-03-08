@@ -15,7 +15,7 @@ const faqCategories = [
     faqs: [
       {
         question: "How much does a trade website cost?",
-        answer: "Our Business package is £997 for setup plus £99 per month. This includes a fully custom website, SEO optimisation, hosting, and ongoing support. If you want ongoing SEO to dominate Google, our Pro SEO package is £395 per month. Visit our pricing page for full details.",
+        answer: "Our websites start from an affordable monthly fee with no large upfront cost. We offer packages tailored to sole traders and growing trade businesses. Visit our <a href='/pricing' class='text-accent underline hover:text-accent/80'>pricing page</a> for a clear, transparent breakdown with no hidden fees.",
       },
       {
         question: "How long does it take to build a website?",
