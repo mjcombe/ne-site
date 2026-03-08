@@ -100,12 +100,12 @@ const TradePageLayout = ({
             {heroDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" asChild>
+            <Button size="lg" asChild className="bg-white text-[#074054] hover:bg-white/90 font-normal">
               <Link to="/get-started">
                 Get Started <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button variant="heroOutline" size="lg" asChild>
+            <Button size="lg" asChild className="bg-white text-[#074054] hover:bg-white/90 font-normal">
               <a href="tel:07463687129">
                 <Phone className="w-4 h-4" /> Call 07463 687129
               </a>
