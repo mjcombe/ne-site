@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About NE1 Digital | Trade Website Specialists"
+        title="About NE Trades | Trade Website Specialists"
         description="We build websites and SEO for trade businesses in the North East. Meet the team behind NE Trades."
         canonical="https://netrades.co.uk/about"
         jsonLd={breadcrumbSchema([
