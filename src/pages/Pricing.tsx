@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 
 const websiteFeatures = [
   { icon: Globe, label: "Fully custom website design and build" },
@@ -55,6 +56,11 @@ const idealFor = [
 const Pricing = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Pricing | Trade Websites from £99/month | NE Trades"
+        description="Transparent pricing for trade websites and SEO. Business package from £99/month. Pro SEO from £395/month. No hidden fees."
+        canonical="https://netrades.co.uk/pricing"
+      />
       {/* Hero */}
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto container-tight text-center">

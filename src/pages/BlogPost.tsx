@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 // Parse markdown-style links [text](/url) into React elements
 const renderWithLinks = (text: string) => {
@@ -36,6 +37,28 @@ const BlogPost = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title={`${post.title} | NE Trades Blog`}
+        description={post.excerpt.slice(0, 155)}
+        canonical={`https://netrades.co.uk/blog/${post.slug}`}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: "Home", url: "https://netrades.co.uk/" },
+            { name: "Blog", url: "https://netrades.co.uk/blog" },
+            { name: post.title, url: `https://netrades.co.uk/blog/${post.slug}` },
+          ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: post.date,
+            author: { "@type": "Organization", name: "NE1 Digital" },
+            publisher: { "@id": "https://netrades.co.uk/#organization" },
+            mainEntityOfPage: `https://netrades.co.uk/blog/${post.slug}`,
+          },
+        ]}
+      />
       {/* Hero */}
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto container-tight">

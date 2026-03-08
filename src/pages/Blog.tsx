@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
+import SEOHead from "@/components/SEOHead";
 
 const Blog = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Blog | SEO & Website Tips for Trade Businesses"
+        description="Practical SEO and website advice for electricians, plumbers, builders and tradespeople. Grow your local visibility."
+        canonical="https://netrades.co.uk/blog"
+      />
       {/* Hero */}
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto container-tight text-center">

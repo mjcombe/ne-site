@@ -3,6 +3,7 @@ import { Wrench, Zap, Droplets, HardHat, PaintBucket, Hammer, Home, Thermometer,
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import tradeBuilder from "@/assets/trade-builder.jpg";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 const trades = [
   { icon: Zap, name: "Electricians", href: "/trades/electricians", description: "Domestic rewires, new builds, commercial installations, emergency callouts — we help electricians rank for the searches that generate real work." },
@@ -18,6 +19,15 @@ const trades = [
 const WhoWeHelpPage = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Websites & SEO for Trades | Electricians, Plumbers, Builders"
+        description="We build websites and local SEO for electricians, plumbers, builders, roofers and trade businesses across the North East."
+        canonical="https://netrades.co.uk/who-we-help"
+        jsonLd={breadcrumbSchema([
+          { name: "Home", url: "https://netrades.co.uk/" },
+          { name: "Who We Help", url: "https://netrades.co.uk/who-we-help" },
+        ])}
+      />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">

@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Phone, CheckCircle } from "lucide-react";
 import { useEffect } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const GetStarted = () => {
   useEffect(() => {
@@ -43,6 +44,11 @@ const GetStarted = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="Get Started | Free Consultation for Trade Businesses"
+        description="Book a free call to discuss your trade website and SEO. No obligation, no jargon, just honest advice."
+        canonical="https://netrades.co.uk/get-started"
+      />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
