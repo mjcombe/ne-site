@@ -1,8 +1,4 @@
 import { Phone, FileText, TrendingUp, Star } from "lucide-react";
-import resultPhoneCalls from "@/assets/result-phone-calls.jpg";
-import resultQuoteRequests from "@/assets/result-quote-requests.jpg";
-import resultGoogleRankings from "@/assets/result-google-rankings.jpg";
-import resultSatisfaction from "@/assets/result-satisfaction.jpg";
 
 const stats = [
   {
@@ -10,28 +6,24 @@ const stats = [
     value: "3x",
     label: "More phone calls",
     description: "Our clients typically see three times more inbound calls within the first three months.",
-    image: resultPhoneCalls,
   },
   {
     icon: FileText,
     value: "150%",
     label: "More quote requests",
     description: "Better websites and local SEO mean more customers filling in your contact forms.",
-    image: resultQuoteRequests,
   },
   {
     icon: TrendingUp,
     value: "Page 1",
     label: "Google rankings",
     description: "We get trade businesses ranking on page one of Google for their key local search terms.",
-    image: resultGoogleRankings,
   },
   {
     icon: Star,
     value: "5★",
     label: "Client satisfaction",
     description: "Our trade clients rate us five stars because we deliver results, not excuses.",
-    image: resultSatisfaction,
   },
 ];
 
@@ -76,13 +68,8 @@ const Results = () => {
               key={index}
               className="bg-card text-card-foreground rounded-lg overflow-hidden border border-border shadow-md"
             >
-              <img
-                src={stat.image}
-                alt={stat.label}
-                className="w-full h-36 object-cover"
-                loading="lazy"
-              />
               <div className="p-5 text-center">
+                <stat.icon className="w-8 h-8 text-accent mx-auto mb-3" />
                 <span className="block text-3xl md:text-4xl font-bold font-heading text-accent mb-1">
                   {stat.value}
                 </span>
