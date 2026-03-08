@@ -24,6 +24,7 @@ const navLinks = [
   { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help" },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Results", href: "/results" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
