@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import tradeBuilder from "@/assets/trade-builder.jpg";
+import michaelJames from "@/assets/michaeljames.jpg";
 
 const About = () => {
   return (
