@@ -116,6 +116,31 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+
+          {/* Locations */}
+          <div>
+            <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/90">
+              Locations
+            </h4>
+            <ul className="flex flex-col gap-2.5">
+              {[
+                { label: "Newcastle", href: "/locations/newcastle" },
+                { label: "Sunderland", href: "/locations/sunderland" },
+                { label: "Gateshead", href: "/locations/gateshead" },
+                { label: "Durham", href: "/locations/durham" },
+                { label: "North Shields", href: "/locations/north-shields" },
+                { label: "Darlington", href: "/locations/darlington" },
+                { label: "Middlesbrough", href: "/locations/middlesbrough" },
+                { label: "All Locations", href: "/locations" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Bottom bar */}
