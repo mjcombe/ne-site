@@ -1,6 +1,6 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { PaintBucket } from "lucide-react";
-import heroImage from "@/assets/hero-trades.jpg";
+import heroImage from "@/assets/trade-decorator.jpg";
 
 const Decorators = () => (
   <TradePageLayout

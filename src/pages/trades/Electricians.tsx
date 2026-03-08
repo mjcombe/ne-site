@@ -1,6 +1,6 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Zap } from "lucide-react";
-import heroImage from "@/assets/hero-trades.jpg";
+import heroImage from "@/assets/trade-electrician.jpg";
 
 const Electricians = () => (
   <TradePageLayout
