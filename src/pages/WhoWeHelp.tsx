@@ -27,7 +27,7 @@ const WhoWeHelpPage = () => {
             We work with tradespeople across the North East
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1 Web Digital helps trade businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">plumber</Link>, an <Link to="/trades/electricians" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">electrician</Link>, or a <Link to="/trades/builders" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">builder</Link>, we build websites and SEO strategies that turn searches into booked work.
+            NE Trades helps trade businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">plumber</Link>, an <Link to="/trades/electricians" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">electrician</Link>, or a <Link to="/trades/builders" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">builder</Link>, we build websites and SEO strategies that turn searches into booked work.
           </p>
         </div>
       </section>
