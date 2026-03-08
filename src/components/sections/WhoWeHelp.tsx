@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 import { tradeCategories } from "@/data/tradeCategories";
 
-// Show a selection of trades across categories for the homepage
-const featuredTrades = [
-  ...tradeCategories[0].trades.slice(0, 4),
-  ...tradeCategories[1].trades.slice(0, 1),
-  ...tradeCategories[2].trades.slice(0, 1),
-];
+// Show a selection of trades for the homepage
+const featuredTrades = tradeCategories[0].trades.slice(0, 6);
 
 const WhoWeHelp = () => {
   return (
