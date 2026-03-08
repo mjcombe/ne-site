@@ -25,6 +25,7 @@ const navLinks = [
   { label: "Who We Help", href: "/who-we-help" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Results", href: "/results" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
