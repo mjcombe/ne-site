@@ -17,6 +17,14 @@ const servicesDropdown = [
   { label: "Ongoing SEO Support", href: "/services/ongoing-seo", sub: true },
 ];
 
+const aboutDropdown = [
+  { label: "About Us", href: "/about", sub: false },
+  { label: "Results", href: "/results", sub: false },
+  { label: "Reviews", href: "/reviews", sub: false },
+  { label: "Blog", href: "/blog", sub: false },
+  { label: "Contact", href: "/contact", sub: false },
+];
+
 type SimpleDropdown = { label: string; href: string; sub?: boolean }[];
 
 interface NavLink {
@@ -31,10 +39,7 @@ const navLinks: NavLink[] = [
   { label: "Who We Help", href: "/who-we-help", megaMenu: true },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Results", href: "/results" },
-  { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "/about", dropdown: aboutDropdown },
 ];
 
 const Header = () => {
