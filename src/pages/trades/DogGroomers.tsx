@@ -4,7 +4,7 @@ import heroImage from "@/assets/trade-builder.jpg";
 
 const DogGroomers = () => (
   <TradePageLayout
-    trade="Dog Groomers"
+    category="services"
     icon={Dog}
     heroImage={heroImage}
     heroTitle="Websites & SEO that bring dog groomers more bookings"

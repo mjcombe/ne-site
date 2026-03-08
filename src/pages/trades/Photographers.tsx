@@ -4,7 +4,7 @@ import heroImage from "@/assets/trade-decorator.jpg";
 
 const Photographers = () => (
   <TradePageLayout
-    trade="Photographers"
+    category="services"
     icon={Camera}
     heroImage={heroImage}
     heroTitle="Websites & SEO that bring photographers more bookings"

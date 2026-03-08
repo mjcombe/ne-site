@@ -4,7 +4,7 @@ import heroImage from "@/assets/trade-decorator.jpg";
 
 const MassageTherapists = () => (
   <TradePageLayout
-    trade="Massage Therapists & Spa Services"
+    category="beauty"
     icon={Heart}
     heroImage={heroImage}
     heroTitle="Websites & SEO that bring massage therapists more clients"

@@ -4,7 +4,7 @@ import heroImage from "@/assets/trade-builder.jpg";
 
 const PestControl = () => (
   <TradePageLayout
-    trade="Pest Control"
+    category="services"
     icon={Bug}
     heroImage={heroImage}
     heroTitle="Websites & SEO that bring pest control businesses more emergency and planned work"

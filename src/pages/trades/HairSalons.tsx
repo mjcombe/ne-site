@@ -4,7 +4,7 @@ import heroImage from "@/assets/trade-decorator.jpg";
 
 const HairSalons = () => (
   <TradePageLayout
-    trade="Hair Salons & Barbers"
+    category="beauty"
     icon={Scissors}
     heroImage={heroImage}
     heroTitle="Websites & SEO that bring salons and barbers more bookings"
