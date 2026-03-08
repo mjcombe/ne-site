@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Helmet } from "@/components/SEOHead";
+
 
 const faqCategories = [
   {
