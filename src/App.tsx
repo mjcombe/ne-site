@@ -66,6 +66,7 @@ const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const FAQPage = lazy(() => import("./pages/FAQ"));
 const Reviews = lazy(() => import("./pages/Reviews"));
+const LandingPage = lazy(() => import("./pages/LandingPage"));
 const Locations = lazy(() => import("./pages/Locations"));
 const Location = lazy(() => import("./pages/Location"));
 
@@ -140,6 +141,7 @@ const App = () => (
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/reviews" element={<Reviews />} />
+            <Route path="/go" element={<LandingPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/:slug" element={<Location />} />
