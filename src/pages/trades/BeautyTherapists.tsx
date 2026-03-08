@@ -1,13 +1,11 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Sparkles } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const BeautyTherapists = () => (
   <TradePageLayout
     category="beauty"
     trade="Beauty Therapists"
     icon={Sparkles}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring beauty therapists more bookings"
     heroDescription="From facials and skin treatments to aesthetics and semi-permanent makeup, we help beauty therapists and aestheticians get found by clients searching for treatments in their local area."
     problemsTitle="Why most beauty therapists struggle online"

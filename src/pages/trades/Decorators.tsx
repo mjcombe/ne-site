@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { PaintBucket } from "lucide-react";
-import heroImage from "@/assets/trade-decorator.jpg";
 
 const Decorators = () => (
   <TradePageLayout
     trade="Decorators"
     icon={PaintBucket}
-    heroImage={heroImage}
     heroTitle="Attract more decorating work from homeowners who value quality"
     heroDescription="Interior painting, exterior decorating, wallpapering, and specialist finishes — we help painters and decorators build an online reputation that attracts the right customers and the right kind of work."
     problemsTitle="Why decorators struggle to stand out online"

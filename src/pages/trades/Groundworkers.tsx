@@ -1,12 +1,10 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Shovel } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
 
 const Groundworkers = () => (
   <TradePageLayout
     trade="Groundworkers"
     icon={Shovel}
-    heroImage={heroImage}
     heroTitle="Websites & SEO that bring groundwork companies more contracts"
     heroDescription="From foundations and drainage to driveways and excavation, we help groundwork businesses get found by builders, developers, and homeowners who need reliable groundwork services."
     problemsTitle="Why most groundwork companies struggle online"
