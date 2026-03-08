@@ -3,6 +3,26 @@ import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
 
+// Parse markdown-style links [text](/url) into React elements
+const renderWithLinks = (text: string) => {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (match) {
+      return (
+        <Link
+          key={i}
+          to={match[2]}
+          className="text-primary font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
+        >
+          {match[1]}
+        </Link>
+      );
+    }
+    return part;
+  });
+};
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
@@ -66,7 +86,7 @@ const BlogPost = () => {
               }
               return (
                 <p key={i} className="text-muted-foreground leading-relaxed mb-5">
-                  {block}
+                  {renderWithLinks(block)}
                 </p>
               );
             })}
