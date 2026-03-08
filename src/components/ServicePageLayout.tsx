@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, LucideIcon } from "lucide-react";
+import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarChart3, Sparkles, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 
