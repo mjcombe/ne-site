@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 
@@ -14,6 +14,14 @@ interface ServicePageLayoutProps {
   expectedOutcomes: string[];
   relatedServices: { label: string; href: string }[];
 }
+const serviceIconMap: Record<string, LucideIcon> = {
+  "/services/websites-for-trades": Globe,
+  "/services/local-seo": Search,
+  "/services/google-business-profile": MapPin,
+  "/services/service-area-pages": FileText,
+  "/services/hosting-and-care": Shield,
+  "/services/ongoing-seo": TrendingUp,
+};
 
 const ServicePageLayout = ({
   title,
@@ -133,16 +141,24 @@ const ServicePageLayout = ({
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Related services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {relatedServices.map((service, i) => (
-              <Link
-                key={i}
-                to={service.href}
-                className="group p-5 rounded-lg bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all flex items-center justify-between"
-              >
-                <span className="text-sm font-medium text-foreground">{service.label}</span>
-                <ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform" />
-              </Link>
-            ))}
+            {relatedServices.map((service, i) => {
+              const Icon = serviceIconMap[service.href];
+              return (
+                <Link
+                  key={i}
+                  to={service.href}
+                  className="group p-5 rounded-lg bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all flex items-center gap-3"
+                >
+                  {Icon && (
+                    <div className="w-9 h-9 rounded-md bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors">
+                      <Icon className="w-4.5 h-4.5 text-accent" />
+                    </div>
+                  )}
+                  <span className="text-sm font-medium text-foreground flex-1">{service.label}</span>
+                  <ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform shrink-0" />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
