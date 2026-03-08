@@ -60,7 +60,7 @@ const Header = () => {
   }, [location.pathname]);
 
   const isDropdownActive = (dropdown: SimpleDropdown) =>
-    dropdown.some((item) => location.pathname === item.href);
+    dropdown.some((item) => item.href && location.pathname === item.href);
 
   const isMegaMenuActive = () =>
     tradeCategories.some((cat) => cat.trades.some((t) => location.pathname === t.href));
