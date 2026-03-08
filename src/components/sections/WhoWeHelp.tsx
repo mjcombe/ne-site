@@ -51,31 +51,27 @@ const WhoWeHelp = () => {
             </Link>
           </div>
 
-          {/* Images grid */}
+          {/* Stats grid */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <img
-                src={tradePlumber}
-                alt="Professional plumber at work"
-                className="w-full rounded-lg shadow-lg object-cover aspect-square"
-                loading="lazy"
-              />
-              <div className="bg-accent rounded-lg p-5 text-accent-foreground">
-                <span className="block text-3xl font-bold font-heading">28+</span>
+              <div className="bg-accent rounded-lg p-8 text-accent-foreground">
+                <span className="block text-4xl font-bold font-heading">28+</span>
                 <span className="text-sm opacity-90">Industries Served</span>
+              </div>
+              <div className="gradient-navy rounded-lg p-8 text-primary-foreground">
+                <span className="block text-4xl font-bold font-heading">100+</span>
+                <span className="text-sm opacity-80">Websites Built</span>
               </div>
             </div>
             <div className="space-y-4 pt-8">
-              <div className="gradient-navy rounded-lg p-5 text-primary-foreground">
-                <span className="block text-3xl font-bold font-heading">Local</span>
+              <div className="gradient-navy rounded-lg p-8 text-primary-foreground">
+                <span className="block text-4xl font-bold font-heading">Local</span>
                 <span className="text-sm opacity-80">SEO Specialists</span>
               </div>
-              <img
-                src={tradeRoofer}
-                alt="Professional roofer at work"
-                className="w-full rounded-lg shadow-lg object-cover aspect-square"
-                loading="lazy"
-              />
+              <div className="bg-accent rounded-lg p-8 text-accent-foreground">
+                <span className="block text-4xl font-bold font-heading">5★</span>
+                <span className="text-sm opacity-90">Google Rating</span>
+              </div>
             </div>
           </div>
         </div>

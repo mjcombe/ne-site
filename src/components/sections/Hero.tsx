@@ -1,23 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-trades-premium.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden gradient-navy">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Professional tradesperson at work"
-          className="w-full h-full object-cover opacity-20"
-          loading="eager"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/90 to-navy/70" />
-      </div>
-
-      <div className="relative z-10 w-full">
+    <section className="gradient-navy">
+      <div className="w-full">
         <div className="py-20 md:py-28 lg:py-36 text-center max-w-4xl mx-auto px-4 md:px-6">
           <p className="text-sm text-primary-foreground/70 font-medium uppercase tracking-wider mb-6 animate-fade-in">
             Specialist websites & SEO for trade businesses
