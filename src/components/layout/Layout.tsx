@@ -1,7 +1,9 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import CookieConsent from "@/components/CookieConsent";
-.ReactNode;
+
+interface LayoutProps {
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
@@ -11,9 +13,8 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="flex-1">{children}</main>
       <Footer />
       <CookieConsent />
-      <Chatbot />
     </div>
   );
 };
 
-export defa
+export default Layout;
