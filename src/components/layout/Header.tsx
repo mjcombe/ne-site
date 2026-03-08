@@ -19,16 +19,13 @@ const seoDropdown = [
 ];
 
 const navLinks = [
-  { label: "Home", href: "/" },
   { label: "Services", href: "/services", dropdown: servicesDropdown },
   { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help" },
-  { label: "Locations", href: "/locations" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
   { label: "Results", href: "/results" },
   { label: "Blog", href: "/blog" },
-  { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
