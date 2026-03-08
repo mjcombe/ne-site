@@ -1,6 +1,6 @@
 import {
   Zap, Droplets, HardHat, Wrench, PaintBucket, Hammer, Home, Thermometer,
-  Blocks, Grid3X3, Scaffold, PipetteIcon, Lock, DoorOpen, Shovel,
+  Blocks, Grid3X3, Lock, DoorOpen, Shovel,
   Scissors, Sparkles, Hand, Brush, Heart,
   SprayCanIcon, Dog, Dumbbell, Camera, Car, TreePine, Bug, GraduationCap
 } from "lucide-react";
