@@ -64,23 +64,25 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1" ref={navRef}>
           {navLinks.map((link) => {
             if (link.dropdown) {
+              const isOpen = openDesktop === link.label;
+              const isActive = isDropdownActive(link.dropdown);
               return (
-                <div key={link.label} className="relative" ref={dropdownRef}>
+                <div key={link.label} className="relative">
                   <button
-                    onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
+                    onClick={() => setOpenDesktop(isOpen ? null : link.label)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
-                      isSeoPaths
+                      isActive
                         ? "text-primary font-semibold bg-secondary"
                         : "text-text-secondary hover:text-foreground hover:bg-secondary"
                     }`}
                   >
                     {link.label}
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${desktopDropdownOpen ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
-                  {desktopDropdownOpen && (
+                  {isOpen && (
                     <div className="absolute top-full left-0 mt-1 w-52 bg-card border border-border rounded-lg shadow-lg py-1 animate-fade-in z-50">
                       {link.dropdown.map((item) => (
                         <Link
