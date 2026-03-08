@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "How much does a trade website cost?",
-    answer: "Our websites start from an affordable monthly fee with no large upfront cost. We offer packages tailored to sole traders and growing trade businesses. Get in touch for a clear, transparent quote with no hidden fees.",
+    answer: "Our websites start from an affordable monthly fee with no large upfront cost. We offer packages tailored to sole traders and growing trade businesses. Visit our <a href='/pricing' class='text-accent underline hover:text-accent/80'>pricing page</a> for a clear, transparent breakdown with no hidden fees.",
   },
   {
     question: "How long does it take to build a website?",
