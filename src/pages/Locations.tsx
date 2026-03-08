@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { locations } from "@/data/locations";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import CoverageMap from "@/components/CoverageMap";
 
 const Locations = () => {
   return (
@@ -31,6 +32,17 @@ const Locations = () => {
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
             From Newcastle to Middlesbrough, Durham to Blyth — we help tradespeople across every corner of the North East get found online and win more local work.
           </p>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="section-padding bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Coverage Area</h2>
+            <p className="text-lg text-muted-foreground">Interactive map showing the locations we serve across the North East.</p>
+          </div>
+          <CoverageMap />
         </div>
       </section>
 
