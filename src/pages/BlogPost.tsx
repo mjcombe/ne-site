@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 // Parse markdown-style links [text](/url) into React elements
 const renderWithLinks = (text: string) => {
