@@ -4,6 +4,7 @@ import heroImage from "@/assets/trade-landscaper.jpg";
 
 const GardenMaintenance = () => (
   <TradePageLayout
+    category="services"
     trade="Garden Maintenance"
     icon={TreePine}
     heroImage={heroImage}
