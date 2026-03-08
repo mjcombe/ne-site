@@ -6,20 +6,18 @@ import logoImage from "@/assets/logo.png";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const servicesDropdown = [
-  { label: "Websites for Trades", href: "/services/websites-for-trades" },
-  { label: "Google Business Profile", href: "/services/google-business-profile" },
-  { label: "Service Area Pages", href: "/services/service-area-pages" },
-  { label: "Hosting & Care", href: "/services/hosting-and-care" },
+  { label: "Websites for Trades", href: "/services/websites-for-trades", sub: false },
+  { label: "Google Business Profile", href: "/services/google-business-profile", sub: false },
+  { label: "Service Area Pages", href: "/services/service-area-pages", sub: false },
+  { label: "Hosting & Care", href: "/services/hosting-and-care", sub: false },
+  { label: "divider", href: "", sub: false },
+  { label: "SEO for Trades", href: "/services/seo", sub: true },
+  { label: "Local SEO", href: "/services/local-seo", sub: true },
+  { label: "AI & Generative SEO", href: "/services/ai-seo", sub: true },
+  { label: "Ongoing SEO Support", href: "/services/ongoing-seo", sub: true },
 ];
 
-const seoDropdown = [
-  { label: "SEO for Trades", href: "/services/seo" },
-  { label: "Local SEO", href: "/services/local-seo" },
-  { label: "AI & Generative SEO", href: "/services/ai-seo" },
-  { label: "Ongoing SEO Support", href: "/services/ongoing-seo" },
-];
-
-type SimpleDropdown = { label: string; href: string }[];
+type SimpleDropdown = { label: string; href: string; sub?: boolean }[];
 
 interface NavLink {
   label: string;
@@ -30,7 +28,6 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { label: "Services", href: "/services", dropdown: servicesDropdown },
-  { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help", megaMenu: true },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
