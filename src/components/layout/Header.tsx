@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.png";
+import { tradeCategories } from "@/data/tradeCategories";
 
 const servicesDropdown = [
   { label: "Websites for Trades", href: "/services/websites-for-trades" },
@@ -18,10 +19,19 @@ const seoDropdown = [
   { label: "Ongoing SEO Support", href: "/services/ongoing-seo" },
 ];
 
-const navLinks = [
+type SimpleDropdown = { label: string; href: string }[];
+
+interface NavLink {
+  label: string;
+  href: string;
+  dropdown?: SimpleDropdown;
+  megaMenu?: boolean;
+}
+
+const navLinks: NavLink[] = [
   { label: "Services", href: "/services", dropdown: servicesDropdown },
   { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
-  { label: "Who We Help", href: "/who-we-help" },
+  { label: "Who We Help", href: "/who-we-help", megaMenu: true },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
   { label: "Results", href: "/results" },
@@ -37,7 +47,6 @@ const Header = () => {
   const location = useLocation();
   const navRef = useRef<HTMLElement>(null);
 
-  // Close desktop dropdown on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
@@ -48,14 +57,16 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  // Close dropdowns on route change
   useEffect(() => {
     setOpenDesktop(null);
     setOpenMobile(null);
   }, [location.pathname]);
 
-  const isDropdownActive = (dropdown: typeof seoDropdown) =>
+  const isDropdownActive = (dropdown: SimpleDropdown) =>
     dropdown.some((item) => location.pathname === item.href);
+
+  const isMegaMenuActive = () =>
+    tradeCategories.some((cat) => cat.trades.some((t) => location.pathname === t.href));
 
   return (
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
@@ -67,6 +78,63 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1" ref={navRef}>
           {navLinks.map((link) => {
+            // Mega menu for Who We Help
+            if (link.megaMenu) {
+              const isOpen = openDesktop === link.label;
+              const isActive = location.pathname === link.href || isMegaMenuActive();
+              return (
+                <div key={link.label} className="relative">
+                  <button
+                    onClick={() => setOpenDesktop(isOpen ? null : link.label)}
+                    className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
+                      isActive
+                        ? "text-primary font-semibold bg-secondary"
+                        : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    {link.label}
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {isOpen && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[720px] bg-card border border-border rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
+                      <div className="grid grid-cols-3 gap-6">
+                        {tradeCategories.map((cat) => (
+                          <div key={cat.label}>
+                            <span className="block text-xs font-bold text-accent uppercase tracking-wider mb-3">{cat.label}</span>
+                            <div className="space-y-0.5">
+                              {cat.trades.map((trade) => (
+                                <Link
+                                  key={trade.href}
+                                  to={trade.href}
+                                  className={`flex items-center gap-2 px-2 py-1.5 rounded text-sm transition-colors ${
+                                    location.pathname === trade.href
+                                      ? "text-primary font-semibold bg-secondary"
+                                      : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                                  }`}
+                                >
+                                  <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
+                                  {trade.name}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="mt-4 pt-4 border-t border-border">
+                        <Link
+                          to="/who-we-help"
+                          className="text-sm font-medium text-accent hover:underline"
+                        >
+                          View all industries we work with →
+                        </Link>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            // Standard dropdown
             if (link.dropdown) {
               const isOpen = openDesktop === link.label;
               const isActive = isDropdownActive(link.dropdown);
@@ -103,6 +171,8 @@ const Header = () => {
                 </div>
               );
             }
+
+            // Simple link
             return (
               <Link
                 key={link.href}
@@ -142,9 +212,62 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-border bg-surface-raised animate-fade-in">
+        <div className="lg:hidden border-t border-border bg-surface-raised animate-fade-in max-h-[80vh] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
+              // Mobile mega menu
+              if (link.megaMenu) {
+                const isOpen = openMobile === link.label;
+                const isActive = location.pathname === link.href || isMegaMenuActive();
+                return (
+                  <div key={link.label}>
+                    <button
+                      onClick={() => setOpenMobile(isOpen ? null : link.label)}
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
+                        isActive
+                          ? "text-primary font-semibold bg-secondary"
+                          : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                      }`}
+                    >
+                      {link.label}
+                      <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                    </button>
+                    {isOpen && (
+                      <div className="ml-4 mt-1 space-y-3">
+                        {tradeCategories.map((cat) => (
+                          <div key={cat.label}>
+                            <span className="block px-4 py-1 text-xs font-bold text-accent uppercase tracking-wider">{cat.label}</span>
+                            {cat.trades.map((trade) => (
+                              <Link
+                                key={trade.href}
+                                to={trade.href}
+                                onClick={() => setMobileOpen(false)}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
+                                  location.pathname === trade.href
+                                    ? "text-primary font-semibold bg-secondary"
+                                    : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                                }`}
+                              >
+                                <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
+                                {trade.name}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                        <Link
+                          to="/who-we-help"
+                          onClick={() => setMobileOpen(false)}
+                          className="block px-4 py-2 text-sm font-medium text-accent"
+                        >
+                          View all →
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              // Mobile standard dropdown
               if (link.dropdown) {
                 const isOpen = openMobile === link.label;
                 const isActive = isDropdownActive(link.dropdown);
@@ -182,6 +305,7 @@ const Header = () => {
                   </div>
                 );
               }
+
               return (
                 <Link
                   key={link.href}
