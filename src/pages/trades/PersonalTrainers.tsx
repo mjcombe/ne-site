@@ -5,6 +5,7 @@ import heroImage from "@/assets/trade-builder.jpg";
 const PersonalTrainers = () => (
   <TradePageLayout
     category="services"
+    trade="Personal Trainers"
     icon={Dumbbell}
     heroImage={heroImage}
     heroTitle="Websites & SEO that bring personal trainers more clients"
