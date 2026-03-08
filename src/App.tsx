@@ -52,8 +52,6 @@ const FAQPage = lazy(() => import("./pages/FAQ"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingTrades = lazy(() => import("./pages/landing/LandingTrades"));
-const LandingBeauty = lazy(() => import("./pages/landing/LandingBeauty"));
-const LandingServices = lazy(() => import("./pages/landing/LandingServices"));
 const Locations = lazy(() => import("./pages/Locations"));
 const Location = lazy(() => import("./pages/Location"));
 
