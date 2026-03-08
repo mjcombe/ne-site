@@ -21,7 +21,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-background dotted-bg">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-background dotted-bg">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Ready to work with a team that gets trades?
