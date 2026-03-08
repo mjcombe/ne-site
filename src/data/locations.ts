@@ -47,7 +47,7 @@ export const locations: LocationData[] = [
     searchTerms: ["electrician Newcastle", "plumber Newcastle upon Tyne", "builder Newcastle", "roofer Newcastle", "joiner Newcastle", "kitchen fitter Newcastle", "bathroom fitter Newcastle", "boiler repair Newcastle"],
     areaDescription: "Our Newcastle clients typically cover the city centre, Jesmond, Heaton, Gosforth, Fenham, Benwell, Walker, Byker, Ouseburn, and surrounding areas. We build service area pages targeting each neighbourhood to maximise your local visibility.",
     nearbyAreas: ["Gateshead", "North Shields", "Wallsend", "Whitley Bay", "Gosforth", "Jesmond"],
-    testimonialQuote: "Since NE1 Digital built our website, we've gone from relying on word of mouth to getting five or six enquiries a week through Google. Best investment we've made.",
+    testimonialQuote: "Since NE Trades built our website, we've gone from relying on word of mouth to getting five or six enquiries a week through Google. Best investment we've made.",
     testimonialAuthor: "Newcastle Electrician",
     testimonialTrade: "Domestic & Commercial Electrician",
     ctaHeading: "Ready to dominate Google in Newcastle?",
