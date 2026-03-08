@@ -2,10 +2,16 @@ import Layout from "@/components/layout/Layout";
 import HowItWorksSection from "@/components/sections/HowItWorks";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+import SEOHead from "@/components/SEOHead";
 
 const HowItWorksPage = () => {
   return (
     <Layout>
+      <SEOHead
+        title="How It Works | Trade Websites in 3 Weeks | NE Trades"
+        description="A simple, no-nonsense process to get your trade website live and ranking on Google. Discovery, design, build, launch."
+        canonical="https://netrades.co.uk/how-it-works"
+      />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
