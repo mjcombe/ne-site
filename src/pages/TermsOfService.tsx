@@ -14,7 +14,7 @@ const TermsOfService = () => (
         <div className="space-y-8">
           <div>
             <h2 className="text-xl font-bold text-foreground mb-3">1. Introduction</h2>
-            <p className="text-muted-foreground leading-relaxed">These terms of service govern your use of the NE1 Web Digital website and our services. By using our website or engaging our services, you agree to these terms.</p>
+            <p className="text-muted-foreground leading-relaxed">These terms of service govern your use of the NE Trades website and our services. By using our website or engaging our services, you agree to these terms.</p>
           </div>
 
           <div>
