@@ -136,7 +136,20 @@ const faqCategories = [
 const FAQPage = () => {
   return (
     <Layout>
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <SEOHead
+        title="FAQ | Common Questions About Trade Websites & SEO"
+        description="Answers to common questions about websites, SEO, pricing and support for trade businesses in the North East."
+        canonical="https://netrades.co.uk/faq"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqCategories.flatMap(cat => cat.faqs.map(faq => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          }))),
+        }}
+      />
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
             FAQs
