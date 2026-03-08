@@ -1,4 +1,5 @@
 import { Phone, FileText, TrendingUp, Star } from "lucide-react";
+import { reviews } from "@/data/reviews";
 
 const stats = [
   {
@@ -27,23 +28,13 @@ const stats = [
   },
 ];
 
-const testimonials = [
-  {
-    quote: "I'm very pleased with my new website. Michael was extremely helpful, professional, and responsive throughout the whole process. Highly recommended!",
-    name: "Liam Fisher",
-    role: "Website Client",
-  },
-  {
-    quote: "I would 100% recommend these guys if you are looking for a top service with regards to build and support and value!",
-    name: "SAPORI",
-    role: "Website Client",
-  },
-  {
-    quote: "Michael helped me with some local SEO work, really helpful and went the extra mile.",
-    name: "Josh Bullock",
-    role: "SEO Client",
-  },
-];
+// Pick 3 real reviews deterministically (indices 0, 15, 30 for variety)
+const pickedIndices = [0, 15, 30];
+const realReviews = reviews.filter(r => r.text);
+const testimonials = pickedIndices.map(i => {
+  const r = realReviews[i % realReviews.length];
+  return { quote: r.text, name: r.name, role: r.business || "Google Review" };
+});
 
 const Results = () => {
   return (
