@@ -86,14 +86,11 @@ const Reviews = () => {
                 <blockquote className="text-sm text-foreground leading-relaxed mb-4 flex-1">
                   "{review.text}"
                 </blockquote>
-                <div className="flex items-center justify-between pt-3 border-t border-border">
-                  <div>
-                    <span className="block text-sm font-semibold text-foreground">{review.name}</span>
-                    {review.business && (
-                      <span className="block text-xs text-muted-foreground">{review.business}</span>
-                    )}
-                  </div>
-                  <span className="text-xs text-muted-foreground">{review.date}</span>
+                <div className="pt-3 border-t border-border">
+                  <span className="block text-sm font-semibold text-foreground">{review.name}</span>
+                  {review.business && (
+                    <span className="block text-xs text-muted-foreground">{review.business}</span>
+                  )}
                 </div>
               </div>
             ))}
