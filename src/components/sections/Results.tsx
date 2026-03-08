@@ -68,13 +68,8 @@ const Results = () => {
               key={index}
               className="bg-card text-card-foreground rounded-lg overflow-hidden border border-border shadow-md"
             >
-              <img
-                src={stat.image}
-                alt={stat.label}
-                className="w-full h-36 object-cover"
-                loading="lazy"
-              />
               <div className="p-5 text-center">
+                <stat.icon className="w-8 h-8 text-accent mx-auto mb-3" />
                 <span className="block text-3xl md:text-4xl font-bold font-heading text-accent mb-1">
                   {stat.value}
                 </span>
