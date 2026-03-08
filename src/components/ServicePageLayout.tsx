@@ -8,7 +8,6 @@ interface ServicePageLayoutProps {
   title: string;
   subtitle: string;
   description: string;
-  heroImage?: string;
   whoIsItFor: string[];
   howItHelps: string[];
   whatsIncluded: string[];
