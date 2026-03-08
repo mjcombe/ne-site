@@ -1,8 +1,17 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, Globe, Search, MapPin, FileText, TrendingUp } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
+import { tradeCategories } from "@/data/tradeCategories";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+
+const relatedServiceLinks = [
+  { label: "Trade Websites", href: "/services/websites-for-trades", icon: Globe },
+  { label: "Local SEO", href: "/services/local-seo", icon: Search },
+  { label: "Google Business Profile", href: "/services/google-business-profile", icon: MapPin },
+  { label: "Service Area Pages", href: "/services/service-area-pages", icon: FileText },
+  { label: "Ongoing SEO", href: "/services/ongoing-seo", icon: TrendingUp },
+];
 
 // Parse markdown-style links [text](/url) into React elements
 const renderWithLinks = (text: string) => {
@@ -135,6 +144,58 @@ const BlogPost = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             ) : <div />}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="section-padding bg-background">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-6">Related Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {relatedServiceLinks.map((service, i) => {
+              const SIcon = service.icon;
+              return (
+                <Link
+                  key={i}
+                  to={service.href}
+                  className="group flex items-center gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all"
+                >
+                  <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                    <SIcon className="w-4 h-4 text-accent" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground flex-1">{service.label}</span>
+                  <ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform shrink-0" />
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Trades */}
+      <section className="section-padding bg-secondary">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-6">We Help These Trades</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {tradeCategories[0].trades.slice(0, 6).map((trade) => {
+              const TIcon = trade.icon;
+              return (
+                <Link
+                  key={trade.href}
+                  to={trade.href}
+                  className="group flex items-center gap-2 p-3 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-sm transition-all"
+                >
+                  <TIcon className="w-4 h-4 text-accent shrink-0" />
+                  <span className="text-sm font-medium text-foreground">{trade.name}</span>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="mt-4">
+            <Link to="/who-we-help" className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline">
+              See all trades we work with <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
