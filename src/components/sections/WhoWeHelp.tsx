@@ -1,6 +1,6 @@
 import tradePlumber from "@/assets/trade-plumber.jpg";
 import tradeRoofer from "@/assets/trade-roofer.jpg";
-import tradeBuilder from "@/assets/trade-builder.jpg";
+import tradeBuilder from "@/assets/trade-electrician.jpg";
 import { Wrench, Zap, Droplets, HardHat, PaintBucket, Hammer } from "lucide-react";
 import { Link } from "react-router-dom";
 

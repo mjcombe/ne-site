@@ -1,6 +1,6 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Hammer } from "lucide-react";
-import heroImage from "@/assets/trade-builder.jpg";
+import heroImage from "@/assets/trade-joiner.jpg";
 
 const Joiners = () => (
   <TradePageLayout

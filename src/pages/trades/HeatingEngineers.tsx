@@ -1,6 +1,6 @@
 import TradePageLayout from "@/components/TradePageLayout";
 import { Thermometer } from "lucide-react";
-import heroImage from "@/assets/trade-plumber.jpg";
+import heroImage from "@/assets/trade-heating.jpg";
 
 const HeatingEngineers = () => (
   <TradePageLayout
