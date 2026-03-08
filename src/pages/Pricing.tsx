@@ -166,7 +166,7 @@ const Pricing = () => {
                   £0 upfront — website build included
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Includes full website build, hosting, support, and ongoing SEO. Minimum term: 12 months.
+                  Includes full website build, hosting, support, and ongoing SEO. Minimum term: 12 months. Fair usage applies.
                 </p>
               </div>
               <div className="p-8">
