@@ -214,7 +214,7 @@ const TradePageLayout = ({
       </section>
 
       {/* CTA */}
-      <section className="section-padding gradient-navy text-primary-foreground">
+      <section className={`section-padding ${heroGradient} text-primary-foreground`}>
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">{ctaTitle}</h2>
           <p className="text-lg text-primary-foreground/75 mb-8">{ctaDescription}</p>
