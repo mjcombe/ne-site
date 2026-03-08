@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
+import { tradeCategories } from "@/data/tradeCategories";
 
 const serviceLinks = [
   { label: "Websites for Trades", href: "/services/websites-for-trades" },
@@ -28,6 +30,12 @@ const legalLinks = [
 ];
 
 const Footer = () => {
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
+
+  const toggleCategory = (label: string) => {
+    setOpenCategory(openCategory === label ? null : label);
+  };
+
   return (
     <footer className="gradient-navy text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-16">
@@ -36,7 +44,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <span className="font-heading font-bold text-xl text-primary-foreground">NE1 Digital</span>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Professional websites and local SEO built specifically for trade businesses across the North East and beyond.
+              Professional websites and local SEO for trades, beauty, and service businesses across the North East and beyond.
             </p>
             <div className="flex flex-col gap-3">
               <a href="tel:07463687129" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
@@ -62,10 +70,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-2.5">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
+                  <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -81,10 +86,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-2.5">
               {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
+                  <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -92,29 +94,47 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Who We Help */}
+          {/* Who We Help - Collapsible Categories */}
           <div>
             <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/90">
-              Trades We Work With
+              Who We Help
             </h4>
-            <ul className="flex flex-col gap-2.5">
-              {[
-                { label: "Electricians", href: "/trades/electricians" },
-                { label: "Plumbers", href: "/trades/plumbers" },
-                { label: "Builders", href: "/trades/builders" },
-                { label: "Roofers", href: "/trades/roofers" },
-                { label: "Decorators", href: "/trades/decorators" },
-                { label: "Joiners & Carpenters", href: "/trades/joiners" },
-                { label: "Landscapers", href: "/trades/landscapers" },
-                { label: "Heating Engineers", href: "/trades/heating-engineers" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-col gap-1">
+              {tradeCategories.map((cat) => {
+                const isOpen = openCategory === cat.label;
+                return (
+                  <div key={cat.label}>
+                    <button
+                      onClick={() => toggleCategory(cat.label)}
+                      className="w-full flex items-center justify-between py-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    >
+                      <span className="font-medium">{cat.label}</span>
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                    </button>
+                    {isOpen && (
+                      <ul className="flex flex-col gap-1.5 pl-3 pb-2 animate-fade-in">
+                        {cat.trades.map((trade) => (
+                          <li key={trade.href}>
+                            <Link
+                              to={trade.href}
+                              className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+                            >
+                              {trade.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                );
+              })}
+              <Link
+                to="/who-we-help"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors mt-2 font-medium"
+              >
+                View All →
+              </Link>
+            </div>
           </div>
 
           {/* Locations */}
