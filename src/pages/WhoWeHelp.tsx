@@ -88,7 +88,11 @@ const WhoWeHelpPage = () => {
                 <Link to="/get-started">Get Started <ArrowRight className="w-5 h-5" /></Link>
               </Button>
             </div>
-            <img src={tradeBuilder} alt="Professional tradesperson at work" className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" />
+            <div className="gradient-navy rounded-lg p-8 text-primary-foreground flex flex-col justify-center aspect-[4/3]">
+              <span className="block text-4xl font-bold font-heading mb-2">100+</span>
+              <span className="block text-lg font-heading mb-1">Trade Websites Built</span>
+              <span className="text-sm text-primary-foreground/70">Across the North East</span>
+            </div>
           </div>
         </div>
       </section>
