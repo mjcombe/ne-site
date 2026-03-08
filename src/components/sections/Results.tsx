@@ -29,19 +29,19 @@ const stats = [
 
 const testimonials = [
   {
-    quote: "Since NE1 Web Digital built our new website and sorted our SEO, we've had to take on another electrician to handle the extra work. Best money we've ever spent.",
-    name: "David Thompson",
-    role: "Thompson Electrical, Newcastle",
+    quote: "I'm very pleased with my new website. Michael was extremely helpful, professional, and responsive throughout the whole process. Highly recommended!",
+    name: "Liam Fisher",
+    role: "Website Client",
   },
   {
-    quote: "I was sceptical about SEO but the results speak for themselves. We went from barely any online enquiries to getting calls every single day.",
-    name: "Mark Richardson",
-    role: "Richardson Plumbing, Sunderland",
+    quote: "I would 100% recommend these guys if you are looking for a top service with regards to build and support and value!",
+    name: "SAPORI",
+    role: "Website Client",
   },
   {
-    quote: "NE1 Web Digital actually understand how trade businesses work. They built us a proper website that our customers trust, and it shows in the enquiries.",
-    name: "Sarah Mitchell",
-    role: "Mitchell Roofing, Durham",
+    quote: "Michael helped me with some local SEO work, really helpful and went the extra mile.",
+    name: "Josh Bullock",
+    role: "SEO Client",
   },
 ];
 
