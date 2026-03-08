@@ -53,7 +53,8 @@ const Header = () => {
     setOpenMobile(null);
   }, [location.pathname]);
 
-  const isSeoPaths = seoDropdown.some((item) => location.pathname === item.href);
+  const isDropdownActive = (dropdown: typeof seoDropdown) =>
+    dropdown.some((item) => location.pathname === item.href);
 
   return (
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
