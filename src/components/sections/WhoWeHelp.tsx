@@ -1,5 +1,3 @@
-import tradePlumber from "@/assets/trade-plumber.jpg";
-import tradeRoofer from "@/assets/trade-roofer.jpg";
 import { Link } from "react-router-dom";
 import { tradeCategories } from "@/data/tradeCategories";
 
