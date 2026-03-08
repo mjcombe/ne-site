@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Star } from "lucide-react";
 
 const Hero = () => {
   return (
     <section className="gradient-navy">
       <div className="w-full">
         <div className="py-20 md:py-28 lg:py-36 text-center max-w-4xl mx-auto px-4 md:px-6">
-          <p className="text-sm text-primary-foreground/70 font-medium uppercase tracking-wider mb-6 animate-fade-in">
-            Specialist websites & SEO for trade businesses
-          </p>
+          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-3.5 h-3.5 fill-[hsl(38,92%,50%)] text-[hsl(38,92%,50%)]" />
+              ))}
+            </div>
+            <span className="text-sm font-bold text-primary-foreground">5.0</span>
+            <span className="text-xs text-primary-foreground/60">Google Reviews</span>
+          </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Get more local enquiries for your trade business
@@ -32,23 +38,6 @@ const Hero = () => {
                 Book a Free Call
               </a>
             </Button>
-          </div>
-
-          <div className="mt-12 flex items-center justify-center gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <div className="text-center">
-              <span className="block text-2xl md:text-3xl font-bold text-accent">100+</span>
-              <span className="text-xs text-primary-foreground/60 uppercase tracking-wide">Trade Websites</span>
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/20" />
-            <div className="text-center">
-              <span className="block text-2xl md:text-3xl font-bold text-accent">5★</span>
-              <span className="text-xs text-primary-foreground/60 uppercase tracking-wide">Google Rating</span>
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/20" />
-            <div className="text-center">
-              <span className="block text-2xl md:text-3xl font-bold text-accent">3x</span>
-              <span className="text-xs text-primary-foreground/60 uppercase tracking-wide">More Enquiries</span>
-            </div>
           </div>
         </div>
       </div>
