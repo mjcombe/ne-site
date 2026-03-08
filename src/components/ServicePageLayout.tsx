@@ -14,6 +14,14 @@ interface ServicePageLayoutProps {
   expectedOutcomes: string[];
   relatedServices: { label: string; href: string }[];
 }
+const serviceIconMap: Record<string, LucideIcon> = {
+  "/services/websites-for-trades": Globe,
+  "/services/local-seo": Search,
+  "/services/google-business-profile": MapPin,
+  "/services/service-area-pages": FileText,
+  "/services/hosting-and-care": Shield,
+  "/services/ongoing-seo": TrendingUp,
+};
 
 const ServicePageLayout = ({
   title,
