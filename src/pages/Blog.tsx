@@ -1,3 +1,4 @@
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Layout from "@/components/layout/Layout";
@@ -5,6 +6,15 @@ import { blogPosts } from "@/data/blogPosts";
 import SEOHead from "@/components/SEOHead";
 
 const Blog = () => {
+  const categories = useMemo(() => {
+    const cats = Array.from(new Set(blogPosts.map((p) => p.category)));
+    return ["All", ...cats];
+  }, []);
+
+  const [active, setActive] = useState("All");
+
+  const filtered = active === "All" ? blogPosts : blogPosts.filter((p) => p.category === active);
+
   return (
     <Layout>
       <SEOHead
@@ -27,11 +37,29 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Posts Grid */}
+      {/* Filter + Posts */}
       <section className="section-padding bg-background">
         <div className="container mx-auto container-tight">
+          {/* Category Filter */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActive(cat)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  active === cat
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-card border border-border text-muted-foreground hover:text-foreground hover:border-accent/30"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {blogPosts.map((post) => {
+            {filtered.map((post) => {
               const Icon = post.icon;
               return (
                 <Link
@@ -72,6 +100,10 @@ const Blog = () => {
               );
             })}
           </div>
+
+          {filtered.length === 0 && (
+            <p className="text-center text-muted-foreground py-12">No posts found in this category.</p>
+          )}
         </div>
       </section>
 
