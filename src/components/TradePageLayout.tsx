@@ -5,11 +5,13 @@ import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
+export type TradeCategory = "trades" | "beauty" | "services";
+
 interface TradePageProps {
   trade: string;
   heroTitle: string;
   heroDescription: string;
-  heroImage: string;
+  heroImage?: string;
   problemsTitle: string;
   problems: string[];
   servicesTitle: string;
@@ -23,13 +25,25 @@ interface TradePageProps {
   ctaTitle: string;
   ctaDescription: string;
   icon: LucideIcon;
+  category?: TradeCategory;
 }
+
+const categoryGradients: Record<TradeCategory, string> = {
+  trades: "gradient-trades",
+  beauty: "gradient-beauty",
+  services: "gradient-services",
+};
+
+const categoryAccentClasses: Record<TradeCategory, string> = {
+  trades: "text-sky-300",
+  beauty: "text-pink-300",
+  services: "text-emerald-300",
+};
 
 const TradePageLayout = ({
   trade,
   heroTitle,
   heroDescription,
-  heroImage,
   problemsTitle,
   problems,
   servicesTitle,
@@ -43,11 +57,14 @@ const TradePageLayout = ({
   ctaTitle,
   ctaDescription,
   icon: Icon,
+  category = "trades",
 }: TradePageProps) => {
   const location = useLocation();
   const canonical = `https://netrades.co.uk${location.pathname}`;
   const pageTitle = `Websites & SEO for ${trade} | NE Trades`;
   const metaDesc = heroDescription.slice(0, 155);
+  const heroGradient = categoryGradients[category];
+  const heroAccent = categoryAccentClasses[category];
 
   return (
     <Layout>
@@ -72,37 +89,27 @@ const TradePageLayout = ({
         ]}
       />
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground section-padding">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent uppercase tracking-wider mb-3">
-                <Icon className="w-4 h-4" />
-                {trade}
-              </span>
-              <h1 className="text-3xl md:text-5xl font-bold mb-6">{heroTitle}</h1>
-              <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8">
-                {heroDescription}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cta" size="lg" asChild>
-                  <Link to="/get-started">
-                    Get Started <ArrowRight className="w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button variant="heroOutline" size="lg" asChild>
-                  <a href="tel:07463687129">
-                    <Phone className="w-4 h-4" /> Call 07463 687129
-                  </a>
-                </Button>
-              </div>
-            </div>
-            <img
-              src={heroImage}
-              alt={`Professional ${trade.toLowerCase()} at work`}
-              className="rounded-lg shadow-lg w-full object-cover aspect-[4/3]"
-              loading="eager"
-            />
+      <section className={`${heroGradient} text-primary-foreground section-padding`}>
+        <div className="container mx-auto max-w-3xl text-center">
+          <span className={`inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider mb-3 ${heroAccent}`}>
+            <Icon className="w-5 h-5" />
+            {trade}
+          </span>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">{heroTitle}</h1>
+          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto">
+            {heroDescription}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="cta" size="lg" asChild>
+              <Link to="/get-started">
+                Get Started <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="tel:07463687129">
+                <Phone className="w-4 h-4" /> Call 07463 687129
+              </a>
+            </Button>
           </div>
         </div>
       </section>

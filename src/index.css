@@ -118,6 +118,19 @@
     background: linear-gradient(135deg, hsl(var(--teal)), hsl(188 50% 75%));
   }
 
+  /* Category hero gradients */
+  .gradient-trades {
+    background: linear-gradient(135deg, hsl(215 60% 14%), hsl(215 55% 22%));
+  }
+
+  .gradient-beauty {
+    background: linear-gradient(135deg, hsl(330 45% 18%), hsl(340 40% 28%));
+  }
+
+  .gradient-services {
+    background: linear-gradient(135deg, hsl(160 40% 14%), hsl(170 35% 24%));
+  }
+
   .dotted-bg {
     position: relative;
   }
