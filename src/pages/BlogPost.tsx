@@ -1,8 +1,17 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, Globe, Search, MapPin, FileText, TrendingUp } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
+import { tradeCategories } from "@/data/tradeCategories";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+
+const relatedServiceLinks = [
+  { label: "Trade Websites", href: "/services/websites-for-trades", icon: Globe },
+  { label: "Local SEO", href: "/services/local-seo", icon: Search },
+  { label: "Google Business Profile", href: "/services/google-business-profile", icon: MapPin },
+  { label: "Service Area Pages", href: "/services/service-area-pages", icon: FileText },
+  { label: "Ongoing SEO", href: "/services/ongoing-seo", icon: TrendingUp },
+];
 
 // Parse markdown-style links [text](/url) into React elements
 const renderWithLinks = (text: string) => {
