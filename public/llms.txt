@@ -1,10 +1,10 @@
 # NE Trades - LLMs.txt
 
-> NE1 Digital builds professional websites and local SEO strategies for trade, beauty, and service businesses across the North East of England.
+> NE1 Digital builds professional websites and local SEO strategies for trade businesses across the North East of England.
 
 ## About
 
-NE1 Digital (trading as NE Trades) is a specialist web design and SEO agency that works with trade businesses, beauty professionals, and local service companies. Based in North Shields, Tyne and Wear, we help local businesses get found on Google and generate more enquiries.
+NE1 Digital (trading as NE Trades) is a specialist web design and SEO agency that works with trade businesses. Based in North Shields, Tyne and Wear, we help tradespeople get found on Google and generate more enquiries.
 
 ## Services
 
@@ -17,7 +17,7 @@ NE1 Digital (trading as NE Trades) is a specialist web design and SEO agency tha
 - [Ongoing SEO Support](https://netrades.co.uk/services/ongoing-seo): Monthly SEO management to maintain and improve search rankings over time.
 - [Hosting & Care](https://netrades.co.uk/services/hosting-and-care): Fast hosting, SSL, daily backups, and ongoing website maintenance.
 
-## Traditional Trades
+## Trades We Work With
 
 - [Electricians](https://netrades.co.uk/trades/electricians): Domestic and commercial electrical contractors
 - [Plumbers](https://netrades.co.uk/trades/plumbers): Plumbing, heating and gas engineers
@@ -34,25 +34,6 @@ NE1 Digital (trading as NE Trades) is a specialist web design and SEO agency tha
 - [Locksmiths](https://netrades.co.uk/trades/locksmiths): Emergency and residential locksmith services
 - [Window & Door Fitters](https://netrades.co.uk/trades/window-door-fitters): UPVC, aluminium and composite installations
 - [Groundworkers](https://netrades.co.uk/trades/groundworkers): Foundations, drainage and excavation
-
-## Beauty & Wellness
-
-- [Hair Salons & Barbers](https://netrades.co.uk/trades/hair-salons): Salons, barber shops and mobile hairdressers
-- [Beauty Therapists](https://netrades.co.uk/trades/beauty-therapists): Aesthetics, facials and skin treatments
-- [Nail Technicians](https://netrades.co.uk/trades/nail-technicians): Nail bars, gel nails and mobile nail techs
-- [Mobile Beauty & Makeup](https://netrades.co.uk/trades/mobile-beauty): Mobile makeup artists and beauty services
-- [Massage & Spa](https://netrades.co.uk/trades/massage-therapists): Massage therapists and spa services
-
-## Service Businesses
-
-- [Cleaners](https://netrades.co.uk/trades/cleaners): Domestic and commercial cleaning services
-- [Dog Groomers](https://netrades.co.uk/trades/dog-groomers): Pet grooming and dog grooming salons
-- [Personal Trainers](https://netrades.co.uk/trades/personal-trainers): PTs, fitness coaches and gym instructors
-- [Photographers](https://netrades.co.uk/trades/photographers): Wedding, portrait and commercial photography
-- [Driving Instructors](https://netrades.co.uk/trades/driving-instructors): ADI qualified driving lesson providers
-- [Mechanics](https://netrades.co.uk/trades/mechanics): Mobile and garage-based vehicle repairs
-- [Garden Maintenance](https://netrades.co.uk/trades/garden-maintenance): Lawn care, hedge trimming and garden tidying
-- [Pest Control](https://netrades.co.uk/trades/pest-control): Residential and commercial pest management
 
 ## Areas We Cover
 
@@ -98,4 +79,4 @@ We serve businesses across the North East of England including:
 
 ## Blog
 
-- [Blog](https://netrades.co.uk/blog): SEO and website tips for trade and service businesses
+- [Blog](https://netrades.co.uk/blog): SEO and website tips for trade businesses
