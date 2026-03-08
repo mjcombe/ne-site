@@ -9,8 +9,13 @@ import SEOHead, { breadcrumbSchema, localBusinessSchema } from "@/components/SEO
 const Location = () => {
   const { slug } = useParams<{ slug: string }>();
   const location = locations.find((l) => l.slug === slug);
+  const locationIndex = locations.findIndex((l) => l.slug === slug);
 
   if (!location) return <Navigate to="/locations" replace />;
+
+  // Pick a real review deterministically based on location index
+  const realReviews = reviews.filter(r => r.text);
+  const review = realReviews[locationIndex % realReviews.length];
 
   return (
     <Layout>
