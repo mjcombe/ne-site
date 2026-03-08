@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import tradeBuilder from "@/assets/trade-builder.jpg";
+
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 import { tradeCategories } from "@/data/tradeCategories";
 
