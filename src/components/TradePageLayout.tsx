@@ -218,10 +218,10 @@ const TradePageLayout = ({
           <h2 className="text-2xl md:text-4xl font-bold mb-4">{ctaTitle}</h2>
           <p className="text-lg text-primary-foreground/75 mb-8">{ctaDescription}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" asChild>
+            <Button size="lg" asChild className="bg-white text-[#074054] hover:bg-white/90 font-normal">
               <Link to="/get-started">Get Started Today <ArrowRight className="w-5 h-5" /></Link>
             </Button>
-            <Button variant="outline" size="lg" asChild className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" asChild className="bg-white text-[#074054] hover:bg-white/90 font-normal">
               <Link to="/contact">Ask a Question</Link>
             </Button>
           </div>
