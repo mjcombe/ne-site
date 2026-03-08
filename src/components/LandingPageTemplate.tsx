@@ -41,17 +41,22 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       />
 
       {/* Minimal Header */}
-      <header className={`${config.headerBg} py-4 px-4`}>
+      <header className="bg-white py-4 px-4 shadow-sm">
         <div className="container mx-auto max-w-5xl flex items-center justify-between">
           <Link to="/">
             <img src={logoImg} alt="NE Trades" className="h-8" />
           </Link>
-          <a
-            href="tel:07463687129"
-            className="inline-flex items-center gap-2 text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-          >
-            <Phone className="w-4 h-4" /> 07463 687129
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href="tel:07463687129"
+              className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
+            >
+              <Phone className="w-4 h-4" /> 07463 687129
+            </a>
+            <Button size="sm" variant="cta" asChild>
+              <Link to="/get-started">Get Started</Link>
+            </Button>
+          </div>
         </div>
       </header>
 
