@@ -1,6 +1,6 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, Clock, Search, ChevronUp } from "lucide-react";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
 import SEOHead from "@/components/SEOHead";
@@ -12,28 +12,8 @@ const Blog = () => {
   }, []);
 
   const [active, setActive] = useState("All");
-  const [query, setQuery] = useState("");
-  const [showTop, setShowTop] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setShowTop(window.scrollY > 400);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const filtered = useMemo(() => {
-    let posts = active === "All" ? blogPosts : blogPosts.filter((p) => p.category === active);
-    if (query.trim()) {
-      const q = query.toLowerCase();
-      posts = posts.filter(
-        (p) =>
-          p.title.toLowerCase().includes(q) ||
-          p.excerpt.toLowerCase().includes(q) ||
-          p.category.toLowerCase().includes(q)
-      );
-    }
-    return posts;
-  }, [active, query]);
+  const filtered = active === "All" ? blogPosts : blogPosts.filter((p) => p.category === active);
 
   return (
     <Layout>
@@ -60,20 +40,7 @@ const Blog = () => {
       {/* Filter + Posts */}
       <section className="section-padding bg-background">
         <div className="container mx-auto container-tight">
-          {/* Search + Category Filter */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <div className="relative flex-1 max-w-md">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-              <input
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search articles..."
-                className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
-              />
-            </div>
-          </div>
-
+          {/* Category Filter */}
           <div className="flex flex-wrap gap-2 mb-8">
             {categories.map((cat) => (
               <button
@@ -135,7 +102,7 @@ const Blog = () => {
           </div>
 
           {filtered.length === 0 && (
-            <p className="text-center text-muted-foreground py-12">No posts found matching your search.</p>
+            <p className="text-center text-muted-foreground py-12">No posts found in this category.</p>
           )}
         </div>
       </section>
@@ -157,17 +124,6 @@ const Blog = () => {
           </Link>
         </div>
       </section>
-
-      {/* Scroll to top */}
-      {showTop && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-24 right-6 z-40 w-10 h-10 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
-          aria-label="Scroll to top"
-        >
-          <ChevronUp className="w-5 h-5" />
-        </button>
-      )}
     </Layout>
   );
 };
