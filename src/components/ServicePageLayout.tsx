@@ -150,7 +150,7 @@ const ServicePageLayout = ({
                   className="group p-5 rounded-lg bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all flex items-center gap-3"
                 >
                   {Icon && (
-                    <div className="w-9 h-9 rounded-md bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors">
+                    <div className="w-9 h-9 rounded-md bg-icon-bg flex items-center justify-center shrink-0 group-hover:bg-icon-bg/80 transition-colors">
                       <Icon className="w-4.5 h-4.5 text-accent" />
                     </div>
                   )}
