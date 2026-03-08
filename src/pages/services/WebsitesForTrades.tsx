@@ -1,9 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImage from "@/assets/service-websites.jpg";
 
 const WebsitesForTrades = () => (
   <ServicePageLayout
-    heroImage={heroImage}
     title="Professional websites built for trade businesses"
     subtitle="Websites for Trades"
     description="Your website is your shopfront. We build clean, professional websites that make trade businesses look credible and convert visitors into phone calls and quote requests."

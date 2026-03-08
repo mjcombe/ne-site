@@ -1,9 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImage from "@/assets/service-hosting.jpg";
 
 const HostingAndCare = () => (
   <ServicePageLayout
-    heroImage={heroImage}
     title="Reliable website hosting and care for trade businesses"
     subtitle="Hosting & Care"
     description="Your website needs to be fast, secure, and always online. We handle all the technical stuff — hosting, updates, security, and backups — so you never have to worry about it."

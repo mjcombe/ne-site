@@ -1,9 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImage from "@/assets/service-ongoing-seo.jpg";
 
 const SEO = () => (
   <ServicePageLayout
-    heroImage={heroImage}
     title="SEO services that get tradespeople to page one"
     subtitle="SEO for Trades"
     description="Search engine optimisation is how customers find you online. We build and execute SEO strategies specifically for trade businesses, so you rank higher, get more clicks, and win more local work."
