@@ -1,4 +1,8 @@
 import { Phone, FileText, TrendingUp, Star } from "lucide-react";
+import resultPhoneCalls from "@/assets/result-phone-calls.jpg";
+import resultQuoteRequests from "@/assets/result-quote-requests.jpg";
+import resultGoogleRankings from "@/assets/result-google-rankings.jpg";
+import resultSatisfaction from "@/assets/result-satisfaction.jpg";
 
 const stats = [
   {
@@ -6,24 +10,28 @@ const stats = [
     value: "3x",
     label: "More phone calls",
     description: "Our clients typically see three times more inbound calls within the first three months.",
+    image: resultPhoneCalls,
   },
   {
     icon: FileText,
     value: "150%",
     label: "More quote requests",
     description: "Better websites and local SEO mean more customers filling in your contact forms.",
+    image: resultQuoteRequests,
   },
   {
     icon: TrendingUp,
     value: "Page 1",
     label: "Google rankings",
     description: "We get trade businesses ranking on page one of Google for their key local search terms.",
+    image: resultGoogleRankings,
   },
   {
     icon: Star,
     value: "5★",
     label: "Client satisfaction",
     description: "Our trade clients rate us five stars because we deliver results, not excuses.",
+    image: resultSatisfaction,
   },
 ];
 
@@ -62,22 +70,27 @@ const Results = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-lg bg-primary-foreground/5 border border-primary-foreground/10"
+              className="bg-card text-card-foreground rounded-lg overflow-hidden border border-border shadow-md"
             >
-              <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center mx-auto mb-3">
-                <stat.icon className="w-6 h-6 text-accent" />
+              <img
+                src={stat.image}
+                alt={stat.label}
+                className="w-full h-36 object-cover"
+                loading="lazy"
+              />
+              <div className="p-5 text-center">
+                <span className="block text-3xl md:text-4xl font-bold font-heading text-accent mb-1">
+                  {stat.value}
+                </span>
+                <span className="block text-sm font-semibold mb-1">{stat.label}</span>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {stat.description}
+                </p>
               </div>
-              <span className="block text-3xl md:text-4xl font-bold font-heading text-accent mb-1">
-                {stat.value}
-              </span>
-              <span className="block text-sm font-semibold mb-1">{stat.label}</span>
-              <p className="text-xs text-primary-foreground/60 leading-relaxed">
-                {stat.description}
-              </p>
             </div>
           ))}
         </div>
