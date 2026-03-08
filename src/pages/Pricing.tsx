@@ -62,7 +62,7 @@ const Pricing = () => {
         canonical="https://netrades.co.uk/pricing"
       />
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-navy text-primary-foreground py-12 md:py-16 px-4 md:px-6">
         <div className="container mx-auto container-tight text-center">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-foreground/10 text-primary-foreground/80 mb-4">
             Pricing
@@ -76,13 +76,27 @@ const Pricing = () => {
         </div>
       </section>
 
+      {/* Social Proof */}
+      <section className="py-6 bg-background border-b border-border">
+        <div className="container mx-auto container-tight text-center">
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+              ))}
+            </div>
+            <span className="text-sm font-medium">Trusted by trade businesses across the North East</span>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Cards */}
-      <section className="section-padding bg-background">
-        <div className="container mx-auto container-tight">
+      <section className="section-padding bg-background dotted-bg relative">
+        <div className="container mx-auto container-tight relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
             {/* Business Package */}
-            <div className="bg-card border border-border rounded-2xl overflow-hidden">
+            <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="p-8 border-b border-border">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[hsl(var(--icon-bg))] flex items-center justify-center">
@@ -99,14 +113,14 @@ const Pricing = () => {
                   A complete, professionally designed website built to generate enquiries and position your business as the obvious choice in your local area. Fully search optimised from day one and designed to convert visitors into customers.
                 </p>
                 <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-4xl font-heading font-bold text-foreground">£997</span>
+                  <span className="text-5xl font-heading font-bold text-foreground">£997</span>
                   <span className="text-muted-foreground text-sm">website setup</span>
                 </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-2xl font-heading font-bold text-foreground">£99</span>
+                <div className="flex items-baseline gap-2 mt-2">
+                  <span className="text-3xl font-heading font-bold text-foreground">£99</span>
                   <span className="text-muted-foreground text-sm">per month</span>
                 </div>
-                <p className="text-xs text-muted-foreground mt-2">
+                <p className="text-xs text-muted-foreground mt-3">
                   Includes unlimited website updates and support (fair usage applies). Minimum term: 12 months.
                 </p>
               </div>
@@ -131,14 +145,14 @@ const Pricing = () => {
             </div>
 
             {/* Pro SEO Package */}
-            <div className="bg-card border-2 border-primary rounded-2xl overflow-hidden relative">
-              <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-semibold px-4 py-1.5 rounded-bl-xl">
+            <div className="bg-card border-2 border-gold rounded-2xl overflow-hidden relative shadow-lg shadow-gold/10">
+              <div className="absolute top-0 right-0 bg-gold text-foreground text-xs font-bold px-4 py-1.5 rounded-bl-xl">
                 Most Popular
               </div>
               <div className="p-8 border-b border-border">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-[hsl(var(--icon-bg))] flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-gold-light flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-gold-dark" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     Growth
@@ -147,7 +161,7 @@ const Pricing = () => {
                 <h2 className="text-2xl font-heading font-bold text-foreground mb-2">
                   Pro SEO Package
                 </h2>
-                <div className="rounded-lg bg-accent/10 border border-accent/20 p-4 mb-4">
+                <div className="rounded-lg bg-gold-light border border-gold/20 p-4 mb-4">
                   <p className="text-sm font-semibold text-foreground mb-1">
                     Website Build + Ongoing SEO — No Upfront Cost
                   </p>
@@ -159,31 +173,33 @@ const Pricing = () => {
                   The complete package. We build your website and then work on it every month — improving your Google rankings, adding content, and generating more local enquiries. Everything from the Business Package plus hands-on SEO every month.
                 </p>
                 <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-4xl font-heading font-bold text-foreground">£395</span>
+                  <span className="text-5xl font-heading font-bold text-foreground">£395</span>
                   <span className="text-muted-foreground text-sm">per month</span>
                 </div>
-                <p className="text-sm font-medium text-accent">
+                <p className="text-sm font-semibold text-gold-dark">
                   £0 upfront — website build included
                 </p>
-                <p className="text-xs text-muted-foreground mt-2">
+                <p className="text-xs text-muted-foreground mt-3">
                   Includes full website build, hosting, support, and ongoing SEO. Minimum term: 12 months. Fair usage applies.
                 </p>
               </div>
               <div className="p-8">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
-                  Everything in Business, plus ongoing SEO
-                </h3>
+                <div className="flex items-center gap-2 mb-4">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
+                    Everything in Business, plus ongoing SEO
+                  </h3>
+                </div>
                 <ul className="flex flex-col gap-3">
                   {seoFeatures.map(({ icon: Icon, label }) => (
                     <li key={label} className="flex items-start gap-3">
-                      <div className="shrink-0 w-7 h-7 rounded-md bg-[hsl(var(--icon-bg))] flex items-center justify-center mt-0.5">
-                        <Icon className="w-3.5 h-3.5 text-primary" />
+                      <div className="shrink-0 w-7 h-7 rounded-md bg-gold-light flex items-center justify-center mt-0.5">
+                        <Icon className="w-3.5 h-3.5 text-gold-dark" />
                       </div>
                       <span className="text-sm text-muted-foreground leading-snug">{label}</span>
                     </li>
                   ))}
                 </ul>
-                <Button variant="cta" size="lg" asChild className="w-full mt-8">
+                <Button size="lg" asChild className="w-full mt-8 bg-gold hover:bg-gold-dark text-foreground font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
                   <Link to="/get-started">Get Started <ArrowRight className="w-4 h-4 ml-1" /></Link>
                 </Button>
               </div>
