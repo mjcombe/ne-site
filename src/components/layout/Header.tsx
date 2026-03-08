@@ -290,20 +290,25 @@ const Header = () => {
                     </button>
                     {isOpen && (
                       <div className="ml-4 flex flex-col gap-0.5 mt-1">
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.href}
-                            to={item.href}
-                            onClick={() => setMobileOpen(false)}
-                            className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
-                              location.pathname === item.href
-                                ? "text-primary font-semibold bg-secondary"
-                                : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                            }`}
-                          >
-                            {item.label}
-                          </Link>
-                        ))}
+                        {link.dropdown.map((item, idx) => {
+                          if (item.label === "divider") {
+                            return <div key={`divider-${idx}`} className="my-1 border-t border-border mx-4" />;
+                          }
+                          return (
+                            <Link
+                              key={item.href}
+                              to={item.href}
+                              onClick={() => setMobileOpen(false)}
+                              className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
+                                location.pathname === item.href
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                              }`}
+                            >
+                              {item.label}
+                            </Link>
+                          );
+                        })}
                       </div>
                     )}
                   </div>
