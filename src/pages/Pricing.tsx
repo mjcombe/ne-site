@@ -147,15 +147,26 @@ const Pricing = () => {
                 <h2 className="text-2xl font-heading font-bold text-foreground mb-2">
                   Pro SEO Package
                 </h2>
+                <div className="rounded-lg bg-accent/10 border border-accent/20 p-4 mb-4">
+                  <p className="text-sm font-semibold text-foreground mb-1">
+                    Website Build + Ongoing SEO — No Upfront Cost
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Your complete website is included in the monthly price. No separate setup fee — everything is rolled into one simple monthly payment.
+                  </p>
+                </div>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                  Dominate Google and generate consistent enquiries. This package builds on the website foundation with ongoing SEO work every month to grow your visibility, outrank competitors and generate more leads from search.
+                  The complete package. We build your website and then work on it every month — improving your Google rankings, adding content, and generating more local enquiries. Everything from the Business Package plus hands-on SEO every month.
                 </p>
-                <div className="flex items-baseline gap-2">
+                <div className="flex items-baseline gap-2 mb-1">
                   <span className="text-4xl font-heading font-bold text-foreground">£395</span>
                   <span className="text-muted-foreground text-sm">per month</span>
                 </div>
+                <p className="text-sm font-medium text-accent">
+                  £0 upfront — website build included
+                </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Includes everything in the Business Package plus ongoing SEO. Minimum term: 12 months.
+                  Includes full website build, hosting, support, and ongoing SEO. Minimum term: 12 months.
                 </p>
               </div>
               <div className="p-8">
