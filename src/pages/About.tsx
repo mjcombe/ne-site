@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About NE Trades | Trade Website Specialists"
+        title="About NE Trades Trade Website Specialists"
         description="We build websites and SEO for trade businesses in the North East. Meet the team behind NE Trades."
         canonical="https://netrades.co.uk/about"
         jsonLd={breadcrumbSchema([
@@ -26,7 +26,7 @@ const About = () => {
             Built by people who understand trades
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1 Web Digital exists to help trade businesses get more work through professional websites and local SEO that actually delivers.
+            NE1  Tradesxists to help trade businesses get more work through professional websites and local SEO that actually delivers.
           </p>
         </div>
       </section>
