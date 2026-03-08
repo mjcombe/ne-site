@@ -15,6 +15,8 @@ const GoogleBusinessProfile = lazy(() => import("./pages/services/GoogleBusiness
 const ServiceAreaPages = lazy(() => import("./pages/services/ServiceAreaPages"));
 const HostingAndCare = lazy(() => import("./pages/services/HostingAndCare"));
 const OngoingSEO = lazy(() => import("./pages/services/OngoingSEO"));
+const SEO = lazy(() => import("./pages/services/SEO"));
+const AISEO = lazy(() => import("./pages/services/AISEO"));
 const WhoWeHelp = lazy(() => import("./pages/WhoWeHelp"));
 const Electricians = lazy(() => import("./pages/trades/Electricians"));
 const Plumbers = lazy(() => import("./pages/trades/Plumbers"));
