@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.png";
+
+const seoDropdown = [
+  { label: "SEO for Trades", href: "/services/seo" },
+  { label: "Local SEO", href: "/services/local-seo" },
+  { label: "AI & Generative SEO", href: "/services/ai-seo" },
+  { label: "Ongoing SEO Support", href: "/services/ongoing-seo" },
+];
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "SEO", href: "/services/seo", dropdown: seoDropdown },
   { label: "Who We Help", href: "/who-we-help" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Results", href: "/results" },
@@ -16,31 +24,88 @@ const navLinks = [
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const location = useLocation();
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close desktop dropdown on outside click
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDesktopDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  // Close dropdown on route change
+  useEffect(() => {
+    setDesktopDropdownOpen(false);
+    setMobileDropdownOpen(false);
+  }, [location.pathname]);
+
+  const isSeoPaths = seoDropdown.some((item) => location.pathname === item.href);
 
   return (
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
-        {/* Logo */}
         <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
           <img src={logoImage} alt="NE1 Trades" className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                location.pathname === link.href
-                  ? "text-primary font-semibold bg-secondary"
-                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            if (link.dropdown) {
+              return (
+                <div key={link.label} className="relative" ref={dropdownRef}>
+                  <button
+                    onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
+                    className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
+                      isSeoPaths
+                        ? "text-primary font-semibold bg-secondary"
+                        : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    {link.label}
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${desktopDropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {desktopDropdownOpen && (
+                    <div className="absolute top-full left-0 mt-1 w-52 bg-card border border-border rounded-lg shadow-lg py-1 animate-fade-in z-50">
+                      {link.dropdown.map((item) => (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          className={`block px-4 py-2.5 text-sm transition-colors ${
+                            location.pathname === item.href
+                              ? "text-primary font-semibold bg-secondary"
+                              : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+            return (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  location.pathname === link.href
+                    ? "text-primary font-semibold bg-secondary"
+                    : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Desktop CTA */}
@@ -68,20 +133,57 @@ const Header = () => {
       {mobileOpen && (
         <div className="lg:hidden border-t border-border bg-surface-raised animate-fade-in">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => setMobileOpen(false)}
-                className={`px-4 py-3 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === link.href
-                    ? "text-primary font-semibold bg-secondary"
-                    : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              if (link.dropdown) {
+                return (
+                  <div key={link.label}>
+                    <button
+                      onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
+                        isSeoPaths
+                          ? "text-primary font-semibold bg-secondary"
+                          : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                      }`}
+                    >
+                      {link.label}
+                      <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`} />
+                    </button>
+                    {mobileDropdownOpen && (
+                      <div className="ml-4 flex flex-col gap-0.5 mt-1">
+                        {link.dropdown.map((item) => (
+                          <Link
+                            key={item.href}
+                            to={item.href}
+                            onClick={() => setMobileOpen(false)}
+                            className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
+                              location.pathname === item.href
+                                ? "text-primary font-semibold bg-secondary"
+                                : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                            }`}
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`px-4 py-3 rounded-md text-sm font-medium transition-colors ${
+                    location.pathname === link.href
+                      ? "text-primary font-semibold bg-secondary"
+                      : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
               <a href="tel:07463687129" className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
                 <Phone className="w-4 h-4" />
