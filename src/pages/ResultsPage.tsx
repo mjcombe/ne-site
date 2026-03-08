@@ -1,10 +1,16 @@
 import Layout from "@/components/layout/Layout";
 import ResultsSection from "@/components/sections/Results";
 import FinalCTA from "@/components/sections/FinalCTA";
+import SEOHead from "@/components/SEOHead";
 
 const ResultsPage = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Results | Trade Websites That Generate Enquiries"
+        description="Real results from real trade businesses. See how our websites and SEO generate more calls and enquiries."
+        canonical="https://netrades.co.uk/results"
+      />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
