@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import CookieConsent from "@/components/CookieConsent";
-import Chatbot from "@/components/Chatbot";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,7 +13,6 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="flex-1">{children}</main>
       <Footer />
       <CookieConsent />
-      <Chatbot />
     </div>
   );
 };
