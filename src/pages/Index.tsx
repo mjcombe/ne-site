@@ -26,6 +26,7 @@ const Index = () => {
       <WhoWeHelp />
       <Results />
       <FAQ />
+      <BlogCarousel />
       <FinalCTA />
     </Layout>
   );
