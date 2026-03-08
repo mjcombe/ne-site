@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="gradient-navy">
       <div className="w-full">
         <div className="py-20 md:py-28 lg:py-36 text-center max-w-4xl mx-auto px-4 md:px-6">
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
+          <div className="inline-flex items-center gap-2 mb-6 animate-fade-in">
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 fill-[hsl(38,92%,50%)] text-[hsl(38,92%,50%)]" />
