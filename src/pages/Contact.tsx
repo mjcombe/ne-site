@@ -75,7 +75,7 @@ const Contact = () => {
               <h2 className="text-xl font-bold text-foreground mb-6">Get in touch directly</h2>
               <div className="space-y-6">
                 <a href="tel:07463687129" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
-                  <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-accent" />
                   </div>
                   <div>
@@ -85,7 +85,7 @@ const Contact = () => {
                 </a>
 
                 <a href="mailto:hello@netrades.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
-                  <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5 text-accent" />
                   </div>
                   <div>
@@ -95,7 +95,7 @@ const Contact = () => {
                 </a>
 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
-                  <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-accent" />
                   </div>
                   <div>
@@ -105,7 +105,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
-                  <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <Clock className="w-5 h-5 text-accent" />
                   </div>
                   <div>

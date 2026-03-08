@@ -63,7 +63,7 @@ const ServiceCards = () => {
               to={service.href}
               className="group bg-card rounded-lg border border-border p-6 hover:border-accent/40 hover:shadow-lg transition-all duration-300 flex flex-col"
             >
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+              <div className="w-12 h-12 rounded-lg bg-icon-bg flex items-center justify-center mb-4 group-hover:bg-icon-bg/80 transition-colors">
                 <service.icon className="w-6 h-6 text-accent" />
               </div>
               <h3 className="font-heading font-semibold text-lg text-foreground mb-2">

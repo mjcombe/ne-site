@@ -37,7 +37,7 @@ const WhoWeHelp = () => {
                   to={trade.href}
                   className="flex items-center gap-3 p-3 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <trade.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div>
