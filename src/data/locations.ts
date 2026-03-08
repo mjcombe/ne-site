@@ -326,7 +326,7 @@ export const locations: LocationData[] = [
     searchTerms: ["electrician Cramlington", "plumber Cramlington", "builder Cramlington", "roofer Cramlington", "kitchen fitter Cramlington", "heating engineer Cramlington", "landscaper Cramlington", "joiner Cramlington"],
     areaDescription: "We target Cramlington town centre, Parkside, Eastfield, Southfield, Nelson Village, and surrounding areas including Seaton Delaval, Seghill, and Annitsford.",
     nearbyAreas: ["Blyth", "Killingworth", "Whitley Bay", "North Shields", "Morpeth", "Ashington"],
-    testimonialQuote: "Living and working in Cramlington, I needed to be found by local customers. NE1 Digital made that happen within weeks.",
+    testimonialQuote: "Living and working in Cramlington, I needed to be found by local customers. NE Trades made that happen within weeks.",
     testimonialAuthor: "Cramlington Heating Engineer",
     testimonialTrade: "Boiler Installation & Servicing",
     ctaHeading: "Grow your business in Cramlington",
