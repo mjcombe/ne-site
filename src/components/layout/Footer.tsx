@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <footer className="gradient-navy text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <span className="font-heading font-bold text-xl text-primary-foreground">NE1 Digital</span>
