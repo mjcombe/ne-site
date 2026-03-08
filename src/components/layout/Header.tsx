@@ -149,20 +149,27 @@ const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-52 bg-card border border-border rounded-lg shadow-lg py-1 animate-fade-in z-50">
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.href}
-                          to={item.href}
-                          className={`block px-4 py-2.5 text-sm transition-colors ${
-                            location.pathname === item.href
-                              ? "text-primary font-semibold bg-secondary"
-                              : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                    <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-xl py-2 animate-fade-in z-50">
+                      {link.dropdown.map((item, idx) => {
+                        if (item.label === "divider") {
+                          return <div key={`divider-${idx}`} className="my-2 border-t border-border mx-3" />;
+                        }
+                        return (
+                          <Link
+                            key={item.href}
+                            to={item.href}
+                            className={`block px-4 py-2 text-sm transition-colors ${
+                              item.sub ? "pl-4" : ""
+                            } ${
+                              location.pathname === item.href
+                                ? "text-primary font-semibold bg-secondary"
+                                : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                            }`}
+                          >
+                            {item.label}
+                          </Link>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
