@@ -67,6 +67,9 @@ const Pricing = lazy(() => import("./pages/Pricing"));
 const FAQPage = lazy(() => import("./pages/FAQ"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const LandingPage = lazy(() => import("./pages/LandingPage"));
+const LandingTrades = lazy(() => import("./pages/landing/LandingTrades"));
+const LandingBeauty = lazy(() => import("./pages/landing/LandingBeauty"));
+const LandingServices = lazy(() => import("./pages/landing/LandingServices"));
 const Locations = lazy(() => import("./pages/Locations"));
 const Location = lazy(() => import("./pages/Location"));
 
@@ -142,6 +145,9 @@ const App = () => (
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/go" element={<LandingPage />} />
+            <Route path="/go/trades" element={<LandingTrades />} />
+            <Route path="/go/beauty" element={<LandingBeauty />} />
+            <Route path="/go/services" element={<LandingServices />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/:slug" element={<Location />} />
