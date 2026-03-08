@@ -184,7 +184,7 @@ const FAQPage = () => {
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-                    {faq.answer}
+                    <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
                   </AccordionContent>
                 </AccordionItem>
               ))}
