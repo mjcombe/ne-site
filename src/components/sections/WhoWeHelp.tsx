@@ -15,10 +15,10 @@ const WhoWeHelp = () => {
               Who We Help
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Built for trades, beauty, and service businesses
+              Built for tradespeople across the North East
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              We work with local businesses across trades, beauty, and services. We know how your customers search, what makes them pick up the phone, and what a good lead looks like for your industry.
+              We work with trade businesses across the North East. We know how your customers search, what makes them pick up the phone, and what a good lead looks like for your trade.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
