@@ -51,8 +51,8 @@ const WhoWeHelp = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <div className="bg-accent rounded-lg p-8 text-accent-foreground">
-                <span className="block text-4xl font-bold font-heading">28+</span>
-                <span className="text-sm opacity-90">Industries Served</span>
+                <span className="block text-4xl font-bold font-heading">15+</span>
+                <span className="text-sm opacity-90">Trades Served</span>
               </div>
               <div className="gradient-navy rounded-lg p-8 text-primary-foreground">
                 <span className="block text-4xl font-bold font-heading">100+</span>
