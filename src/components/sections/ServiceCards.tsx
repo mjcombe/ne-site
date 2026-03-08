@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Globe, Search, MapPin, FileText, Shield, TrendingUp, ArrowRight } from "lucide-react";
+import { Globe, Search, MapPin, FileText, Shield, TrendingUp, ArrowRight, BarChart3, Sparkles } from "lucide-react";
 
 const services = [
   {
@@ -37,6 +37,18 @@ const services = [
     title: "Ongoing SEO Support",
     description: "Continuous SEO improvements, content updates, and performance tracking to keep your rankings climbing month after month.",
     href: "/services/ongoing-seo",
+  },
+  {
+    icon: BarChart3,
+    title: "SEO for Trades",
+    description: "Full SEO services built for trade businesses. From keyword research to technical fixes, we get you ranking on Google.",
+    href: "/services/seo",
+  },
+  {
+    icon: Sparkles,
+    title: "AI & Generative SEO",
+    description: "Future-proof your visibility with AI-powered SEO. Get found in AI search results, voice assistants, and generative engines.",
+    href: "/services/ai-seo",
   },
 ];
 

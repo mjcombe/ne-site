@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, LucideIcon } from "lucide-react";
+import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarChart3, Sparkles, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 
@@ -21,6 +21,8 @@ const serviceIconMap: Record<string, LucideIcon> = {
   "/services/service-area-pages": FileText,
   "/services/hosting-and-care": Shield,
   "/services/ongoing-seo": TrendingUp,
+  "/services/seo": BarChart3,
+  "/services/ai-seo": Sparkles,
 };
 
 const ServicePageLayout = ({

@@ -15,6 +15,8 @@ const GoogleBusinessProfile = lazy(() => import("./pages/services/GoogleBusiness
 const ServiceAreaPages = lazy(() => import("./pages/services/ServiceAreaPages"));
 const HostingAndCare = lazy(() => import("./pages/services/HostingAndCare"));
 const OngoingSEO = lazy(() => import("./pages/services/OngoingSEO"));
+const SEO = lazy(() => import("./pages/services/SEO"));
+const AISEO = lazy(() => import("./pages/services/AISEO"));
 const WhoWeHelp = lazy(() => import("./pages/WhoWeHelp"));
 const Electricians = lazy(() => import("./pages/trades/Electricians"));
 const Plumbers = lazy(() => import("./pages/trades/Plumbers"));
@@ -57,6 +59,8 @@ const App = () => (
             <Route path="/services/service-area-pages" element={<ServiceAreaPages />} />
             <Route path="/services/hosting-and-care" element={<HostingAndCare />} />
             <Route path="/services/ongoing-seo" element={<OngoingSEO />} />
+            <Route path="/services/seo" element={<SEO />} />
+            <Route path="/services/ai-seo" element={<AISEO />} />
             <Route path="/who-we-help" element={<WhoWeHelp />} />
             <Route path="/trades/electricians" element={<Electricians />} />
             <Route path="/trades/plumbers" element={<Plumbers />} />
