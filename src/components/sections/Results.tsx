@@ -87,19 +87,19 @@ const Results = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-lg p-6"
+              className="bg-card text-card-foreground rounded-lg p-6 shadow-md border border-border"
             >
               <div className="flex gap-1 mb-3">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                  <Star key={i} className="w-4 h-4 fill-[hsl(38,92%,50%)] text-[hsl(38,92%,50%)]" />
                 ))}
               </div>
-              <blockquote className="text-sm text-primary-foreground/80 leading-relaxed mb-4 italic">
+              <blockquote className="text-sm text-muted-foreground leading-relaxed mb-4 italic">
                 "{testimonial.quote}"
               </blockquote>
               <div>
-                <span className="block text-sm font-semibold">{testimonial.name}</span>
-                <span className="block text-xs text-primary-foreground/50">{testimonial.role}</span>
+                <span className="block text-sm font-semibold text-foreground">{testimonial.name}</span>
+                <span className="block text-xs text-muted-foreground">{testimonial.role}</span>
               </div>
             </div>
           ))}
