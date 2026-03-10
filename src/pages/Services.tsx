@@ -15,14 +15,15 @@ const Services = () => {
           { name: "Services", url: "https://ne1webdesign.co.uk/services" },
         ])}
       />
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             Digital services built for your business
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            From your first website to ongoing SEO, we have everything your trade business needs to get found online and win more local work.
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
+            From your first website to ongoing SEO, we have everything your business needs to get found online and win more local work.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
       <ServiceCards />
