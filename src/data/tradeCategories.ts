@@ -1,6 +1,6 @@
 import {
-  Zap, Droplets, HardHat, Wrench, PaintBucket, Hammer, Home, Thermometer,
-  Blocks, Grid3X3, Lock, DoorOpen, Shovel,
+  Wrench, Car, Sparkles, Heart, Building2, Briefcase, UtensilsCrossed, ShoppingBag,
+  GraduationCap, SprayCan, Camera, Baby, PawPrint, Truck,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -18,23 +18,87 @@ export interface TradeCategory {
 
 export const tradeCategories: TradeCategory[] = [
   {
-    label: "Trades We Work With",
+    label: "Trades & Home Services",
     trades: [
-      { icon: Zap, name: "Electricians", href: "/trades/electricians", description: "Domestic and commercial electrical contractors" },
-      { icon: Droplets, name: "Plumbers", href: "/trades/plumbers", description: "Plumbing, heating and gas engineers" },
-      { icon: HardHat, name: "Builders", href: "/trades/builders", description: "General builders and construction firms" },
-      { icon: Wrench, name: "Roofers", href: "/trades/roofers", description: "Roofing contractors and repair specialists" },
-      { icon: PaintBucket, name: "Decorators", href: "/trades/decorators", description: "Painters, decorators and plasterers" },
-      { icon: Hammer, name: "Joiners", href: "/trades/joiners", description: "Joiners, carpenters and cabinet makers" },
-      { icon: Home, name: "Landscapers", href: "/trades/landscapers", description: "Garden design and landscaping services" },
-      { icon: Thermometer, name: "Heating Engineers", href: "/trades/heating-engineers", description: "Boiler servicing and central heating" },
-      { icon: Blocks, name: "Plasterers", href: "/trades/plasterers", description: "Plastering, rendering and skimming" },
-      { icon: Grid3X3, name: "Tilers", href: "/trades/tilers", description: "Floor and wall tiling specialists" },
-      { icon: HardHat, name: "Scaffolders", href: "/trades/scaffolders", description: "Scaffolding erection and hire" },
-      { icon: Wrench, name: "Drainage Engineers", href: "/trades/drainage-engineers", description: "Drain repairs, CCTV surveys and unblocking" },
-      { icon: Lock, name: "Locksmiths", href: "/trades/locksmiths", description: "Emergency and residential locksmith services" },
-      { icon: DoorOpen, name: "Window & Door Fitters", href: "/trades/window-door-fitters", description: "UPVC, aluminium and composite installations" },
-      { icon: Shovel, name: "Groundworkers", href: "/trades/groundworkers", description: "Foundations, drainage and excavation" },
+      { icon: Wrench, name: "Trades & Home Services", href: "/industries/trades-and-home-services", description: "Builders, plumbers, electricians, roofers, joiners, landscapers, heating engineers, locksmiths and more" },
+    ],
+  },
+  {
+    label: "Automotive",
+    trades: [
+      { icon: Car, name: "Automotive", href: "/industries/automotive", description: "Garages, MOT centres, mobile mechanics, car dealers, detailing, vehicle wraps and more" },
+    ],
+  },
+  {
+    label: "Beauty & Aesthetics",
+    trades: [
+      { icon: Sparkles, name: "Beauty & Aesthetics", href: "/industries/beauty-and-aesthetics", description: "Hair salons, barbers, beauty salons, nail techs, lash specialists, aesthetic clinics and more" },
+    ],
+  },
+  {
+    label: "Health & Wellbeing",
+    trades: [
+      { icon: Heart, name: "Health & Wellbeing", href: "/industries/health-and-wellbeing", description: "Dentists, physiotherapists, chiropractors, opticians, personal trainers, gyms and more" },
+    ],
+  },
+  {
+    label: "Property & Construction",
+    trades: [
+      { icon: Building2, name: "Property & Construction", href: "/industries/property-and-construction", description: "Estate agents, letting agents, architects, interior designers, developers and more" },
+    ],
+  },
+  {
+    label: "Professional Services",
+    trades: [
+      { icon: Briefcase, name: "Professional Services", href: "/industries/professional-services", description: "Accountants, financial advisors, mortgage brokers, solicitors, consultants and more" },
+    ],
+  },
+  {
+    label: "Hospitality & Food",
+    trades: [
+      { icon: UtensilsCrossed, name: "Hospitality & Food", href: "/industries/hospitality-and-food", description: "Restaurants, cafes, bars, takeaways, catering companies, bakeries and more" },
+    ],
+  },
+  {
+    label: "Retail & Ecommerce",
+    trades: [
+      { icon: ShoppingBag, name: "Retail & Ecommerce", href: "/industries/retail-and-ecommerce", description: "Clothing boutiques, jewellery stores, gift shops, furniture stores, homeware and more" },
+    ],
+  },
+  {
+    label: "Education & Training",
+    trades: [
+      { icon: GraduationCap, name: "Education & Training", href: "/industries/education-and-training", description: "Tutors, training providers, driving schools, music teachers, coaches, course creators" },
+    ],
+  },
+  {
+    label: "Cleaning & Maintenance",
+    trades: [
+      { icon: SprayCan, name: "Cleaning & Maintenance", href: "/industries/cleaning-and-maintenance", description: "Domestic cleaners, commercial cleaning, window cleaners, carpet cleaners, pressure washing" },
+    ],
+  },
+  {
+    label: "Events & Creative",
+    trades: [
+      { icon: Camera, name: "Events & Creative Services", href: "/industries/events-and-creative-services", description: "Photographers, videographers, wedding planners, florists, event planners, DJs" },
+    ],
+  },
+  {
+    label: "Childcare & Family",
+    trades: [
+      { icon: Baby, name: "Childcare & Family Services", href: "/industries/childcare-and-family-services", description: "Nurseries, childcare providers, kids activity centres, play centres" },
+    ],
+  },
+  {
+    label: "Pet Services",
+    trades: [
+      { icon: PawPrint, name: "Pet Services", href: "/industries/pet-services", description: "Dog groomers, pet shops, dog trainers, boarding kennels" },
+    ],
+  },
+  {
+    label: "Logistics & Moving",
+    trades: [
+      { icon: Truck, name: "Logistics & Moving", href: "/industries/logistics-and-moving", description: "Removal companies, storage facilities, courier services" },
     ],
   },
 ];
