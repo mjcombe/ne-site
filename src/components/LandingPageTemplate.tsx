@@ -47,12 +47,12 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
             <img src={logoImg} alt="NE Trades" className="h-8" />
           </Link>
           <div className="flex items-center gap-4">
-            <a
-              href="tel:07463687129"
+            <Link
+              to="/contact"
               className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
             >
-              <Phone className="w-4 h-4" /> 07463 687129
-            </a>
+              <Phone className="w-4 h-4" /> Contact Us
+            </Link>
             <Button size="sm" variant="cta" asChild>
               <Link to="/get-started">Get Started</Link>
             </Button>
