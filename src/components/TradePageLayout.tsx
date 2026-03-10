@@ -44,9 +44,9 @@ const categoryGradients: Record<TradeCategory, string> = {
 };
 
 const categoryAccentClasses: Record<TradeCategory, string> = {
-  trades: "text-emerald-300",
-  beauty: "text-emerald-300",
-  services: "text-emerald-300",
+  trades: "text-white/80",
+  beauty: "text-white/80",
+  services: "text-white/80",
 };
 
 const TradePageLayout = ({
