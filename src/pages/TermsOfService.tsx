@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 
 const TermsOfService = () => (
   <Layout>
-    <section className="gradient-navy text-primary-foreground section-padding">
+    <section className="gradient-trades text-primary-foreground section-padding">
       <div className="container mx-auto max-w-3xl text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Terms of Service</h1>
         <p className="text-primary-foreground/70">Last updated: February 2026</p>
