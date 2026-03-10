@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ResultsSection from "@/components/sections/Results";
 import FinalCTA from "@/components/sections/FinalCTA";
 import SEOHead from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const ResultsPage = () => {
   return (
@@ -11,17 +12,18 @@ const ResultsPage = () => {
         description="Real results from real businesses. See how our websites and SEO generate more calls and enquiries."
         canonical="https://ne1webdesign.co.uk/results"
       />
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             Results
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Results that matter to trade businesses
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            Results that matter to your business
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
             We measure success by the things that matter to you — more phone calls, more quote requests, and more booked jobs.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 

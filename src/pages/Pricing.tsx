@@ -7,6 +7,7 @@ import {
   Globe2, Settings, Search, MapPin, Users, Target, Wrench, BadgeCheck
 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 
@@ -62,17 +63,18 @@ const Pricing = () => {
         canonical="https://ne1webdesign.co.uk/pricing"
       />
       {/* Hero */}
-      <section className="gradient-trades text-primary-foreground py-12 md:py-16 px-4 md:px-6">
+      <section className="gradient-trades text-white py-12 md:py-16 px-4 md:px-6">
         <div className="container mx-auto container-tight text-center">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-foreground/10 text-primary-foreground/80 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-white/10 text-white/80 mb-4">
             Pricing
           </span>
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-white">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Everything you need to get found online, win more work, and grow your trade business. No hidden fees, no surprises.
+          <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            Everything you need to get found online, win more work, and grow your business. No hidden fees, no surprises.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 

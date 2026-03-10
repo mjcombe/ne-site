@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { locations } from "@/data/locations";
 import { reviews } from "@/data/reviews";
 import SEOHead, { breadcrumbSchema, localBusinessSchema } from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Location = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -50,17 +51,17 @@ const Location = () => {
       />
 
       {/* Hero */}
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center">
-            <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
               <MapPin className="w-4 h-4" />
               {location.name}, {location.county}
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
               {location.heroHeading}
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-3xl mx-auto">
               {location.heroSubheading}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -77,6 +78,7 @@ const Location = () => {
                 </Link>
               </Button>
             </div>
+            <GoogleRatingBadge />
           </div>
         </div>
       </section>

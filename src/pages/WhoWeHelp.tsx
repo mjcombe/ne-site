@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 import { tradeCategories } from "@/data/tradeCategories";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const WhoWeHelpPage = () => {
   return (
@@ -18,17 +19,18 @@ const WhoWeHelpPage = () => {
           { name: "Who We Help", url: "https://ne1webdesign.co.uk/who-we-help" },
         ])}
       />
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             Who We Help
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             We work with businesses across every industry
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
             NE1 Digital helps businesses get found on Google. Whether you're a tradesperson, salon owner, restaurant, accountant or any local business — we build websites and SEO strategies that turn searches into customers.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 

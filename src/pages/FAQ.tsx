@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/Layout";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import {
   Accordion,
   AccordionContent,
@@ -150,17 +151,18 @@ const FAQPage = () => {
           }))),
         }}
       />
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             FAQs
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             Frequently Asked Questions
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            Straight answers to the things tradespeople ask us most. Can't find what you're looking for? Just get in touch.
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
+            Straight answers to the things businesses ask us most. Can't find what you're looking for? Just get in touch.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 

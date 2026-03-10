@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Mail, Clock, Phone } from "lucide-react";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Contact = () => {
   useEffect(() => {
@@ -50,17 +51,18 @@ const Contact = () => {
         description="Get in touch to discuss your website or SEO project. Offices in North Tyneside and Teesside, serving businesses everywhere."
         canonical="https://ne1webdesign.co.uk/contact"
       />
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             Contact
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             Book a free discovery call
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
             Pick a time that works for you. We'll have a quick chat about your business and how we can help you get more enquiries.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 
