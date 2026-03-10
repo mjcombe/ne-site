@@ -18,7 +18,7 @@ const WhoWeHelpPage = () => {
           { name: "Who We Help", url: "https://ne1webdesign.co.uk/who-we-help" },
         ])}
       />
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-trades text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
             Who We Help

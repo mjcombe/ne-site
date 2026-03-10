@@ -23,7 +23,7 @@ const Blog = () => {
         canonical="https://ne1webdesign.co.uk/blog"
       />
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-trades text-primary-foreground section-padding">
         <div className="container mx-auto container-tight text-center">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-foreground/10 text-primary-foreground/80 mb-4">
             Blog

@@ -20,7 +20,7 @@ const Locations = () => {
       />
 
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-trades text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent uppercase tracking-wider mb-3">
             <MapPin className="w-4 h-4" />

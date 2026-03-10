@@ -62,7 +62,7 @@ const Pricing = () => {
         canonical="https://ne1webdesign.co.uk/pricing"
       />
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground py-12 md:py-16 px-4 md:px-6">
+      <section className="gradient-trades text-primary-foreground py-12 md:py-16 px-4 md:px-6">
         <div className="container mx-auto container-tight text-center">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-foreground/10 text-primary-foreground/80 mb-4">
             Pricing
