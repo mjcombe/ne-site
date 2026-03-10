@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
