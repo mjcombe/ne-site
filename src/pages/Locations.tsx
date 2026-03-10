@@ -10,12 +10,12 @@ const Locations = () => {
   return (
     <Layout>
       <SEOHead
-        title="Locations | Trade Websites Across the North East"
-        description="We build websites and SEO for tradespeople across the North East. Newcastle, Sunderland, Durham, Gateshead and beyond."
-        canonical="https://netrades.co.uk/locations"
+        title="Locations | Web Design Across the North East | NE1 Digital"
+        description="We build websites and deliver SEO for businesses across the North East. North Tyneside, Teesside, Newcastle, Sunderland and beyond."
+        canonical="https://ne1webdesign.co.uk/locations"
         jsonLd={breadcrumbSchema([
-          { name: "Home", url: "https://netrades.co.uk/" },
-          { name: "Locations", url: "https://netrades.co.uk/locations" },
+          { name: "Home", url: "https://ne1webdesign.co.uk/" },
+          { name: "Locations", url: "https://ne1webdesign.co.uk/locations" },
         ])}
       />
 
