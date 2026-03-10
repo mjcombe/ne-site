@@ -83,8 +83,8 @@ const TradePageLayout = ({
         canonical={canonical}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Who We Help", url: "https://netrades.co.uk/who-we-help" },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Who We Help", url: "https://ne1webdesign.co.uk/who-we-help" },
             { name: trade, url: canonical },
           ]),
           {
