@@ -87,9 +87,9 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
               </Link>
             </Button>
             <Button size="xl" asChild className="bg-white text-[#074054] hover:bg-white/90 font-normal shadow-lg">
-              <a href="tel:07463687129">
-                <Phone className="w-5 h-5" /> Call Now
-              </a>
+              <Link to="/contact">
+                <Phone className="w-5 h-5" /> Contact Us
+              </Link>
             </Button>
           </div>
 
