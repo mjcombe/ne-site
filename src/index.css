@@ -124,15 +124,15 @@
 
   /* Category hero gradients */
   .gradient-trades {
-    background: linear-gradient(135deg, hsl(230 40% 16%), hsl(155 46% 38%));
+    background: linear-gradient(135deg, hsl(220 35% 22%), hsl(155 46% 38%));
   }
 
   .gradient-beauty {
-    background: linear-gradient(135deg, hsl(230 40% 16%), hsl(155 46% 38%));
+    background: linear-gradient(135deg, hsl(220 35% 22%), hsl(155 46% 38%));
   }
 
   .gradient-services {
-    background: linear-gradient(135deg, hsl(230 40% 16%), hsl(155 46% 38%));
+    background: linear-gradient(135deg, hsl(220 35% 22%), hsl(155 46% 38%));
   }
 
   .dotted-bg {
