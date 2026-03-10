@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import PasswordGate from "./components/PasswordGate";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -64,66 +65,67 @@ const PageLoader = () => (
 );
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/websites-for-trades" element={<WebsitesForTrades />} />
-            <Route path="/services/local-seo" element={<LocalSEO />} />
-            <Route path="/services/google-business-profile" element={<GoogleBusinessProfile />} />
-            <Route path="/services/service-area-pages" element={<ServiceAreaPages />} />
-            <Route path="/services/hosting-and-care" element={<HostingAndCare />} />
-            <Route path="/services/ongoing-seo" element={<OngoingSEO />} />
-            <Route path="/services/seo" element={<SEO />} />
-            <Route path="/services/ai-seo" element={<AISEO />} />
-            <Route path="/who-we-help" element={<WhoWeHelp />} />
-            {/* Industry Pages */}
-            <Route path="/industries/trades-and-home-services" element={<TradesAndHomeServices />} />
-            <Route path="/industries/automotive" element={<Automotive />} />
-            <Route path="/industries/beauty-and-aesthetics" element={<BeautyAndAesthetics />} />
-            <Route path="/industries/health-and-wellbeing" element={<HealthAndWellbeing />} />
-            <Route path="/industries/property-and-construction" element={<PropertyAndConstruction />} />
-            <Route path="/industries/professional-services" element={<ProfessionalServices />} />
-            <Route path="/industries/hospitality-and-food" element={<HospitalityAndFood />} />
-            <Route path="/industries/retail-and-ecommerce" element={<RetailAndEcommerce />} />
-            <Route path="/industries/education-and-training" element={<EducationAndTraining />} />
-            <Route path="/industries/cleaning-and-maintenance" element={<CleaningAndMaintenance />} />
-            <Route path="/industries/events-and-creative-services" element={<EventsAndCreative />} />
-            <Route path="/industries/childcare-and-family-services" element={<ChildcareAndFamily />} />
-            <Route path="/industries/pet-services" element={<PetServices />} />
-            <Route path="/industries/logistics-and-moving" element={<LogisticsAndMoving />} />
-            {/* Other */}
-            <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="/results" element={<ResultsPage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/get-started" element={<GetStarted />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="/cookie-policy" element={<CookiePolicy />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/go" element={<LandingPage />} />
-            <Route path="/go/trades" element={<LandingTrades />} />
-            <Route path="/faq" element={<FAQPage />} />
-            <Route path="/locations" element={<Locations />} />
-            <Route path="/locations/:slug" element={<Location />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/portfolio/:slug" element={<PortfolioProject />} />
-            <Route path="*" element={<NotFound />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <PasswordGate>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/websites-for-trades" element={<WebsitesForTrades />} />
+              <Route path="/services/local-seo" element={<LocalSEO />} />
+              <Route path="/services/google-business-profile" element={<GoogleBusinessProfile />} />
+              <Route path="/services/service-area-pages" element={<ServiceAreaPages />} />
+              <Route path="/services/hosting-and-care" element={<HostingAndCare />} />
+              <Route path="/services/ongoing-seo" element={<OngoingSEO />} />
+              <Route path="/services/seo" element={<SEO />} />
+              <Route path="/services/ai-seo" element={<AISEO />} />
+              <Route path="/who-we-help" element={<WhoWeHelp />} />
+              {/* Industry Pages */}
+              <Route path="/industries/trades-and-home-services" element={<TradesAndHomeServices />} />
+              <Route path="/industries/automotive" element={<Automotive />} />
+              <Route path="/industries/beauty-and-aesthetics" element={<BeautyAndAesthetics />} />
+              <Route path="/industries/health-and-wellbeing" element={<HealthAndWellbeing />} />
+              <Route path="/industries/property-and-construction" element={<PropertyAndConstruction />} />
+              <Route path="/industries/professional-services" element={<ProfessionalServices />} />
+              <Route path="/industries/hospitality-and-food" element={<HospitalityAndFood />} />
+              <Route path="/industries/retail-and-ecommerce" element={<RetailAndEcommerce />} />
+              <Route path="/industries/education-and-training" element={<EducationAndTraining />} />
+              <Route path="/industries/cleaning-and-maintenance" element={<CleaningAndMaintenance />} />
+              <Route path="/industries/events-and-creative-services" element={<EventsAndCreative />} />
+              <Route path="/industries/childcare-and-family-services" element={<ChildcareAndFamily />} />
+              <Route path="/industries/pet-services" element={<PetServices />} />
+              <Route path="/industries/logistics-and-moving" element={<LogisticsAndMoving />} />
+              {/* Other */}
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/results" element={<ResultsPage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/get-started" element={<GetStarted />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/go" element={<LandingPage />} />
+              <Route path="/go/trades" element={<LandingTrades />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/locations" element={<Locations />} />
+              <Route path="/locations/:slug" element={<Location />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/portfolio/:slug" element={<PortfolioProject />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </PasswordGate>
 );
 
 export default App;
