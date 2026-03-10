@@ -10,21 +10,21 @@ const stats = [
   },
   {
     icon: FileText,
-    value: "150%",
-    label: "More quote requests",
-    description: "Better websites and local SEO mean more customers filling in your contact forms.",
+    value: "200+",
+    label: "Custom websites",
+    description: "We've launched over 200 custom websites since opening the doors in 2018.",
   },
   {
     icon: TrendingUp,
     value: "Page 1",
     label: "Google rankings",
-    description: "We get trade businesses ranking on page one of Google for their key local search terms.",
+    description: "We get businesses ranking on page one of Google for their key local search terms.",
   },
   {
     icon: Star,
     value: "5★",
-    label: "Client satisfaction",
-    description: "Our trade clients rate us five stars because we deliver results, not excuses.",
+    label: "94 Google Reviews",
+    description: "Consistent 5-star reviews from clients across all industries. Results, not excuses.",
   },
 ];
 
@@ -45,10 +45,10 @@ const Results = () => {
             Results
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Real results for real trade businesses
+            Getting you more leads for your business
           </h2>
           <p className="text-lg text-primary-foreground/70 leading-relaxed">
-            We don't deal in vanity metrics. Here's what actually matters — more calls, more quotes, more booked jobs.
+            With over 20 years of experience, we turn your ideas into responsive, functional websites that attract and convert more leads.
           </p>
         </div>
 

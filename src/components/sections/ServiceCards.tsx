@@ -4,14 +4,14 @@ import { Globe, Search, MapPin, FileText, Shield, TrendingUp, ArrowRight, BarCha
 const services = [
   {
     icon: Globe,
-    title: "Websites for Trades",
-    description: "Professional, fast-loading websites built specifically for trade businesses. Designed to turn visitors into enquiries.",
+    title: "Web Design",
+    description: "Beautiful, fast-loading websites built to convert. Whether you need a brochure site, e-commerce store, or a complete redesign, we create designs that drive enquiries.",
     href: "/services/websites-for-trades",
   },
   {
     icon: Search,
     title: "Local SEO",
-    description: "Get found when local customers search for your trade. We optimise your online presence so you rank higher on Google.",
+    description: "Get found when local customers search for your services. We optimise your online presence so you rank higher on Google in your area.",
     href: "/services/local-seo",
   },
   {
@@ -28,20 +28,20 @@ const services = [
   },
   {
     icon: Shield,
-    title: "Hosting & Care",
-    description: "Reliable hosting, security updates, backups, and ongoing maintenance so your website is always online and running fast.",
+    title: "Hosting & Care Plans",
+    description: "Reliable hosting, security updates, backups, and ongoing maintenance so your website is always online and running at its best.",
     href: "/services/hosting-and-care",
   },
   {
     icon: TrendingUp,
-    title: "Ongoing SEO Support",
+    title: "Ongoing SEO",
     description: "Continuous SEO improvements, content updates, and performance tracking to keep your rankings climbing month after month.",
     href: "/services/ongoing-seo",
   },
   {
     icon: BarChart3,
-    title: "SEO for Trades",
-    description: "Full SEO services built for trade businesses. From keyword research to technical fixes, we get you ranking on Google.",
+    title: "SEO Services",
+    description: "Full SEO services for businesses of all sizes. From keyword research to technical fixes, we get you ranking on Google.",
     href: "/services/seo",
   },
   {
@@ -61,10 +61,10 @@ const ServiceCards = () => {
             Our Services
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Everything your trade business needs to get found and win more work
+            A snapshot of our services
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From your first website to ongoing SEO, we handle it all so you can focus on the job at hand.
+            From your first website to ongoing SEO, we handle it all so you can focus on running your business.
           </p>
         </div>
 
