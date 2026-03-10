@@ -52,6 +52,8 @@ const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingTrades = lazy(() => import("./pages/landing/LandingTrades"));
 const Locations = lazy(() => import("./pages/Locations"));
 const Location = lazy(() => import("./pages/Location"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const PortfolioProject = lazy(() => import("./pages/PortfolioProject"));
 
 const queryClient = new QueryClient();
 
