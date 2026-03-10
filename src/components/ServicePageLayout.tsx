@@ -3,6 +3,7 @@ import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarCha
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 interface ServicePageLayoutProps {
   title: string;
