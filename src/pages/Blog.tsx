@@ -24,17 +24,18 @@ const Blog = () => {
         canonical="https://ne1webdesign.co.uk/blog"
       />
       {/* Hero */}
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto container-tight text-center">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-foreground/10 text-primary-foreground/80 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-white/10 text-white/80 mb-4">
             Blog
           </span>
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
-            Local SEO Tips for Tradespeople
+          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-white">
+            SEO Tips for Local Businesses
           </h1>
-          <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Practical advice to help trade businesses in the North East get found online, win more work, and stop relying on lead generation sites.
+          <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            Practical advice to help businesses get found online, win more work, and grow their online presence.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 

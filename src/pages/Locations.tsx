@@ -20,18 +20,19 @@ const Locations = () => {
       />
 
       {/* Hero */}
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             <MapPin className="w-4 h-4" />
             Areas We Cover
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Trade websites and SEO across the North East
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            Web design and SEO across the North East
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            From Newcastle to Middlesbrough, Durham to Blyth — we help tradespeople across every corner of the North East get found online and win more local work.
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
+            From Newcastle to Middlesbrough, Durham to Blyth — we help businesses across every corner of the North East get found online and win more local work.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 

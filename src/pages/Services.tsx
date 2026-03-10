@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ServiceCards from "@/components/sections/ServiceCards";
 import FinalCTA from "@/components/sections/FinalCTA";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Services = () => {
   return (

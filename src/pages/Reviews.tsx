@@ -23,15 +23,15 @@ const Reviews = () => {
       />
 
       {/* Hero */}
-      <section className="gradient-trades text-primary-foreground py-12 md:py-16 px-4 md:px-6">
+      <section className="gradient-trades text-white py-12 md:py-16 px-4 md:px-6">
         <div className="container mx-auto container-tight text-center">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-foreground/10 text-primary-foreground/80 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-white/10 text-white/80 mb-4">
             Reviews
           </span>
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-white">
             What Our Clients Say
           </h1>
-          <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mb-6">
+          <p className="text-lg text-white/70 max-w-2xl mx-auto mb-6">
             Don't just take our word for it. Here's what real businesses think about working with us.
           </p>
           <div className="flex items-center justify-center gap-3">
