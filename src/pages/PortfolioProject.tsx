@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEOHead from "@/components/SEOHead";
-import GoogleRatingBadge from "@/components/GoogleRatingBadge";
+import { portfolioProjects } from "@/data/portfolioProjects";
 import { portfolioProjects } from "@/data/portfolioProjects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, ExternalLink, X } from "lucide-react";
