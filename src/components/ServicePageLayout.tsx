@@ -37,9 +37,9 @@ const ServicePageLayout = ({
 }: ServicePageLayoutProps) => {
   const location = useLocation();
   const slug = location.pathname.split("/").pop() || "";
-  const pageTitle = `${subtitle} | NE Trades`;
+  const pageTitle = `${subtitle} | NE1 Digital`;
   const metaDesc = description.slice(0, 155);
-  const canonical = `https://netrades.co.uk${location.pathname}`;
+  const canonical = `https://ne1webdesign.co.uk${location.pathname}`;
 
   return (
     <Layout>
