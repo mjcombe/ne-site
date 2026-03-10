@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
+import { Mail, ChevronDown, MessageSquare } from "lucide-react";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const serviceLinks = [
@@ -49,17 +49,13 @@ const Footer = () => {
             </p>
             <div className="flex flex-col gap-3">
               <Link to="/contact" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                <Phone className="w-4 h-4 shrink-0" />
+                <MessageSquare className="w-4 h-4 shrink-0" />
                 Contact Us
               </Link>
               <a href="mailto:hello@netrades.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4 shrink-0" />
                 hello@netrades.co.uk
               </a>
-              <div className="flex items-start gap-2 text-sm text-primary-foreground/80">
-                <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                <span>Suite 2.6a, North Tyneside Business Centre,<br />North Shields, NE30 1NT</span>
-              </div>
             </div>
           </div>
 
@@ -167,10 +163,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} NE1 Digital. All rights reserved. Website by{" "}
-            <a href="https://ne1webdesign.co.uk/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-              NE1 DIGITAL
-            </a>
+            © {new Date().getFullYear()} NE1 Digital. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {legalLinks.map((link) => (
