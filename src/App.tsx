@@ -19,23 +19,21 @@ const SEO = lazy(() => import("./pages/services/SEO"));
 const AISEO = lazy(() => import("./pages/services/AISEO"));
 const WhoWeHelp = lazy(() => import("./pages/WhoWeHelp"));
 
-// Traditional Trades
-const Electricians = lazy(() => import("./pages/trades/Electricians"));
-const Plumbers = lazy(() => import("./pages/trades/Plumbers"));
-const Builders = lazy(() => import("./pages/trades/Builders"));
-const Roofers = lazy(() => import("./pages/trades/Roofers"));
-const Decorators = lazy(() => import("./pages/trades/Decorators"));
-const Joiners = lazy(() => import("./pages/trades/Joiners"));
-const Landscapers = lazy(() => import("./pages/trades/Landscapers"));
-const HeatingEngineers = lazy(() => import("./pages/trades/HeatingEngineers"));
-const Plasterers = lazy(() => import("./pages/trades/Plasterers"));
-const Tilers = lazy(() => import("./pages/trades/Tilers"));
-const Scaffolders = lazy(() => import("./pages/trades/Scaffolders"));
-const DrainageEngineers = lazy(() => import("./pages/trades/DrainageEngineers"));
-const Locksmiths = lazy(() => import("./pages/trades/Locksmiths"));
-const WindowDoorFitters = lazy(() => import("./pages/trades/WindowDoorFitters"));
-const Groundworkers = lazy(() => import("./pages/trades/Groundworkers"));
-
+// Industry Pages
+const TradesAndHomeServices = lazy(() => import("./pages/industries/TradesAndHomeServices"));
+const Automotive = lazy(() => import("./pages/industries/Automotive"));
+const BeautyAndAesthetics = lazy(() => import("./pages/industries/BeautyAndAesthetics"));
+const HealthAndWellbeing = lazy(() => import("./pages/industries/HealthAndWellbeing"));
+const PropertyAndConstruction = lazy(() => import("./pages/industries/PropertyAndConstruction"));
+const ProfessionalServices = lazy(() => import("./pages/industries/ProfessionalServices"));
+const HospitalityAndFood = lazy(() => import("./pages/industries/HospitalityAndFood"));
+const RetailAndEcommerce = lazy(() => import("./pages/industries/RetailAndEcommerce"));
+const EducationAndTraining = lazy(() => import("./pages/industries/EducationAndTraining"));
+const CleaningAndMaintenance = lazy(() => import("./pages/industries/CleaningAndMaintenance"));
+const EventsAndCreative = lazy(() => import("./pages/industries/EventsAndCreative"));
+const ChildcareAndFamily = lazy(() => import("./pages/industries/ChildcareAndFamily"));
+const PetServices = lazy(() => import("./pages/industries/PetServices"));
+const LogisticsAndMoving = lazy(() => import("./pages/industries/LogisticsAndMoving"));
 
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const ResultsPage = lazy(() => import("./pages/ResultsPage"));
@@ -82,22 +80,21 @@ const App = () => (
             <Route path="/services/seo" element={<SEO />} />
             <Route path="/services/ai-seo" element={<AISEO />} />
             <Route path="/who-we-help" element={<WhoWeHelp />} />
-            {/* Traditional Trades */}
-            <Route path="/trades/electricians" element={<Electricians />} />
-            <Route path="/trades/plumbers" element={<Plumbers />} />
-            <Route path="/trades/builders" element={<Builders />} />
-            <Route path="/trades/roofers" element={<Roofers />} />
-            <Route path="/trades/decorators" element={<Decorators />} />
-            <Route path="/trades/joiners" element={<Joiners />} />
-            <Route path="/trades/landscapers" element={<Landscapers />} />
-            <Route path="/trades/heating-engineers" element={<HeatingEngineers />} />
-            <Route path="/trades/plasterers" element={<Plasterers />} />
-            <Route path="/trades/tilers" element={<Tilers />} />
-            <Route path="/trades/scaffolders" element={<Scaffolders />} />
-            <Route path="/trades/drainage-engineers" element={<DrainageEngineers />} />
-            <Route path="/trades/locksmiths" element={<Locksmiths />} />
-            <Route path="/trades/window-door-fitters" element={<WindowDoorFitters />} />
-            <Route path="/trades/groundworkers" element={<Groundworkers />} />
+            {/* Industry Pages */}
+            <Route path="/industries/trades-and-home-services" element={<TradesAndHomeServices />} />
+            <Route path="/industries/automotive" element={<Automotive />} />
+            <Route path="/industries/beauty-and-aesthetics" element={<BeautyAndAesthetics />} />
+            <Route path="/industries/health-and-wellbeing" element={<HealthAndWellbeing />} />
+            <Route path="/industries/property-and-construction" element={<PropertyAndConstruction />} />
+            <Route path="/industries/professional-services" element={<ProfessionalServices />} />
+            <Route path="/industries/hospitality-and-food" element={<HospitalityAndFood />} />
+            <Route path="/industries/retail-and-ecommerce" element={<RetailAndEcommerce />} />
+            <Route path="/industries/education-and-training" element={<EducationAndTraining />} />
+            <Route path="/industries/cleaning-and-maintenance" element={<CleaningAndMaintenance />} />
+            <Route path="/industries/events-and-creative-services" element={<EventsAndCreative />} />
+            <Route path="/industries/childcare-and-family-services" element={<ChildcareAndFamily />} />
+            <Route path="/industries/pet-services" element={<PetServices />} />
+            <Route path="/industries/logistics-and-moving" element={<LogisticsAndMoving />} />
             {/* Other */}
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/results" element={<ResultsPage />} />

@@ -10,8 +10,8 @@ const WhoWeHelpPage = () => {
   return (
     <Layout>
       <SEOHead
-        title="Websites & SEO for Businesses | NE1 Digital"
-        description="We build websites and local SEO for businesses of all kinds across North Tyneside, Teesside and the wider North East."
+        title="Industries We Work With | NE1 Digital"
+        description="We build websites and local SEO for businesses of all kinds across North Tyneside, Teesside and the wider North East — from trades and beauty to hospitality and professional services."
         canonical="https://ne1webdesign.co.uk/who-we-help"
         jsonLd={breadcrumbSchema([
           { name: "Home", url: "https://ne1webdesign.co.uk/" },
@@ -24,23 +24,24 @@ const WhoWeHelpPage = () => {
             Who We Help
           </span>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            We work with businesses across the North East
+            We work with businesses across every industry
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1 Digital helps businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">plumber</Link>, an <Link to="/trades/electricians" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">electrician</Link>, or a <Link to="/trades/builders" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">builder</Link>, we build websites and SEO strategies that turn searches into booked work.
+            NE1 Digital helps businesses get found on Google. Whether you're a tradesperson, salon owner, restaurant, accountant or any local business — we build websites and SEO strategies that turn searches into customers.
           </p>
         </div>
       </section>
 
-      {tradeCategories.map((category) => (
-        <section key={category.label} className="section-padding bg-background">
-          <div className="container mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-2">{category.label}</h2>
-            <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-              From electricians to groundworkers — we help trade businesses get found online and win more local work.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {category.trades.map((trade) => (
+      <section className="section-padding bg-background">
+        <div className="container mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-2">Industries We Work With</h2>
+          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+            From tradespeople and beauty salons to restaurants and professional services — we help businesses across every sector get found online.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {tradeCategories.map((category) => {
+              const trade = category.trades[0];
+              return (
                 <Link key={trade.href} to={trade.href} className="flex gap-4 p-6 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all group">
                   <div className="shrink-0 w-12 h-12 rounded-lg bg-icon-bg flex items-center justify-center">
                     <trade.icon className="w-6 h-6 text-accent" />
@@ -51,11 +52,11 @@ const WhoWeHelpPage = () => {
                     <span className="inline-flex items-center gap-1 text-sm font-medium text-accent mt-2">Learn more <ArrowRight className="w-4 h-4" /></span>
                   </div>
                 </Link>
-              ))}
-            </div>
+              );
+            })}
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
 
       <section className="section-padding bg-secondary">
         <div className="container mx-auto max-w-5xl">
@@ -64,7 +65,7 @@ const WhoWeHelpPage = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                 Why businesses choose NE1 Digital</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Generic web agencies don't understand your industry. We know how local customers search, what makes them pick up the phone, and how to turn clicks into booked work — whether you're a <Link to="/trades/roofers" className="text-accent hover:underline">roofer</Link>, a <Link to="/trades/joiners" className="text-accent hover:underline">joiner</Link>, or a <Link to="/trades/heating-engineers" className="text-accent hover:underline">heating engineer</Link>.
+                Generic web agencies don't understand your industry. We take the time to learn how your customers search, what makes them pick up the phone, and how to turn clicks into real business — no matter what sector you're in.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
@@ -87,7 +88,7 @@ const WhoWeHelpPage = () => {
             </div>
             <div className="gradient-navy rounded-lg p-8 text-primary-foreground flex flex-col justify-center aspect-[4/3]">
               <span className="block text-4xl font-bold font-heading mb-2">100+</span>
-              <span className="block text-lg font-heading mb-1">Trade Websites Built</span>
+              <span className="block text-lg font-heading mb-1">Websites Built</span>
               <span className="text-sm text-primary-foreground/70">Across the North East</span>
             </div>
           </div>
