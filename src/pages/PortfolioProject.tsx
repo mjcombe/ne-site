@@ -1,7 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEOHead from "@/components/SEOHead";
-import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import { portfolioProjects } from "@/data/portfolioProjects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, ExternalLink, X } from "lucide-react";
@@ -49,7 +48,6 @@ const PortfolioProject = () => {
           <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             {project.title}
           </h1>
-          <GoogleRatingBadge />
         </div>
       </section>
 
@@ -108,7 +106,7 @@ const PortfolioProject = () => {
               {project.description}
             </p>
             {project.websiteUrl && (
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="default" size="lg" asChild>
                 <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer">
                   View Website <ExternalLink className="w-4 h-4 ml-2" />
                 </a>
