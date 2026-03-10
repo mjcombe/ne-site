@@ -5,6 +5,7 @@ export interface PortfolioProject {
   industry: string;
   description: string;
   thumbnail: string;
+  websiteUrl?: string;
   images: string[];
   services: string[];
   results: string[];
@@ -24,7 +25,8 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "A complete digital transformation for a family-run plumbing business in Newcastle. We designed and built a modern, high-converting website with local SEO integration and Google Business Profile optimisation — helping them dominate local search results.",
     thumbnail: "/placeholder.svg",
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    websiteUrl: "https://example.com",
+    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
     services: ["Website Design", "Local SEO", "Google Business Profile"],
     results: [
       "320% increase in organic traffic within 6 months",
