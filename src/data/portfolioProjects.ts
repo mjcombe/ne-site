@@ -1,3 +1,5 @@
+import portfolioNewcastleCare from "@/assets/portfolio-newcastlecare.webp";
+
 export interface PortfolioProject {
   slug: string;
   title: string;
