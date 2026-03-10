@@ -200,10 +200,10 @@ const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:07463687129" className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors">
+          <Link to="/contact" className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors">
             <Phone className="w-4 h-4" />
-            <span className="font-medium">07463 687129</span>
-          </a>
+            <span className="font-medium">Contact Us</span>
+          </Link>
           <Button variant="navCta" asChild>
             <Link to="/get-started">Get Started</Link>
           </Button>
