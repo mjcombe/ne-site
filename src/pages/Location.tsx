@@ -41,9 +41,9 @@ const Location = () => {
               name: location.name,
             },
             serviceType: [
-              `Web Design for Tradespeople in ${location.name}`,
+              `Web Design in ${location.name}`,
               `Local SEO in ${location.name}`,
-              `Trade Websites ${location.name}`,
+              `Website Design ${location.name}`,
             ],
           },
         ]}
