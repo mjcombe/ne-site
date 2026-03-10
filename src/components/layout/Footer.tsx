@@ -30,12 +30,6 @@ const legalLinks = [
 ];
 
 const Footer = () => {
-  const [openCategory, setOpenCategory] = useState<string | null>(null);
-
-  const toggleCategory = (label: string) => {
-    setOpenCategory(openCategory === label ? null : label);
-  };
-
   return (
     <footer className="gradient-navy text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-16">
