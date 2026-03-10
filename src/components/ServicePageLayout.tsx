@@ -49,8 +49,8 @@ const ServicePageLayout = ({
         canonical={canonical}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Services", url: "https://netrades.co.uk/services" },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Services", url: "https://ne1webdesign.co.uk/services" },
             { name: subtitle, url: canonical },
           ]),
           {
