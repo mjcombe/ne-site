@@ -102,6 +102,20 @@ const PortfolioProject = () => {
             </div>
           </div>
 
+          {/* Description & View Website */}
+          <div className="mb-16">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              {project.description}
+            </p>
+            {project.websiteUrl && (
+              <Button variant="outline" size="lg" asChild>
+                <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer">
+                  View Website <ExternalLink className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
+            )}
+          </div>
+
           {/* Results */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-6 text-foreground">Results</h2>
@@ -117,20 +131,6 @@ const PortfolioProject = () => {
               ))}
             </div>
           </div>
-
-          {/* Testimonial */}
-          {project.testimonial && (
-            <div className="mb-16 p-8 rounded-xl gradient-trades text-white">
-              <Quote className="w-8 h-8 text-white/40 mb-4" />
-              <blockquote className="text-lg md:text-xl font-medium mb-4 text-white">
-                "{project.testimonial.quote}"
-              </blockquote>
-              <p className="text-sm text-white/80">
-                <strong className="text-white">{project.testimonial.author}</strong>{" "}
-                — {project.testimonial.role}
-              </p>
-            </div>
-          )}
 
           {/* CTA */}
           <div className="text-center">
