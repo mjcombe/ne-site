@@ -44,7 +44,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       <header className="bg-white py-4 px-4 shadow-sm">
         <div className="container mx-auto max-w-5xl flex items-center justify-between">
           <Link to="/">
-            <img src={logoImg} alt="NE Trades" className="h-8" />
+            <img src={logoImg} alt="NE1 Digital" className="h-8" />
           </Link>
           <div className="flex items-center gap-4">
             <Link
