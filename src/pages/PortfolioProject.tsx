@@ -2,7 +2,6 @@ import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEOHead from "@/components/SEOHead";
 import { portfolioProjects } from "@/data/portfolioProjects";
-import { portfolioProjects } from "@/data/portfolioProjects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, ExternalLink, X } from "lucide-react";
 import NotFound from "./NotFound";
