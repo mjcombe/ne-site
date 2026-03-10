@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 import { tradeCategories } from "@/data/tradeCategories";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const WhoWeHelpPage = () => {
   return (
