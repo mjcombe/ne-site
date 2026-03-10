@@ -48,10 +48,10 @@ const Footer = () => {
               Professional websites and local SEO for trades, beauty, and service businesses across the North East and beyond.
             </p>
             <div className="flex flex-col gap-3">
-              <a href="tel:07463687129" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <Link to="/contact" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Phone className="w-4 h-4 shrink-0" />
-                07463 687129
-              </a>
+                Contact Us
+              </Link>
               <a href="mailto:hello@netrades.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4 shrink-0" />
                 hello@netrades.co.uk

@@ -240,12 +240,12 @@ const Pricing = () => {
             <Button variant="cta" size="lg" asChild>
               <Link to="/get-started">Get Started <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
-            <a
-              href="tel:07463687129"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              <Phone className="w-4 h-4" /> 07463 687129
-            </a>
+              <Phone className="w-4 h-4" /> Contact Us
+            </Link>
           </div>
         </div>
       </section>

@@ -115,9 +115,9 @@ const TradePageLayout = ({
               </Link>
             </Button>
             <Button size="lg" asChild className="bg-white text-[#074054] hover:bg-white/90 font-normal">
-              <a href="tel:07463687129">
-                <Phone className="w-4 h-4" /> Call 07463 687129
-              </a>
+              <Link to="/contact">
+                <Phone className="w-4 h-4" /> Contact Us
+              </Link>
             </Button>
           </div>
         </div>
