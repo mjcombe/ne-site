@@ -62,7 +62,7 @@ const WhoWeHelpPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Why tradespeople choose NE1 Web  Trades         </h2>
+                Why businesses choose NE1 Digital</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Generic web agencies don't understand your industry. We know how local customers search, what makes them pick up the phone, and how to turn clicks into booked work — whether you're a <Link to="/trades/roofers" className="text-accent hover:underline">roofer</Link>, a <Link to="/trades/joiners" className="text-accent hover:underline">joiner</Link>, or a <Link to="/trades/heating-engineers" className="text-accent hover:underline">heating engineer</Link>.
               </p>
