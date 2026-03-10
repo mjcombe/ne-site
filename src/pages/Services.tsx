@@ -7,12 +7,12 @@ const Services = () => {
   return (
     <Layout>
       <SEOHead
-        title="Digital Services for Trade Businesses | NE Trades"
-        description="Websites, local SEO, Google Business Profile and ongoing support built for electricians, plumbers, builders and trades."
-        canonical="https://netrades.co.uk/services"
+        title="Digital Services for Businesses | NE1 Digital"
+        description="Websites, local SEO, Google Business Profile and ongoing support built for businesses of all kinds."
+        canonical="https://ne1webdesign.co.uk/services"
         jsonLd={breadcrumbSchema([
-          { name: "Home", url: "https://netrades.co.uk/" },
-          { name: "Services", url: "https://netrades.co.uk/services" },
+          { name: "Home", url: "https://ne1webdesign.co.uk/" },
+          { name: "Services", url: "https://ne1webdesign.co.uk/services" },
         ])}
       />
       <section className="gradient-navy text-primary-foreground section-padding">
