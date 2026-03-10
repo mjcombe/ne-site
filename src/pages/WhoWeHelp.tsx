@@ -10,12 +10,12 @@ const WhoWeHelpPage = () => {
   return (
     <Layout>
       <SEOHead
-        title="Websites & SEO for Tradespeople | Electricians, Plumbers, Builders & More"
-        description="We build websites and local SEO for electricians, plumbers, builders, roofers, joiners and tradespeople across the North East."
-        canonical="https://netrades.co.uk/who-we-help"
+        title="Websites & SEO for Businesses | NE1 Digital"
+        description="We build websites and local SEO for businesses of all kinds across North Tyneside, Teesside and the wider North East."
+        canonical="https://ne1webdesign.co.uk/who-we-help"
         jsonLd={breadcrumbSchema([
-          { name: "Home", url: "https://netrades.co.uk/" },
-          { name: "Who We Help", url: "https://netrades.co.uk/who-we-help" },
+          { name: "Home", url: "https://ne1webdesign.co.uk/" },
+          { name: "Who We Help", url: "https://ne1webdesign.co.uk/who-we-help" },
         ])}
       />
       <section className="gradient-navy text-primary-foreground section-padding">
