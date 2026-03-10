@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Mail, Clock, Phone } from "lucide-react";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Contact = () => {
   useEffect(() => {

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { locations } from "@/data/locations";
 import { reviews } from "@/data/reviews";
 import SEOHead, { breadcrumbSchema, localBusinessSchema } from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Location = () => {
   const { slug } = useParams<{ slug: string }>();

@@ -7,6 +7,7 @@ import {
   Globe2, Settings, Search, MapPin, Users, Target, Wrench, BadgeCheck
 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 

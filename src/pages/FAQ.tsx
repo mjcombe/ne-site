@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/Layout";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import {
   Accordion,
   AccordionContent,
