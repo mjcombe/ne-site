@@ -100,15 +100,6 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
-                  <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-accent" />
-                  </div>
-                  <div>
-                    <span className="block text-sm font-semibold text-foreground">Location</span>
-                    <span className="block text-sm text-muted-foreground">Suite 2.6a, North Tyneside Business Centre,<br />North Shields, NE30 1NT</span>
-                  </div>
-                </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">

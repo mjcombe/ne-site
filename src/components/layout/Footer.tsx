@@ -163,10 +163,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} NE1 Digital. All rights reserved. Website by{" "}
-            <a href="https://ne1webdesign.co.uk/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-              NE1 DIGITAL
-            </a>
+            © {new Date().getFullYear()} NE1 Digital. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {legalLinks.map((link) => (
