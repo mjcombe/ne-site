@@ -3,6 +3,7 @@ import HowItWorksSection from "@/components/sections/HowItWorks";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
 import SEOHead from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const HowItWorksPage = () => {
   return (
@@ -12,17 +13,18 @@ const HowItWorksPage = () => {
         description="A simple, no-nonsense process to get your website live and ranking on Google. Discovery, design, build, launch."
         canonical="https://ne1webdesign.co.uk/how-it-works"
       />
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             How It Works
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            A simple process, designed around your trade
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            A simple process, designed around your business
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            No complicated process. No tech speak. Just a straightforward approach that gets your trade business found by more local customers.
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed">
+            No complicated process. No tech speak. Just a straightforward approach that gets your business found by more local customers.
           </p>
+          <GoogleRatingBadge />
         </div>
       </section>
 
