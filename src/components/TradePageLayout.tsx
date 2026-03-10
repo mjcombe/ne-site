@@ -98,14 +98,14 @@ const TradePageLayout = ({
         ]}
       />
       {/* Hero */}
-      <section className={`${heroGradient} text-primary-foreground section-padding`}>
+      <section className={`${heroGradient} text-white section-padding`}>
         <div className="container mx-auto max-w-3xl text-center">
           <span className={`inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider mb-3 ${heroAccent}`}>
             <Icon className="w-5 h-5" />
             {trade}
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">{heroTitle}</h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">{heroTitle}</h1>
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-2xl mx-auto">
             {heroDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -120,6 +120,7 @@ const TradePageLayout = ({
               </Link>
             </Button>
           </div>
+          <GoogleRatingBadge />
         </div>
       </section>
 
