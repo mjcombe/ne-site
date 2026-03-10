@@ -195,8 +195,8 @@ const TradePageLayout = ({
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {benefits.map((benefit, i) => (
-              <div key={i} className="flex items-start gap-3 p-6 rounded-lg bg-card border border-border">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-green-500/10 text-green-500 flex items-center justify-center text-sm font-bold mt-0.5">✓</span>
+              <div key={i} className="flex items-start gap-4 p-6 rounded-lg bg-card border border-border">
+                <CheckCircle2 className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-heading font-semibold text-foreground mb-1">{benefit.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
