@@ -57,9 +57,9 @@ const Pricing = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pricing | Trade Websites from £99/month | NE Trades"
-        description="Transparent pricing for trade websites and SEO. Business package from £99/month. Pro SEO from £395/month. No hidden fees."
-        canonical="https://netrades.co.uk/pricing"
+        title="Pricing | Websites from £99/month | NE1 Digital"
+        description="Transparent pricing for websites and SEO. Business package from £99/month. Pro SEO from £395/month. No hidden fees."
+        canonical="https://ne1webdesign.co.uk/pricing"
       />
       {/* Hero */}
       <section className="gradient-navy text-primary-foreground py-12 md:py-16 px-4 md:px-6">

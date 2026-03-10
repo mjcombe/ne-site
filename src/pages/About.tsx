@@ -9,12 +9,12 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About NE Tradesrade Website Specialists"
-        description="We build websites and SEO for trade businesses in the North East. Meet the team behind NE Trades."
-        canonical="https://netrades.co.uk/about"
+        title="About NE1 Digital | Web Design & SEO Specialists"
+        description="We build websites and deliver SEO for businesses across North Tyneside, Teesside and beyond. Meet the team behind NE1 Digital."
+        canonical="https://ne1webdesign.co.uk/about"
         jsonLd={breadcrumbSchema([
-          { name: "Home", url: "https://netrades.co.uk/" },
-          { name: "About", url: "https://netrades.co.uk/about" },
+          { name: "Home", url: "https://ne1webdesign.co.uk/" },
+          { name: "About", url: "https://ne1webdesign.co.uk/about" },
         ])}
       />
       <section className="gradient-navy text-primary-foreground section-padding">
@@ -23,10 +23,10 @@ const About = () => {
             About
           </span>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Built by people who understand trades
+            Built by people who understand business
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1  T Trades help trade businesses get more work through professional websites and local SEO that actually delivers.
+            NE1 Digital helps businesses get more work through professional websites and local SEO that actually delivers.
           </p>
         </div>
       </section>
@@ -38,20 +38,20 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Our story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  NE1 Web Di Tradesnded with a simple observation: most web design agencies don't understand the trades industry. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a tradesperson.
+                  NE1 Digital was founded with a simple observation: most web design agencies don't understand local businesses. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a service provider.
                 </p>
                 <p>
-                  We decided to change that. Based in the North East, we work exclusively with trade businesses — electricians, plumbers, builders, roofers, decorators, and every trade in between. We know how your customers search, what makes them pick up the phone, and what a genuinely useful lead looks like.
+                  We decided to change that. With offices in North Tyneside and Teesside, we work with businesses of all kinds — from tradespeople to professional services, beauty salons to local retailers. We know how your customers search, what makes them pick up the phone, and what a genuinely useful lead looks like.
                 </p>
                 <p>
-                  Our approach is simple: build a professional website, set up strong local SEO, and deliver measurable results. No jargon, no fluff, no vanity metrics. Just more phone calls, more quote requests, and more booked jobs.
+                  Our approach is simple: build a professional website, set up strong local SEO, and deliver measurable results. No jargon, no fluff, no vanity metrics. Just more phone calls, more enquiries, and more customers.
                 </p>
               </div>
             </div>
             <div className="gradient-navy rounded-lg p-8 text-primary-foreground flex flex-col justify-center aspect-[4/3]">
-              <span className="block text-4xl font-bold font-heading mb-2">NE</span>
-              <span className="block text-lg font-heading mb-1">Trades</span>
-              <span className="text-sm text-primary-foreground/70">North East England</span>
+              <span className="block text-4xl font-bold font-heading mb-2">NE1</span>
+              <span className="block text-lg font-heading mb-1">Digital</span>
+              <span className="text-sm text-primary-foreground/70">North Tyneside & Teesside</span>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ const About = () => {
             {[
               { title: "Results over aesthetics", description: "A website should generate enquiries, not win design awards. Everything we build is designed to convert." },
               { title: "Straight talking", description: "No jargon, no upselling, no complicated reports. We tell you what's working, what's not, and what we're doing about it." },
-              { title: "Trade specialists", description: "We only work with trade businesses. That focus means we're better at it than any generalist agency." },
+              { title: "Local specialists", description: "We focus on local businesses. That focus means we're better at it than any generalist agency." },
             ].map((value, i) => (
               <div key={i} className="p-6 rounded-lg bg-card border border-border">
                 <h3 className="font-heading font-semibold text-lg text-foreground mb-2">{value.title}</h3>
@@ -78,10 +78,10 @@ const About = () => {
       <section className="section-padding bg-background dotted-bg">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Ready to work with a team that gets trades?
+            Ready to work with a team that gets results?
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Book a free call and find out how we can help your trade business grow.
+            Book a free call and find out how we can help your business grow.
           </p>
           <Button variant="cta" size="lg" asChild>
             <Link to="/get-started">Get Started <ArrowRight className="w-5 h-5" /></Link>

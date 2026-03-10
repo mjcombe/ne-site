@@ -69,8 +69,8 @@ const TradePageLayout = ({
   category = "trades",
 }: TradePageProps) => {
   const location = useLocation();
-  const canonical = `https://netrades.co.uk${location.pathname}`;
-  const pageTitle = `Websites & SEO for ${trade} | NE Trades`;
+  const canonical = `https://ne1webdesign.co.uk${location.pathname}`;
+  const pageTitle = `Websites & SEO for ${trade} | NE1 Digital`;
   const metaDesc = heroDescription.slice(0, 155);
   const heroGradient = categoryGradients[category];
   const heroAccent = categoryAccentClasses[category];
@@ -83,8 +83,8 @@ const TradePageLayout = ({
         canonical={canonical}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Who We Help", url: "https://netrades.co.uk/who-we-help" },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Who We Help", url: "https://ne1webdesign.co.uk/who-we-help" },
             { name: trade, url: canonical },
           ]),
           {
@@ -92,7 +92,7 @@ const TradePageLayout = ({
             "@type": "Service",
             name: `Websites & SEO for ${trade}`,
             description: heroDescription,
-            provider: { "@id": "https://netrades.co.uk/#business" },
+            provider: { "@id": "https://ne1webdesign.co.uk/#business" },
             areaServed: { "@type": "AdministrativeArea", name: "North East England" },
           },
         ]}

@@ -8,9 +8,9 @@ const HowItWorksPage = () => {
   return (
     <Layout>
       <SEOHead
-        title="How It Works | Trade Websites in 3 Weeks | NE Trades"
-        description="A simple, no-nonsense process to get your trade website live and ranking on Google. Discovery, design, build, launch."
-        canonical="https://netrades.co.uk/how-it-works"
+        title="How It Works | Your Website in 3 Weeks | NE1 Digital"
+        description="A simple, no-nonsense process to get your website live and ranking on Google. Discovery, design, build, launch."
+        canonical="https://ne1webdesign.co.uk/how-it-works"
       />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Star, TrendingUp, Globe, Zap, Shield } from "lucide-react";
 import { reviews } from "@/data/reviews";
 import SEOHead from "@/components/SEOHead";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/assets/logo-ne1digital.png";
 
 export interface LandingPageConfig {
   slug: string;
@@ -37,14 +37,14 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       <SEOHead
         title={config.seoTitle}
         description={config.seoDescription}
-        canonical={`https://netrades.co.uk/go/${config.slug}`}
+        canonical={`https://ne1webdesign.co.uk/go/${config.slug}`}
       />
 
       {/* Minimal Header */}
       <header className="bg-white py-4 px-4 shadow-sm">
         <div className="container mx-auto max-w-5xl flex items-center justify-between">
           <Link to="/">
-            <img src={logoImg} alt="NE Trades" className="h-8" />
+            <img src={logoImg} alt="NE1 Digital" className="h-8" />
           </Link>
           <div className="flex items-center gap-4">
             <Link
@@ -255,7 +255,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       {/* Minimal Footer */}
       <footer className={`${config.headerBg} text-primary-foreground/60 py-6 px-4`}>
         <div className="container mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <span>© {new Date().getFullYear()} NE Trades. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} NE1 Digital. All rights reserved.</span>
           <div className="flex gap-4">
             <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-primary-foreground transition-colors">Terms</Link>

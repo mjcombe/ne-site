@@ -10,12 +10,12 @@ const WhoWeHelpPage = () => {
   return (
     <Layout>
       <SEOHead
-        title="Websites & SEO for Tradespeople | Electricians, Plumbers, Builders & More"
-        description="We build websites and local SEO for electricians, plumbers, builders, roofers, joiners and tradespeople across the North East."
-        canonical="https://netrades.co.uk/who-we-help"
+        title="Websites & SEO for Businesses | NE1 Digital"
+        description="We build websites and local SEO for businesses of all kinds across North Tyneside, Teesside and the wider North East."
+        canonical="https://ne1webdesign.co.uk/who-we-help"
         jsonLd={breadcrumbSchema([
-          { name: "Home", url: "https://netrades.co.uk/" },
-          { name: "Who We Help", url: "https://netrades.co.uk/who-we-help" },
+          { name: "Home", url: "https://ne1webdesign.co.uk/" },
+          { name: "Who We Help", url: "https://ne1webdesign.co.uk/who-we-help" },
         ])}
       />
       <section className="gradient-navy text-primary-foreground section-padding">
@@ -24,10 +24,10 @@ const WhoWeHelpPage = () => {
             Who We Help
           </span>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            We work with tradespeople across the North East
+            We work with businesses across the North East
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE Trades trade businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">plumber</Link>, an <Link to="/trades/electricians" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">electrician</Link>, or a <Link to="/trades/builders" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">builder</Link>, we build websites and SEO strategies that turn searches into booked work.
+            NE1 Digital helps businesses get found on Google. Whether you're a <Link to="/trades/plumbers" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">plumber</Link>, an <Link to="/trades/electricians" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">electrician</Link>, or a <Link to="/trades/builders" className="text-primary-foreground/75 hover:text-primary-foreground transition-colors">builder</Link>, we build websites and SEO strategies that turn searches into booked work.
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ const WhoWeHelpPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Why tradespeople choose NE1 Web  Trades         </h2>
+                Why businesses choose NE1 Digital</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Generic web agencies don't understand your industry. We know how local customers search, what makes them pick up the phone, and how to turn clicks into booked work — whether you're a <Link to="/trades/roofers" className="text-accent hover:underline">roofer</Link>, a <Link to="/trades/joiners" className="text-accent hover:underline">joiner</Link>, or a <Link to="/trades/heating-engineers" className="text-accent hover:underline">heating engineer</Link>.
               </p>

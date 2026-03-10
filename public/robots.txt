@@ -25,6 +25,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://netrades.co.uk/sitemap.xml
+Sitemap: https://ne1webdesign.co.uk/sitemap.xml
 
-Host: https://netrades.co.uk
+Host: https://ne1webdesign.co.uk

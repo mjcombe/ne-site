@@ -17,9 +17,9 @@ const Reviews = () => {
   return (
     <Layout>
       <SEOHead
-        title="Customer Reviews | NE Trades"
-        description="Read what our clients say about our websites and SEO services. 5-0 star rating from 96 Google reviews. Electricians, plumbers, builders and more across the North East."
-        canonical="https://netrades.co.uk/reviews"
+        title="Customer Reviews | NE1 Digital"
+        description="Read what our clients say about our web design and SEO services. 5.0 star rating from Google reviews."
+        canonical="https://ne1webdesign.co.uk/reviews"
       />
 
       {/* Hero */}

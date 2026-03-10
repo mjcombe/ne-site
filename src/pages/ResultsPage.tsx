@@ -7,9 +7,9 @@ const ResultsPage = () => {
   return (
     <Layout>
       <SEOHead
-        title="Results | Trade Websites That Generate Enquiries"
-        description="Real results from real trade businesses. See how our websites and SEO generate more calls and enquiries."
-        canonical="https://netrades.co.uk/results"
+        title="Results | Websites That Generate Enquiries | NE1 Digital"
+        description="Real results from real businesses. See how our websites and SEO generate more calls and enquiries."
+        canonical="https://ne1webdesign.co.uk/results"
       />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">

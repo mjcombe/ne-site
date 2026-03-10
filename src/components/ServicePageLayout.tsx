@@ -37,9 +37,9 @@ const ServicePageLayout = ({
 }: ServicePageLayoutProps) => {
   const location = useLocation();
   const slug = location.pathname.split("/").pop() || "";
-  const pageTitle = `${subtitle} | NE Trades`;
+  const pageTitle = `${subtitle} | NE1 Digital`;
   const metaDesc = description.slice(0, 155);
-  const canonical = `https://netrades.co.uk${location.pathname}`;
+  const canonical = `https://ne1webdesign.co.uk${location.pathname}`;
 
   return (
     <Layout>
@@ -49,8 +49,8 @@ const ServicePageLayout = ({
         canonical={canonical}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Services", url: "https://netrades.co.uk/services" },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Services", url: "https://ne1webdesign.co.uk/services" },
             { name: subtitle, url: canonical },
           ]),
           {
@@ -58,7 +58,7 @@ const ServicePageLayout = ({
             "@type": "Service",
             name: subtitle,
             description: description,
-            provider: { "@id": "https://netrades.co.uk/#business" },
+            provider: { "@id": "https://ne1webdesign.co.uk/#business" },
             areaServed: { "@type": "AdministrativeArea", name: "North East England" },
           },
         ]}

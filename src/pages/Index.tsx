@@ -14,9 +14,9 @@ const Index = () => {
   return (
     <Layout>
       <SEOHead
-        title="Websites & Local SEO for Trade Businesses | NE Trades"
-        description="Professional websites and local SEO for electricians, plumbers, builders and tradespeople in the North East. More enquiries, more booked jobs."
-        canonical="https://netrades.co.uk/"
+        title="Web Design & Local SEO for Businesses | NE1 Digital"
+        description="Professional web design and local SEO for businesses across North Tyneside, Teesside and beyond. More enquiries, more customers."
+        canonical="https://ne1webdesign.co.uk/"
         jsonLd={[localBusinessSchema, organizationSchema, websiteSchema]}
       />
       <Hero />
