@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Star, TrendingUp, Globe, Zap, Shield } from "lucide-react";
 import { reviews } from "@/data/reviews";
 import SEOHead from "@/components/SEOHead";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/assets/logo-ne1digital.png";
 
 export interface LandingPageConfig {
   slug: string;
