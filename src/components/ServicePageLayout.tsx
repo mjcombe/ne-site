@@ -65,15 +65,15 @@ const ServicePageLayout = ({
         ]}
       />
       {/* Hero */}
-      <section className="gradient-trades text-primary-foreground section-padding">
+      <section className="gradient-trades text-white section-padding">
         <div className="container mx-auto max-w-4xl">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">
             {subtitle}
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white">
             {title}
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed max-w-3xl mb-8">
+          <p className="text-lg md:text-xl text-white/75 leading-relaxed max-w-3xl mb-8">
             {description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -86,6 +86,7 @@ const ServicePageLayout = ({
               <Link to="/contact">Book a Free Call</Link>
             </Button>
           </div>
+          <GoogleRatingBadge />
         </div>
       </section>
       {/* Who it's for */}

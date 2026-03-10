@@ -5,6 +5,7 @@ import { ArrowRight, Phone, CheckCircle2, Globe, Search, MapPin, FileText, Shiel
 import type { LucideIcon } from "lucide-react";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const relatedServiceLinks = [
   { label: "Trade Websites", href: "/services/websites-for-trades", icon: Globe },
