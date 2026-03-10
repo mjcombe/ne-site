@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Mail, ChevronDown, MessageSquare } from "lucide-react";
+import { Mail, ChevronDown, Phone } from "lucide-react";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const serviceLinks = [
-  { label: "Websites for Trades", href: "/services/websites-for-trades" },
+  { label: "Websites for Businesses", href: "/services/websites-for-trades" },
   { label: "Local SEO", href: "/services/local-seo" },
   { label: "Google Business Profile", href: "/services/google-business-profile" },
   { label: "Service Area Pages", href: "/services/service-area-pages" },
@@ -45,16 +45,16 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <span className="font-heading font-bold text-xl text-primary-foreground">NE1 Digital</span>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Professional websites and local SEO for trades, beauty, and service businesses across the North East and beyond.
+              Professional web design and local SEO for businesses across North Tyneside, Teesside and the wider North East.
             </p>
             <div className="flex flex-col gap-3">
-              <Link to="/contact" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                <MessageSquare className="w-4 h-4 shrink-0" />
-                Contact Us
-              </Link>
-              <a href="mailto:hello@netrades.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <a href="tel:01916941463" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Phone className="w-4 h-4 shrink-0" />
+                0191 694 1463
+              </a>
+              <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4 shrink-0" />
-                hello@netrades.co.uk
+                hello@ne1webdesign.co.uk
               </a>
             </div>
           </div>

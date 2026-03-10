@@ -2,16 +2,16 @@ import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImage from "@/assets/logo.png";
+import logoImage from "@/assets/logo-ne1digital.png";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const servicesDropdown = [
-  { label: "Websites for Trades", href: "/services/websites-for-trades", sub: false },
+  { label: "Websites for Businesses", href: "/services/websites-for-trades", sub: false },
   { label: "Google Business Profile", href: "/services/google-business-profile", sub: false },
   { label: "Service Area Pages", href: "/services/service-area-pages", sub: false },
   { label: "Hosting & Care", href: "/services/hosting-and-care", sub: false },
   { label: "divider", href: "", sub: false },
-  { label: "SEO for Trades", href: "/services/seo", sub: true },
+  { label: "SEO", href: "/services/seo", sub: true },
   { label: "Local SEO", href: "/services/local-seo", sub: true },
   { label: "AI & Generative SEO", href: "/services/ai-seo", sub: true },
   { label: "Ongoing SEO Support", href: "/services/ongoing-seo", sub: true },
@@ -74,7 +74,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
         <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
-          <img src={logoImage} alt="NE1 Trades" className="h-8 w-auto" />
+          <img src={logoImage} alt="NE1 Digital" className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -200,10 +200,10 @@ const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <Link to="/contact" className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors">
+          <a href="tel:01916941463" className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors">
             <Phone className="w-4 h-4" />
-            <span className="font-medium">Contact Us</span>
-          </Link>
+            <span className="font-medium">0191 694 1463</span>
+          </a>
           <Button variant="navCta" asChild>
             <Link to="/get-started">Get Started</Link>
           </Button>
@@ -336,10 +336,10 @@ const Header = () => {
               );
             })}
             <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
-              <Link to="/contact" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
+              <a href="tel:01916941463" className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
                 <Phone className="w-4 h-4" />
-                Contact Us
-              </Link>
+                0191 694 1463
+              </a>
               <Button variant="cta" size="lg" asChild className="w-full">
                 <Link to="/get-started" onClick={() => setMobileOpen(false)}>Get Started</Link>
               </Button>

@@ -18,11 +18,11 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Get more local enquiries for your trade business
+            Get more local enquiries for your business
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Professional websites and local SEO built specifically for electricians, plumbers, builders, and tradespeople across the North East. More phone calls. More quote requests. More booked jobs.
+            Professional web design and local SEO for businesses across North Tyneside, Teesside and beyond. More phone calls. More enquiries. More customers.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -33,10 +33,10 @@ const Hero = () => {
               </Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/contact">
+              <a href="tel:01916941463">
                 <Phone className="w-5 h-5" />
-                Book a Free Call
-              </Link>
+                0191 694 1463
+              </a>
             </Button>
           </div>
         </div>

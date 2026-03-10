@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { Mail, Clock, MessageSquare } from "lucide-react";
+import { Mail, Clock, Phone } from "lucide-react";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 
@@ -46,9 +46,9 @@ const Contact = () => {
   return (
     <Layout>
       <SEOHead
-        title="Contact NE Trades | Book a Free Call"
-        description="Get in touch to discuss your trade website or SEO project. Based in North Shields, serving the North East and beyond."
-        canonical="https://netrades.co.uk/contact"
+        title="Contact NE1 Digital | Book a Free Call"
+        description="Get in touch to discuss your website or SEO project. Offices in North Tyneside and Teesside, serving businesses everywhere."
+        canonical="https://ne1webdesign.co.uk/contact"
       />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
@@ -80,26 +80,25 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <h2 className="text-xl font-bold text-foreground mb-6">Get in touch directly</h2>
               <div className="space-y-6">
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                <a href="tel:01916941463" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
-                    <MessageSquare className="w-5 h-5 text-accent" />
+                    <Phone className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <span className="block text-sm font-semibold text-foreground">Call us</span>
-                    <span className="block text-sm text-muted-foreground">Use the form to get in touch and we'll arrange a call</span>
+                    <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">Call us</span>
+                    <span className="block text-sm text-muted-foreground">0191 694 1463</span>
                   </div>
-                </div>
+                </a>
 
-                <a href="mailto:hello@netrades.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
+                <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">Email us</span>
-                    <span className="block text-sm text-muted-foreground">hello@netrades.co.uk</span>
+                    <span className="block text-sm text-muted-foreground">hello@ne1webdesign.co.uk</span>
                   </div>
                 </a>
-
 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
