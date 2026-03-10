@@ -10,7 +10,7 @@ const About = () => {
     <Layout>
       <SEOHead
         title="About NE1 Digital | Web Design & SEO Specialists"
-        description="We build websites and deliver SEO for businesses across North Tyneside, Teesside and beyond. Meet the team behind NE1 Digital."
+        description="With over 20 years of experience in web design and development, NE1 Digital helps businesses grow online. Based in North Tyneside and Teesside."
         canonical="https://ne1webdesign.co.uk/about"
         jsonLd={breadcrumbSchema([
           { name: "Home", url: "https://ne1webdesign.co.uk/" },
@@ -20,13 +20,13 @@ const About = () => {
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
-            About
+            About Us
           </span>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Built by people who understand business
+            Trusted by clients to deliver award-winning website design
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            NE1 Digital helps businesses get more work through professional websites and local SEO that actually delivers.
+            With over twenty years of experience in website design and development, we have the expertise to create websites that not only look great but help businesses grow.
           </p>
         </div>
       </section>
@@ -38,13 +38,13 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Our story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  NE1 Digital was founded with a simple observation: most web design agencies don't understand local businesses. They build generic websites, use marketing jargon, and have no idea how a local customer actually finds and chooses a service provider.
+                  Founded in 2018 by Michael James, NE1 Digital has worked with businesses of all sizes, from start-ups to well known national brands, helping them build a strong online presence and achieve their digital goals.
                 </p>
                 <p>
-                  We decided to change that. With offices in North Tyneside and Teesside, we work with businesses of all kinds — from tradespeople to professional services, beauty salons to local retailers. We know how your customers search, what makes them pick up the phone, and what a genuinely useful lead looks like.
+                  We believe that every business is unique, and so is every website we create. Whether you're looking for a brand-new website, an SEO strategy to improve visibility, or advice on taking your business online, we take the time to understand your needs and offer the best solutions.
                 </p>
                 <p>
-                  Our approach is simple: build a professional website, set up strong local SEO, and deliver measurable results. No jargon, no fluff, no vanity metrics. Just more phone calls, more enquiries, and more customers.
+                  Every project begins with a discovery call, where we listen to your business goals, understand your challenges, and offer expert advice on the best approach for your new website. From there, we develop a tailored strategy that ensures your website is designed for success.
                 </p>
               </div>
             </div>
@@ -59,12 +59,15 @@ const About = () => {
 
       <section className="section-padding bg-secondary">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">What we believe in</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Why clients partner with us</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Results over aesthetics", description: "A website should generate enquiries, not win design awards. Everything we build is designed to convert." },
-              { title: "Straight talking", description: "No jargon, no upselling, no complicated reports. We tell you what's working, what's not, and what we're doing about it." },
-              { title: "Local specialists", description: "We focus on local businesses. That focus means we're better at it than any generalist agency." },
+              { title: "200+ Custom Websites", description: "We've launched over 200 custom websites since 2018, collaborating with businesses across various industries." },
+              { title: "Client Focused", description: "Our clients are at the heart of everything we do, guiding our approach to ensure their needs and expectations are exceeded." },
+              { title: "Bespoke Design", description: "We focus on tailored solutions, ensuring a unique, user-friendly, and future-proof digital presence that aligns with your brand." },
+              { title: "North Tyneside Based", description: "Our office is in the heart of North Tyneside. We're always happy to meet and discuss your online options in person." },
+              { title: "Competitive Pricing", description: "Our pricing structure ensures the best value for money. Cost-effective bespoke solutions without compromising on quality." },
+              { title: "Consistent 5-Star Reviews", description: "We receive 5-star reviews from our clients. By carefully listening to your needs, we consistently deliver outstanding results." },
             ].map((value, i) => (
               <div key={i} className="p-6 rounded-lg bg-card border border-border">
                 <h3 className="font-heading font-semibold text-lg text-foreground mb-2">{value.title}</h3>
@@ -78,13 +81,13 @@ const About = () => {
       <section className="section-padding bg-background dotted-bg">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Ready to work with a team that gets results?
+            Take the next step
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Book a free call and find out how we can help your business grow.
+            Why not book a thirty-minute free consultation call to see how we can help your business online?
           </p>
           <Button variant="cta" size="lg" asChild>
-            <Link to="/get-started">Get Started <ArrowRight className="w-5 h-5" /></Link>
+            <Link to="/get-started">Book A Call <ArrowRight className="w-5 h-5" /></Link>
           </Button>
         </div>
       </section>

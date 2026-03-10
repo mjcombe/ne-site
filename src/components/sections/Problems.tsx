@@ -4,7 +4,7 @@ const problems = [
   {
     icon: SearchX,
     title: "Invisible on Google",
-    description: "Your customers search for local trades every day. If your business doesn't show up, they're calling your competitors instead.",
+    description: "Your customers search for local businesses every day. If your business doesn't show up, they're calling your competitors instead.",
   },
   {
     icon: Ban,
@@ -14,12 +14,12 @@ const problems = [
   {
     icon: Clock,
     title: "Wasting time on bad leads",
-    description: "Without a clear website and proper local presence, you attract tyre-kickers instead of serious customers ready to book.",
+    description: "Without a clear website and proper local presence, you attract tyre-kickers instead of serious customers ready to buy.",
   },
   {
     icon: AlertTriangle,
-    title: "Generic agencies don't get trades",
-    description: "Most web designers don't understand how local customers find and choose tradespeople. You need a specialist who does.",
+    title: "Generic agencies don't deliver",
+    description: "Most web designers build generic sites and use marketing jargon. You need a team that understands how local customers actually find and choose businesses.",
   },
 ];
 
@@ -32,10 +32,10 @@ const Problems = () => {
             The Problem
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Good at your trade but struggling to get found online?
+            Great at what you do but struggling to get found online?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Most trade businesses lose thousands of pounds in potential work every year simply because customers can't find them.
+            Most businesses lose thousands of pounds in potential work every year simply because customers can't find them.
           </p>
         </div>
 

@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "How much does a trade website cost?",
-    answer: "Our websites start from an affordable monthly fee with no large upfront cost. We offer packages tailored to sole traders and growing trade businesses. Visit our <a href='/pricing' class='text-accent underline hover:text-accent/80'>pricing page</a> for a clear, transparent breakdown with no hidden fees.",
+    question: "How much does a website cost?",
+    answer: "Our websites start from an affordable monthly fee with no large upfront cost. We offer packages tailored to businesses of all sizes, from startups to established brands. Visit our <a href='/pricing' class='text-accent underline hover:text-accent/80'>pricing page</a> for a clear, transparent breakdown with no hidden fees.",
   },
   {
     question: "How long does it take to build a website?",
-    answer: "Most trade websites are live within two to three weeks. We handle everything — design, content, setup, and optimisation — so you don't need to lift a finger.",
+    answer: "Most websites are live within two to three weeks. We handle everything — design, content, setup, and optimisation — so you can focus on running your business.",
   },
   {
     question: "Do I need to provide the content?",
-    answer: "No. We write all the content for your website based on a quick discovery call. We understand how to write for trade businesses and their customers, so everything is clear, professional, and optimised for search.",
+    answer: "No. We write all the content for your website based on a discovery call. We understand how to write for businesses and their customers, so everything is clear, professional, and optimised for search.",
   },
   {
     question: "What is local SEO and why does it matter?",
-    answer: "Local SEO makes sure your business appears when nearby customers search for your trade on Google. If someone searches 'electrician near me' or 'plumber Newcastle', local SEO helps you show up at the top. It's the most cost-effective way to get consistent enquiries.",
+    answer: "Local SEO makes sure your business appears when nearby customers search for your services on Google. It's the most cost-effective way to get consistent enquiries without relying on paid ads.",
   },
   {
-    question: "Do you work with trades outside the North East?",
-    answer: "We're based in the North East and it's our home market, but we work with trade businesses across the UK. Our approach to local SEO works wherever you're based.",
+    question: "Do you only work with businesses in the North East?",
+    answer: "We're based in North Tyneside and Teesside and it's our home market, but we work with businesses across the UK. Our approach to local SEO works wherever you're based.",
   },
   {
     question: "What if I already have a website?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Can I see examples of your work?",
-    answer: "Absolutely. Get in touch and we'll share examples of trade websites we've built and the results they've achieved. We're happy to show you real data from real trade businesses.",
+    answer: "Absolutely. Get in touch and we'll share examples of websites we've built and the results they've achieved. We're happy to show you real data from real businesses.",
   },
   {
     question: "What happens after my website is live?",
@@ -49,10 +49,10 @@ const FAQ = () => {
             FAQs
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Common questions from trade businesses
+            Common questions from our clients
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Straight answers to the things tradespeople ask us most.
+            Straight answers to the things businesses ask us most.
           </p>
         </div>
 

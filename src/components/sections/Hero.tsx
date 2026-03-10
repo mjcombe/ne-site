@@ -14,21 +14,21 @@ const Hero = () => {
               ))}
             </div>
             <span className="text-sm font-bold text-primary-foreground">5.0</span>
-            <span className="text-xs text-primary-foreground/60">Google Reviews</span>
+            <span className="text-xs text-primary-foreground/60">Based on 94 Google Reviews</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Get more local enquiries for your business
+            Websites that work. No hassle, no stress, just results.
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Professional web design and local SEO for businesses across North Tyneside, Teesside and beyond. More phone calls. More enquiries. More customers.
+            Helping businesses build, grow and scale online through professional web design and local SEO services. Based in North Tyneside and Teesside.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="xl" asChild>
               <Link to="/get-started">
-                Get More Enquiries
+                Book A Call
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>

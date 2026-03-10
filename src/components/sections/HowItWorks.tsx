@@ -7,19 +7,19 @@ const steps = [
     number: "01",
     icon: MessageSquare,
     title: "Free discovery call",
-    description: "We have a quick chat about your trade business, where you work, and what kind of leads you want. No jargon, no pressure.",
+    description: "We have a quick chat about your business, your goals, and what kind of results you want. No jargon, no pressure.",
   },
   {
     number: "02",
     icon: Palette,
     title: "We build your website & SEO",
-    description: "We create a professional website tailored to your trade and set up your local SEO so you start getting found on Google.",
+    description: "We create a professional website tailored to your business and set up your local SEO so you start getting found on Google.",
   },
   {
     number: "03",
     icon: Rocket,
     title: "You get more enquiries",
-    description: "Your phone starts ringing. More quote requests come in. You book more jobs. We keep optimising to grow your results.",
+    description: "Your phone starts ringing. More enquiries come in. You win more customers. We keep optimising to grow your results.",
   },
 ];
 
@@ -32,10 +32,10 @@ const HowItWorks = () => {
             How It Works
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Three simple steps to more local work
+            Three simple steps to more enquiries
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            No complicated process. No tech speak. Just a straightforward path from where you are now to more booked jobs.
+            No complicated process. No tech speak. Just a straightforward path to more customers for your business.
           </p>
         </div>
 
