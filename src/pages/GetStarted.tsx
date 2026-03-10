@@ -94,14 +94,14 @@ const GetStarted = () => {
               </div>
 
               <div className="p-5 rounded-lg bg-card border border-border mb-6">
-                <h3 className="font-heading font-semibold text-foreground mb-2">Prefer to call?</h3>
+                <h3 className="font-heading font-semibold text-foreground mb-2">Prefer to get in touch another way?</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Give us a ring and we'll have a quick chat about what you need.
+                  Head to our contact page and we'll get back to you quickly.
                 </p>
-                <a href="tel:07463687129" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                <Link to="/contact" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
                   <Phone className="w-4 h-4" />
-                  07463 687129
-                </a>
+                  Contact Us
+                </Link>
               </div>
 
               <div className="p-5 rounded-lg gradient-navy text-primary-foreground">

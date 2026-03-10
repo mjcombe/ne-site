@@ -336,10 +336,10 @@ const Header = () => {
               );
             })}
             <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
-              <a href="tel:07463687129" className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
+              <Link to="/contact" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
                 <Phone className="w-4 h-4" />
-                07463 687129
-              </a>
+                Contact Us
+              </Link>
               <Button variant="cta" size="lg" asChild className="w-full">
                 <Link to="/get-started" onClick={() => setMobileOpen(false)}>Get Started</Link>
               </Button>

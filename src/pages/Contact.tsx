@@ -80,15 +80,15 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <h2 className="text-xl font-bold text-foreground mb-6">Get in touch directly</h2>
               <div className="space-y-6">
-                <a href="tel:07463687129" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <span className="block text-sm font-semibold text-foreground group-hover:text-accent transition-colors">Call us</span>
-                    <span className="block text-sm text-muted-foreground">07463 687129</span>
+                    <span className="block text-sm font-semibold text-foreground">Call us</span>
+                    <span className="block text-sm text-muted-foreground">Use the form to get in touch and we'll arrange a call</span>
                   </div>
-                </a>
+                </div>
 
                 <a href="mailto:hello@netrades.co.uk" className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-accent/30 transition-colors group">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">

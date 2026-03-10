@@ -82,7 +82,7 @@ const ServicePageLayout = ({
               </Link>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:07463687129">Book a Free Call</a>
+              <Link to="/contact">Book a Free Call</Link>
             </Button>
           </div>
         </div>

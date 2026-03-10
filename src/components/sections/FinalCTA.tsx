@@ -21,10 +21,10 @@ const FinalCTA = () => {
               </Link>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href="tel:07463687129">
+              <Link to="/contact">
                 <Phone className="w-5 h-5" />
                 Book a Free Call
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

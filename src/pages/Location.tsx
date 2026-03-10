@@ -241,10 +241,10 @@ const Location = () => {
               </Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="tel:07463687129">
+              <Link to="/contact">
                 <Phone className="w-5 h-5" />
-                07463 687129
-              </a>
+                Contact Us
+              </Link>
             </Button>
           </div>
         </div>
