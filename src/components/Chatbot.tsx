@@ -73,7 +73,7 @@ async function streamChat({
 const Chatbot = () => {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Msg[]>([
-    { role: "assistant", content: "Hi! 👋 I'm the Net Trades assistant. How can I help you today?" },
+    { role: "assistant", content: "Hi! 👋 I'm the NE1 Digital assistant. How can I help you today?" },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -136,7 +136,7 @@ const Chatbot = () => {
           {/* Header */}
           <div className="bg-primary text-primary-foreground px-4 py-3 flex items-center gap-2">
             <MessageCircle className="w-5 h-5" />
-            <span className="font-semibold text-sm">Net Trades Assistant</span>
+            <span className="font-semibold text-sm">NE1 Digital Assistant</span>
           </div>
 
           {/* Messages */}

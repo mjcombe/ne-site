@@ -1,68 +1,68 @@
-# NE Trades - LLMs.txt
+# NE1 Digital - LLMs.txt
 
-> NE Tradesuilds professional websites and local SEO strategies for trade businesses across the North East of England.
+> NE1 Digital builds professional websites and local SEO strategies for businesses across North Tyneside, Teesside and the wider North East of England.
 
 ## About
 
-NE1  Tradess a specialist web design and SEO agency that works with trade businesses. Based in North Shields, Tyne and Wear, we help tradespeople get found on Google and generate more enquiries.
+NE1 Digital is a specialist web design and local SEO agency with offices in North Tyneside and Teesside. We help businesses of all kinds get found on Google and generate more enquiries.
 
 ## Services
 
-- [Websites for Trades](https://netrades.co.uk/services/websites-for-trades): Professional websites designed to convert visitors into phone calls and quote requests.
-- [Local SEO](https://netrades.co.uk/services/local-seo): Search engine optimisation targeting local customers searching for services in specific areas.
-- [Google Business Profile](https://netrades.co.uk/services/google-business-profile): Optimisation of Google Business listings to appear in the local map pack.
-- [Service Area Pages](https://netrades.co.uk/services/service-area-pages): Location-specific pages targeting individual towns and areas.
-- [SEO for Trades](https://netrades.co.uk/services/seo): Comprehensive search engine optimisation built specifically for local businesses.
-- [AI & Generative SEO](https://netrades.co.uk/services/ai-seo): Optimisation for AI-powered search tools including ChatGPT and Google AI Overviews.
-- [Ongoing SEO Support](https://netrades.co.uk/services/ongoing-seo): Monthly SEO management to maintain and improve search rankings over time.
-- [Hosting & Care](https://netrades.co.uk/services/hosting-and-care): Fast hosting, SSL, daily backups, and ongoing website maintenance.
+- [Web Design](https://ne1webdesign.co.uk/services/websites-for-trades): Professional websites designed to convert visitors into phone calls and enquiries.
+- [Local SEO](https://ne1webdesign.co.uk/services/local-seo): Search engine optimisation targeting local customers searching for services in specific areas.
+- [Google Business Profile](https://ne1webdesign.co.uk/services/google-business-profile): Optimisation of Google Business listings to appear in the local map pack.
+- [Service Area Pages](https://ne1webdesign.co.uk/services/service-area-pages): Location-specific pages targeting individual towns and areas.
+- [SEO](https://ne1webdesign.co.uk/services/seo): Comprehensive search engine optimisation built specifically for local businesses.
+- [AI & Generative SEO](https://ne1webdesign.co.uk/services/ai-seo): Optimisation for AI-powered search tools including ChatGPT and Google AI Overviews.
+- [Ongoing SEO Support](https://ne1webdesign.co.uk/services/ongoing-seo): Monthly SEO management to maintain and improve search rankings over time.
+- [Hosting & Care](https://ne1webdesign.co.uk/services/hosting-and-care): Fast hosting, SSL, daily backups, and ongoing website maintenance.
 
-## Trades We Work With
+## Industries We Work With
 
-- [Electricians](https://netrades.co.uk/trades/electricians): Domestic and commercial electrical contractors
-- [Plumbers](https://netrades.co.uk/trades/plumbers): Plumbing, heating and gas engineers
-- [Builders](https://netrades.co.uk/trades/builders): General builders and construction firms
-- [Roofers](https://netrades.co.uk/trades/roofers): Roofing contractors and repair specialists
-- [Decorators](https://netrades.co.uk/trades/decorators): Painters, decorators and plasterers
-- [Joiners & Carpenters](https://netrades.co.uk/trades/joiners): Joiners, carpenters and cabinet makers
-- [Landscapers](https://netrades.co.uk/trades/landscapers): Garden design and landscaping services
-- [Heating Engineers](https://netrades.co.uk/trades/heating-engineers): Boiler servicing and central heating
-- [Plasterers](https://netrades.co.uk/trades/plasterers): Plastering, rendering and skimming
-- [Tilers](https://netrades.co.uk/trades/tilers): Floor and wall tiling specialists
-- [Scaffolders](https://netrades.co.uk/trades/scaffolders): Scaffolding erection and hire
-- [Drainage Engineers](https://netrades.co.uk/trades/drainage-engineers): Drain repairs, CCTV surveys and unblocking
-- [Locksmiths](https://netrades.co.uk/trades/locksmiths): Emergency and residential locksmith services
-- [Window & Door Fitters](https://netrades.co.uk/trades/window-door-fitters): UPVC, aluminium and composite installations
-- [Groundworkers](https://netrades.co.uk/trades/groundworkers): Foundations, drainage and excavation
+- [Electricians](https://ne1webdesign.co.uk/trades/electricians): Domestic and commercial electrical contractors
+- [Plumbers](https://ne1webdesign.co.uk/trades/plumbers): Plumbing, heating and gas engineers
+- [Builders](https://ne1webdesign.co.uk/trades/builders): General builders and construction firms
+- [Roofers](https://ne1webdesign.co.uk/trades/roofers): Roofing contractors and repair specialists
+- [Decorators](https://ne1webdesign.co.uk/trades/decorators): Painters, decorators and plasterers
+- [Joiners & Carpenters](https://ne1webdesign.co.uk/trades/joiners): Joiners, carpenters and cabinet makers
+- [Landscapers](https://ne1webdesign.co.uk/trades/landscapers): Garden design and landscaping services
+- [Heating Engineers](https://ne1webdesign.co.uk/trades/heating-engineers): Boiler servicing and central heating
+- [Plasterers](https://ne1webdesign.co.uk/trades/plasterers): Plastering, rendering and skimming
+- [Tilers](https://ne1webdesign.co.uk/trades/tilers): Floor and wall tiling specialists
+- [Scaffolders](https://ne1webdesign.co.uk/trades/scaffolders): Scaffolding erection and hire
+- [Drainage Engineers](https://ne1webdesign.co.uk/trades/drainage-engineers): Drain repairs, CCTV surveys and unblocking
+- [Locksmiths](https://ne1webdesign.co.uk/trades/locksmiths): Emergency and residential locksmith services
+- [Window & Door Fitters](https://ne1webdesign.co.uk/trades/window-door-fitters): UPVC, aluminium and composite installations
+- [Groundworkers](https://ne1webdesign.co.uk/trades/groundworkers): Foundations, drainage and excavation
 
 ## Areas We Cover
 
-We serve businesses across the North East of England including:
+We serve businesses across the North East of England with a focus on North Tyneside and Teesside, including:
 
-- [Newcastle upon Tyne](https://netrades.co.uk/locations/newcastle)
-- [Sunderland](https://netrades.co.uk/locations/sunderland)
-- [Gateshead](https://netrades.co.uk/locations/gateshead)
-- [Durham](https://netrades.co.uk/locations/durham)
-- [North Shields](https://netrades.co.uk/locations/north-shields)
-- [South Shields](https://netrades.co.uk/locations/south-shields)
-- [Whitley Bay](https://netrades.co.uk/locations/whitley-bay)
-- [Tynemouth](https://netrades.co.uk/locations/tynemouth)
-- [Wallsend](https://netrades.co.uk/locations/wallsend)
-- [Cramlington](https://netrades.co.uk/locations/cramlington)
-- [Blyth](https://netrades.co.uk/locations/blyth)
-- [Ashington](https://netrades.co.uk/locations/ashington)
-- [Morpeth](https://netrades.co.uk/locations/morpeth)
-- [Hexham](https://netrades.co.uk/locations/hexham)
-- [Darlington](https://netrades.co.uk/locations/darlington)
-- [Hartlepool](https://netrades.co.uk/locations/hartlepool)
-- [Middlesbrough](https://netrades.co.uk/locations/middlesbrough)
-- [Stockton-on-Tees](https://netrades.co.uk/locations/stockton-on-tees)
-- [Washington](https://netrades.co.uk/locations/washington)
-- [Chester-le-Street](https://netrades.co.uk/locations/chester-le-street)
-- [Consett](https://netrades.co.uk/locations/consett)
-- [Bishop Auckland](https://netrades.co.uk/locations/bishop-auckland)
-- [Jarrow](https://netrades.co.uk/locations/jarrow)
-- [Hebburn](https://netrades.co.uk/locations/hebburn)
+- [Newcastle upon Tyne](https://ne1webdesign.co.uk/locations/newcastle)
+- [Sunderland](https://ne1webdesign.co.uk/locations/sunderland)
+- [Gateshead](https://ne1webdesign.co.uk/locations/gateshead)
+- [Durham](https://ne1webdesign.co.uk/locations/durham)
+- [North Shields](https://ne1webdesign.co.uk/locations/north-shields)
+- [South Shields](https://ne1webdesign.co.uk/locations/south-shields)
+- [Whitley Bay](https://ne1webdesign.co.uk/locations/whitley-bay)
+- [Tynemouth](https://ne1webdesign.co.uk/locations/tynemouth)
+- [Wallsend](https://ne1webdesign.co.uk/locations/wallsend)
+- [Cramlington](https://ne1webdesign.co.uk/locations/cramlington)
+- [Blyth](https://ne1webdesign.co.uk/locations/blyth)
+- [Ashington](https://ne1webdesign.co.uk/locations/ashington)
+- [Morpeth](https://ne1webdesign.co.uk/locations/morpeth)
+- [Hexham](https://ne1webdesign.co.uk/locations/hexham)
+- [Darlington](https://ne1webdesign.co.uk/locations/darlington)
+- [Hartlepool](https://ne1webdesign.co.uk/locations/hartlepool)
+- [Middlesbrough](https://ne1webdesign.co.uk/locations/middlesbrough)
+- [Stockton-on-Tees](https://ne1webdesign.co.uk/locations/stockton-on-tees)
+- [Washington](https://ne1webdesign.co.uk/locations/washington)
+- [Chester-le-Street](https://ne1webdesign.co.uk/locations/chester-le-street)
+- [Consett](https://ne1webdesign.co.uk/locations/consett)
+- [Bishop Auckland](https://ne1webdesign.co.uk/locations/bishop-auckland)
+- [Jarrow](https://ne1webdesign.co.uk/locations/jarrow)
+- [Hebburn](https://ne1webdesign.co.uk/locations/hebburn)
 
 ## Pricing
 
@@ -71,12 +71,11 @@ We serve businesses across the North East of England including:
 
 ## Contact
 
-- Phone: 07463 687129
-- Email: hello@netrades.co.uk
-- Address: Suite 2.6a, North Tyneside Business Centre, North Shields, NE30 1NT
-- [Get Started](https://netrades.co.uk/get-started)
-- [Contact Page](https://netrades.co.uk/contact)
+- Phone: 0191 694 1463
+- Email: hello@ne1webdesign.co.uk
+- [Get Started](https://ne1webdesign.co.uk/get-started)
+- [Contact Page](https://ne1webdesign.co.uk/contact)
 
 ## Blog
 
-- [Blog](https://netrades.co.uk/blog): SEO and website tips for trade businesses
+- [Blog](https://ne1webdesign.co.uk/blog): SEO and website tips for businesses

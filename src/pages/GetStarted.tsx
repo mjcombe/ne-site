@@ -46,9 +46,9 @@ const GetStarted = () => {
   return (
     <Layout>
       <SEOHead
-        title="Get Started | Free Consultation for Trade Businesses"
-        description="Book a free call to discuss your trade website and SEO. No obligation, no jargon, just honest advice."
-        canonical="https://netrades.co.uk/get-started"
+        title="Get Started | Free Consultation | NE1 Digital"
+        description="Book a free call to discuss your website and SEO. No obligation, no jargon, just honest advice."
+        canonical="https://ne1webdesign.co.uk/get-started"
       />
       <section className="gradient-navy text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
@@ -59,7 +59,7 @@ const GetStarted = () => {
             Ready to get more enquiries?
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/75 leading-relaxed">
-            Pick a time that works for you and we'll have a free, no-obligation discovery call to discuss how we can help your trade business grow.
+            Pick a time that works for you and we'll have a free, no-obligation discovery call to discuss how we can help your business grow.
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ const GetStarted = () => {
                 {[
                   "A clear understanding of your current online position",
                   "Honest assessment of what's working and what isn't",
-                  "Specific recommendations tailored to your trade",
+                  "Specific recommendations tailored to your business",
                   "Transparent pricing with no hidden costs",
                   "A clear plan to start generating more enquiries",
                 ].map((item, i) => (
@@ -97,12 +97,12 @@ const GetStarted = () => {
               <div className="p-5 rounded-lg bg-card border border-border mb-6">
                 <h3 className="font-heading font-semibold text-foreground mb-2">Prefer to get in touch another way?</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Head to our contact page and we'll get back to you quickly.
+                  Give us a call or head to our contact page.
                 </p>
-                <Link to="/contact" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                <a href="tel:01916941463" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
                   <Phone className="w-4 h-4" />
-                  Contact Us
-                </Link>
+                  0191 694 1463
+                </a>
               </div>
 
               <div className="p-5 rounded-lg gradient-navy text-primary-foreground">
