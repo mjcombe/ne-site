@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Mail, ChevronDown, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const serviceLinks = [
