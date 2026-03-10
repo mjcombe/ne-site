@@ -37,7 +37,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       <SEOHead
         title={config.seoTitle}
         description={config.seoDescription}
-        canonical={`https://netrades.co.uk/go/${config.slug}`}
+        canonical={`https://ne1webdesign.co.uk/go/${config.slug}`}
       />
 
       {/* Minimal Header */}
