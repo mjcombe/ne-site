@@ -56,10 +56,6 @@ const Footer = () => {
                 <Mail className="w-4 h-4 shrink-0" />
                 hello@netrades.co.uk
               </a>
-              <div className="flex items-start gap-2 text-sm text-primary-foreground/80">
-                <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                <span>Suite 2.6a, North Tyneside Business Centre,<br />North Shields, NE30 1NT</span>
-              </div>
             </div>
           </div>
 
