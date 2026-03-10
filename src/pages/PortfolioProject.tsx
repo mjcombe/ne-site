@@ -49,7 +49,6 @@ const PortfolioProject = () => {
           <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             {project.title}
           </h1>
-          <GoogleRatingBadge />
         </div>
       </section>
 
