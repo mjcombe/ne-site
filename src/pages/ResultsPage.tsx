@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ResultsSection from "@/components/sections/Results";
 import FinalCTA from "@/components/sections/FinalCTA";
 import SEOHead from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const ResultsPage = () => {
   return (
