@@ -4,12 +4,31 @@ import SEOHead from "@/components/SEOHead";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import { portfolioProjects } from "@/data/portfolioProjects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle, Quote } from "lucide-react";
+import { ArrowLeft, CheckCircle, Quote, ExternalLink, X } from "lucide-react";
 import NotFound from "./NotFound";
+import { useState, useCallback, useEffect } from "react";
 
 const PortfolioProject = () => {
   const { slug } = useParams();
   const project = portfolioProjects.find((p) => p.slug === slug);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const closeLightbox = useCallback(() => setLightboxIndex(null), []);
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (lightboxIndex === null) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight" && project)
+        setLightboxIndex((prev) => (prev !== null ? (prev + 1) % project.images.length : 0));
+      if (e.key === "ArrowLeft" && project)
+        setLightboxIndex((prev) =>
+          prev !== null ? (prev - 1 + project.images.length) % project.images.length : 0
+        );
+    };
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
+  }, [lightboxIndex, project, closeLightbox]);
 
   if (!project) return <NotFound />;
 
@@ -31,6 +50,15 @@ const PortfolioProject = () => {
             {project.title}
           </h1>
           <p className="text-lg text-white/75 mb-6">{project.description}</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            {project.websiteUrl && (
+              <Button variant="outline" size="lg" asChild className="border-white/30 text-white hover:bg-white/10 hover:text-white">
+                <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer">
+                  View Website <ExternalLink className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
+            )}
+          </div>
           <GoogleRatingBadge />
         </div>
       </section>
@@ -45,19 +73,25 @@ const PortfolioProject = () => {
           </Link>
 
           {/* Gallery */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
             {project.images.map((img, i) => (
-              <div
+              <button
                 key={i}
-                className="aspect-video rounded-xl overflow-hidden border border-border bg-muted"
+                onClick={() => setLightboxIndex(i)}
+                className="group aspect-video rounded-xl overflow-hidden border border-border bg-muted cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <img
                   src={img}
                   alt={`${project.title} screenshot ${i + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-              </div>
+                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300 flex items-center justify-center">
+                  <span className="text-sm font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-foreground/60 px-4 py-2 rounded-full">
+                    View full size
+                  </span>
+                </div>
+              </button>
             ))}
           </div>
 
@@ -80,9 +114,7 @@ const PortfolioProject = () => {
 
           {/* Results */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-foreground">
-              Results
-            </h2>
+            <h2 className="text-2xl font-bold mb-6 text-foreground">Results</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {project.results.map((r) => (
                 <div
@@ -124,6 +156,51 @@ const PortfolioProject = () => {
           </div>
         </div>
       </section>
+
+      {/* Lightbox */}
+      {lightboxIndex !== null && (
+        <div
+          className="fixed inset-0 z-[100] bg-foreground/90 flex items-center justify-center p-4 animate-fade-in"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors z-10"
+            aria-label="Close lightbox"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <button
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-4xl font-light transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxIndex((lightboxIndex - 1 + project.images.length) % project.images.length);
+            }}
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+          <img
+            src={project.images[lightboxIndex]}
+            alt={`${project.title} screenshot ${lightboxIndex + 1}`}
+            className="max-w-full max-h-[85vh] rounded-lg object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-4xl font-light transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxIndex((lightboxIndex + 1) % project.images.length);
+            }}
+            aria-label="Next image"
+          >
+            ›
+          </button>
+          <div className="absolute bottom-6 text-white/60 text-sm">
+            {lightboxIndex + 1} / {project.images.length}
+          </div>
+        </div>
+      )}
     </Layout>
   );
 };
