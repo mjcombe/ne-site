@@ -255,7 +255,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       {/* Minimal Footer */}
       <footer className={`${config.headerBg} text-primary-foreground/60 py-6 px-4`}>
         <div className="container mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <span>© {new Date().getFullYear()} NE Trades. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} NE1 Digital. All rights reserved.</span>
           <div className="flex gap-4">
             <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-primary-foreground transition-colors">Terms</Link>

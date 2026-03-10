@@ -92,7 +92,7 @@ const TradePageLayout = ({
             "@type": "Service",
             name: `Websites & SEO for ${trade}`,
             description: heroDescription,
-            provider: { "@id": "https://netrades.co.uk/#business" },
+            provider: { "@id": "https://ne1webdesign.co.uk/#business" },
             areaServed: { "@type": "AdministrativeArea", name: "North East England" },
           },
         ]}
