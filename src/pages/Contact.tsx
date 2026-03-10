@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { Mail, Clock } from "lucide-react";
+import { Mail, Clock, MessageSquare } from "lucide-react";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 
