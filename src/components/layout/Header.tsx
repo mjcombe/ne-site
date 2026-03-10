@@ -238,27 +238,25 @@ const Header = () => {
                       <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                     </button>
                     {isOpen && (
-                      <div className="ml-4 mt-1 space-y-3">
-                        {tradeCategories.map((cat) => (
-                          <div key={cat.label}>
-                            <span className="block px-4 py-1 text-xs font-bold text-accent uppercase tracking-wider">{cat.label}</span>
-                            {cat.trades.map((trade) => (
-                              <Link
-                                key={trade.href}
-                                to={trade.href}
-                                onClick={() => setMobileOpen(false)}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
-                                  location.pathname === trade.href
-                                    ? "text-primary font-semibold bg-secondary"
-                                    : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                                }`}
-                              >
-                                <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
-                                {trade.name}
-                              </Link>
-                            ))}
-                          </div>
-                        ))}
+                      <div className="ml-4 mt-1 space-y-0.5">
+                        {tradeCategories.map((cat) => {
+                          const trade = cat.trades[0];
+                          return (
+                            <Link
+                              key={trade.href}
+                              to={trade.href}
+                              onClick={() => setMobileOpen(false)}
+                              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
+                                location.pathname === trade.href
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                              }`}
+                            >
+                              <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
+                              {trade.name}
+                            </Link>
+                          );
+                        })}
                         <Link
                           to="/who-we-help"
                           onClick={() => setMobileOpen(false)}
