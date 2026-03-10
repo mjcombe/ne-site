@@ -12,7 +12,7 @@ const HowItWorksPage = () => {
         description="A simple, no-nonsense process to get your website live and ranking on Google. Discovery, design, build, launch."
         canonical="https://ne1webdesign.co.uk/how-it-works"
       />
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-trades text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
             How It Works

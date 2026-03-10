@@ -15,7 +15,7 @@ const Services = () => {
           { name: "Services", url: "https://ne1webdesign.co.uk/services" },
         ])}
       />
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-trades text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
             Digital services built for your business

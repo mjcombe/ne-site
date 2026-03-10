@@ -69,7 +69,7 @@ const BlogPost = () => {
         ]}
       />
       {/* Hero */}
-      <section className="gradient-navy text-primary-foreground section-padding">
+      <section className="gradient-trades text-primary-foreground section-padding">
         <div className="container mx-auto container-tight">
           <Link
             to="/blog"
