@@ -32,11 +32,10 @@ const Location = () => {
           {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: `NE Trades – ${location.name}`,
+            name: `NE1 Digital – ${location.name}`,
             description: location.metaDescription,
-            url: `https://netrades.co.uk/locations/${location.slug}`,
-            telephone: "+447463687129",
-            address: localBusinessSchema.address,
+            url: `https://ne1webdesign.co.uk/locations/${location.slug}`,
+            telephone: "+441916941463",
             areaServed: {
               "@type": "City",
               name: location.name,
