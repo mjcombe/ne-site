@@ -98,29 +98,25 @@ const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[720px] bg-card border border-border rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
-                      <div className="grid grid-cols-3 gap-6">
-                        {tradeCategories.map((cat) => (
-                          <div key={cat.label}>
-                            <span className="block text-xs font-bold text-accent uppercase tracking-wider mb-3">{cat.label}</span>
-                            <div className="space-y-0.5">
-                              {cat.trades.map((trade) => (
-                                <Link
-                                  key={trade.href}
-                                  to={trade.href}
-                                  className={`flex items-center gap-2 px-2 py-1.5 rounded text-sm transition-colors ${
-                                    location.pathname === trade.href
-                                      ? "text-primary font-semibold bg-secondary"
-                                      : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                                  }`}
-                                >
-                                  <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
-                                  {trade.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[680px] bg-card border border-border rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
+                      <div className="grid grid-cols-2 gap-1">
+                        {tradeCategories.map((cat) => {
+                          const trade = cat.trades[0];
+                          return (
+                            <Link
+                              key={trade.href}
+                              to={trade.href}
+                              className={`flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors ${
+                                location.pathname === trade.href
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                              }`}
+                            >
+                              <trade.icon className="w-4 h-4 text-accent shrink-0" />
+                              {trade.name}
+                            </Link>
+                          );
+                        })}
                       </div>
                       <div className="mt-4 pt-4 border-t border-border">
                         <Link
@@ -242,27 +238,25 @@ const Header = () => {
                       <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                     </button>
                     {isOpen && (
-                      <div className="ml-4 mt-1 space-y-3">
-                        {tradeCategories.map((cat) => (
-                          <div key={cat.label}>
-                            <span className="block px-4 py-1 text-xs font-bold text-accent uppercase tracking-wider">{cat.label}</span>
-                            {cat.trades.map((trade) => (
-                              <Link
-                                key={trade.href}
-                                to={trade.href}
-                                onClick={() => setMobileOpen(false)}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
-                                  location.pathname === trade.href
-                                    ? "text-primary font-semibold bg-secondary"
-                                    : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                                }`}
-                              >
-                                <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
-                                {trade.name}
-                              </Link>
-                            ))}
-                          </div>
-                        ))}
+                      <div className="ml-4 mt-1 space-y-0.5">
+                        {tradeCategories.map((cat) => {
+                          const trade = cat.trades[0];
+                          return (
+                            <Link
+                              key={trade.href}
+                              to={trade.href}
+                              onClick={() => setMobileOpen(false)}
+                              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
+                                location.pathname === trade.href
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                              }`}
+                            >
+                              <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
+                              {trade.name}
+                            </Link>
+                          );
+                        })}
                         <Link
                           to="/who-we-help"
                           onClick={() => setMobileOpen(false)}
