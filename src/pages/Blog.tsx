@@ -4,6 +4,7 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
 import SEOHead from "@/components/SEOHead";
+import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Blog = () => {
   const categories = useMemo(() => {
