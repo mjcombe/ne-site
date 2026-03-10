@@ -98,31 +98,15 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-1">
               {tradeCategories.map((cat) => {
-                const isOpen = openCategory === cat.label;
+                const trade = cat.trades[0];
                 return (
-                  <div key={cat.label}>
-                    <button
-                      onClick={() => toggleCategory(cat.label)}
-                      className="w-full flex items-center justify-between py-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                    >
-                      <span className="font-medium">{cat.label}</span>
-                      <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                    </button>
-                    {isOpen && (
-                      <ul className="flex flex-col gap-1.5 pl-3 pb-2 animate-fade-in">
-                        {cat.trades.map((trade) => (
-                          <li key={trade.href}>
-                            <Link
-                              to={trade.href}
-                              className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-                            >
-                              {trade.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                  <Link
+                    key={trade.href}
+                    to={trade.href}
+                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors py-0.5"
+                  >
+                    {trade.name}
+                  </Link>
                 );
               })}
               <Link
