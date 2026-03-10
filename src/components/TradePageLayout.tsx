@@ -156,9 +156,12 @@ const TradePageLayout = ({
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
-              <div key={i} className="p-6 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all">
+              <div key={i} className="p-6 rounded-lg bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-green-500/10 text-green-500 flex items-center justify-center text-sm font-bold mt-0.5">✓</span>
+                <div>
                 <h3 className="font-heading font-semibold text-lg text-foreground mb-2">{service.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                </div>
               </div>
             ))}
           </div>
