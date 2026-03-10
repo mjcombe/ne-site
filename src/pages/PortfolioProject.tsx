@@ -107,7 +107,7 @@ const PortfolioProject = () => {
               {project.description}
             </p>
             {project.websiteUrl && (
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="default" size="lg" asChild>
                 <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer">
                   View Website <ExternalLink className="w-4 h-4 ml-2" />
                 </a>
