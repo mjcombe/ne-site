@@ -49,16 +49,6 @@ const PortfolioProject = () => {
           <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             {project.title}
           </h1>
-          <p className="text-lg text-white/75 mb-6">{project.description}</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            {project.websiteUrl && (
-              <Button variant="outline" size="lg" asChild className="border-white/30 text-white hover:bg-white/10 hover:text-white">
-                <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer">
-                  View Website <ExternalLink className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
-            )}
-          </div>
           <GoogleRatingBadge />
         </div>
       </section>
