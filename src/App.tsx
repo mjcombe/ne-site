@@ -52,6 +52,8 @@ const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingTrades = lazy(() => import("./pages/landing/LandingTrades"));
 const Locations = lazy(() => import("./pages/Locations"));
 const Location = lazy(() => import("./pages/Location"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const PortfolioProject = lazy(() => import("./pages/PortfolioProject"));
 
 const queryClient = new QueryClient();
 
@@ -113,6 +115,9 @@ const App = () => (
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/:slug" element={<Location />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:slug" element={<PortfolioProject />} />
+            <Route path="*" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

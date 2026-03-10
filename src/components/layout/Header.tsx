@@ -35,9 +35,11 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services", dropdown: servicesDropdown },
   { label: "Who We Help", href: "/who-we-help", megaMenu: true },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about", dropdown: aboutDropdown },
 ];
