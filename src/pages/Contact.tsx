@@ -82,7 +82,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
                   <div className="w-10 h-10 rounded-md bg-icon-bg flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-accent" />
+                    <MessageSquare className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <span className="block text-sm font-semibold text-foreground">Call us</span>

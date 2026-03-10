@@ -49,7 +49,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col gap-3">
               <Link to="/contact" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                <Phone className="w-4 h-4 shrink-0" />
+                <MessageSquare className="w-4 h-4 shrink-0" />
                 Contact Us
               </Link>
               <a href="mailto:hello@netrades.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
