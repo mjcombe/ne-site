@@ -4,7 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 import { portfolioProjects } from "@/data/portfolioProjects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle, Quote, ExternalLink, X } from "lucide-react";
+import { ArrowLeft, CheckCircle, ExternalLink, X } from "lucide-react";
 import NotFound from "./NotFound";
 import { useState, useCallback, useEffect } from "react";
 
