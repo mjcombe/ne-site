@@ -22,12 +22,12 @@ const Location = () => {
       <SEOHead
         title={location.metaTitle}
         description={location.metaDescription}
-        canonical={`https://netrades.co.uk/locations/${location.slug}`}
+        canonical={`https://ne1webdesign.co.uk/locations/${location.slug}`}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Locations", url: "https://netrades.co.uk/locations" },
-            { name: location.name, url: `https://netrades.co.uk/locations/${location.slug}` },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Locations", url: "https://ne1webdesign.co.uk/locations" },
+            { name: location.name, url: `https://ne1webdesign.co.uk/locations/${location.slug}` },
           ]),
           {
             "@context": "https://schema.org",
