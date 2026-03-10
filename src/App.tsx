@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import PasswordGate from "./components/PasswordGate";
+import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
