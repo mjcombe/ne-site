@@ -4,7 +4,7 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo-ne1digital.png";
 import { tradeCategories } from "@/data/tradeCategories";
-
+import { locations } from "@/data/locations";
 const servicesDropdown = [
   { label: "Websites for Businesses", href: "/services/websites-for-trades", sub: false },
   { label: "Google Business Profile", href: "/services/google-business-profile", sub: false },
@@ -25,6 +25,12 @@ const aboutDropdown = [
   { label: "Contact", href: "/contact", sub: false },
 ];
 
+const locationsDropdown = locations.map((loc) => ({
+  label: loc.name,
+  href: `/locations/${loc.slug}`,
+  sub: false,
+}));
+
 type SimpleDropdown = { label: string; href: string; sub?: boolean }[];
 
 interface NavLink {
@@ -41,7 +47,7 @@ const navLinks: NavLink[] = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Locations", href: "/locations" },
+  { label: "Locations", href: "/locations", dropdown: locationsDropdown },
   { label: "About", href: "/about", dropdown: aboutDropdown },
 ];
 

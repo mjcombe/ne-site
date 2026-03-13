@@ -4,7 +4,6 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { locations } from "@/data/locations";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
-import CoverageMap from "@/components/CoverageMap";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Locations = () => {
@@ -37,16 +36,6 @@ const Locations = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="section-padding bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="mb-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Coverage Area</h2>
-            <p className="text-lg text-muted-foreground">Interactive map showing the locations we serve across the North East.</p>
-          </div>
-          <CoverageMap />
-        </div>
-      </section>
 
       {/* Location Grid */}
       <section className="section-padding bg-background">
