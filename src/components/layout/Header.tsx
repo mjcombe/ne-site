@@ -41,6 +41,7 @@ const navLinks: NavLink[] = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Locations", href: "/locations" },
   { label: "About", href: "/about", dropdown: aboutDropdown },
 ];
 
