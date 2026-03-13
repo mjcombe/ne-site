@@ -4,7 +4,7 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo-ne1digital.png";
 import { tradeCategories } from "@/data/tradeCategories";
-
+import { locations } from "@/data/locations";
 const servicesDropdown = [
   { label: "Websites for Businesses", href: "/services/websites-for-trades", sub: false },
   { label: "Google Business Profile", href: "/services/google-business-profile", sub: false },
