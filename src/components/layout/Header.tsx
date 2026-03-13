@@ -25,6 +25,12 @@ const aboutDropdown = [
   { label: "Contact", href: "/contact", sub: false },
 ];
 
+const locationsDropdown = locations.map((loc) => ({
+  label: loc.name,
+  href: `/locations/${loc.slug}`,
+  sub: false,
+}));
+
 type SimpleDropdown = { label: string; href: string; sub?: boolean }[];
 
 interface NavLink {
@@ -41,7 +47,7 @@ const navLinks: NavLink[] = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Locations", href: "/locations" },
+  { label: "Locations", href: "/locations", dropdown: locationsDropdown },
   { label: "About", href: "/about", dropdown: aboutDropdown },
 ];
 
