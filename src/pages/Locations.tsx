@@ -4,7 +4,6 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { locations } from "@/data/locations";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
-import CoverageMap from "@/components/CoverageMap";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
 
 const Locations = () => {
