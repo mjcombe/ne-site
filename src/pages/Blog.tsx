@@ -19,8 +19,8 @@ const Blog = () => {
   return (
     <Layout>
       <SEOHead
-        title="Blog | SEO & Website Tips for Businesses | NE1 Digital"
-        description="Practical SEO and website advice for businesses. Grow your local visibility and get more enquiries."
+        title="Blog | SEO, GMB & Website Tips for Local Businesses | NE1 Digital"
+        description="Practical SEO, Google Business Profile and website advice for local businesses across the North East. Grow your visibility and win more customers."
         canonical="https://ne1webdesign.co.uk/blog"
       />
       {/* Hero */}
