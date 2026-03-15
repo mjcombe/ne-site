@@ -62,9 +62,9 @@ const BlogPost = () => {
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
-            author: { "@type": "Organization", name: "NE Trades" },
-            publisher: { "@id": "https://netrades.co.uk/#organization" },
-            mainEntityOfPage: `https://netrades.co.uk/blog/${post.slug}`,
+            author: { "@type": "Organization", name: "NE1 Digital" },
+            publisher: { "@id": "https://ne1webdesign.co.uk/#organization" },
+            mainEntityOfPage: `https://ne1webdesign.co.uk/blog/${post.slug}`,
           },
         ]}
       />

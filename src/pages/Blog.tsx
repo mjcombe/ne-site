@@ -30,10 +30,10 @@ const Blog = () => {
             Blog
           </span>
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-white">
-            SEO Tips for Local Businesses
+            SEO & Marketing Tips for Local Businesses
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Practical advice to help businesses get found online, win more work, and grow their online presence.
+            Practical advice on local SEO, Google Business Profile optimisation, and websites to help businesses across the North East get found online and win more customers.
           </p>
           <GoogleRatingBadge />
         </div>
