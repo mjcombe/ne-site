@@ -49,12 +49,12 @@ const BlogPost = () => {
       <SEOHead
         title={`${post.title} | NE Trades Blog`}
         description={post.excerpt.slice(0, 155)}
-        canonical={`https://netrades.co.uk/blog/${post.slug}`}
+        canonical={`https://ne1webdesign.co.uk/blog/${post.slug}`}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Blog", url: "https://netrades.co.uk/blog" },
-            { name: post.title, url: `https://netrades.co.uk/blog/${post.slug}` },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Blog", url: "https://ne1webdesign.co.uk/blog" },
+            { name: post.title, url: `https://ne1webdesign.co.uk/blog/${post.slug}` },
           ]),
           {
             "@context": "https://schema.org",
@@ -62,9 +62,9 @@ const BlogPost = () => {
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
-            author: { "@type": "Organization", name: "NE Trades" },
-            publisher: { "@id": "https://netrades.co.uk/#organization" },
-            mainEntityOfPage: `https://netrades.co.uk/blog/${post.slug}`,
+            author: { "@type": "Organization", name: "NE1 Digital" },
+            publisher: { "@id": "https://ne1webdesign.co.uk/#organization" },
+            mainEntityOfPage: `https://ne1webdesign.co.uk/blog/${post.slug}`,
           },
         ]}
       />
