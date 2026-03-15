@@ -49,7 +49,7 @@ const BlogPost = () => {
       <SEOHead
         title={`${post.title} | NE Trades Blog`}
         description={post.excerpt.slice(0, 155)}
-        canonical={`https://netrades.co.uk/blog/${post.slug}`}
+        canonical={`https://ne1webdesign.co.uk/blog/${post.slug}`}
         jsonLd={[
           breadcrumbSchema([
             { name: "Home", url: "https://netrades.co.uk/" },
