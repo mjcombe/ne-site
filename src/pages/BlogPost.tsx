@@ -52,9 +52,9 @@ const BlogPost = () => {
         canonical={`https://ne1webdesign.co.uk/blog/${post.slug}`}
         jsonLd={[
           breadcrumbSchema([
-            { name: "Home", url: "https://netrades.co.uk/" },
-            { name: "Blog", url: "https://netrades.co.uk/blog" },
-            { name: post.title, url: `https://netrades.co.uk/blog/${post.slug}` },
+            { name: "Home", url: "https://ne1webdesign.co.uk/" },
+            { name: "Blog", url: "https://ne1webdesign.co.uk/blog" },
+            { name: post.title, url: `https://ne1webdesign.co.uk/blog/${post.slug}` },
           ]),
           {
             "@context": "https://schema.org",
