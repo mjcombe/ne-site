@@ -4,7 +4,6 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo-ne1digital.png";
 import { tradeCategories } from "@/data/tradeCategories";
-import { locations } from "@/data/locations";
 
 const servicesDropdown = [
   { label: "Websites for Businesses", href: "/services/websites-for-trades", sub: false },
@@ -73,9 +72,6 @@ const Header = () => {
   const isMegaMenuActive = () =>
     tradeCategories.some((cat) => cat.trades.some((t) => location.pathname === t.href));
 
-  const isLocationActive = () =>
-    locations.some((loc) => location.pathname === `/locations/${loc.slug}`);
-
   return (
     <header className="sticky top-0 z-50 bg-surface-raised/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
@@ -86,63 +82,6 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1" ref={navRef}>
           {navLinks.map((link) => {
-            // Locations mega menu
-            if (link.locationsMega) {
-              const isOpen = openDesktop === link.label;
-              const isActive = location.pathname === link.href || isLocationActive();
-              return (
-                <div key={link.label} className="relative">
-                  <button
-                    onClick={() => setOpenDesktop(isOpen ? null : link.label)}
-                    className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
-                      isActive
-                        ? "text-primary font-semibold bg-secondary"
-                        : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                    }`}
-                  >
-                    {link.label}
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                  </button>
-                  {isOpen && (
-                    <div className="absolute top-full right-0 mt-1 w-[600px] bg-card border border-border rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
-                      <div className="grid grid-cols-2 gap-x-8 gap-y-4">
-                        {locationsByRegion.map((group) => (
-                          <div key={group.region}>
-                            <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-                              {group.region}
-                            </h4>
-                            <div className="space-y-0.5">
-                              {group.locations.map((loc) => (
-                                <Link
-                                  key={loc.slug}
-                                  to={`/locations/${loc.slug}`}
-                                  className={`block px-2 py-1 rounded text-sm transition-colors ${
-                                    location.pathname === `/locations/${loc.slug}`
-                                      ? "text-primary font-semibold bg-secondary"
-                                      : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                                  }`}
-                                >
-                                  {loc.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="mt-4 pt-4 border-t border-border">
-                        <Link
-                          to="/locations"
-                          className="text-sm font-medium text-accent hover:underline"
-                        >
-                          View all locations →
-                        </Link>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            }
-
             // Mega menu for Who We Help
             if (link.megaMenu) {
               const isOpen = openDesktop === link.label;
@@ -283,61 +222,6 @@ const Header = () => {
         <div className="lg:hidden border-t border-border bg-surface-raised animate-fade-in max-h-[80vh] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
-              // Mobile locations mega menu
-              if (link.locationsMega) {
-                const isOpen = openMobile === link.label;
-                const isActive = location.pathname === link.href || isLocationActive();
-                return (
-                  <div key={link.label}>
-                    <button
-                      onClick={() => setOpenMobile(isOpen ? null : link.label)}
-                      className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
-                        isActive
-                          ? "text-primary font-semibold bg-secondary"
-                          : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                      }`}
-                    >
-                      {link.label}
-                      <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                    </button>
-                    {isOpen && (
-                      <div className="ml-4 mt-1 space-y-3">
-                        {locationsByRegion.map((group) => (
-                          <div key={group.region}>
-                            <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground px-4 mb-1">
-                              {group.region}
-                            </h4>
-                            <div className="space-y-0.5">
-                              {group.locations.map((loc) => (
-                                <Link
-                                  key={loc.slug}
-                                  to={`/locations/${loc.slug}`}
-                                  onClick={() => setMobileOpen(false)}
-                                  className={`block px-4 py-2 rounded-md text-sm transition-colors ${
-                                    location.pathname === `/locations/${loc.slug}`
-                                      ? "text-primary font-semibold bg-secondary"
-                                      : "text-text-secondary hover:text-foreground hover:bg-secondary"
-                                  }`}
-                                >
-                                  {loc.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                        <Link
-                          to="/locations"
-                          onClick={() => setMobileOpen(false)}
-                          className="block px-4 py-2 text-sm font-medium text-accent"
-                        >
-                          View all →
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-
               // Mobile mega menu
               if (link.megaMenu) {
                 const isOpen = openMobile === link.label;
