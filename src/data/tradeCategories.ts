@@ -1,6 +1,7 @@
 import {
   Wrench, Car, Sparkles, Heart, Building2, Briefcase, UtensilsCrossed, ShoppingBag,
-  GraduationCap, SprayCan, Camera, Baby, PawPrint, Truck,
+  GraduationCap, SprayCan, Camera, Baby, PawPrint, Truck, ShieldCheck, Monitor,
+  Gem, Dumbbell, Stethoscope, Scissors,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -99,6 +100,42 @@ export const tradeCategories: TradeCategory[] = [
     label: "Logistics & Moving",
     trades: [
       { icon: Truck, name: "Logistics & Moving", href: "/industries/logistics-and-moving", description: "Removal companies, storage facilities, courier services" },
+    ],
+  },
+  {
+    label: "Care & Support",
+    trades: [
+      { icon: Stethoscope, name: "Care & Support Services", href: "/industries/care-and-support", description: "Care homes, home care providers, disability support, elderly care, supported living" },
+    ],
+  },
+  {
+    label: "Security Services",
+    trades: [
+      { icon: ShieldCheck, name: "Security Services", href: "/industries/security-services", description: "CCTV installers, alarm companies, security guards, access control, fire safety" },
+    ],
+  },
+  {
+    label: "IT & Technology",
+    trades: [
+      { icon: Monitor, name: "IT & Technology", href: "/industries/it-and-technology", description: "IT support, managed services, software companies, tech consultants, SaaS businesses" },
+    ],
+  },
+  {
+    label: "Wedding Services",
+    trades: [
+      { icon: Gem, name: "Wedding Services", href: "/industries/wedding-services", description: "Wedding venues, wedding planners, bridal shops, cake makers, wedding photographers" },
+    ],
+  },
+  {
+    label: "Sports & Fitness",
+    trades: [
+      { icon: Dumbbell, name: "Sports & Fitness", href: "/industries/sports-and-fitness", description: "Gyms, personal trainers, yoga studios, martial arts, sports coaching, dance schools" },
+    ],
+  },
+  {
+    label: "Hair & Barbering",
+    trades: [
+      { icon: Scissors, name: "Hair & Barbering", href: "/industries/hair-and-barbering", description: "Barber shops, hair salons, mobile hairdressers, hair extensions, colour specialists" },
     ],
   },
 ];

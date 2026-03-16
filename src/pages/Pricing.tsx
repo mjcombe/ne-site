@@ -48,7 +48,7 @@ const seoFeatures = [
 ];
 
 const idealFor = [
-  "Trades and local service businesses",
+  "Local businesses of all kinds",
   "Companies wanting to generate more enquiries online",
   "Businesses that want a website that actually ranks on Google",
   "Companies that want ongoing support without hiring in-house staff",
@@ -87,7 +87,7 @@ const Pricing = () => {
                 <Star key={i} className="w-4 h-4 fill-gold text-gold" />
               ))}
             </div>
-            <span className="text-sm font-medium">Trusted by trade businesses across the North East</span>
+            <span className="text-sm font-medium">Trusted by businesses across the North East</span>
           </div>
         </div>
       </section>

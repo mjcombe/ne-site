@@ -2,14 +2,14 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 const SEO = () => (
   <ServicePageLayout
-    title="SEO services that get tradespeople to page one"
-    subtitle="SEO for Trades"
-    description="Search engine optimisation is how customers find you online. We build and execute SEO strategies specifically for trade businesses, so you rank higher, get more clicks, and win more local work."
+    title="SEO services that get your business to page one"
+    subtitle="SEO for Businesses"
+    description="Search engine optimisation is how customers find you online. We build and execute SEO strategies for businesses of all kinds, so you rank higher, get more clicks, and win more local customers."
     whoIsItFor={[
-      "Trade businesses that want to appear on Google's first page",
-      "Tradespeople tired of relying on word of mouth or paid ads alone",
+      "Businesses that want to appear on Google's first page",
+      "Companies tired of relying on word of mouth or paid ads alone",
       "Businesses that want a long-term source of consistent enquiries",
-      "Any trade covering a local area that wants to dominate search results",
+      "Any business covering a local area that wants to dominate search results",
     ]}
     howItHelps={[
       "We research exactly what your potential customers are searching for and build a strategy around those keywords so your website ranks for the terms that matter.",
@@ -18,7 +18,7 @@ const SEO = () => (
       "Technical SEO ensures your site loads fast, works on mobile, and has no crawl errors or broken links holding your rankings back.",
     ]}
     whatsIncluded={[
-      "Keyword research for your trade and area",
+      "Keyword research for your business and area",
       "On-page SEO optimisation",
       "Technical SEO audit and fixes",
       "Local citation building",

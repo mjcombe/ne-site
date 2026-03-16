@@ -2,14 +2,14 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 const GoogleBusinessProfile = () => (
   <ServicePageLayout
-    title="Google Business Profile optimisation for tradespeople"
+    title="Google Business Profile optimisation for local businesses"
     subtitle="Google Business Profile"
     description="Your Google Business Profile is often the first thing customers see. We optimise it fully so you stand out in the map pack and get more calls directly from Google."
     whoIsItFor={[
-      "Trade businesses that want to appear in Google's map pack",
-      "Tradespeople who haven't claimed or optimised their Google listing",
+      "Businesses that want to appear in Google's local map pack",
+      "Companies that haven't claimed or optimised their Google listing",
       "Businesses that want more calls directly from Google search results",
-      "Any local trade that wants to build trust through reviews and visibility",
+      "Any local business that wants to build trust through reviews and visibility",
     ]}
     howItHelps={[
       "A fully optimised Google Business Profile puts your business at the top of local search results with your phone number, reviews, and service details front and centre.",
@@ -28,7 +28,7 @@ const GoogleBusinessProfile = () => (
       "Performance tracking and insights",
     ]}
     expectedOutcomes={[
-      "Higher visibility in Google's local map pack when customers search for your trade nearby.",
+      "Higher visibility in Google's local map pack when customers search for your services nearby.",
       "More direct phone calls and website visits from your Google Business Profile listing.",
       "Stronger trust signals through a professional, complete profile with positive reviews.",
       "Better understanding of how customers find and interact with your business on Google.",
