@@ -112,12 +112,12 @@ const Pricing = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                   A complete, professionally designed website built to generate enquiries and position your business as the obvious choice in your local area. Fully search optimised from day one and designed to convert visitors into customers.
                 </p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">Estimated from</p>
                 <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-5xl font-heading font-bold text-foreground">£997</span>
-                  <span className="text-muted-foreground text-sm">website setup</span>
+                  <span className="text-4xl font-heading font-bold text-foreground">£997 – £3,947</span>
                 </div>
                 <div className="flex items-baseline gap-2 mt-2">
-                  <span className="text-3xl font-heading font-bold text-foreground">£99</span>
+                  <span className="text-2xl font-heading font-bold text-foreground">then £99</span>
                   <span className="text-muted-foreground text-sm">per month</span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-3">
