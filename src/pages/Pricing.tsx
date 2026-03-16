@@ -41,6 +41,7 @@ const seoFeatures = [
   { icon: Target, label: "Competitor analysis and keyword expansion" },
   { icon: Wrench, label: "Technical SEO improvements" },
   { icon: BadgeCheck, label: "Authority and trust signals for stronger rankings" },
+  { icon: BarChart3, label: "Google Analytics setup, tracking and reporting" },
   { icon: Settings, label: "Unlimited website updates (fair usage applies)" },
 ];
 
