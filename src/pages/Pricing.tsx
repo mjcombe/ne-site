@@ -48,7 +48,7 @@ const seoFeatures = [
 ];
 
 const idealFor = [
-  "Trades and local service businesses",
+  "Local businesses of all kinds",
   "Companies wanting to generate more enquiries online",
   "Businesses that want a website that actually ranks on Google",
   "Companies that want ongoing support without hiring in-house staff",

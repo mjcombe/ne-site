@@ -107,6 +107,12 @@ const App = () => (
               <Route path="/industries/childcare-and-family-services" element={<ChildcareAndFamily />} />
               <Route path="/industries/pet-services" element={<PetServices />} />
               <Route path="/industries/logistics-and-moving" element={<LogisticsAndMoving />} />
+              <Route path="/industries/care-and-support" element={<CareAndSupport />} />
+              <Route path="/industries/security-services" element={<SecurityServices />} />
+              <Route path="/industries/it-and-technology" element={<ITAndTechnology />} />
+              <Route path="/industries/wedding-services" element={<WeddingServices />} />
+              <Route path="/industries/sports-and-fitness" element={<SportsAndFitness />} />
+              <Route path="/industries/hair-and-barbering" element={<HairAndBarbering />} />
               {/* Other */}
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/results" element={<ResultsPage />} />
