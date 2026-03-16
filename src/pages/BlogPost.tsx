@@ -34,7 +34,10 @@ const renderWithLinks = (text: string) => {
 };
 
 const BlogPost = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug: paramSlug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  // Support root-level WordPress URLs: derive slug from pathname if no route param
+  const slug = paramSlug || location.pathname.replace(/^\//, '').replace(/\/$/, '');
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) return <Navigate to="/blog" replace />;
