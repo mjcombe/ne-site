@@ -35,22 +35,38 @@ const Footer = () => {
     <footer className="gradient-navy text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
-          {/* Brand */}
+          {/* Brand & Offices */}
           <div className="lg:col-span-1">
             <span className="font-heading font-bold text-xl text-primary-foreground">NE1 Digital</span>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Professional web design and local SEO for businesses across North Tyneside, Teesside and the wider North East.
             </p>
-            <div className="flex flex-col gap-3">
-              <a href="tel:01916941463" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                <Phone className="w-4 h-4 shrink-0" />
-                0191 694 1463
-              </a>
-              <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                <Mail className="w-4 h-4 shrink-0" />
-                hello@ne1webdesign.co.uk
-              </a>
+
+            {/* North Tyneside Office */}
+            <div className="flex items-start gap-2 mb-4">
+              <MapPin className="w-4 h-4 shrink-0 mt-0.5 text-primary-foreground/60" />
+              <div className="text-sm text-primary-foreground/70 leading-relaxed">
+                <span className="block font-semibold text-primary-foreground/90">North Tyneside</span>
+                Suite 2.6a, North Tyneside Business Centre,<br />
+                North Shields, NE30 1NT
+                <a href="tel:01916941463" className="block mt-1 hover:text-primary-foreground transition-colors">0191 694 1463</a>
+              </div>
             </div>
+
+            {/* Teesside Office */}
+            <div className="flex items-start gap-2 mb-5">
+              <MapPin className="w-4 h-4 shrink-0 mt-0.5 text-primary-foreground/60" />
+              <div className="text-sm text-primary-foreground/70 leading-relaxed">
+                <span className="block font-semibold text-primary-foreground/90">Teesside</span>
+                Norton High Street, TS20
+                <a href="tel:07463687129" className="block mt-1 hover:text-primary-foreground transition-colors">07463 687129</a>
+              </div>
+            </div>
+
+            <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <Mail className="w-4 h-4 shrink-0" />
+              hello@ne1webdesign.co.uk
+            </a>
           </div>
 
           {/* Services */}
