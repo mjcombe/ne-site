@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarChart3, Sparkles, LucideIcon } from "lucide-react";
+import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarChart3, Sparkles, LucideIcon, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
