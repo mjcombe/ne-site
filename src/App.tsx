@@ -36,6 +36,12 @@ const EventsAndCreative = lazy(() => import("./pages/industries/EventsAndCreativ
 const ChildcareAndFamily = lazy(() => import("./pages/industries/ChildcareAndFamily"));
 const PetServices = lazy(() => import("./pages/industries/PetServices"));
 const LogisticsAndMoving = lazy(() => import("./pages/industries/LogisticsAndMoving"));
+const CareAndSupport = lazy(() => import("./pages/industries/CareAndSupport"));
+const SecurityServices = lazy(() => import("./pages/industries/SecurityServices"));
+const ITAndTechnology = lazy(() => import("./pages/industries/ITAndTechnology"));
+const WeddingServices = lazy(() => import("./pages/industries/WeddingServices"));
+const SportsAndFitness = lazy(() => import("./pages/industries/SportsAndFitness"));
+const HairAndBarbering = lazy(() => import("./pages/industries/HairAndBarbering"));
 
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const ResultsPage = lazy(() => import("./pages/ResultsPage"));
