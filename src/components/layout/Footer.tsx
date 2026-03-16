@@ -1,6 +1,6 @@
 // Footer component
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { tradeCategories } from "@/data/tradeCategories";
 
 const serviceLinks = [
