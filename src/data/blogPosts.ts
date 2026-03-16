@@ -15,6 +15,8 @@ export interface BlogPost {
   readTime: string;
   category: string;
   content: string[];
+  /** Optional root-level URL path for migrated WordPress posts (e.g. "/my-old-post") */
+  urlPath?: string;
 }
 
 export const blogPosts: BlogPost[] = [
