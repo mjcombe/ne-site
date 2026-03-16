@@ -20,18 +20,13 @@ const servicesDropdown = [
 
 const aboutDropdown = [
   { label: "About Us", href: "/about", sub: false },
-  { label: "Results", href: "/results", sub: false },
-  { label: "Reviews", href: "/reviews", sub: false },
+  { label: "How It Works", href: "/how-it-works", sub: false },
+  { label: "Our Pricing", href: "/pricing", sub: false },
+  { label: "Client Results", href: "/results", sub: false },
+  { label: "Our Reviews", href: "/reviews", sub: false },
   { label: "Blog", href: "/blog", sub: false },
-  { label: "Contact", href: "/contact", sub: false },
+  { label: "Contact Us", href: "/contact", sub: false },
 ];
-
-// Group locations by region
-const regionOrder = ["Tyne and Wear", "Northumberland", "County Durham", "Teesside"];
-const locationsByRegion = regionOrder.map((region) => ({
-  region,
-  locations: locations.filter((loc) => loc.county === region),
-})).filter((g) => g.locations.length > 0);
 
 type SimpleDropdown = { label: string; href: string; sub?: boolean }[];
 
@@ -40,17 +35,13 @@ interface NavLink {
   href: string;
   dropdown?: SimpleDropdown;
   megaMenu?: boolean;
-  locationsMega?: boolean;
 }
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services", dropdown: servicesDropdown },
   { label: "Who We Help", href: "/who-we-help", megaMenu: true },
-  { label: "How It Works", href: "/how-it-works" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Locations", href: "/locations", locationsMega: true },
   { label: "About", href: "/about", dropdown: aboutDropdown },
 ];
 
