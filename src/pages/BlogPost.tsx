@@ -133,7 +133,7 @@ const BlogPost = () => {
           <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between gap-4">
             {prevPost ? (
               <Link
-                to={`/blog/${prevPost.slug}`}
+                to={prevPost.urlPath || `/blog/${prevPost.slug}`}
                 className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
@@ -142,7 +142,7 @@ const BlogPost = () => {
             ) : <div />}
             {nextPost ? (
               <Link
-                to={`/blog/${nextPost.slug}`}
+                to={nextPost.urlPath || `/blog/${nextPost.slug}`}
                 className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors sm:text-right"
               >
                 <span className="line-clamp-1">{nextPost.title}</span>
