@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
+import founderImage from "@/assets/michael-james-founder.jpg";
 
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
@@ -50,10 +51,13 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="gradient-navy rounded-lg p-8 text-primary-foreground flex flex-col justify-center aspect-[4/3]">
-              <span className="block text-4xl font-bold font-heading mb-2">NE1</span>
-              <span className="block text-lg font-heading mb-1">Digital</span>
-              <span className="text-sm text-primary-foreground/70">North Tyneside & Teesside</span>
+            <div className="rounded-lg overflow-hidden aspect-[3/4] shadow-xl">
+              <img
+                src={founderImage}
+                alt="Michael James, Founder of NE1 Digital"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
