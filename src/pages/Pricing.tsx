@@ -23,16 +23,13 @@ const websiteFeatures = [
   { icon: MousePointerClick, label: "Click to call functionality for mobile users" },
   { icon: Mail, label: "Dynamic enquiry and contact forms" },
   { icon: Star, label: "Google Reviews integration" },
-  { icon: BarChart3, label: "Google Analytics setup and tracking" },
   { icon: MapPin, label: "Google Business Profile optimisation" },
   { icon: Award, label: "Industry accreditation badges and trust signals" },
-  { icon: Puzzle, label: "Third party widget support including WhatsApp, TrueQuote, Calendly, Tradify, Jobber and ServiceM8" },
   { icon: Sparkles, label: "AI and Generative Engine Optimisation (GEO) to prepare your website for modern AI search" },
   { icon: Server, label: "Super fast hosting for performance and reliability" },
   { icon: Lock, label: "SSL security certificate" },
   { icon: CloudUpload, label: "Daily backups and ongoing security updates" },
   { icon: Globe2, label: "Domain name registration and management" },
-  { icon: Settings, label: "Content management system so your website can grow with your business" },
 ];
 
 const seoFeatures = [
