@@ -46,28 +46,30 @@ const BlogPost = () => {
   const currentIndex = blogPosts.findIndex((p) => p.slug === slug);
   const nextPost = blogPosts[currentIndex + 1];
   const prevPost = blogPosts[currentIndex - 1];
+  const postUrl = post.urlPath || `/blog/${post.slug}`;
+  const fullUrl = `https://ne1webdesign.co.uk${postUrl}`;
 
   return (
     <Layout>
       <SEOHead
-        title={`${post.title} | NE Trades Blog`}
-        description={post.excerpt.slice(0, 155)}
-        canonical={`https://ne1webdesign.co.uk/blog/${post.slug}`}
+        title={post.metaDescription ? `${post.title} | NE1 Digital` : `${post.title} | NE Trades Blog`}
+        description={post.metaDescription || post.excerpt.slice(0, 155)}
+        canonical={fullUrl}
         jsonLd={[
           breadcrumbSchema([
             { name: "Home", url: "https://ne1webdesign.co.uk/" },
             { name: "Blog", url: "https://ne1webdesign.co.uk/blog" },
-            { name: post.title, url: `https://ne1webdesign.co.uk/blog/${post.slug}` },
+            { name: post.title, url: fullUrl },
           ]),
           {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: post.title,
-            description: post.excerpt,
+            description: post.metaDescription || post.excerpt,
             datePublished: post.date,
             author: { "@type": "Organization", name: "NE1 Digital" },
             publisher: { "@id": "https://ne1webdesign.co.uk/#organization" },
-            mainEntityOfPage: `https://ne1webdesign.co.uk/blog/${post.slug}`,
+            mainEntityOfPage: fullUrl,
           },
         ]}
       />
