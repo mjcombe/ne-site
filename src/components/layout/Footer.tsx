@@ -71,30 +71,17 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 py-10">
 
         {/* Top: Brand + Offices — 3 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <div>
-            <span className="font-heading font-bold text-lg text-primary-foreground">NE1 Digital</span>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mt-2 max-w-xs">
-              Web design & local SEO for businesses across the North East. 200+ websites built.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-1.5 text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-              <Mail className="w-3.5 h-3.5 shrink-0" />
-              hello@ne1webdesign.co.uk
-            </a>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">North Tyneside</p>
-              <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
-                <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
-                <span>Suite 2.6a, North Tyneside Business Centre, North Shields, NE30 1NT</span>
-              </div>
-              <a href="tel:01916941463" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
-                <Phone className="w-3 h-3 shrink-0" />
-                0191 694 1463
-              </a>
+            <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">North Tyneside</p>
+            <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
+              <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
+              <span>Suite 2.6a, North Tyneside Business Centre, North Shields, NE30 1NT</span>
             </div>
+            <a href="tel:01916941463" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
+              <Phone className="w-3 h-3 shrink-0" />
+              0191 694 1463
+            </a>
           </div>
 
           <div>
@@ -103,6 +90,10 @@ const Footer = () => {
               <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
               <span>Norton High Street, TS20</span>
             </div>
+            <a href="tel:07463687129" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
+              <Phone className="w-3 h-3 shrink-0" />
+              07463 687129
+            </a>
           </div>
         </div>
 
