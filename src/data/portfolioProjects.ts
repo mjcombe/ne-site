@@ -1,4 +1,8 @@
 import portfolioNewcastleCare from "@/assets/portfolio-newcastlecare.webp";
+import portfolioIntegrity1 from "@/assets/portfolio-integrity-plumb-1.webp";
+import portfolioIntegrity2 from "@/assets/portfolio-integrity-plumb-2.webp";
+import portfolioIntegrity3 from "@/assets/portfolio-integrity-plumb-3.webp";
+import portfolioIntegrity4 from "@/assets/portfolio-integrity-plumb-4.webp";
 
 export interface PortfolioProject {
   slug: string;
@@ -20,27 +24,27 @@ export interface PortfolioProject {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    slug: "smith-plumbing-website",
-    title: "Smith Plumbing & Heating",
-    client: "Smith Plumbing & Heating",
+    slug: "integrity-plumb-website",
+    title: "Integrity Plumb",
+    client: "Integrity Plumb",
     industry: "Plumbing & Heating",
     description:
-      "A complete digital transformation for a family-run plumbing business in Newcastle. We designed and built a modern, high-converting website with local SEO integration and Google Business Profile optimisation — helping them dominate local search results.",
-    thumbnail: "/placeholder.svg",
-    websiteUrl: "https://example.com",
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    services: ["Website Design", "Local SEO", "Google Business Profile"],
+      "A full website design and local SEO project for Integrity Plumb, a trusted plumbing and heating company based in County Durham. We built a professional, high-converting website with service pages, area pages, and Google Business Profile optimisation — helping them stand out in local search results across Murton, Seaham, Sunderland and the wider County Durham area.",
+    thumbnail: portfolioIntegrity4,
+    websiteUrl: "https://integrityplumb.co.uk",
+    images: [portfolioIntegrity4, portfolioIntegrity2, portfolioIntegrity1, portfolioIntegrity3],
+    services: ["Website Design", "Local SEO", "Google Business Profile", "Service Area Pages"],
     results: [
-      "320% increase in organic traffic within 6 months",
-      "45 new enquiries per month from Google",
-      "Page 1 rankings for 12 target keywords",
-      "Google Business Profile views up 280%",
+      "Professional website launched to support local growth",
+      "Page 1 rankings for key plumbing searches in County Durham",
+      "Increased enquiries from homeowners across the region",
+      "Google Business Profile views up significantly",
     ],
     testimonial: {
       quote:
-        "NE1 Digital completely transformed our online presence. We went from barely getting any calls to having more work than we can handle. Couldn't recommend them enough.",
-      author: "David Smith",
-      role: "Owner, Smith Plumbing & Heating",
+        "NE1 Digital built us a website that actually brings in work. We're getting calls every week now from people finding us on Google. Brilliant service from start to finish.",
+      author: "Luke",
+      role: "Owner, Integrity Plumb",
     },
   },
   {
