@@ -15,6 +15,8 @@ export interface BlogPost {
   readTime: string;
   category: string;
   content: string[];
+  /** Optional root-level URL path for migrated WordPress posts (e.g. "/my-old-post") */
+  urlPath?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -532,6 +534,74 @@ export const blogPosts: BlogPost[] = [
       "Heating work generates natural review opportunities — a grateful customer whose boiler you fixed on a freezing evening is likely to leave a glowing [review](/blog/how-to-get-more-google-reviews). Send a review request the morning after emergency call-outs when gratitude is highest. Reviews mentioning specific locations boost your [Google Maps ranking](/blog/how-to-rank-higher-google-maps).",
       "## Year-Round Strategy",
       "Don't wait for winter. Build your online presence during quieter months so you're firmly established when demand peaks. An [ongoing SEO strategy](/services/ongoing-seo) ensures your website climbs rankings steadily. [Get started now](/get-started) and be ready for the season ahead."
+    ]
+  },
+  {
+    slug: "10-common-website-mistakes-north-east-businesses-make-and-how-to-fix-them",
+    title: "10 Common Website Mistakes North East Businesses Make and How to Fix Them",
+    metaDescription: "We work with businesses across North Tyneside and Newcastle and see the same website issues holding companies back. Discover the ten most common mistakes and how simple fixes can improve performance, enquiries and customer experience.",
+    excerpt: "A website is one of the most valuable tools your business has. Here are ten of the most common mistakes we see across the North East, and how to fix them.",
+    icon: Globe,
+    date: "2025-12-10",
+    readTime: "6 min read",
+    category: "Websites",
+    urlPath: "/10-common-website-mistakes-north-east-businesses-make-and-how-to-fix-them",
+    content: [
+      "A website is one of the most valuable tools your business has. It is usually the first place a customer lands, and in many cases the deciding factor in whether they get in touch, book a service or move on to a competitor. But a website only works when it is built with purpose, kept up to date, and genuinely supports the way customers behave online.",
+      "Because we work with businesses every day across North Tyneside, Newcastle and the wider North East, we see the same issues cropping up repeatedly. These affect trades, salons, cafés, training providers, local retailers and even long established companies who assume their website is fine because it was redesigned a few years ago.",
+      "Here are ten of the most common mistakes we come across, why they matter, and how to fix them.",
+      "## 1. Not mobile friendly",
+      "Mobile traffic is no longer a trend. It is the default. For many of our clients, especially trades and local service businesses, more than seventy percent of website visits come from mobile devices.",
+      "Yet many websites still break on smaller screens, use old themes that do not adjust properly, hide key information below large hero images or offer difficult navigation on mobile.",
+      "## 2. Too much jargon and not enough clarity",
+      "It is easy for businesses to write in a way that makes sense internally but confuses customers. Customers want clarity, not complexity.",
+      "## 3. Not enough meaningful content",
+      "Content should answer questions, remove doubts and help customers understand what you do. Good content builds trust and helps turn visitors into enquiries.",
+      "## 4. Hiding essential information",
+      "Websites must make phone numbers, email addresses and contact forms easy to find. Missing contact information is one of the fastest ways to lose a potential customer.",
+      "## 5. Slow loading speed",
+      "Slow websites frustrate users and create a poor impression. Oversized images, outdated plugins and poor optimisation are common causes.",
+      "## 6. Weak or unclear calls to action",
+      "Visitors should always know the next step. Clear actions such as \"request a quote\" or \"call today\" help improve conversion rates.",
+      "## 7. Outdated design and layout",
+      "A modern design helps visitors trust your brand and improves overall credibility.",
+      "## 8. Cluttered pages and poor user experience",
+      "Excessive pop ups, flashing banners and confusing layouts distract visitors and reduce engagement.",
+      "## 9. Broken forms or booking systems",
+      "Always test your contact forms and booking systems regularly. Businesses often discover problems only after enquiries stop arriving.",
+      "## 10. Sending all traffic to the homepage",
+      "Dedicated service pages perform far better for SEO and conversion than a generic homepage.",
+      "A successful website is not defined by how it looks at first glance but by how well it helps customers, how easy it is to use and how effectively it supports your marketing."
+    ]
+  },
+  {
+    slug: "5-simple-ideas-for-improving-your-website",
+    title: "5 Simple Ideas for Improving Your Website",
+    metaDescription: "Five practical tips to improve your business website, attract more visitors and convert them into customers.",
+    excerpt: "Do you worry that your business website isn't good enough? Here are five basic steps you can take to attract more customers.",
+    icon: Sparkles,
+    date: "2019-01-01",
+    readTime: "4 min read",
+    category: "Websites",
+    urlPath: "/5-simple-ideas-for-improving-your-website",
+    content: [
+      "Do you worry that your business website isn't good enough? That its flaws could mean you're missing out on potential sales?",
+      "More and more businesses are always looking for ways to improve their website and make more sales.",
+      "So if you think there are things you can do to improve your website, you're right. Here we look at some basic steps you can take to attract more customers.",
+      "## 1. Improve the focus of your pages",
+      "Can your website visitors easily understand what they are supposed to do once they arrive on your website?",
+      "If they cannot, the chances of making a sale fall dramatically. Each page on your website should encourage the visitor to take an action that moves them towards your overall goal.",
+      "For example, if you are selling a product, the goal might be to search for products, add items to a basket and complete the checkout process.",
+      "If pages lack focus, visitors get distracted and are much less likely to become customers.",
+      "## 2. Simplify navigation",
+      "Visitors should be able to move through your website easily. Clear menus and logical page structures make it easier for users to find what they need.",
+      "## 3. Improve page speed",
+      "Slow websites cause visitors to leave quickly. Optimising images and reducing unnecessary scripts can significantly improve performance.",
+      "## 4. Use clear calls to action",
+      "Encourage visitors to take the next step, whether that is contacting you, requesting a quote or purchasing a product.",
+      "## 5. Keep content up to date",
+      "Fresh and relevant content helps both visitors and search engines understand your website.",
+      "Updating articles and adding useful information regularly can improve both traffic and engagement."
     ]
   }
 ];

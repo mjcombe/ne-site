@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, ArrowRight, Globe, Search, MapPin, FileText, TrendingUp } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { blogPosts } from "@/data/blogPosts";
@@ -34,7 +34,10 @@ const renderWithLinks = (text: string) => {
 };
 
 const BlogPost = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug: paramSlug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  // Support root-level WordPress URLs: derive slug from pathname if no route param
+  const slug = paramSlug || location.pathname.replace(/^\//, '').replace(/\/$/, '');
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) return <Navigate to="/blog" replace />;
@@ -43,28 +46,30 @@ const BlogPost = () => {
   const currentIndex = blogPosts.findIndex((p) => p.slug === slug);
   const nextPost = blogPosts[currentIndex + 1];
   const prevPost = blogPosts[currentIndex - 1];
+  const postUrl = post.urlPath || `/blog/${post.slug}`;
+  const fullUrl = `https://ne1webdesign.co.uk${postUrl}`;
 
   return (
     <Layout>
       <SEOHead
-        title={`${post.title} | NE Trades Blog`}
-        description={post.excerpt.slice(0, 155)}
-        canonical={`https://ne1webdesign.co.uk/blog/${post.slug}`}
+        title={post.metaDescription ? `${post.title} | NE1 Digital` : `${post.title} | NE Trades Blog`}
+        description={post.metaDescription || post.excerpt.slice(0, 155)}
+        canonical={fullUrl}
         jsonLd={[
           breadcrumbSchema([
             { name: "Home", url: "https://ne1webdesign.co.uk/" },
             { name: "Blog", url: "https://ne1webdesign.co.uk/blog" },
-            { name: post.title, url: `https://ne1webdesign.co.uk/blog/${post.slug}` },
+            { name: post.title, url: fullUrl },
           ]),
           {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: post.title,
-            description: post.excerpt,
+            description: post.metaDescription || post.excerpt,
             datePublished: post.date,
             author: { "@type": "Organization", name: "NE1 Digital" },
             publisher: { "@id": "https://ne1webdesign.co.uk/#organization" },
-            mainEntityOfPage: `https://ne1webdesign.co.uk/blog/${post.slug}`,
+            mainEntityOfPage: fullUrl,
           },
         ]}
       />
@@ -128,7 +133,7 @@ const BlogPost = () => {
           <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between gap-4">
             {prevPost ? (
               <Link
-                to={`/blog/${prevPost.slug}`}
+                to={prevPost.urlPath || `/blog/${prevPost.slug}`}
                 className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
@@ -137,7 +142,7 @@ const BlogPost = () => {
             ) : <div />}
             {nextPost ? (
               <Link
-                to={`/blog/${nextPost.slug}`}
+                to={nextPost.urlPath || `/blog/${nextPost.slug}`}
                 className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors sm:text-right"
               >
                 <span className="line-clamp-1">{nextPost.title}</span>

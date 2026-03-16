@@ -40,7 +40,7 @@ const BlogCarousel = () => {
             {latestPosts.map((post) => (
               <CarouselItem key={post.slug} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
                 <Link
-                  to={`/blog/${post.slug}`}
+                  to={post.urlPath || `/blog/${post.slug}`}
                   className="block h-full rounded-xl bg-card border border-border hover:border-accent/30 hover:shadow-md transition-all group overflow-hidden"
                 >
                   <div className="p-5 flex flex-col h-full">
