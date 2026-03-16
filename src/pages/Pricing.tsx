@@ -87,7 +87,7 @@ const Pricing = () => {
                 <Star key={i} className="w-4 h-4 fill-gold text-gold" />
               ))}
             </div>
-            <span className="text-sm font-medium">Trusted by trade businesses across the North East</span>
+            <span className="text-sm font-medium">Trusted by businesses across the North East</span>
           </div>
         </div>
       </section>
