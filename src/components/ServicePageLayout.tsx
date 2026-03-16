@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarChart3, Sparkles, LucideIcon } from "lucide-react";
+import { ArrowRight, Globe, Search, MapPin, FileText, Shield, TrendingUp, BarChart3, Sparkles, LucideIcon, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
@@ -136,6 +136,27 @@ const ServicePageLayout = ({
                 <span className="text-sm text-foreground">{item}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Snapshot */}
+      <section className="section-padding bg-secondary">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-card border border-border rounded-2xl p-8 text-center">
+            <div className="w-12 h-12 rounded-xl bg-[hsl(var(--icon-bg))] flex items-center justify-center mx-auto mb-4">
+              <Zap className="w-6 h-6 text-primary" />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Packages to suit your business</h2>
+            <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+              Business websites from <span className="font-semibold text-foreground">£997</span> + <span className="font-semibold text-foreground">£99/month</span>. 
+              Pro SEO packages from <span className="font-semibold text-foreground">£395/month</span> with website build included.
+            </p>
+            <Button variant="cta" size="lg" asChild>
+              <Link to="/pricing">
+                View Our Pricing <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

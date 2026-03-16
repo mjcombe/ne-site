@@ -4,26 +4,6 @@ import { Mail, MapPin, ChevronDown, Phone } from "lucide-react";
 import { tradeCategories } from "@/data/tradeCategories";
 import { locations } from "@/data/locations";
 
-const serviceLinks = [
-  { label: "Websites for Businesses", href: "/services/websites-for-trades" },
-  { label: "Local SEO", href: "/services/local-seo" },
-  { label: "Google Business Profile", href: "/services/google-business-profile" },
-  { label: "Service Area Pages", href: "/services/service-area-pages" },
-  { label: "Hosting & Care", href: "/services/hosting-and-care" },
-  { label: "Ongoing SEO", href: "/services/ongoing-seo" },
-];
-
-const companyLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Our Pricing", href: "/pricing" },
-  { label: "Client Results", href: "/results" },
-  { label: "Our Reviews", href: "/reviews" },
-  { label: "Blog", href: "/blog" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: "/contact" },
-];
-
 const legalLinks = [
   { label: "Privacy", href: "/privacy-policy" },
   { label: "Terms", href: "/terms-of-service" },
@@ -36,7 +16,6 @@ const locationsByRegion = regionOrder.map((region) => ({
   locations: locations.filter((loc) => loc.county === region),
 })).filter((g) => g.locations.length > 0);
 
-// Industry groups with collapsible sub-items
 const industryGroups = [
   {
     label: "Trade & Property",
@@ -90,58 +69,49 @@ const Footer = () => {
   return (
     <footer className="gradient-navy text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
 
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-1">
+          {/* Brand + Offices */}
+          <div>
             <span className="font-heading font-bold text-lg text-primary-foreground">NE1 Digital</span>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mt-2 mb-4 max-w-xs">
               Web design & local SEO for businesses across the North East. 200+ websites built.
             </p>
-            <div className="flex flex-col gap-2 text-sm text-primary-foreground/60">
+            <div className="flex flex-col gap-2 text-sm text-primary-foreground/60 mb-5">
               <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-1.5 hover:text-primary-foreground transition-colors">
                 <Mail className="w-3.5 h-3.5 shrink-0" />
                 hello@ne1webdesign.co.uk
               </a>
-              <a href="tel:01916941463" className="flex items-center gap-1.5 hover:text-primary-foreground transition-colors">
-                <Phone className="w-3.5 h-3.5 shrink-0" />
+            </div>
+
+            {/* North Tyneside Office */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">North Tyneside</p>
+              <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
+                <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
+                <span>Suite 2.6a, North Tyneside Business Centre, North Shields, NE30 1NT</span>
+              </div>
+              <a href="tel:01916941463" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
+                <Phone className="w-3 h-3 shrink-0" />
                 0191 694 1463
+              </a>
+            </div>
+
+            {/* Teesside Office */}
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">Teesside</p>
+              <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
+                <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
+                <span>Norton High Street, TS20</span>
+              </div>
+              <a href="tel:07463687129" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
+                <Phone className="w-3 h-3 shrink-0" />
+                07463 687129
               </a>
             </div>
           </div>
 
-          {/* Services & Company side by side on mobile */}
-          <div>
-            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
-              Services
-            </h4>
-            <ul className="flex flex-col gap-1.5">
-              {serviceLinks.map((link) => (
-                <li key={link.href}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
-              Company
-            </h4>
-            <ul className="flex flex-col gap-1.5">
-              {companyLinks.map((link) => (
-                <li key={link.href}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Who We Help - collapsible groups */}
+          {/* Who We Help */}
           <div>
             <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
               Who We Help
@@ -172,7 +142,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Locations Covered - collapsible regions */}
+          {/* Locations Covered */}
           <div>
             <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
               Locations Covered
@@ -198,6 +168,30 @@ const Footer = () => {
                 All Locations →
               </Link>
             </div>
+          </div>
+
+          {/* Quick Links (lean) */}
+          <div>
+            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
+              Quick Links
+            </h4>
+            <ul className="flex flex-col gap-1.5">
+              {[
+                { label: "About Us", href: "/about" },
+                { label: "Our Pricing", href: "/pricing" },
+                { label: "Our Reviews", href: "/reviews" },
+                { label: "Client Results", href: "/results" },
+                { label: "Blog", href: "/blog" },
+                { label: "FAQ", href: "/faq" },
+                { label: "Contact Us", href: "/contact" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
