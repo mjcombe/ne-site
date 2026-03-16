@@ -55,7 +55,7 @@ const CollapsibleSection = ({
     <div>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between w-full text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors py-0.5"
+        className="flex items-center justify-between w-full text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors py-0.5"
       >
         <span>{label}</span>
         <ChevronDown className={`w-3 h-3 transition-transform ${open ? "rotate-180" : ""}`} />
@@ -68,24 +68,23 @@ const CollapsibleSection = ({
 const Footer = () => {
   return (
     <footer className="gradient-navy text-primary-foreground">
-      <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+      <div className="container mx-auto px-4 md:px-6 py-10">
 
-          {/* Brand + Offices */}
+        {/* Top: Brand + Offices — 3 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div>
             <span className="font-heading font-bold text-lg text-primary-foreground">NE1 Digital</span>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mt-2 mb-4 max-w-xs">
+            <p className="text-primary-foreground/60 text-sm leading-relaxed mt-2 max-w-xs">
               Web design & local SEO for businesses across the North East. 200+ websites built.
             </p>
-            <div className="flex flex-col gap-2 text-sm text-primary-foreground/60 mb-5">
-              <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-1.5 hover:text-primary-foreground transition-colors">
-                <Mail className="w-3.5 h-3.5 shrink-0" />
-                hello@ne1webdesign.co.uk
-              </a>
-            </div>
+          </div>
 
-            {/* North Tyneside Office */}
-            <div className="mb-4">
+          <div className="flex flex-col gap-3">
+            <a href="mailto:hello@ne1webdesign.co.uk" className="flex items-center gap-1.5 text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+              <Mail className="w-3.5 h-3.5 shrink-0" />
+              hello@ne1webdesign.co.uk
+            </a>
+            <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">North Tyneside</p>
               <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
                 <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
@@ -96,27 +95,29 @@ const Footer = () => {
                 0191 694 1463
               </a>
             </div>
+          </div>
 
-            {/* Teesside Office */}
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">Teesside</p>
-              <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
-                <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
-                <span>Norton High Street, TS20</span>
-              </div>
-              <a href="tel:07463687129" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
-                <Phone className="w-3 h-3 shrink-0" />
-                07463 687129
-              </a>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">Teesside</p>
+            <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
+              <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
+              <span>Norton High Street, TS20</span>
             </div>
           </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-primary-foreground/10 my-8" />
+
+        {/* Bottom nav: Who We Help / Locations / Quick Links — 3 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
           {/* Who We Help */}
           <div>
             <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
               Who We Help
             </h4>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-0.5">
               {industryGroups.map((group) => (
                 <CollapsibleSection key={group.label} label={group.label}>
                   {group.items.map((cat) => {
@@ -135,7 +136,7 @@ const Footer = () => {
               ))}
               <Link
                 to="/who-we-help"
-                className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors mt-1.5 font-medium"
+                className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors mt-1 font-medium"
               >
                 All Industries →
               </Link>
@@ -147,7 +148,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
               Locations Covered
             </h4>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-0.5">
               {locationsByRegion.map((group) => (
                 <CollapsibleSection key={group.region} label={group.region}>
                   {group.locations.map((loc) => (
@@ -163,19 +164,19 @@ const Footer = () => {
               ))}
               <Link
                 to="/locations"
-                className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors mt-1.5 font-medium"
+                className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors mt-1 font-medium"
               >
                 All Locations →
               </Link>
             </div>
           </div>
 
-          {/* Quick Links (lean) */}
+          {/* Quick Links */}
           <div>
             <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
               Quick Links
             </h4>
-            <ul className="flex flex-col gap-1.5">
+            <ul className="flex flex-col gap-1">
               {[
                 { label: "About Us", href: "/about" },
                 { label: "Our Pricing", href: "/pricing" },
@@ -195,8 +196,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row justify-between items-center gap-3">
+        {/* Legal bar */}
+        <div className="mt-8 pt-5 border-t border-primary-foreground/10 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-primary-foreground/40">
             © {new Date().getFullYear()} NE1 Digital. All rights reserved.
           </p>
