@@ -23,16 +23,13 @@ const websiteFeatures = [
   { icon: MousePointerClick, label: "Click to call functionality for mobile users" },
   { icon: Mail, label: "Dynamic enquiry and contact forms" },
   { icon: Star, label: "Google Reviews integration" },
-  { icon: BarChart3, label: "Google Analytics setup and tracking" },
   { icon: MapPin, label: "Google Business Profile optimisation" },
   { icon: Award, label: "Industry accreditation badges and trust signals" },
-  { icon: Puzzle, label: "Third party widget support including WhatsApp, TrueQuote, Calendly, Tradify, Jobber and ServiceM8" },
   { icon: Sparkles, label: "AI and Generative Engine Optimisation (GEO) to prepare your website for modern AI search" },
   { icon: Server, label: "Super fast hosting for performance and reliability" },
   { icon: Lock, label: "SSL security certificate" },
   { icon: CloudUpload, label: "Daily backups and ongoing security updates" },
   { icon: Globe2, label: "Domain name registration and management" },
-  { icon: Settings, label: "Content management system so your website can grow with your business" },
 ];
 
 const seoFeatures = [
@@ -44,6 +41,7 @@ const seoFeatures = [
   { icon: Target, label: "Competitor analysis and keyword expansion" },
   { icon: Wrench, label: "Technical SEO improvements" },
   { icon: BadgeCheck, label: "Authority and trust signals for stronger rankings" },
+  { icon: BarChart3, label: "Google Analytics setup, tracking and reporting" },
   { icon: Settings, label: "Unlimited website updates (fair usage applies)" },
 ];
 
@@ -114,12 +112,12 @@ const Pricing = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                   A complete, professionally designed website built to generate enquiries and position your business as the obvious choice in your local area. Fully search optimised from day one and designed to convert visitors into customers.
                 </p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">Estimated from</p>
                 <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-5xl font-heading font-bold text-foreground">£997</span>
-                  <span className="text-muted-foreground text-sm">website setup</span>
+                  <span className="text-4xl font-heading font-bold text-foreground">£997 – £3,947</span>
                 </div>
                 <div className="flex items-baseline gap-2 mt-2">
-                  <span className="text-3xl font-heading font-bold text-foreground">£99</span>
+                  <span className="text-2xl font-heading font-bold text-foreground">then £99</span>
                   <span className="text-muted-foreground text-sm">per month</span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-3">
