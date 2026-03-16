@@ -123,6 +123,9 @@ const App = () => (
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
               <Route path="/blog" element={<Blog />} />
+              {/* WordPress migrated posts at root-level URLs */}
+              <Route path="/10-common-website-mistakes-north-east-businesses-make-and-how-to-fix-them" element={<BlogPost />} />
+              <Route path="/5-simple-ideas-for-improving-your-website" element={<BlogPost />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/reviews" element={<Reviews />} />

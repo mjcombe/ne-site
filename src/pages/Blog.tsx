@@ -66,7 +66,7 @@ const Blog = () => {
               return (
                 <Link
                   key={post.slug}
-                  to={`/blog/${post.slug}`}
+                  to={post.urlPath || `/blog/${post.slug}`}
                   className="group bg-card border border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
