@@ -1,3 +1,4 @@
+import { useState, useMemo } from "react";
 import Layout from "@/components/layout/Layout";
 import SEOHead from "@/components/SEOHead";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
@@ -6,6 +7,18 @@ import { portfolioProjects } from "@/data/portfolioProjects";
 import { ArrowRight } from "lucide-react";
 
 const Portfolio = () => {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const allServices = useMemo(() => {
+    const set = new Set<string>();
+    portfolioProjects.forEach((p) => p.services.forEach((s) => set.add(s)));
+    return ["All", ...Array.from(set).sort()];
+  }, []);
+
+  const filtered = activeFilter === "All"
+    ? portfolioProjects
+    : portfolioProjects.filter((p) => p.services.includes(activeFilter));
+
   return (
     <Layout>
       <SEOHead
@@ -33,8 +46,25 @@ const Portfolio = () => {
       {/* Projects Grid */}
       <section className="section-padding bg-background">
         <div className="container mx-auto">
+          {/* Filter Bar */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {allServices.map((service) => (
+              <button
+                key={service}
+                onClick={() => setActiveFilter(service)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  activeFilter === service
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                }`}
+              >
+                {service}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioProjects.map((project) => (
+            {filtered.map((project) => (
               <Link
                 key={project.slug}
                 to={`/portfolio/${project.slug}`}
