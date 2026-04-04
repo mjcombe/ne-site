@@ -39,7 +39,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <Button size="xl" asChild className="bg-white text-foreground hover:bg-white/90 font-semibold">
+            <Button size="xl" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
               <Link to="/get-started">
                 Book A Call
               </Link>
