@@ -62,6 +62,15 @@
     --text-primary: 210 40% 95%;
     --text-secondary: 215 15% 65%;
     --text-muted: 215 15% 50%;
+
+    /* Light section tokens */
+    --light-bg: 40 20% 97%;
+    --light-card: 0 0% 100%;
+    --light-border: 220 15% 88%;
+    --light-foreground: 220 30% 18%;
+    --light-muted: 220 10% 45%;
+    --light-icon-bg: 174 50% 92%;
+    --header-bg: 215 45% 12%;
   }
 
   .dark {
