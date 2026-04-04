@@ -67,7 +67,7 @@ const CollapsibleSection = ({
 
 const Footer = () => {
   return (
-    <footer className="gradient-navy text-primary-foreground">
+    <footer className="bg-[hsl(var(--header-bg))] text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-10">
 
         {/* Top: Brand + Offices — 3 columns */}

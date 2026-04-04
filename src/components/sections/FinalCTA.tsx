@@ -4,7 +4,7 @@ import { ArrowRight, Phone } from "lucide-react";
 
 const FinalCTA = () => {
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding section-light">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
