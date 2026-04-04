@@ -43,6 +43,24 @@ export interface PortfolioProject {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
+    slug: "onda-pilates-website",
+    title: "ŌNDA Pilates",
+    client: "ŌNDA Pilates",
+    industry: "Pilates & Wellness",
+    description:
+      "A sleek, premium website designed for ŌNDA Pilates, a new reformer pilates studio opening in Durham city centre. The site was built to capture the studio's modern brand identity, showcase class offerings, and drive waitlist sign-ups ahead of launch. With a strong focus on visual impact and user experience, the site positions ŌNDA as a destination studio from day one.",
+    thumbnail: portfolioOndaPilates1,
+    websiteUrl: "https://www.ondapilates.co.uk/",
+    images: [portfolioOndaPilates1, portfolioOndaPilates2, portfolioOndaPilates3, portfolioOndaPilates4],
+    services: ["Website Design"],
+    results: [
+      "Premium pre-launch website built to establish brand presence",
+      "Waitlist sign-ups driven through compelling landing pages",
+      "Class structure and studio details presented clearly",
+      "Strong visual identity established ahead of studio opening",
+    ],
+  },
+  {
     slug: "tynemouth-yoga-website",
     title: "Tynemouth Yoga Collective",
     client: "Tynemouth Yoga Collective",
