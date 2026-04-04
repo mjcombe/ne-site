@@ -3,6 +3,10 @@ import portfolioIntegrity1 from "@/assets/portfolio-integrity-plumb-1.webp";
 import portfolioIntegrity2 from "@/assets/portfolio-integrity-plumb-2.webp";
 import portfolioIntegrity3 from "@/assets/portfolio-integrity-plumb-3.webp";
 import portfolioIntegrity4 from "@/assets/portfolio-integrity-plumb-4.webp";
+import portfolioSkinrenu1 from "@/assets/portfolio-skinrenu-1.png";
+import portfolioSkinrenu2 from "@/assets/portfolio-skinrenu-2.png";
+import portfolioSkinrenu3 from "@/assets/portfolio-skinrenu-3.png";
+import portfolioSkinrenu4 from "@/assets/portfolio-skinrenu-4.png";
 
 export interface PortfolioProject {
   slug: string;
