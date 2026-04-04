@@ -66,12 +66,12 @@ const PortfolioProject = () => {
               <button
                 key={i}
                 onClick={() => setLightboxIndex(i)}
-                className="group aspect-video rounded-xl overflow-hidden border border-border bg-muted cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="group rounded-xl overflow-hidden border border-border bg-muted cursor-pointer relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <img
                   src={img}
                   alt={`${project.title} screenshot ${i + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300 flex items-center justify-center">
