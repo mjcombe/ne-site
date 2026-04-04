@@ -91,4 +91,22 @@ export const portfolioProjects: PortfolioProject[] = [
       "Strong foundation for ongoing SEO growth",
     ],
   },
+  {
+    slug: "newcastle-therapy-website",
+    title: "Newcastle Therapy",
+    client: "Newcastle Therapy",
+    industry: "Counselling & Psychotherapy",
+    description:
+      "A calming, professional website designed for Newcastle Therapy, a counselling and psychotherapy practice based in Newcastle upon Tyne. The site was built to create a welcoming first impression, clearly present the services available, and make it easy for potential clients to book a free consultation. Local SEO was implemented from launch to improve visibility for therapy searches across Newcastle and surrounding areas.",
+    thumbnail: portfolioNewcastleTherapy1,
+    websiteUrl: "https://newcastletherapy.co.uk/",
+    images: [portfolioNewcastleTherapy1, portfolioNewcastleTherapy2, portfolioNewcastleTherapy3, portfolioNewcastleTherapy4],
+    services: ["Website Design", "Local SEO", "Google Business Profile", "Service Area Pages"],
+    results: [
+      "Professional website launched to build trust with potential clients",
+      "Improved visibility for therapy searches in Newcastle",
+      "Increased consultation bookings from new clients",
+      "Strong foundation for ongoing SEO and local growth",
+    ],
+  },
 ];
