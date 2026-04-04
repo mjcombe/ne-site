@@ -70,11 +70,11 @@ const Portfolio = () => {
                 to={`/portfolio/${project.slug}`}
                 className="group rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300"
               >
-                <div className="aspect-video bg-muted overflow-hidden">
+                <div className="bg-muted overflow-hidden">
                   <img
                     src={project.thumbnail}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                 </div>
