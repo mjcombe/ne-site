@@ -69,4 +69,22 @@ export const portfolioProjects: PortfolioProject[] = [
       "Strong foundation for ongoing SEO and Google Business Profile growth",
     ],
   },
+  {
+    slug: "skin-renu-website",
+    title: "Skin Renu",
+    client: "Skin Renu",
+    industry: "Aesthetics & Beauty",
+    description:
+      "A premium website designed for Skin Renu, a medically led aesthetics clinic based in the heart of Newcastle upon Tyne. The site was built to reflect the clinic's refined brand, showcase their range of treatments, and make it easy for clients to book consultations. Local SEO was implemented from launch to improve visibility for aesthetic treatment searches across Newcastle.",
+    thumbnail: portfolioSkinrenu1,
+    websiteUrl: "https://skinrenu.co.uk/",
+    images: [portfolioSkinrenu1, portfolioSkinrenu2, portfolioSkinrenu3, portfolioSkinrenu4],
+    services: ["Website Design", "Local SEO", "Google Business Profile"],
+    results: [
+      "Premium website launched to reflect the clinic's brand",
+      "Improved visibility for aesthetics searches in Newcastle",
+      "Increased consultation bookings from new clients",
+      "Strong foundation for ongoing SEO growth",
+    ],
+  },
 ];
