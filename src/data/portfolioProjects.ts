@@ -7,6 +7,10 @@ import portfolioSkinrenu1 from "@/assets/portfolio-skinrenu-1.png";
 import portfolioSkinrenu2 from "@/assets/portfolio-skinrenu-2.png";
 import portfolioSkinrenu3 from "@/assets/portfolio-skinrenu-3.png";
 import portfolioSkinrenu4 from "@/assets/portfolio-skinrenu-4.png";
+import portfolioNewcastleTherapy1 from "@/assets/portfolio-newcastletherapy-1.png";
+import portfolioNewcastleTherapy2 from "@/assets/portfolio-newcastletherapy-2.png";
+import portfolioNewcastleTherapy3 from "@/assets/portfolio-newcastletherapy-3.png";
+import portfolioNewcastleTherapy4 from "@/assets/portfolio-newcastletherapy-4.png";
 
 export interface PortfolioProject {
   slug: string;
