@@ -119,20 +119,20 @@
   }
 
   .gradient-teal {
-    background: linear-gradient(135deg, hsl(var(--teal)), hsl(188 50% 75%));
+    background: linear-gradient(135deg, hsl(var(--teal)), hsl(174 50% 40%));
   }
 
   /* Category hero gradients */
   .gradient-trades {
-    background: linear-gradient(135deg, hsl(245 35% 18%), hsl(225 40% 38%));
+    background: linear-gradient(135deg, hsl(220 45% 5%), hsl(220 35% 15%));
   }
 
   .gradient-beauty {
-    background: linear-gradient(135deg, hsl(245 35% 18%), hsl(225 40% 38%));
+    background: linear-gradient(135deg, hsl(220 45% 5%), hsl(220 35% 15%));
   }
 
   .gradient-services {
-    background: linear-gradient(135deg, hsl(245 35% 18%), hsl(225 40% 38%));
+    background: linear-gradient(135deg, hsl(220 45% 5%), hsl(220 35% 15%));
   }
 
   .dotted-bg {

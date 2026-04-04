@@ -17,8 +17,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         cta: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold",
         ctaOutline: "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold",
-        hero: "bg-white text-[#074054] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-normal text-base",
-        heroOutline: "bg-white text-[#074054] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-normal text-base",
+        hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold text-base",
+        heroOutline: "border-2 border-foreground/30 text-foreground hover:bg-foreground/10 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-normal text-base",
         navCta: "bg-accent text-accent-foreground hover:bg-accent/90 font-semibold",
       },
       size: {
