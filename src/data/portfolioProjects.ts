@@ -1,3 +1,7 @@
+import portfolioOndaPilates1 from "@/assets/portfolio-ondapilates-1.png";
+import portfolioOndaPilates2 from "@/assets/portfolio-ondapilates-2.png";
+import portfolioOndaPilates3 from "@/assets/portfolio-ondapilates-3.png";
+import portfolioOndaPilates4 from "@/assets/portfolio-ondapilates-4.png";
 import portfolioNewcastleCare1 from "@/assets/portfolio-newcastlecare-1.png";
 import portfolioNewcastleCare2 from "@/assets/portfolio-newcastlecare-2.png";
 import portfolioNewcastleCare3 from "@/assets/portfolio-newcastlecare-3.png";
