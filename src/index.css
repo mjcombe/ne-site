@@ -64,13 +64,19 @@
     --text-muted: 215 15% 50%;
 
     /* Light section tokens */
-    --light-bg: 40 20% 97%;
+    --light-bg: 20 18% 97%;
     --light-card: 0 0% 100%;
     --light-border: 220 15% 88%;
     --light-foreground: 220 30% 18%;
     --light-muted: 220 10% 45%;
     --light-icon-bg: 174 50% 92%;
     --header-bg: 215 45% 12%;
+
+    /* Header (white) tokens */
+    --header-text: 220 30% 25%;
+    --header-text-muted: 220 15% 45%;
+    --header-hover-bg: 220 15% 95%;
+    --header-active-bg: 174 50% 92%;
   }
 
   .dark {

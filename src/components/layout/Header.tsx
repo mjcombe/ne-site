@@ -331,8 +331,8 @@ const Header = () => {
                 </Link>
               );
             })}
-            <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
-              <a href="tel:01916941463" className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
+            <div className="mt-3 pt-3 border-t border-[hsl(var(--light-border))] flex flex-col gap-2">
+              <a href="tel:01916941463" className="flex items-center gap-2 px-4 py-2 text-sm text-[hsl(var(--header-text-muted))]">
                 <Phone className="w-4 h-4" />
                 0191 694 1463
               </a>
