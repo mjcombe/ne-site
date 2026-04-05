@@ -250,8 +250,8 @@ const Header = () => {
                               onClick={() => setMobileOpen(false)}
                               className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
                                 location.pathname === trade.href
-                                  ? "text-primary font-semibold bg-secondary"
-                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                                  ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
+                                  : "text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
                               }`}
                             >
                               <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
