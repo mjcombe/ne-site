@@ -101,7 +101,18 @@
   }
 }
 
-@layer utilities {
+  .header-light {
+    --foreground: 220 20% 20%;
+    --text-secondary: 220 10% 40%;
+    --text-muted: 220 10% 55%;
+    --secondary: 220 20% 94%;
+    --border: 220 15% 88%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+    --accent: 174 60% 40%;
+  }
+
+
   .text-balance {
     text-wrap: balance;
   }
