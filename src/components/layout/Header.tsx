@@ -219,7 +219,7 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-border bg-surface-raised animate-fade-in max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden border-t border-[hsl(var(--light-border))] bg-white animate-fade-in max-h-[80vh] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
               // Mobile mega menu
