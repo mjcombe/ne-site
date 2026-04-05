@@ -92,8 +92,8 @@ const Header = () => {
                     onClick={() => setOpenDesktop(isOpen ? null : link.label)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
                       isActive
-                        ? "text-primary font-semibold bg-secondary"
-                        : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                        ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
+                        : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
                     }`}
                   >
                     {link.label}
