@@ -293,7 +293,7 @@ const Header = () => {
                       <div className="ml-4 flex flex-col gap-0.5 mt-1">
                         {link.dropdown.map((item, idx) => {
                           if (item.label === "divider") {
-                            return <div key={`divider-${idx}`} className="my-1 border-t border-border mx-4" />;
+                            return <div key={`divider-${idx}`} className="my-1 border-t border-[hsl(var(--light-border))] mx-4" />;
                           }
                           return (
                             <Link
