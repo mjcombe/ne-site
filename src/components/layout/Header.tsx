@@ -100,7 +100,7 @@ const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[680px] bg-card border border-border rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[680px] bg-white border border-[hsl(var(--light-border))] rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
                       <div className="grid grid-cols-2 gap-1">
                         {tradeCategories.map((cat) => {
                           const trade = cat.trades[0];
