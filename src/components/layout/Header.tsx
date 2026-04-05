@@ -198,7 +198,7 @@ const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:01916941463" className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors">
+          <a href="tel:01916941463" className="flex items-center gap-1.5 text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] transition-colors">
             <Phone className="w-4 h-4" />
             <span className="font-medium">0191 694 1463</span>
           </a>
