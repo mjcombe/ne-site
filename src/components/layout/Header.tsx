@@ -302,8 +302,8 @@ const Header = () => {
                               onClick={() => setMobileOpen(false)}
                               className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
                                 location.pathname === item.href
-                                  ? "text-primary font-semibold bg-secondary"
-                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                                  ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
+                                  : "text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
                               }`}
                             >
                               {item.label}
