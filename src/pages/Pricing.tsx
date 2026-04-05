@@ -209,7 +209,7 @@ const Pricing = () => {
       </section>
 
       {/* Who It's For */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8 text-foreground">
             Who This Is Ideal For
