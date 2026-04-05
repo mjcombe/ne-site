@@ -73,7 +73,7 @@ const Header = () => {
     tradeCategories.some((cat) => cat.trades.some((t) => location.pathname === t.href));
 
   return (
-    <header className="sticky top-0 z-50 bg-[hsl(var(--header-bg))] backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 bg-white backdrop-blur-md border-b border-[hsl(var(--light-border))]">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
         <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
           <img src={logoImage} alt="NE1 Digital" className="h-8 w-auto" />
