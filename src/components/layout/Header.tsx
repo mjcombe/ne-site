@@ -232,8 +232,8 @@ const Header = () => {
                       onClick={() => setOpenMobile(isOpen ? null : link.label)}
                       className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
                         isActive
-                          ? "text-primary font-semibold bg-secondary"
-                          : "text-text-secondary hover:text-foreground hover:bg-secondary"
+                          ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
+                          : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
                       }`}
                     >
                       {link.label}
