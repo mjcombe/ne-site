@@ -210,7 +210,7 @@ const Header = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 rounded-md hover:bg-secondary transition-colors"
+          className="lg:hidden p-2 rounded-md hover:bg-[hsl(var(--header-hover-bg))] transition-colors text-[hsl(var(--header-text))]"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
