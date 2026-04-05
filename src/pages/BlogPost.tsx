@@ -179,7 +179,7 @@ const BlogPost = () => {
       </section>
 
       {/* Related Trades */}
-      <section className="section-padding section-light">
+      <section className="section-padding bg-secondary">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-6">We Help These Trades</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -206,7 +206,7 @@ const BlogPost = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding section-light">
+      <section className="section-padding bg-secondary">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-foreground">
             Need Help With Your Local SEO?

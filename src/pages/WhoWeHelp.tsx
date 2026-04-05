@@ -60,7 +60,7 @@ const WhoWeHelpPage = () => {
         </div>
       </section>
 
-      <section className="section-padding section-light">
+      <section className="section-padding bg-secondary">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

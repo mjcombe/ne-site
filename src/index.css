@@ -62,21 +62,6 @@
     --text-primary: 210 40% 95%;
     --text-secondary: 215 15% 65%;
     --text-muted: 215 15% 50%;
-
-    /* Light section tokens */
-    --light-bg: 20 18% 97%;
-    --light-card: 0 0% 100%;
-    --light-border: 220 15% 88%;
-    --light-foreground: 220 30% 18%;
-    --light-muted: 220 10% 45%;
-    --light-icon-bg: 174 50% 92%;
-    --header-bg: 215 45% 12%;
-
-    /* Header (white) tokens */
-    --header-text: 220 30% 25%;
-    --header-text-muted: 220 15% 45%;
-    --header-hover-bg: 220 15% 95%;
-    --header-active-bg: 174 50% 92%;
   }
 
   .dark {
@@ -129,21 +114,6 @@
     @apply max-w-5xl mx-auto;
   }
 
-  /* Light section overrides — sets local CSS vars so all token classes just work */
-  .section-light {
-    --background: var(--light-bg);
-    --foreground: var(--light-foreground);
-    --card: 0 0% 100%;
-    --card-foreground: var(--light-foreground);
-    --muted-foreground: var(--light-muted);
-    --border: var(--light-border);
-    --icon-bg: var(--light-icon-bg);
-    --secondary: 220 15% 93%;
-    --secondary-foreground: var(--light-foreground);
-    background: hsl(var(--light-bg));
-    color: hsl(var(--light-foreground));
-  }
-
   .gradient-navy {
     background: linear-gradient(135deg, hsl(var(--navy-dark)), hsl(var(--navy)));
   }
@@ -176,11 +146,5 @@
     pointer-events: none;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'%3E%3Ccircle fill='%23ffffff' cx='10' cy='10' r='1'%3E%3C/circle%3E%3C/svg%3E");
     opacity: 0.06;
-  }
-
-  /* Light dotted bg variant */
-  .section-light .dotted-bg::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'%3E%3Ccircle fill='%23000000' cx='10' cy='10' r='1'%3E%3C/circle%3E%3C/svg%3E");
-    opacity: 0.04;
   }
 }

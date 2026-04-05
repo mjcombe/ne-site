@@ -30,7 +30,7 @@ const HowItWorksPage = () => {
 
       <HowItWorksSection />
 
-      <section className="section-padding section-light">
+      <section className="section-padding bg-secondary">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">What to expect along the way</h2>
           <div className="space-y-6">

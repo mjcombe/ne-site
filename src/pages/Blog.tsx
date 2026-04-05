@@ -110,7 +110,7 @@ const Blog = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding section-light">
+      <section className="section-padding bg-secondary">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-foreground">
             Want Us to Handle Your SEO?

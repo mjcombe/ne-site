@@ -54,7 +54,7 @@ const services = [
 
 const ServiceCards = () => {
   return (
-    <section className="section-padding section-light">
+    <section className="section-padding bg-secondary">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">

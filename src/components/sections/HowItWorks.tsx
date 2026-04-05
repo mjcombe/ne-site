@@ -25,7 +25,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-background dotted-bg">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
@@ -48,8 +48,8 @@ const HowItWorks = () => {
               )}
 
               <div className="relative z-10 mb-5">
-                <div className="w-24 h-24 rounded-2xl bg-[hsl(var(--navy))] mx-auto flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                  <step.icon className="w-10 h-10 text-primary" />
+                <div className="w-24 h-24 rounded-2xl gradient-navy mx-auto flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
+                  <step.icon className="w-10 h-10 text-primary-foreground" />
                 </div>
                 <span className="absolute -top-2 -right-2 md:right-[calc(50%-4rem)] w-8 h-8 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-heading font-bold text-sm shadow">
                   {step.number}

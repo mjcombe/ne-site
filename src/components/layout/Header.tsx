@@ -73,7 +73,7 @@ const Header = () => {
     tradeCategories.some((cat) => cat.trades.some((t) => location.pathname === t.href));
 
   return (
-    <header className="sticky top-0 z-50 bg-white backdrop-blur-md border-b border-[hsl(var(--light-border))]">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
         <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
           <img src={logoImage} alt="NE1 Digital" className="h-8 w-auto" />
@@ -92,15 +92,15 @@ const Header = () => {
                     onClick={() => setOpenDesktop(isOpen ? null : link.label)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
                       isActive
-                        ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                        : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                        ? "text-primary font-semibold bg-secondary"
+                        : "text-text-secondary hover:text-foreground hover:bg-secondary"
                     }`}
                   >
                     {link.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[680px] bg-white border border-[hsl(var(--light-border))] rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[680px] bg-card border border-border rounded-lg shadow-xl py-5 px-6 animate-fade-in z-50">
                       <div className="grid grid-cols-2 gap-1">
                         {tradeCategories.map((cat) => {
                           const trade = cat.trades[0];
@@ -110,8 +110,8 @@ const Header = () => {
                               to={trade.href}
                               className={`flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors ${
                                 location.pathname === trade.href
-                                  ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                                  : "text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
                               }`}
                             >
                               <trade.icon className="w-4 h-4 text-accent shrink-0" />
@@ -120,7 +120,7 @@ const Header = () => {
                           );
                         })}
                       </div>
-                      <div className="mt-4 pt-4 border-t border-[hsl(var(--light-border))]">
+                      <div className="mt-4 pt-4 border-t border-border">
                         <Link
                           to="/who-we-help"
                           className="text-sm font-medium text-accent hover:underline"
@@ -144,18 +144,18 @@ const Header = () => {
                     onClick={() => setOpenDesktop(isOpen ? null : link.label)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors inline-flex items-center gap-1 ${
                       isActive
-                        ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                        : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                        ? "text-primary font-semibold bg-secondary"
+                        : "text-text-secondary hover:text-foreground hover:bg-secondary"
                     }`}
                   >
                     {link.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-[hsl(var(--light-border))] rounded-lg shadow-xl py-2 animate-fade-in z-50">
+                    <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-xl py-2 animate-fade-in z-50">
                       {link.dropdown.map((item, idx) => {
                         if (item.label === "divider") {
-                          return <div key={`divider-${idx}`} className="my-2 border-t border-[hsl(var(--light-border))] mx-3" />;
+                          return <div key={`divider-${idx}`} className="my-2 border-t border-border mx-3" />;
                         }
                         return (
                           <Link
@@ -165,8 +165,8 @@ const Header = () => {
                               item.sub ? "pl-4" : ""
                             } ${
                               location.pathname === item.href
-                                ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                                : "text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                                ? "text-primary font-semibold bg-secondary"
+                                : "text-text-secondary hover:text-foreground hover:bg-secondary"
                             }`}
                           >
                             {item.label}
@@ -186,8 +186,8 @@ const Header = () => {
                 to={link.href}
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   location.pathname === link.href
-                    ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                    : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                    ? "text-primary font-semibold bg-secondary"
+                    : "text-text-secondary hover:text-foreground hover:bg-secondary"
                 }`}
               >
                 {link.label}
@@ -198,7 +198,7 @@ const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:01916941463" className="flex items-center gap-1.5 text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] transition-colors">
+          <a href="tel:01916941463" className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors">
             <Phone className="w-4 h-4" />
             <span className="font-medium">0191 694 1463</span>
           </a>
@@ -210,7 +210,7 @@ const Header = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 rounded-md hover:bg-[hsl(var(--header-hover-bg))] transition-colors text-[hsl(var(--header-text))]"
+          className="lg:hidden p-2 rounded-md hover:bg-secondary transition-colors"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -219,7 +219,7 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-[hsl(var(--light-border))] bg-white animate-fade-in max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden border-t border-border bg-surface-raised animate-fade-in max-h-[80vh] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
               // Mobile mega menu
@@ -232,8 +232,8 @@ const Header = () => {
                       onClick={() => setOpenMobile(isOpen ? null : link.label)}
                       className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
                         isActive
-                          ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                          : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                          ? "text-primary font-semibold bg-secondary"
+                          : "text-text-secondary hover:text-foreground hover:bg-secondary"
                       }`}
                     >
                       {link.label}
@@ -250,8 +250,8 @@ const Header = () => {
                               onClick={() => setMobileOpen(false)}
                               className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
                                 location.pathname === trade.href
-                                  ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                                  : "text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
                               }`}
                             >
                               <trade.icon className="w-3.5 h-3.5 text-accent shrink-0" />
@@ -282,8 +282,8 @@ const Header = () => {
                       onClick={() => setOpenMobile(isOpen ? null : link.label)}
                       className={`w-full flex items-center justify-between px-4 py-3 rounded-md text-sm font-medium transition-colors ${
                         isActive
-                          ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                          : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                          ? "text-primary font-semibold bg-secondary"
+                          : "text-text-secondary hover:text-foreground hover:bg-secondary"
                       }`}
                     >
                       {link.label}
@@ -293,7 +293,7 @@ const Header = () => {
                       <div className="ml-4 flex flex-col gap-0.5 mt-1">
                         {link.dropdown.map((item, idx) => {
                           if (item.label === "divider") {
-                            return <div key={`divider-${idx}`} className="my-1 border-t border-[hsl(var(--light-border))] mx-4" />;
+                            return <div key={`divider-${idx}`} className="my-1 border-t border-border mx-4" />;
                           }
                           return (
                             <Link
@@ -302,8 +302,8 @@ const Header = () => {
                               onClick={() => setMobileOpen(false)}
                               className={`px-4 py-2.5 rounded-md text-sm transition-colors ${
                                 location.pathname === item.href
-                                  ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                                  : "text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                                  ? "text-primary font-semibold bg-secondary"
+                                  : "text-text-secondary hover:text-foreground hover:bg-secondary"
                               }`}
                             >
                               {item.label}
@@ -323,16 +323,16 @@ const Header = () => {
                   onClick={() => setMobileOpen(false)}
                   className={`px-4 py-3 rounded-md text-sm font-medium transition-colors ${
                     location.pathname === link.href
-                      ? "text-primary font-semibold bg-[hsl(var(--header-active-bg))]"
-                      : "text-[hsl(var(--header-text))] hover:text-[hsl(var(--light-foreground))] hover:bg-[hsl(var(--header-hover-bg))]"
+                      ? "text-primary font-semibold bg-secondary"
+                      : "text-text-secondary hover:text-foreground hover:bg-secondary"
                   }`}
                 >
                   {link.label}
                 </Link>
               );
             })}
-            <div className="mt-3 pt-3 border-t border-[hsl(var(--light-border))] flex flex-col gap-2">
-              <a href="tel:01916941463" className="flex items-center gap-2 px-4 py-2 text-sm text-[hsl(var(--header-text-muted))]">
+            <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
+              <a href="tel:01916941463" className="flex items-center gap-2 px-4 py-2 text-sm text-text-secondary">
                 <Phone className="w-4 h-4" />
                 0191 694 1463
               </a>

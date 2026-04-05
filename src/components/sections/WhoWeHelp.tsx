@@ -24,7 +24,7 @@ const highlights = [
 
 const WhoWeHelp = () => {
   return (
-    <section className="section-padding section-light">
+    <section className="section-padding bg-secondary">
       <div className="container mx-auto max-w-5xl">
         <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
           What We Do
