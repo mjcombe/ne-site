@@ -152,7 +152,7 @@ const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-xl py-2 animate-fade-in z-50">
+                    <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-[hsl(var(--light-border))] rounded-lg shadow-xl py-2 animate-fade-in z-50">
                       {link.dropdown.map((item, idx) => {
                         if (item.label === "divider") {
                           return <div key={`divider-${idx}`} className="my-2 border-t border-border mx-3" />;
