@@ -120,7 +120,7 @@ const Header = () => {
                           );
                         })}
                       </div>
-                      <div className="mt-4 pt-4 border-t border-border">
+                      <div className="mt-4 pt-4 border-t border-[hsl(var(--light-border))]">
                         <Link
                           to="/who-we-help"
                           className="text-sm font-medium text-accent hover:underline"
