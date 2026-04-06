@@ -146,7 +146,7 @@ const TradePageLayout = ({
       </section>
 
       {/* Services */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
             {servicesTitle}
