@@ -91,7 +91,7 @@ const Pricing = () => {
       </section>
 
       {/* Pricing Cards */}
-      <section className="section-padding bg-background dotted-bg relative">
+      <section className="section-padding section-light bg-[hsl(var(--background))] relative">
         <div className="container mx-auto container-tight relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
