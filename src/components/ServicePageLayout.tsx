@@ -107,7 +107,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* How it helps */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">How it helps generate enquiries</h2>
           <div className="space-y-4">
