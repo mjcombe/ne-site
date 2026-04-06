@@ -55,7 +55,7 @@ const CollapsibleSection = ({
     <div>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between w-full text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors py-0.5"
+        className="flex items-center justify-between w-full text-sm text-foreground/60 hover:text-foreground transition-colors py-0.5"
       >
         <span>{label}</span>
         <ChevronDown className={`w-3 h-3 transition-transform ${open ? "rotate-180" : ""}`} />
@@ -67,30 +67,30 @@ const CollapsibleSection = ({
 
 const Footer = () => {
   return (
-    <footer className="gradient-navy text-primary-foreground">
+    <footer className="section-light bg-[hsl(var(--background))] text-foreground border-t border-border">
       <div className="container mx-auto px-4 md:px-6 py-10">
 
-        {/* Top: Brand + Offices — 3 columns */}
+        {/* Top: Brand + Offices — 2 columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">North Tyneside</p>
-            <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
+            <p className="text-xs font-semibold uppercase tracking-wider text-foreground/80 mb-1">North Tyneside</p>
+            <div className="flex items-start gap-1.5 text-xs text-muted-foreground leading-relaxed">
               <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
               <span>Suite 2.6a, North Tyneside Business Centre, North Shields, NE30 1NT</span>
             </div>
-            <a href="tel:01916941463" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
+            <a href="tel:01916941463" className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors mt-1">
               <Phone className="w-3 h-3 shrink-0" />
               0191 694 1463
             </a>
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-foreground/80 mb-1">Teesside</p>
-            <div className="flex items-start gap-1.5 text-xs text-primary-foreground/50 leading-relaxed">
+            <p className="text-xs font-semibold uppercase tracking-wider text-foreground/80 mb-1">Teesside</p>
+            <div className="flex items-start gap-1.5 text-xs text-muted-foreground leading-relaxed">
               <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
               <span>Norton High Street, TS20</span>
             </div>
-            <a href="tel:07463687129" className="flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors mt-1">
+            <a href="tel:07463687129" className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors mt-1">
               <Phone className="w-3 h-3 shrink-0" />
               07463 687129
             </a>
@@ -98,14 +98,14 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-primary-foreground/10 my-8" />
+        <div className="border-t border-border my-8" />
 
         {/* Bottom nav: Who We Help / Locations / Quick Links — 3 columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
           {/* Who We Help */}
           <div>
-            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
+            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-foreground/90">
               Who We Help
             </h4>
             <div className="flex flex-col gap-0.5">
@@ -117,7 +117,7 @@ const Footer = () => {
                       <Link
                         key={trade.href}
                         to={trade.href}
-                        className="text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors py-0.5"
+                        className="text-xs text-muted-foreground hover:text-foreground transition-colors py-0.5"
                       >
                         {trade.name}
                       </Link>
@@ -127,7 +127,7 @@ const Footer = () => {
               ))}
               <Link
                 to="/who-we-help"
-                className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors mt-1 font-medium"
+                className="text-xs text-foreground/60 hover:text-foreground transition-colors mt-1 font-medium"
               >
                 All Industries →
               </Link>
@@ -136,7 +136,7 @@ const Footer = () => {
 
           {/* Locations Covered */}
           <div>
-            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
+            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-foreground/90">
               Locations Covered
             </h4>
             <div className="flex flex-col gap-0.5">
@@ -146,7 +146,7 @@ const Footer = () => {
                     <Link
                       key={loc.slug}
                       to={`/locations/${loc.slug}`}
-                      className="text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors py-0.5"
+                      className="text-xs text-muted-foreground hover:text-foreground transition-colors py-0.5"
                     >
                       {loc.name}
                     </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
               ))}
               <Link
                 to="/locations"
-                className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors mt-1 font-medium"
+                className="text-xs text-foreground/60 hover:text-foreground transition-colors mt-1 font-medium"
               >
                 All Locations →
               </Link>
@@ -164,7 +164,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-primary-foreground/90">
+            <h4 className="font-heading font-semibold text-xs uppercase tracking-wider mb-3 text-foreground/90">
               Quick Links
             </h4>
             <ul className="flex flex-col gap-1">
@@ -178,7 +178,7 @@ const Footer = () => {
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -188,8 +188,8 @@ const Footer = () => {
         </div>
 
         {/* Legal bar */}
-        <div className="mt-8 pt-5 border-t border-primary-foreground/10 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-primary-foreground/40">
+        <div className="mt-8 pt-5 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} NE1 Digital. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
@@ -197,7 +197,7 @@ const Footer = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-xs text-primary-foreground/40 hover:text-primary-foreground transition-colors"
+                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
               </Link>

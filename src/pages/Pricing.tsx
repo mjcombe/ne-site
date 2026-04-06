@@ -77,7 +77,7 @@ const Pricing = () => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-6 bg-background border-b border-border">
+      <section className="py-6 section-light bg-[hsl(var(--background))] border-b border-border">
         <div className="container mx-auto container-tight text-center">
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <div className="flex gap-0.5">
@@ -91,7 +91,7 @@ const Pricing = () => {
       </section>
 
       {/* Pricing Cards */}
-      <section className="section-padding bg-background dotted-bg relative">
+      <section className="section-padding section-light bg-[hsl(var(--background))] relative">
         <div className="container mx-auto container-tight relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
@@ -209,7 +209,7 @@ const Pricing = () => {
       </section>
 
       {/* Who It's For */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8 text-foreground">
             Who This Is Ideal For
@@ -228,7 +228,7 @@ const Pricing = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-foreground">
             Ready to Get Started?

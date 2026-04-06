@@ -113,7 +113,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Problems */}
-      <section className="py-16 md:py-20 px-4 bg-background">
+      <section className="py-16 md:py-20 px-4 section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl md:text-4xl font-heading font-bold text-foreground mb-6">
             {config.problemsHeading}
@@ -130,7 +130,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Solution */}
-      <section className="py-16 md:py-20 px-4 bg-secondary">
+      <section className="py-16 md:py-20 px-4 bg-background">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -157,7 +157,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-16 md:py-20 px-4 bg-background">
+      <section className="py-16 md:py-20 px-4 section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-2 mb-3">
@@ -193,7 +193,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Pricing Teaser */}
-      <section className="py-16 md:py-20 px-4 bg-secondary">
+      <section className="py-16 md:py-20 px-4 bg-background">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
             Simple, affordable pricing

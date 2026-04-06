@@ -90,7 +90,7 @@ const ServicePageLayout = ({
         </div>
       </section>
       {/* Who it's for */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Who is this for?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -107,7 +107,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* How it helps */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">How it helps generate enquiries</h2>
           <div className="space-y-4">
@@ -124,7 +124,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* What's included */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">What's included</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -141,7 +141,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* Pricing Snapshot */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-card border border-border rounded-2xl p-8 text-center">
             <div className="w-12 h-12 rounded-xl bg-[hsl(var(--icon-bg))] flex items-center justify-center mx-auto mb-4">
@@ -176,7 +176,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* Related services */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Related services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -203,7 +203,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Ready to get more enquiries?

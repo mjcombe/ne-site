@@ -101,15 +101,30 @@
   }
 }
 
-.header-light {
+.header-light,
+.section-light {
+  --background: 30 25% 97%;
   --foreground: 220 20% 20%;
-  --text-secondary: 220 10% 40%;
-  --text-muted: 220 10% 55%;
-  --secondary: 220 20% 94%;
-  --border: 220 15% 88%;
   --card: 0 0% 100%;
   --card-foreground: 220 20% 20%;
+  --secondary: 220 20% 94%;
+  --secondary-foreground: 220 20% 20%;
+  --muted: 220 15% 92%;
+  --muted-foreground: 220 10% 40%;
   --accent: 174 60% 40%;
+  --accent-foreground: 220 40% 7%;
+  --border: 220 15% 88%;
+  --input: 220 15% 88%;
+  --text-primary: 220 20% 20%;
+  --text-secondary: 220 10% 40%;
+  --text-muted: 220 10% 55%;
+  --icon-bg: 174 30% 90%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+}
+
+.header-light {
+  --background: 0 0% 100%;
 }
 
 @layer utilities {
