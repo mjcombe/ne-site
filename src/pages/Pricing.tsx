@@ -228,7 +228,7 @@ const Pricing = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-foreground">
             Ready to Get Started?

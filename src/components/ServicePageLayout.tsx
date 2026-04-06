@@ -176,7 +176,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* Related services */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Related services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

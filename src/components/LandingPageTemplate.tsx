@@ -193,7 +193,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Pricing Teaser */}
-      <section className="py-16 md:py-20 px-4 bg-secondary">
+      <section className="py-16 md:py-20 px-4 bg-background">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
             Simple, affordable pricing

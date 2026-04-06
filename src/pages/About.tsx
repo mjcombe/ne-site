@@ -84,7 +84,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-background dotted-bg">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Take the next step
