@@ -119,6 +119,7 @@
   --text-secondary: 220 10% 40%;
   --text-muted: 220 10% 55%;
   --icon-bg: 174 30% 90%;
+  --primary-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 }
