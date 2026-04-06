@@ -130,7 +130,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Solution */}
-      <section className="py-16 md:py-20 px-4 bg-secondary">
+      <section className="py-16 md:py-20 px-4 bg-background">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-heading font-bold text-foreground mb-4">
