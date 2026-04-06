@@ -90,7 +90,7 @@ const ServicePageLayout = ({
         </div>
       </section>
       {/* Who it's for */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Who is this for?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
