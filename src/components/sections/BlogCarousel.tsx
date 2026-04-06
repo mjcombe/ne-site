@@ -13,7 +13,7 @@ const latestPosts = blogPosts.slice(0, 8);
 
 const BlogCarousel = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-background dotted-bg">
       <div className="container mx-auto max-w-5xl">
         <div className="flex items-end justify-between mb-8">
           <div>

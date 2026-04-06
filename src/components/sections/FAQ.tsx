@@ -42,7 +42,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="section-padding bg-background dotted-bg">
+    <section className="section-padding section-light bg-[hsl(var(--background))]">
       <div className="container mx-auto max-w-3xl">
         <div className="text-center mb-12 md:mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
