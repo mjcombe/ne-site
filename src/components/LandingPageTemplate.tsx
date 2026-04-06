@@ -113,7 +113,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Problems */}
-      <section className="py-16 md:py-20 px-4 bg-background">
+      <section className="py-16 md:py-20 px-4 section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl md:text-4xl font-heading font-bold text-foreground mb-6">
             {config.problemsHeading}
