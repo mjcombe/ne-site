@@ -141,7 +141,7 @@ const ServicePageLayout = ({
       </section>
 
       {/* Pricing Snapshot */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-card border border-border rounded-2xl p-8 text-center">
             <div className="w-12 h-12 rounded-xl bg-[hsl(var(--icon-bg))] flex items-center justify-center mx-auto mb-4">
