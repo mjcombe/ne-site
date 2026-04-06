@@ -157,7 +157,7 @@ const LandingPageTemplate = ({ config }: { config: LandingPageConfig }) => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-16 md:py-20 px-4 bg-background">
+      <section className="py-16 md:py-20 px-4 section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-2 mb-3">
