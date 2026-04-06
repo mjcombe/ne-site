@@ -77,7 +77,7 @@ const Pricing = () => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-6 bg-background border-b border-border">
+      <section className="py-6 section-light bg-[hsl(var(--background))] border-b border-border">
         <div className="container mx-auto container-tight text-center">
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <div className="flex gap-0.5">
