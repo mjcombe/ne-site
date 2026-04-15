@@ -47,7 +47,7 @@ const Reviews = () => {
       </section>
 
       {/* Google Badge */}
-      <section className="py-6 bg-background border-b border-border">
+      <section className="py-6 section-light bg-[hsl(var(--background))] border-b border-border">
         <div className="container mx-auto container-tight text-center">
           <div className="inline-flex items-center gap-3 bg-card border border-border rounded-xl px-6 py-3 shadow-sm">
             <img
