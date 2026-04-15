@@ -66,7 +66,7 @@ const GetStarted = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Cal.com Embed */}

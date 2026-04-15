@@ -44,7 +44,7 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Grid */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto">
           {/* Filter Bar */}
           <div className="flex flex-wrap gap-2 mb-8">
