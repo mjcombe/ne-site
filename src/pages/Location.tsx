@@ -84,7 +84,7 @@ const Location = () => {
       </section>
 
       {/* Intro */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {location.introTitle}
@@ -98,7 +98,7 @@ const Location = () => {
       </section>
 
       {/* Why Local SEO */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
             {location.whyLocalSEOTitle}
@@ -120,7 +120,7 @@ const Location = () => {
       </section>
 
       {/* Search Terms */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -150,7 +150,7 @@ const Location = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl text-center">
           <div className="flex gap-1 justify-center mb-4">
             {[...Array(5)].map((_, i) => (
@@ -168,7 +168,7 @@ const Location = () => {
       </section>
 
       {/* Area Coverage */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -195,7 +195,7 @@ const Location = () => {
       </section>
 
       {/* Services Links */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
             What we offer {location.name} tradespeople
