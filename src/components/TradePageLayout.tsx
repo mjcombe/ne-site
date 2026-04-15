@@ -146,7 +146,7 @@ const TradePageLayout = ({
       </section>
 
       {/* Services */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
             {servicesTitle}
@@ -188,7 +188,7 @@ const TradePageLayout = ({
       </section>
 
       {/* Benefits */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-10">
             {benefitsTitle}
@@ -228,7 +228,7 @@ const TradePageLayout = ({
       </section>
 
       {/* Related Services */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
             Our Services for {trade}

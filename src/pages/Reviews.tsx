@@ -47,7 +47,7 @@ const Reviews = () => {
       </section>
 
       {/* Google Badge */}
-      <section className="py-6 bg-background border-b border-border">
+      <section className="py-6 section-light bg-[hsl(var(--background))] border-b border-border">
         <div className="container mx-auto container-tight text-center">
           <div className="inline-flex items-center gap-3 bg-card border border-border rounded-xl px-6 py-3 shadow-sm">
             <img
@@ -69,7 +69,7 @@ const Reviews = () => {
       </section>
 
       {/* Reviews Grid */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto container-tight">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {displayedReviews.map((review, index) => (

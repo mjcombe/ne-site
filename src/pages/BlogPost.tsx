@@ -107,7 +107,7 @@ const BlogPost = () => {
       </section>
 
       {/* Content */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl">
           <article className="prose prose-lg max-w-none">
             {post.content.map((block, i) => {
@@ -154,7 +154,7 @@ const BlogPost = () => {
       </section>
 
       {/* Related Services */}
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-6">Related Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -179,7 +179,7 @@ const BlogPost = () => {
       </section>
 
       {/* Related Trades */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-6">We Help These Trades</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -206,7 +206,7 @@ const BlogPost = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto container-tight text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-foreground">
             Need Help With Your Local SEO?

@@ -51,7 +51,7 @@ const PortfolioProject = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding section-light bg-[hsl(var(--background))]">
         <div className="container mx-auto max-w-5xl">
           <Link
             to="/portfolio"
