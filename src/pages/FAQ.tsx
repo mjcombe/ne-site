@@ -169,7 +169,7 @@ const FAQPage = () => {
       {faqCategories.map((category, catIndex) => (
         <section
           key={catIndex}
-          className={`section-padding ${catIndex % 2 === 0 ? "bg-background" : "bg-secondary"}`}
+          className="section-padding section-light bg-[hsl(var(--background))]"
         >
           <div className="container mx-auto max-w-3xl">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
