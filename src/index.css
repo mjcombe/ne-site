@@ -104,24 +104,26 @@
 
 .header-light,
 .section-light {
-  --background: 30 25% 97%;
-  --foreground: 220 20% 20%;
-  --card: 0 0% 100%;
-  --card-foreground: 220 20% 20%;
-  --secondary: 220 20% 94%;
-  --secondary-foreground: 220 20% 20%;
-  --muted: 220 15% 92%;
+  /* Alternate section: pure white */
+  --background: 0 0% 100%;
+  --foreground: 220 25% 12%;
+  --card: 30 25% 97%;
+  --card-foreground: 220 25% 12%;
+  --secondary: 30 20% 94%;
+  --secondary-foreground: 220 25% 12%;
+  --muted: 30 15% 94%;
   --muted-foreground: 220 10% 40%;
-  --accent: 238 84% 67%;
+  --accent: 220 25% 10%;
   --accent-foreground: 0 0% 100%;
-  --border: 220 15% 88%;
-  --input: 220 15% 88%;
-  --text-primary: 220 20% 20%;
+  --border: 30 15% 90%;
+  --input: 30 15% 90%;
+  --text-primary: 220 25% 12%;
   --text-secondary: 220 10% 40%;
   --text-muted: 220 10% 55%;
-  --icon-bg: 238 84% 95%;
+  --icon-bg: 30 20% 94%;
+  --primary: 220 25% 10%;
   --primary-foreground: 0 0% 100%;
-  --destructive: 0 84% 60%;
+  --destructive: 0 72% 50%;
   --destructive-foreground: 0 0% 100%;
 }
 
@@ -147,7 +149,7 @@
   }
 
   .gradient-teal {
-    background: linear-gradient(135deg, hsl(var(--teal)), hsl(238 84% 57%));
+    background: linear-gradient(135deg, hsl(220 25% 10%), hsl(220 20% 16%));
   }
 
   /* Category hero gradients */
