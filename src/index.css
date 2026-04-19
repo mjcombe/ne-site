@@ -26,8 +26,10 @@
     --muted: 30 15% 92%;
     --muted-foreground: 220 10% 40%;
 
-    --accent: 220 25% 10%;              /* use dark as accent instead of indigo */
+    --accent: 190 60% 38%;              /* soft teal-blue accent */
     --accent-foreground: 0 0% 100%;
+    --accent-soft: 190 50% 95%;
+    --accent-glow: 165 55% 55%;         /* green-teal glow for gradients */
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
