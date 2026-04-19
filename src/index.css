@@ -26,10 +26,10 @@
     --muted: 30 15% 92%;
     --muted-foreground: 220 10% 40%;
 
-    --accent: 190 60% 38%;              /* soft teal-blue accent */
+    --accent: 146 56% 33%;              /* fresh green accent #25854f */
     --accent-foreground: 0 0% 100%;
-    --accent-soft: 190 50% 95%;
-    --accent-glow: 165 55% 55%;         /* green-teal glow for gradients */
+    --accent-soft: 146 45% 94%;
+    --accent-glow: 160 55% 45%;         /* green glow for gradients */
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -50,20 +50,20 @@
     --sidebar-ring: 220 25% 12%;
 
     /* Custom tokens */
-    --icon-bg: 190 50% 94%;             /* soft teal tint behind icons */
-    --icon-fg: 190 60% 32%;             /* teal foreground for icons */
+    --icon-bg: 146 45% 94%;             /* soft green tint behind icons */
+    --icon-fg: 146 56% 28%;             /* deep green for icons */
     --navy: 220 25% 10%;                /* near-black (keeps hero dark) */
     --navy-light: 220 20% 16%;
     --navy-dark: 220 30% 6%;
-    --teal: 190 60% 38%;                /* real teal now */
-    --teal-hover: 190 65% 32%;
-    --teal-light: 190 50% 94%;
+    --teal: 146 56% 33%;                /* now green #25854f */
+    --teal-hover: 146 60% 27%;
+    --teal-light: 146 45% 94%;
     --gold: 38 92% 50%;
     --gold-light: 38 90% 92%;
     --gold-dark: 38 92% 40%;
     /* Gradients */
-    --gradient-soft: linear-gradient(135deg, hsl(190 55% 92%), hsl(165 50% 92%));
-    --gradient-icon: linear-gradient(135deg, hsl(190 60% 38%), hsl(165 55% 45%));
+    --gradient-soft: linear-gradient(135deg, hsl(146 45% 94%), hsl(160 50% 94%));
+    --gradient-icon: linear-gradient(135deg, hsl(146 56% 33%), hsl(160 55% 42%));
     --surface: 30 25% 97%;
     --surface-raised: 0 0% 100%;
     --text-primary: 220 25% 12%;
@@ -119,15 +119,15 @@
   --secondary-foreground: 220 25% 12%;
   --muted: 30 15% 94%;
   --muted-foreground: 220 10% 40%;
-  --accent: 190 60% 38%;
+  --accent: 146 56% 33%;
   --accent-foreground: 0 0% 100%;
   --border: 30 15% 90%;
   --input: 30 15% 90%;
   --text-primary: 220 25% 12%;
   --text-secondary: 220 10% 40%;
   --text-muted: 220 10% 55%;
-  --icon-bg: 190 50% 94%;
-  --icon-fg: 190 60% 32%;
+  --icon-bg: 146 45% 94%;
+  --icon-fg: 146 56% 28%;
   --primary: 220 25% 10%;
   --primary-foreground: 0 0% 100%;
   --destructive: 0 72% 50%;
@@ -156,16 +156,16 @@
   }
 
   .gradient-teal {
-    background: linear-gradient(135deg, hsl(190 60% 38%), hsl(165 55% 45%));
+    background: linear-gradient(135deg, hsl(146 56% 33%), hsl(160 55% 42%));
   }
 
   .icon-tile {
-    background: linear-gradient(135deg, hsl(190 55% 94%), hsl(165 50% 94%));
+    background: linear-gradient(135deg, hsl(146 45% 94%), hsl(160 50% 94%));
     color: hsl(var(--icon-fg));
   }
 
   .icon-tile-solid {
-    background: linear-gradient(135deg, hsl(190 60% 38%), hsl(165 55% 45%));
+    background: linear-gradient(135deg, hsl(146 56% 33%), hsl(160 55% 42%));
     color: hsl(0 0% 100%);
   }
 
