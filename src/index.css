@@ -156,16 +156,16 @@
   }
 
   .gradient-teal {
-    background: linear-gradient(135deg, hsl(190 60% 38%), hsl(165 55% 45%));
+    background: linear-gradient(135deg, hsl(146 56% 33%), hsl(160 55% 42%));
   }
 
   .icon-tile {
-    background: linear-gradient(135deg, hsl(190 55% 94%), hsl(165 50% 94%));
+    background: linear-gradient(135deg, hsl(146 45% 94%), hsl(160 50% 94%));
     color: hsl(var(--icon-fg));
   }
 
   .icon-tile-solid {
-    background: linear-gradient(135deg, hsl(190 60% 38%), hsl(165 55% 45%));
+    background: linear-gradient(135deg, hsl(146 56% 33%), hsl(160 55% 42%));
     color: hsl(0 0% 100%);
   }
 
