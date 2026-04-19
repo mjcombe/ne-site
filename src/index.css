@@ -26,10 +26,10 @@
     --muted: 30 15% 92%;
     --muted-foreground: 220 10% 40%;
 
-    --accent: 190 60% 38%;              /* soft teal-blue accent */
+    --accent: 146 56% 33%;              /* fresh green accent #25854f */
     --accent-foreground: 0 0% 100%;
-    --accent-soft: 190 50% 95%;
-    --accent-glow: 165 55% 55%;         /* green-teal glow for gradients */
+    --accent-soft: 146 45% 94%;
+    --accent-glow: 160 55% 45%;         /* green glow for gradients */
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
