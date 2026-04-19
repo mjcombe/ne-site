@@ -119,15 +119,15 @@
   --secondary-foreground: 220 25% 12%;
   --muted: 30 15% 94%;
   --muted-foreground: 220 10% 40%;
-  --accent: 190 60% 38%;
+  --accent: 146 56% 33%;
   --accent-foreground: 0 0% 100%;
   --border: 30 15% 90%;
   --input: 30 15% 90%;
   --text-primary: 220 25% 12%;
   --text-secondary: 220 10% 40%;
   --text-muted: 220 10% 55%;
-  --icon-bg: 190 50% 94%;
-  --icon-fg: 190 60% 32%;
+  --icon-bg: 146 45% 94%;
+  --icon-fg: 146 56% 28%;
   --primary: 220 25% 10%;
   --primary-foreground: 0 0% 100%;
   --destructive: 0 72% 50%;
