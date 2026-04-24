@@ -143,7 +143,7 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
-  </PasswordGate>
+  </>
 );
 
 export default App;
