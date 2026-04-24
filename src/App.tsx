@@ -72,7 +72,8 @@ const PageLoader = () => (
 );
 
 const App = () => (
-  <PasswordGate>
+  <>
+
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
